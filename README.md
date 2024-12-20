@@ -1,4 +1,4 @@
-# Starlight-Android
+# Starlight-Android-TV
 Gamestream client for Android TV
 
 ![Starlight](https://starlight-game-streaming.com/gallery_gen/240a46036ccec336e7df544b9d444745_1408x792_fit.png?ts=1734105590)
