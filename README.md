@@ -19,7 +19,14 @@ The code for Starlight will be available here once released under the GPLv3 lice
 * Install Android Studio and the Android NDK
 * Run ‘git submodule update --init --recursive’ from within starlight-android/
 * In starlight-android/, create a file called ‘local.properties’. Add an ‘ndk.dir=’ property to the local.properties file and set it equal to your NDK directory.
+* For testing locally on devices, create a keystore.properties file in the project root, once the app bundle is signed using [Android Studio](https://developer.android.com/studio/publish/app-signing), you then enter the details in the keystore file as follows:
+  * storeFile = "location of your key jks file"
+  * storePassword = "your password"
+  * keyAlias = "your alias"
+  * keyPassword = "your key password"
+  * The build.gradle is already configured to retreive the values
 * Build the APK using Android Studio or gradle
+* As the app bundle is signed you can deploy and test on local devices.
 
 
 ## Authors
