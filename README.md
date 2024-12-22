@@ -24,7 +24,7 @@ The code for Starlight will be available here once released under the GPLv3 lice
   * storePassword = "your password"
   * keyAlias = "your alias"
   * keyPassword = "your key password"
-  * The build.gradle is already configured to retreive the values
+  * The build.gradle is already configured to retrieve the values
 * You will need to register the app using [Firebase](https://firebase.google.com/docs/android/setup), as the configuration file is not included.
   * Once setup download the configuration file and place it in the projects app root
   * Everything is already set to connect to the Firebase API so there is nothing more to do
