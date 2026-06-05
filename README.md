@@ -3,7 +3,7 @@ Gamestream client for Android TV
 
 ![Starlight](https://starlight-stream.com/gallery_gen/240a46036ccec336e7df544b9d444745_1408x792_fit.png?ts=1734105590)
 
-Starlight was created by ACSDigital as a project inspired by Moonlight Game Streaming client for Android. 
+Starlight was created by ACSDigital as a project inspired by Moonlight Game Streaming client for Android, Starlight has been refactored and developed in full [Compose for TV](https://developer.android.com/training/tv/playback/compose).
 
 Starlight for Android TV will allow you to stream your full collection of games from your Windows PC to your Android/Google TV device.
 The code for Starlight will be available here once released under the GPLv3 license. We welcome contributions once available.
