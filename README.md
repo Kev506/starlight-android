@@ -3,12 +3,23 @@ Gamestream client for Android TV
 
 ![Starlight](https://starlight-game-streaming.com/gallery_gen/240a46036ccec336e7df544b9d444745_1408x792_fit.png?ts=1734105590)
 
-Starlight was created by ACSDigital as a project inspired by Moonlight Game Streaming client for Android, Starlight has been refactored and developed in full [Compose for TV](https://developer.android.com/training/tv/playback/compose).
+Starlight was created by ACSDigital as a project inspired by Moonlight Game Streaming client for Android, 
+Starlight has been refactored and developed in full [Compose for TV](https://developer.android.com/training/tv/playback/compose).
 
 Starlight for Android/Google TV will allow you to stream your full collection of games from your Windows PC to your Android/Google TV device.
 The code for Starlight will be available here once released under the GPLv3 license. We welcome contributions once available.
 
 [Starlight for Android](https://starlight-game-streaming.com) is an open source client implementation of Moonlight for NVIDIA GameStream and [Sunshine](https://github.com/LizardByte/Sunshine).
+
+
+## ✨ Top Features
+* Full game details, artwork, HD trailers, and more.
+* Supports Android AAudio Super low Latency.
+* Supports AC-3 and E-AC-3 5.1 HDMI/eArc Dolby Digital Plus.
+* Automatically adds your favorites to the Android TV Home Screen.
+* Adds your running title to Watch Next on pause.
+* Supports multiple controllers.
+* Supports multiple languages.
 
 
 ## 🔗 Downloads
@@ -37,20 +48,20 @@ The code for Starlight will be available here once released under the GPLv3 lice
 This project is built using a modern, scalable multi-module architecture:
 
 * **`Starlight Android`** - The primary Jetpack Compose TV application.
-* **[Video Player](https://central.sonatype.com/artifact/io.github.kev506/compose-custom-youtube-player)** - Our standalone custom Compose YouTube player library with persistent subtitle engine and language controls (published on Maven Central).
+* **[Video Player](https://central.sonatype.com/artifact/io.github.kev506/compose-custom-youtube-player) - Our standalone custom Compose YouTube player library with persistent subtitle engine and language controls (published on Maven Central).
 
 
 ## ᝰ🖋️ Authors
 Starlight Developer:
-* **[Kevin Andrews](https://github.com/kev506)**
+* [Kevin Andrews](https://github.com/kev506)
 
 ## 🙏 Thanks To
 Without Moonlight for Android Starlight would not have been possible.
 
 Moonlight Developers:
-* **[Cameron Gutman](https://github.com/cgutman)**
-* **[Diego Waxemberg](https://github.com/dwaxemberg)**
-* **[Aaron Neyer](https://github.com/Aaronneyer)**
-* **[Andrew Hennessy](https://github.com/yetanothername)**
+* [Cameron Gutman](https://github.com/cgutman)
+* [Diego Waxemberg](https://github.com/dwaxemberg)
+* [Aaron Neyer](https://github.com/Aaronneyer)
+* [Andrew Hennessy](https://github.com/yetanothername)
 
-Moonlight is the work of students at **[Case Western](http://case.edu)** and was started as a project at **[MHacks](http://mhacks.org)**.
+Moonlight is the work of students at [Case Western](http://case.edu) and was started as a project at [MHacks](http://mhacks.org).
