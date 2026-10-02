@@ -14,8 +14,8 @@ The code for Starlight will be available here once released under the GPLv3 lice
 
 ## ✨ Top Features
 * Full game details, artwork, HD trailers, and more.
-* Supports Android AAudio Super low Latency.
-* Supports AC-3 and E-AC-3 5.1 HDMI/eArc Dolby Digital Plus.
+* Supports Android AAudio Super low Latency, with Bluetooth headphone PCM fallback hot swap.
+* Supports AC-3 and E-AC-3 5.1 HDMI/eArc Dolby Digital Plus, with Bluetooth headphone PCM fallback hot swap.
 * Automatically adds your favorites to the Android TV Home Screen.
 * Adds your running title to Watch Next on pause.
 * Supports multiple controllers.
