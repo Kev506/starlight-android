@@ -1,9 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
 
-include(":core:video-player")
-
-
 
 pluginManagement {
 
