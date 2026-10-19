@@ -1,0 +1,44 @@
+Starlight ist eine Implementierung des hervorragenden Moonlight-Android. Unterstützt jetzt Themen und Spieldetails von RAWG, „ALLES, WAS SIE BRAUCHEN, IST EIN KOSTENLOSER API-SCHLÜSSEL“,
+aktualisiert auf AndroidX. Neue aktualisierte Layouts. Aufgrund der laufenden Änderungen wird nur Android API 28+ unterstützt, alle darunter liegenden APIs funktionieren nicht.
+
+Das ist völlig kostenlos, keine Werbung, IAPs oder Pro-Builds.
+
+Diese App streamt Spiele, Programme oder Ihren gesamten Desktop von einem NVIDIA GameStream-kompatiblen PC in Ihrem lokalen Netzwerk mithilfe von NVIDIA GeForce Experience oder Sunshine.
+Maus-, Tastatur- und Controller-Eingaben werden von Ihrem Android-Gerät an den PC gesendet.
+
+Die Streaming-Leistung kann je nach Client-Gerät und Netzwerkkonfiguration variieren. HDR erfordert ein HDR10-fähiges Gerät, eine GPU der GTX 1000-Serie und ein HDR10-fähiges Spiel.
+
+'''Funktionen'''
+* Open Source und völlig kostenlos (keine Werbung, IAPs oder „Pro“)
+* Streamt Spiele, die in jedem Store gekauft wurden
+* Funktioniert in Ihrem Heimnetzwerk.
+* Bis zu 4K 120 FPS HDR-Streaming mit 7.1 Surround Sound
+* Tastatur- und Mausunterstützung (am besten mit Android 9.0 oder höher)
+* Stylus/S-Pen-Unterstützung
+* Unterstützt PS3, PS4, Xbox 360, Xbox One und Android-Gamepads
+* Force-Feedback-Unterstützung
+* Lokale Kooperation mit bis zu 4 angeschlossenen Controllern
+* Maussteuerung über Gamepad durch langes Drücken der Start-Taste
+
+'''PC-Anforderungen'''
+* NVIDIA GeForce GTX/RTX oder NVIDIA Quadro GPU
+* Windows 7 oder höher
+* NVIDIA GeForce Experience oder NVIDIA Quadro Experience installiert
+* Sunshine
+
+'''Schnellinstallationsanleitung'''
+# Stellen Sie sicher, dass GeForce/Quadro Experience auf Ihrem PC geöffnet ist. Aktivieren Sie GameStream auf der SHIELD-Einstellungsseite.
+# Tippen Sie in Starlight auf den PC und geben Sie die PIN auf Ihrem PC ein
+# Geben Sie Ihren Rawg-API-Schlüssel ein und warten Sie, bis der Vorgang abgeschlossen ist
+# Beginnen Sie mit dem Streaming!
+
+Für ein gutes Erlebnis benötigen Sie einen WLAN-Router der mittleren bis oberen Preisklasse mit einer guten WLAN-Verbindung zu Ihrem Android-Gerät (5 GHz dringend empfohlen) und einer guten Verbindung von Ihrem PC zu Ihrem Router (Ethernet dringend empfohlen).
+
+'''Detaillierte Einrichtungsanweisungen'''
+In der vollständigen Einrichtungsanleitung https://tinyurl.com/4arnub5z finden Sie:
+* Manuelles Hinzufügen eines PCs (falls Ihr PC nicht erkannt wird)
+* Hinzufügen Ihres kostenlosen Rawg-API-Schlüssels
+* Verwenden eines Controllers, der direkt an Ihren PC angeschlossen ist
+* Streamen Ihres gesamten Desktops
+* Hinzufügen benutzerdefinierter Apps zum Streamen
+* Lesen Sie die Einrichtungsanweisungen, um Probleme zu vermeiden

@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tv_channel_logo_width">80dp</dimen>
+    <dimen name="tv_channel_logo_height" tools:keep="@dimen/tv_channel_logo_height">80dp</dimen>
+    <!--General theme layout settings-->
+    <dimen name="height">3dp</dimen>
+    <dimen name="height_2">2dp</dimen>
+    <dimen name="button_margin">2dp</dimen>
+    <dimen name="radius">16dp</dimen>
+    <dimen name="padding_1">1dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_2" tools:ignore="UnusedResources">2dp</dimen>
+    <dimen name="padding_4" tools:keep="@dimen/padding_4">4dp</dimen>
+    <dimen name="margin_TBLR">2dp</dimen>
+
+    <!--Leanback settings-->
+    <dimen name="lb_browse_rows_margin_top" tools:ignore="PrivateResource">330dp</dimen>
+    <dimen name="lb_rounded_rect_corner_radius" tools:ignore="PrivateResource,UnusedResources">
+        10dp
+    </dimen>
+    <dimen name="lb_browse_item_horizontal_spacing" tools:ignore="PrivateResource">13dp</dimen>
+    <dimen name="lb_browse_headers_width" tools:ignore="PrivateResource,UnusedResources">240dp
+    </dimen>
+    <dimen name="lb_browse_padding_start" tools:ignore="PrivateResource">56dp</dimen>
+    <dimen name="lb_browse_padding_start_float" tools:ignore="PrivateResource,UnusedResources">
+        40dp
+    </dimen>
+    <dimen name="lb_browse_padding_end_float" tools:ignore="PrivateResource,UnusedResources">15dp
+    </dimen>
+    <dimen name="lb_browse_expanded_selected_row_top_padding" tools:ignore="PrivateResource,UnusedResources">
+        13dp
+    </dimen>
+    <dimen name="lb_browse_expanded_row_no_hovercard_bottom_padding" tools:ignore="PrivateResource,UnusedResources">
+        13dp
+    </dimen>
+
+</resources>

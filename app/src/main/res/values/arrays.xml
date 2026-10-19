@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="YouTubePlayerView">
+        <attr name="enableAutomaticInitialization" format="boolean" />
+        <attr name="videoId" format="string" />
+        <attr name="autoPlay" format="boolean" />
+        <attr name="handleNetworkEvents" format="boolean" />
+    </declare-styleable>
+
+    <string-array name="resolution_names">
+        <item>@string/resolution_720p</item>
+        <item>@string/resolution_1080p</item>
+        <item>@string/resolution_1440p</item>
+        <item>@string/resolution_4k</item>
+    </string-array>
+
+    <!-- Keep this in sync with PreferenceConfiguration.isNativeResolution()! -->
+    <string-array name="resolution_values" translatable="false">
+        <item>1280x720</item>
+        <item>1920x1080</item>
+        <item>2560x1440</item>
+        <item>3840x2160</item>
+    </string-array>
+
+    <string-array name="fps_names">
+        <item>@string/fps_30</item>
+        <item>@string/fps_60</item>
+        <item>@string/fps_90</item>
+        <item>@string/fps_120</item>
+    </string-array>
+    <string-array name="fps_values" translatable="false">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </string-array>
+
+    <string-array name="audio_config_names">
+        <item>@string/audioconf_stereo</item>
+        <item>@string/audioconf_51surround</item>
+        <item>@string/audioconf_71surround</item>
+    </string-array>
+    <string-array name="audio_config_values" translatable="false">
+        <item>2</item>
+        <item>51</item>
+        <item>71</item>
+    </string-array>
+
+    <string-array name="audio_output_mode_names">
+        <item>@string/audio_output_mode_pcm</item>
+        <item>@string/audio_output_mode_ac3_auto</item>
+        <item>@string/audio_output_mode_ac3_force</item>
+        <item>@string/audio_output_mode_eac3_auto</item>
+        <item>@string/audio_output_mode_eac3_force</item>
+    </string-array>
+    <string-array name="audio_output_mode_values" translatable="false">
+        <item>pcm</item>
+        <item>ac3_auto</item>
+        <item>ac3_force</item>
+        <item>eac3_auto</item>
+        <item>eac3_force</item>
+    </string-array>
+
+    <!-- Don't forget to update locales_config.xml when you modify this! -->
+    <string-array name="language_names" translatable="false">
+        <item>Default</item>
+        <item>English</item>
+        <item>Italiano</item>
+        <item>Polski</item>
+        <item>Bŭlgarski</item>
+        <item>日本語</item>
+        <item>Русский</item>
+        <item>Nederlands</item>
+        <item>中文(简体)</item>
+        <item>中文(繁體)</item>
+        <item>한국어</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Română</item>
+        <item>Українська</item>
+        <item>Norsk</item>
+        <item>Tiếng Việt</item>
+        <item>Magyar</item>
+        <item>Ελληνικά</item>
+        <item>Português</item>
+        <item>Čeština</item>
+        <item>Svenska</item>
+        <item>Indonesia</item>
+        <item>Türkçe</item>
+    </string-array>
+    <string-array name="language_values" translatable="false">
+        <item>default</item>
+        <item>en</item>
+        <item>it</item>
+        <item>pl</item>
+        <item>bg</item>
+        <item>ja</item>
+        <item>ru</item>
+        <item>nl</item>
+        <item>zh-rCN</item>
+        <item>zh-rTW</item>
+        <item>ko</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>ro</item>
+        <item>uk</item>
+        <item>no</item>
+        <item>vi</item>
+        <item>hu</item>
+        <item>el</item>
+        <item>pt</item>
+        <item>cs</item>
+        <item>sv</item>
+        <item>in</item>
+        <item>tr</item>
+    </string-array>
+
+    <string-array name="video_format_names">
+        <item>@string/videoformat_auto</item>
+        <item>@string/videoformat_av1always</item>
+        <item>@string/videoformat_hevcalways</item>
+        <item>@string/videoformat_h264always</item>
+    </string-array>
+    <string-array name="video_format_values" translatable="false">
+        <item>auto</item>
+        <item>forceav1</item>
+        <item>forceh265</item>
+        <item>neverh265</item>
+    </string-array>
+
+    <string-array name="video_frame_pacing_names">
+        <item>@string/pacing_latency</item>
+        <item>@string/pacing_balanced</item>
+        <item>@string/pacing_balanced_alt</item>
+        <item>@string/pacing_smoothness</item>
+    </string-array>
+    <string-array name="video_frame_pacing_values" translatable="false">
+        <item>latency</item>
+        <item>balanced</item>
+        <item>cap-fps</item>
+        <item>smoothness</item>
+    </string-array>
+    <string-array name="analog_scrolling_names">
+        <item>@string/analogscroll_none</item>
+        <item>@string/analogscroll_right</item>
+        <item>@string/analogscroll_left</item>
+    </string-array>
+    <string-array name="analog_scrolling_values" translatable="false">
+        <item>none</item>
+        <item>right</item>
+        <item>left</item>
+    </string-array>
+</resources>

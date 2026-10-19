@@ -1,0 +1,417 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">遊ぶ</string>
+    <string name="details">詳細</string>
+    <string name="running">ゲームを実行中です。オプションについては [プレイ] をクリックしてください。</string>
+    <string name="No_Details">申し訳ありませんが、表示できる詳細情報はありません。
+
+ゲームを手動で追加した場合は、タイトルを確認し、データベースをクリアして更新してください。
+
+選択したアイテムがデスクトップアプリケーションの場合、表示できる詳細情報はありません。</string>
+    
+    
+    
+    
+    
+    <string name="trailers">予告編</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Leanback UI を使用する</string>
+    <string name="leanback_summary">Leanback UI にアプリを表示する場合に選択します</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PCが削除されました</string>
+    <string name="scut_not_paired">PCがペアリングされていない</string>
+    <string name="scut_pc_not_found">PCが見つかりません</string>
+    <string name="scut_invalid_uuid">提供された PC が無効です</string>
+    <string name="scut_invalid_app_id">提供されたアプリは無効です</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">ヘルプビューア</string>
+    <string name="help_loading_msg">ヘルプページを読み込み中…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">オンライン</string>
+    <string name="pcview_menu_header_offline">オフライン</string>
+    <string name="pcview_menu_header_unknown">さわやか</string>
+    <string name="pcview_menu_app_list">すべてのアプリを表示</string>
+    <string name="pcview_menu_pair_pc">PCとペアリングする</string>
+    <string name="pcview_menu_unpair_pc">ペアリングを解除する</string>
+    <string name="pcview_menu_send_wol">Wake-On-LAN リクエストを送信する</string>
+    <string name="pcview_menu_delete_pc">PCの削除</string>
+    <string name="pcview_menu_test_network">ネットワーク接続のテスト</string>
+    <string name="pcview_menu_details">詳細を見る</string>
+    <string name="pcview_menu_eol">NVIDIA GameStream のサービス終了</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">ネットワーク接続のテスト</string>
+    <string name="nettest_text_waiting">Starlight は、必要なポートがブロックされているかどうかを判断するためにネットワーク接続をテストしています。\n\nこれには数秒かかる場合があります…</string>
+    <string name="nettest_title_done">ネットワークテスト完了</string>
+    <string name="nettest_text_success">お使いのネットワークは Starlight をブロックしていないようです。それでも接続に問題がある場合は、PC のファイアウォール設定を確認してください。\n\nインターネット経由でストリーミングしようとしている場合は、Moonlight インターネット ホスティング ツールを PC にインストールし、付属のインターネット ストリーミング テスターを実行して PC を確認してください\のインターネット接続。</string>
+    <string name="nettest_text_inconclusive">Starlight の接続テスト サーバーに到達できないため、ネットワーク テストを実行できませんでした。インターネット接続を確認するか、後でもう一度試してください。</string>
+    <string name="nettest_text_failure">お使いのデバイスの現在のネットワーク接続が Starlight をブロックしているようです。このネットワークに接続している間は、インターネット経由のストリーミングが機能しない可能性があります。\n\n次のネットワーク ポートがブロックされました:\n</string>
+    <string name="nettest_text_blocked">デバイスの現在のネットワーク接続が Starlight をブロックしています。このネットワークに接続している間は、インターネット経由のストリーミングが機能しない可能性があります。</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">ペアリング中…</string>
+    <string name="pair_pc_offline">コンピュータがオフラインです</string>
+    <string name="pair_pc_ingame">コンピューターは現在ゲーム中です。ペアリングする前にゲームを終了する必要があります。</string>
+    <string name="pair_pairing_title">ペアリング</string>
+    <string name="pair_pairing_msg">ターゲット PC に次の PIN を入力してください。</string>
+    <string name="pair_pairing_help">ホスト PC が Sunshine を実行している場合は、Sunshine Web UI に移動して PIN を入力します。</string>
+    <string name="pair_incorrect_pin">間違ったPIN</string>
+    <string name="pair_fail">ペアリングに失敗しました</string>
+    <string name="pair_already_in_progress">すでにペアリング中です</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">コンピュータはオンラインです</string>
+    <string name="wol_no_mac">MAC アドレスが保存されていないため、PC をスリープ解除できません</string>
+    <string name="wol_waking_pc">目覚めているPC…</string>
+    <string name="wol_waking_msg">PC が起動するまでに数秒かかる場合があります。
+そうでない場合は、Wake-On-LAN 用に適切に構成されていることを確認してください。
+    </string>
+    <string name="wol_fail">Wake-On-LAN パケットの送信に失敗しました</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">ペアリングを解除中…</string>
+    <string name="unpair_success">ペアリングが正常に解除されました</string>
+    <string name="unpair_fail">ペアリングを解除できませんでした</string>
+    <string name="unpair_error">デバイスがペアリングされていません</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">コンピュータがオフラインです</string>
+    <string name="error_manager_not_running">ComputerManager サービスが実行されていません。数秒待つか、アプリを再起動してください。</string>
+    <string name="error_unknown_host">ホストの解決に失敗しました</string>
+    <string name="error_404">GFE が HTTP 404 エラーを返しました。 PC がサポートされている GPU を実行していることを確認してください。
+リモート デスクトップ ソフトウェアを使用すると、このエラーが発生する可能性があります。マシンを再起動するか、GFE を再インストールしてみてください。
+    </string>
+    <string name="title_decoding_error">ビデオ デコーダがクラッシュしました</string>
+    <string name="message_decoding_error">このデバイスのビデオ デコーダとの互換性がないため、Starlight がクラッシュしました。クラッシュが続く場合は、ストリーミング設定を調整してみてください。</string>
+    <string name="title_decoding_reset">ビデオ設定のリセット</string>
+    <string name="message_decoding_reset">選択したストリーミング設定では、デバイスのビデオ デコーダがクラッシュし続けます。ストリーミング設定がデフォルトにリセットされました。</string>
+    <string name="error_usb_prohibited">USB アクセスはデバイス管理者によって禁止されています。 Knox または MDM の設定を確認してください。</string>
+    <string name="unable_to_pin_shortcut">現在のランチャーでは、固定されたショートカットを作成できません。</string>
+    <string name="video_decoder_init_failed">ビデオ デコーダの初期化に失敗しました。お使いのデバイスは、選択した解像度またはフレーム レートをサポートしていない可能性があります。</string>
+    <string name="no_video_received_error">ホストからビデオを受信しませんでした。</string>
+    <string name="no_frame_received_error">ネットワーク接続がうまく動作していません。ビデオのビットレート設定を下げるか、より高速な接続を試してください。</string>
+    <string name="early_termination_error">ストリームの開始時にホスト PC で問題が発生しました。\n\nホスト PC で DRM で保護されたコンテンツを開いていないことを確認してください。ホスト PC を再起動してみることもできます。</string>
+    <string name="frame_conversion_error">ホスト PC が致命的なビデオ エンコード エラーを報告しました。\n\nHDR モードを無効にするか、ストリーミング解像度を変更するか、ホスト PC のディスプレイ解像度を変更してみてください。</string>
+    <string name="check_ports_msg">ファイアウォールとポートのポート転送ルールを確認してください。</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">接続を確立する</string>
+    <string name="conn_establishing_msg">接続を開始します</string>
+    <string name="conn_metered">警告: アクティブなネットワーク接続は従量制です。</string>
+    <string name="conn_client_latency">平均フレーム デコード レイテンシ:</string>
+    <string name="conn_client_latency_hw">ハードウェア デコーダのレイテンシ:</string>
+    <string name="conn_hardware_latency">平均ハードウェア デコード レイテンシー:</string>
+    <string name="conn_starting">起動</string>
+    <string name="conn_error_title">接続エラー</string>
+    <string name="conn_error_msg">起動に失敗しました</string>
+    <string name="conn_terminated_title">接続が終了しました</string>
+    <string name="conn_terminated_msg">接続が終了されました。</string>
+    <string name="error_code_prefix">エラーコード：</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">ホストPCのIPアドレス</string>
+    <string name="searching_pc">ローカル ネットワーク上のホスト PC を検索しています…\n\n
+        ホスト PC で Sunshine が実行されているか、GeForce Experience SHIELD 設定で GameStream が有効になっていることを確認してください。</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="lost_connection">PCとの接続が失われました</string>
+    <string name="title_details">詳細</string>
+    <string name="help">ヘルプ</string>
+    <string name="delete_pc_msg">この PC を削除してもよろしいですか\?</string>
+    <string name="slow_connection_msg">PC への接続が遅い\nビットレートを下げてください</string>
+    <string name="poor_connection_msg">PCとの接続が悪い</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">ビデオ ストリーム: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">デコーダ: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">ネットワークからの受信フレーム レート: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">レンダリング フレーム レート: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">ホスト処理遅延の最小/最大/平均: %1$.1f/%2$.1f/%3$.1f ミリ秒</string>
+    <string name="perf_overlay_netdrops">ネットワーク接続によってドロップされたフレーム: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">平均ネットワーク遅延: %1$d ミリ秒 (差異: %2$d ミリ秒)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">平均デコード時間: %1$.2f ミリ秒</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">PCに接続中…</string>
+    <string name="applist_menu_resume">セッションを再開する</string>
+    <string name="applist_menu_quit">セッションを終了する</string>
+    <string name="applist_menu_quit_and_start">現在のゲームを終了して開始する</string>
+    <string name="applist_menu_cancel">キャンセル</string>
+    <string name="applist_menu_details">詳細を見る</string>
+    <string name="applist_menu_scut">ショートカットを作成</string>
+    <string name="applist_menu_tv_channel">チャンネルに追加</string>
+    <string name="applist_menu_hide_app">アプリを隠す</string>
+    <string name="applist_refresh_title">アプリ一覧</string>
+    <string name="applist_refresh_msg">アプリを更新中…</string>
+    <string name="applist_refresh_error_title">エラー</string>
+    <string name="applist_refresh_error_msg">アプリリストの取得に失敗しました</string>
+    <string name="applist_quit_app">やめる</string>
+    <string name="applist_quit_success">正常に終了しました</string>
+    <string name="applist_quit_fail">終了に失敗しました</string>
+    <string name="applist_quit_confirmation">実行中のアプリを終了してもよろしいですか\?保存されていないデータはすべて失われます。</string>
+    <string name="applist_details_id">アプリID:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">PCを手動で追加する</string>
+    <string name="msg_add_pc">PCに接続中…</string>
+    <string name="addpc_fail">指定されたコンピュータに接続できません。必要なポートがファイアウォールの通過を許可されていることを確認してください。</string>
+    <string name="addpc_success">コンピュータが正常に追加されました</string>
+    <string name="addpc_unknown_host">PCアドレスを解決できません。アドレスにタイプミスがないか確認してください。</string>
+    <string name="addpc_enter_ip">IPアドレスを入力する必要があります</string>
+    <string name="addpc_wrong_sitelocal">そのアドレスは正しくないようです。インターネット経由でストリーミングするには、ルーターのパブリック IP アドレスを使用する必要があります。</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">基本設定</string>
+    <string name="title_resolution_list">ビデオ解像度</string>
+    <string name="summary_resolution_list">増やすと画像の鮮明さが向上します。減少させると、ローエンド デバイスや低速ネットワークでのパフォーマンスが向上します。</string>
+    <string name="title_native_res_dialog">ネイティブ解像度の警告</string>
+    <string name="text_native_res_dialog">ネイティブ解像度や FPS はストリーミング サーバーでサポートされていない可能性があります。おそらく、ホスト PC に一致するカスタム ディスプレイ モードを手動で構成する必要があります。\n\nNVIDIA コントロール パネルで画面設定に一致するカスタム解像度を作成することを選択した場合は、NVIDIA の警告を読んで理解していることを確認してください。モニターの損傷、PC の不安定性、その他の潜在的な問題の可能性については、こちらを参照してください。\n\nPC でカスタム解像度を作成したことに起因する問題については、当社は責任を負いません。\n\nお使いのモニターが、必要なディスプレイ構成をサポートしていない可能性があります。その場合は、仮想モニターをセットアップしてみてください。最後に、お使いのデバイスまたはホスト PC が特定の解像度またはリフレッシュ レートでのストリーミングをサポートしていない場合は、残念ながら運が悪いです。</string>
+    <string name="title_fps_list">ビデオフレームレート</string>
+    <string name="summary_fps_list">増やすとビデオ ストリームがよりスムーズになります。ローエンド デバイスのパフォーマンスを向上させるために減少します。</string>
+    <string name="title_seekbar_bitrate">ビデオのビットレート</string>
+    <string name="summary_seekbar_bitrate">画質を向上させるには大きくします。速度を下げると、低速接続でのパフォーマンスが向上します。</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">ビデオを全画面に拡大する</string>
+    <string name="title_stretch_video">ストレッチビデオ</string>
+    <string name="resolution_prefix_native">ネイティブ</string>
+    <string name="resolution_prefix_native_fullscreen">ネイティブフルスクリーン</string>
+    <string name="resolution_prefix_native_landscape">（風景）</string>
+    <string name="resolution_prefix_native_portrait">(縦向き)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">ネイティブ FPS の警告</string>
+
+    <string name="category_audio_settings">オーディオ設定</string>
+    <string name="title_audio_config_list">サラウンドサウンド設定</string>
+    <string name="summary_audio_config_list">ホームシアター システムで 5.1 または 7.1 サラウンド サウンドを有効にする</string>
+    <string name="title_checkbox_enable_audiofx">システムイコライザーのサポートを有効にする</string>
+    <string name="summary_checkbox_enable_audiofx">ストリーミング中にオーディオ エフェクトを機能させることができますが、オーディオの遅延が増加する可能性があります</string>
+
+    <string name="category_gamepad_settings">ゲームパッドの設定</string>
+    <string name="title_checkbox_multi_controller">ゲームパッドの存在を自動検出</string>
+    <string name="summary_checkbox_multi_controller">このオプションのチェックを外すと、ゲームパッドが常に存在するようになります。</string>
+    <string name="title_checkbox_vibrate_fallback">振動によるランブルサポートをエミュレート</string>
+    <string name="summary_checkbox_vibrate_fallback">ゲームパッドがランブルをサポートしていない場合、デバイスを振動させてランブルをエミュレートします</string>
+    <string name="title_seekbar_vibrate_fallback_strength">エミュレートされたランブル強度を調整する</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">デバイスの振動強度を増幅または低減します</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">アナログスティックのデッドゾーンを調整する</string>
+    <string name="summary_seekbar_deadzone">注: 一部のゲームでは、Starlight が使用するように設定されているデッドゾーンよりも大きなデッドゾーンを強制することができます。</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Xbox 360/One USB ゲームパッド ドライバー</string>
+    <string name="summary_checkbox_xb1_driver">ネイティブ Xbox コントローラー サポートのないデバイスの組み込み USB ドライバーを有効にします</string>
+    <string name="title_checkbox_usb_bind_all">ネイティブ Xbox ゲームパッド サポートをオーバーライドする</string>
+    <string name="summary_checkbox_usb_bind_all">ネイティブ Xbox コントローラー サポートが存在する場合でも、サポートされているすべてのゲームパッドに Starlight の USB ドライバーを使用してください</string>
+    <string name="title_checkbox_mouse_emulation">ゲームパッドによるマウスエミュレーション</string>
+    <string name="summary_checkbox_mouse_emulation">スタートボタンを長押しすると、ゲームパッドがマウスモードに切り替わります。</string>
+    <string name="title_checkbox_flip_face_buttons">フェイスボタンを反転</string>
+    <string name="summary_checkbox_flip_face_buttons">フェイスボタン A/B と X/Y をゲームパッドとオンスクリーンコントロールに切り替えます</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">常にタッチパッドでマウスを制御する</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">タッチパッドでゲームパッドをエミュレートしている場合でも、ゲームパッドのタッチパッド入力を強制的にホスト マウスを制御します。</string>
+    <string name="title_checkbox_gamepad_motion_sensors">ゲームパッドのモーションセンサーの使用を許可する</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">モーション センサーを備えたゲームパッドをエミュレートするときに、サポートされているホストがモーション センサー データを要求できるようにします。ゲームでモーション センサーが使用されていない場合、無効にすると電力とネットワークの使用量がわずかに削減される可能性があります。</string>
+    <string name="title_checkbox_gamepad_motion_fallback">ゲームパッドのモーションセンサーのサポートをエミュレートします</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">接続されているゲームパッドまたは Android バージョンでゲームパッド センサーがサポートされていない場合は、デバイスの内蔵モーション センサーを使用します。\n注: このオプションを有効にすると、ゲームパッドがホスト上で PlayStation コントローラとして表示される可能性があります。</string>
+
+    <string name="category_input_settings">入力設定</string>
+    <string name="title_checkbox_touchscreen_trackpad">タッチスクリーンをトラックパッドとして使用する</string>
+    <string name="summary_checkbox_touchscreen_trackpad">有効にすると、タッチスクリーンはトラックパッドのように機能します。無効にすると、タッチスクリーンがマウス カーソルを直接制御します。</string>
+    <string name="title_checkbox_absolute_mouse_mode">リモートデスクトップマウスモード</string>
+    <string name="summary_checkbox_absolute_mouse_mode">これにより、リモート デスクトップの使用に対してマウスの加速がより自然に動作するようになりますが、多くのゲームとは互換性がありません。</string>
+    <string name="title_checkbox_mouse_nav_buttons">マウスの「戻る」ボタンと「進む」ボタンを有効にする</string>
+    <string name="summary_checkbox_mouse_nav_buttons">このオプションを有効にすると、一部のバグのあるデバイスでの右クリックが機能しなくなる可能性があります</string>
+
+    <string name="category_on_screen_controls_settings">オンスクリーンコントロールの設定</string>
+    <string name="title_checkbox_show_onscreen_controls">画面上のコントロールを表示する</string>
+    <string name="summary_checkbox_show_onscreen_controls">タッチスクリーンに仮想コントローラーのオーバーレイを表示する</string>
+    <string name="title_checkbox_vibrate_osc">振動を有効にする</string>
+    <string name="summary_checkbox_vibrate_osc">デバイスを振動させて、画面上のコントロールのランブルをエミュレートします。</string>
+    <string name="title_only_l3r3">L3 と R3 のみを表示</string>
+    <string name="summary_only_l3r3">L3 と R3 を除くすべての仮想ボタンを非表示にする</string>
+    <string name="title_reset_osc">保存されたオンスクリーン コントロールのレイアウトをクリアする</string>
+    <string name="summary_reset_osc">画面上のすべてのコントロールをデフォルトのサイズと位置にリセットします</string>
+    <string name="dialog_title_reset_osc">レイアウトをリセット</string>
+    <string name="dialog_text_reset_osc">保存したオンスクリーン コントロール レイアウトを削除してもよろしいですか\?</string>
+    <string name="toast_reset_osc_success">画面上のコントロールがデフォルトにリセットされる</string>
+    <string name="title_osc_opacity">画面上のコントロールの不透明度を変更する</string>
+    <string name="summary_osc_opacity">画面上のコントロールの透明性を高める/低くする</string>
+    <string name="dialog_title_osc_opacity">不透明度を変更する</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">UI設定</string>
+    <string name="title_checkbox_enable_pip">ピクチャー・イン・ピクチャー・オブザーバー・モードを有効にする</string>
+    <string name="summary_checkbox_enable_pip">マルチタスク中にストリームを表示できます (ただし、制御はできません)。</string>
+    <string name="title_language_list">言語</string>
+    <string name="summary_language_list">Starlight で使用する言語</string>
+    <string name="title_checkbox_small_icon_mode">小さなボックスアートを使用する</string>
+    <string name="summary_checkbox_small_icon_mode">アプリグリッドのボックスアートが小さくなり、より多くのアプリを画面上に表示できるようになります</string>
+
+    <string name="category_host_settings">ホスト設定</string>
+    <string name="title_checkbox_enable_sops">ゲーム設定を最適化する</string>
+    <string name="summary_checkbox_enable_sops">ストリーミングを最適化するために GFE がゲーム設定を変更できるようにする</string>
+    <string name="title_checkbox_host_audio">PC でオーディオを再生する</string>
+    <string name="summary_checkbox_host_audio">コンピューターとこのデバイスからオーディオを再生します</string>
+
+    <string name="category_advanced_settings">高度な設定</string>
+    <string name="title_unlock_fps">可能なすべてのフレーム レートのロックを解除する</string>
+    <string name="summary_unlock_fps">90 または 120 FPS でストリーミングすると、ハイエンド デバイスでは遅延が軽減される可能性がありますが、それをサポートできないデバイスでは遅延や不安定性が発生する可能性があります</string>
+    <string name="title_checkbox_reduce_refresh_rate">リフレッシュ レートの低下を許可する</string>
+    <string name="summary_checkbox_reduce_refresh_rate">ディスプレイのリフレッシュ レートを低くすると、ビデオ遅延が多少発生しますが、電力を節約できます。</string>
+    <string name="title_checkbox_disable_warnings">警告メッセージを無効にする</string>
+    <string name="summary_checkbox_disable_warnings">ストリーミング中の画面上の接続警告メッセージを無効にする</string>
+    <string name="title_disable_frame_drop">決してフレームをドロップしないでください</string>
+    <string name="summary_disable_frame_drop">一部のデバイスではマイクロスタッタリングが軽減される可能性がありますが、遅延が増加する可能性があります</string>
+    <string name="title_video_format">コーデック設定を変更する</string>
+    <string name="summary_video_format">新しいコーデックは、デバイスがサポートしている場合、ビデオ帯域幅の要件を下げることができます。ホスト ソフトウェアまたは GPU でサポートされていない場合、コーデックの選択は無視される場合があります。</string>
+    <string name="title_enable_hdr">HDR を有効にする (実験的)</string>
+    <string name="summary_enable_hdr">ゲームと PC GPU が HDR をサポートしている場合は、HDR をストリーミングします。 HDR には、HEVC Main 10 エンコーディングをサポートする GPU が必要です。</string>
+    <string name="title_full_range">フルレンジビデオを強制する (デバイス依存)</string>
+    <string name="summary_full_range">これにより、デバイスがフルレンジのビデオ コンテンツを適切に表示しない場合、明るい部分と暗い部分の詳細が失われることになります。</string>
+    <string name="title_enable_perf_overlay">ストリーミング中にパフォーマンス統計を表示する</string>
+    <string name="summary_enable_perf_overlay">ストリーミング中にリアルタイムのストリームパフォーマンス情報を表示します</string>
+    <string name="title_enable_post_stream_toast">ストリーミング後に遅延メッセージを表示する</string>
+    <string name="summary_enable_post_stream_toast">ストリーム終了後に遅延情報メッセージを表示する</string>
+
+    <string name="category_help">ヘルプ</string>
+    <string name="title_setup_guide">セットアップガイド</string>
+    <string name="summary_setup_guide">ストリーミング用にゲーミング PC をセットアップする方法についての手順を表示します。</string>
+    <string name="title_troubleshooting">トラブルシューティングガイド</string>
+    <string name="summary_troubleshooting">一般的なストリーミングの問題を診断して修正するためのヒントを表示する</string>
+    <string name="title_privacy_policy">プライバシーポリシー</string>
+    <string name="summary_privacy_policy">Starlight のプライバシー ポリシーを見る</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">モーション センサー エミュレーションにより、ゲームパッドのタイプが変更される可能性があります</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30FPS</string>
+    <string name="fps_60">60FPS</string>
+    <string name="fps_90">90FPS</string>
+    <string name="fps_120">120FPS</string>
+
+    <string name="audioconf_stereo">ステレオ</string>
+    <string name="audioconf_51surround">5.1 サラウンドサウンド</string>
+    <string name="audioconf_71surround">7.1 サラウンドサウンド</string>
+
+    <string name="videoformat_auto">自動 (推奨)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">AV1 を優先します (実験的)</string>
+    <string name="videoformat_hevcalways">HEVC を好む</string>
+    <string name="videoformat_h264always">H.264 を優先する</string>
+
+    <string name="title_frame_pacing">ビデオフレームペーシング</string>
+    <string name="summary_frame_pacing">ビデオの遅延と滑らかさのバランスを取る方法を指定する</string>
+    <string name="pacing_latency">レイテンシが最も低いことを優先する</string>
+    <string name="pacing_balanced">バランスのとれた</string>
+    <string name="pacing_balanced_alt">FPS制限とのバランス</string>
+    <string name="pacing_smoothness">最もスムーズなビデオを優先します (遅延が大幅に増加する可能性があります)</string>
+    <string name="title_analog_scrolling">アナログスティックを使用してスクロールします</string>
+    <string name="summary_analog_scrolling">マウス エミュレーション モードでスクロールするアナログ スティックを選択します</string>
+    <string name="analogscroll_none">なし (両方のスティックでマウスを動かします)</string>
+    <string name="analogscroll_right">右アナログスティック</string>
+    <string name="analogscroll_left">左アナログスティック</string>
+    <string name="games">ゲーム</string>
+    <string name="settings">設定</string>
+    <string name="exit">出口</string>
+    <string name="options">オプション</string>
+    <string name="pending">保留中</string>
+    <string name="data_collection">データ収集</string>
+    <string name="loading_for_first_time_use_please_wait">初めて使用するためロード中....しばらくお待ちください...</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">このアプリケーションを終了しますか、それとも一時停止しますか。終了すると、保存されていないデータはすべて失われます。</string>
+    <string name="confirm_quit">終了の確認</string>
+    <string name="quit">やめる</string>
+    <string name="pause">一時停止</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">キャッシュをクリアしてもよろしいですか\? このウィンドウは閉じられます。</string>
+    <string name="clear_cache">キャッシュの消去</string>
+    <string name="click_ok_to_launch_game">「OK」をクリックしてゲームを起動します。</string>
+    <string name="active_internet_connection_required_for_game_details">ゲームの詳細を確認するにはアクティブなインターネット接続が必要です。</string>
+    <string name="download">ダウンロード</string>
+    <string name="download_translations_model">翻訳モデルをダウンロードする</string>
+    <string name="download_locale_language_model_to_translate_game_data">ゲームデータを翻訳するためのロケール言語モデルをダウンロードする</string>
+    <string name="downloading_ml_language_file_please_wait">お待ちください..</string>
+    <string name="download_successful">ダウンロードに成功しました</string>
+    <string name="download_error_please_try_again">ダウンロード エラー: もう一度お試しください</string>
+    <string name="model_deleted_successfully">モデルは正常に削除されました</string>
+    <string name="model_delete_failed_please_try_again">モデルの削除に失敗しました。もう一度お試しください。</string>
+    <string name="delete_language_model">言語モデルの削除</string>
+    <string name="delete_downloaded_language_model">ダウンロードした言語モデルを削除する</string>
+    <string name="support">\"サポート \"</string>
+    <string name="cache">キャッシュ %1$s</string>
+    <string name="hdr_off">「HDRオフ」</string>
+    <string name="hdr_on">「HDRオン」</string>
+    <string name="cancel">キャンセル</string>
+    <string name="display_does_not_support_hdr10">ディスプレイはHDR10をサポートしていません</string>
+    <string name="decoder_does_not_support_hdr10_profile">デコーダは HDR10 プロファイルをサポートしていません</string>
+    <string name="no_hevc_decoder_found">HEVC デコーダが見つかりません</string>
+    <string name="no_av1_decoder_found">AV1 デコーダが見つかりません</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">このデバイスまたは ROM は、ハードウェア アクセラレーションによる H.264 再生をサポートしていません。</string>
+    <string name="server_version_malformed">サーバーのバージョンが不正です</string>
+    <string name="device_not_paired_with_computer">デバイスがコンピュータとペアリングされていません</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">お使いの PC GPU は HDR ストリーミングをサポートしていません。ストリームは SDR になります。</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">ホスト PC は 4K を超える解像度でのストリーミングをサポートしていません。</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">4K を超える解像度でストリーミングするには、ストリーミング デバイスが HEVC または AV1 をサポートしている必要があります。</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">4K でストリーミングするには、GeForce Experience を更新する必要があります。ストリーミングは 1080p になります。</string>
+    <string name="failed_to_resume_existing_session">既存のセッションを再開できませんでした</string>
+    <string name="this_session_wasn_t_started_by_this_device">このセッションはこのデバイスによって開始されませんでした。</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">「再開できません。元のストリーミングを終了してください」</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">「デバイスまたは PC 自体を再試行してください。(エラー コード:」</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">「アプリケーションは最小化されています。PC 上で手動で再開するか、」</string>
+    <string name="quit_the_session_and_start_streaming_again">セッションを終了し、ストリーミングを再開します。</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">前のセッションを終了できませんでした!手動で終了する必要があります</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" だから終了できません。オリジナルでのストリーミングを終了します \"</string>
+    <string name="device_or_the_pc_itself_error_code">「デバイスまたは PC 自体。(エラーコード:」)</string>
+    <string name="failed_to_launch_application">アプリケーションの起動に失敗しました</string>
+    <string name="please_wait_for_the_process_to_complete">プロセスが完了するまでお待ちください…</string>
+    <string name="enter_api_key_here">ここにAPIキーを入力してください:</string>
+    <string name="favorites">お気に入り</string>
+    <string name="removed_from_favorites">「お気に入りとホームチャンネルから削除されました」</string>
+    <string name="added_to_favorites">「お気に入りとホームチャンネルに追加されました」</string>
+    <string name="clear_favorites">お気に入りをクリア</string>
+    <string name="clear_favs_msg">お気に入りをクリアしてもよろしいですか\? これにより、ホーム チャンネル アプリケーションも削除されます。</string>
+    <string name="app_list_updated">アプリリストが更新されました</string>
+    <string name="update_the_database"><![CDATA[データベースをクリアして更新してもよろしいですか\? そうするとこのウィンドウが閉じられます。]]></string>
+    <string name="update_database">データベースを更新する</string>
+    <string name="database">データベース</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">すべてのお気に入りをクリアしてもよろしいですか?</string>
+    <string name="resuming_session">セッションを再開</string>
+    <string name="app_added_to_favorites">お気に入りに追加されました</string>
+    <string name="app_removed_from_favorites">お気に入りから削除</string>
+    <string name="anonymous_statistics">匿名統計</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">アプリのパフォーマンスを向上させるために匿名の統計を送信します。</string>
+    <string name="captions">YouTube動画の字幕</string>
+    <string name="captions_text">YouTube動画の字幕を有効または無効にします。</string>
+    <string name="privacy">プライバシー</string>
+    <string name="restart_application">アプリケーションを再起動</string>
+    <string name="restart_now">変更を適用するためにアプリケーションが再起動されます。今すぐ再起動しますか\?</string>
+    <string name="database_updating">データベース更新</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">映像強化:(x%1$.2f)シェーダーSGSR1</string>
+    <string name="title_video_sr">ビデオスーパーレゾリューション</string>
+    <string name="summary_video_sr">ハードウェアアクセラレーションを活用して画質の鮮明さを向上させる</string>
+    <string name="aaudio">音声応答速度を向上させるため、ハードウェアへの直接アクセスを試みます。一部のAndroid TVやストリーミングデバイスでは、メーカーの制限により遅延が発生する場合があります。音声が不安定になった場合は、このオプションを無効にしてください。</string>
+    <string name="enable_aaudio">AAudioを有効にする</string>
+    <string name="aaudio_title">AAudio超低遅延（実験版）</string>
+    <string name="aaudio_summary">AAudio超低遅延（サラウンドサウンド対応）</string>
+    <string name="aaudio_summary29">AAudio超低遅延を有効にする</string>
+    <string name="game_media_library">ゲームメディアライブラリ</string>
+
+    <string name="title_audio_output_mode">音声出力フォーマット</string>
+    <string name="summary_audio_output_mode">PCMはすべての機器と互換性があります。AC-3とDolby Digital Plusはエンコードされた5.1chオーディオをHDMI/eARC対応レシーバーに送信し、経路が失敗した場合はPCMにフォールバックします。</string>
+    <string name="audio_output_mode_pcm">PCM（デフォルト）</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1（自動、実験的）</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1（力、実験値）</string>
+    <string name="audio_output_mode_eac3_auto">ドルビーデジタルプラス／E-AC-3 5.1（自動、実験的）</string>
+    <string name="audio_output_mode_eac3_force">ドルビーデジタルプラス / E-AC-3 5.1 (強制、実験的)</string>
+    <string name="encoded_audio_fallback_to_pcm">エンコードされた音声出力は利用できません。PCM音声で再生を続けます。</string>
+    <string name="switch_to_encoded">エンコードされた音声出力が利用可能です。エンコードされた音声に切り替えます。</string>
+</resources>

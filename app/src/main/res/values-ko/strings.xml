@@ -1,0 +1,415 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">놀다</string>
+    <string name="details">세부</string>
+    <string name="running">게임이 실행 중입니다. 옵션을 보려면 재생을 클릭하세요.</string>
+    <string name="No_Details">죄송합니다. 표시할 세부 정보가 없습니다.
+게임을 수동으로 추가하셨다면, 제목을 확인하고 데이터베이스를 완전히 업데이트해 주세요.
+선택하신 항목이 데스크톱 애플리케이션인 경우, 표시할 세부 정보가 없습니다.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">트레일러</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Leanback UI 사용</string>
+    <string name="leanback_summary">Leanback UI에 앱을 표시하려면 선택하세요.</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PC가 삭제되었습니다.</string>
+    <string name="scut_not_paired">PC가 페어링되지 않음</string>
+    <string name="scut_pc_not_found">PC를 찾을 수 없습니다</string>
+    <string name="scut_invalid_uuid">제공된 PC가 유효하지 않습니다</string>
+    <string name="scut_invalid_app_id">제공된 앱이 유효하지 않습니다.</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">도움말 뷰어</string>
+    <string name="help_loading_msg">도움말 페이지 로드 중…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">온라인</string>
+    <string name="pcview_menu_header_offline">오프라인</string>
+    <string name="pcview_menu_header_unknown">상쾌함</string>
+    <string name="pcview_menu_app_list">모든 앱 보기</string>
+    <string name="pcview_menu_pair_pc">PC와 페어링</string>
+    <string name="pcview_menu_unpair_pc">페어링 해제</string>
+    <string name="pcview_menu_send_wol">Wake-On-LAN 요청 보내기</string>
+    <string name="pcview_menu_delete_pc">PC 삭제</string>
+    <string name="pcview_menu_test_network">네트워크 연결 테스트</string>
+    <string name="pcview_menu_details">세부 정보보기</string>
+    <string name="pcview_menu_eol">NVIDIA GameStream 서비스 종료</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">네트워크 연결 테스트</string>
+    <string name="nettest_text_waiting">Starlight는 필요한 포트가 차단되었는지 확인하기 위해 네트워크 연결을 테스트하고 있습니다.\n\n이 작업은 몇 초 정도 걸릴 수 있습니다…</string>
+    <string name="nettest_title_done">네트워크 테스트 완료</string>
+    <string name="nettest_text_success">네트워크가 Starlight를 차단하지 않는 것 같습니다. 여전히 연결에 문제가 있는 경우 PC의 방화벽 설정을 확인하세요.\n\n인터넷을 통해 스트리밍하려는 경우 PC에 Moonlight 인터넷 호스팅 도구를 설치하고 포함된 인터넷 스트리밍 테스터를 실행하여 PC를 확인하세요.\ 님의 인터넷 연결입니다.</string>
+    <string name="nettest_text_inconclusive">Starlight의 연결 테스트 서버에 연결할 수 없기 때문에 네트워크 테스트를 수행할 수 없습니다. 인터넷 연결을 확인하거나 나중에 다시 시도하세요.</string>
+    <string name="nettest_text_failure">귀하의 장치의 현재 네트워크 연결이 Starlight를 차단하고 있는 것 같습니다. 이 네트워크에 연결되어 있으면 인터넷을 통한 스트리밍이 작동하지 않을 수 있습니다.\n\n다음 네트워크 포트가 차단되었습니다.\n</string>
+    <string name="nettest_text_blocked">장치의 현재 네트워크 연결이 Starlight를 차단하고 있습니다. 이 네트워크에 연결되어 있는 동안에는 인터넷을 통한 스트리밍이 작동하지 않을 수 있습니다.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">편성…</string>
+    <string name="pair_pc_offline">컴퓨터가 오프라인 상태입니다.</string>
+    <string name="pair_pc_ingame">컴퓨터가 현재 게임 중입니다. 페어링하기 전에 게임을 종료해야 합니다.</string>
+    <string name="pair_pairing_title">편성</string>
+    <string name="pair_pairing_msg">대상 PC에 다음 PIN을 입력하십시오.</string>
+    <string name="pair_pairing_help">호스트 PC에서 Sunshine을 실행 중인 경우 Sunshine 웹 UI로 이동하여 PIN을 입력하세요.</string>
+    <string name="pair_incorrect_pin">잘못된 PIN</string>
+    <string name="pair_fail">페어링 실패</string>
+    <string name="pair_already_in_progress">이미 페어링 진행 중</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">컴퓨터가 온라인 상태입니다.</string>
+    <string name="wol_no_mac">저장된 MAC 주소가 없기 때문에 PC를 깨울 수 없습니다</string>
+    <string name="wol_waking_pc">PC 깨우기…</string>
+    <string name="wol_waking_msg">PC가 깨어나는 데 몇 초 정도 걸릴 수 있습니다.
+그렇지 않은 경우 Wake-On-LAN에 맞게 구성되었는지 확인하세요.
+    </string>
+    <string name="wol_fail">Wake-On-LAN 패킷을 보내지 못했습니다.</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">페어링 해제 중…</string>
+    <string name="unpair_success">페어링이 성공적으로 해제되었습니다.</string>
+    <string name="unpair_fail">페어링을 해제하지 못했습니다.</string>
+    <string name="unpair_error">장치가 페어링되지 않았습니다.</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">컴퓨터가 오프라인 상태입니다.</string>
+    <string name="error_manager_not_running">ComputerManager 서비스가 실행되고 있지 않습니다. 몇 초 정도 기다리거나 앱을 다시 시작하세요.</string>
+    <string name="error_unknown_host">호스트를 확인하지 못했습니다.</string>
+    <string name="error_404">GFE에서 HTTP 404 오류를 반환했습니다. PC가 지원되는 GPU를 실행하고 있는지 확인하세요.
+원격 데스크톱 소프트웨어를 사용해도 이 오류가 발생할 수 있습니다. 컴퓨터를 재부팅하거나 GFE를 다시 설치해 보세요.
+    </string>
+    <string name="title_decoding_error">비디오 디코더 충돌</string>
+    <string name="message_decoding_error">이 장치의 비디오 디코더와 호환되지 않아 Starlight가 충돌했습니다. 충돌이 계속되면 스트리밍 설정을 조정해 보십시오.</string>
+    <string name="title_decoding_reset">비디오 설정 재설정</string>
+    <string name="message_decoding_reset">선택한 스트리밍 설정에서 장치의 비디오 디코더가 계속 충돌합니다. 스트리밍 설정이 기본값으로 재설정되었습니다.</string>
+    <string name="error_usb_prohibited">장치 관리자가 USB 액세스를 금지했습니다. Knox 또는 MDM 설정을 확인하세요.</string>
+    <string name="unable_to_pin_shortcut">현재 실행 프로그램에서는 고정된 바로가기 생성을 허용하지 않습니다.</string>
+    <string name="video_decoder_init_failed">비디오 디코더를 초기화하지 못했습니다. 귀하의 장치가 선택한 해상도나 프레임 속도를 지원하지 않을 수 있습니다.</string>
+    <string name="no_video_received_error">호스트로부터 비디오가 수신되지 않았습니다.</string>
+    <string name="no_frame_received_error">네트워크 연결이 제대로 작동하지 않습니다. 비디오 비트 전송률 설정을 낮추거나 더 빠른 연결을 시도해 보세요.</string>
+    <string name="early_termination_error">스트림을 시작할 때 호스트 PC에 문제가 발생했습니다.\n\n호스트 PC에 DRM 보호 콘텐츠가 열려 있지 않은지 확인하세요. 호스트 PC를 다시 시작해 볼 수도 있습니다.</string>
+    <string name="frame_conversion_error">호스트 PC에서 치명적인 비디오 인코딩 오류를 보고했습니다.\n\nHDR 모드를 비활성화하거나 스트리밍 해상도를 변경하거나 호스트 PC의 디스플레이 해상도를 변경해 보세요.</string>
+    <string name="check_ports_msg">포트에 대한 방화벽 및 포트 전달 규칙을 확인하세요.</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">연결 설정 중</string>
+    <string name="conn_establishing_msg">연결 시작</string>
+    <string name="conn_metered">경고: 활성 네트워크 연결이 측정되었습니다!</string>
+    <string name="conn_client_latency">평균 프레임 디코딩 대기 시간:</string>
+    <string name="conn_client_latency_hw">하드웨어 디코더 대기 시간:</string>
+    <string name="conn_hardware_latency">평균 하드웨어 디코딩 대기 시간:</string>
+    <string name="conn_starting">시작</string>
+    <string name="conn_error_title">연결 오류</string>
+    <string name="conn_error_msg">시작하지 못했습니다.</string>
+    <string name="conn_terminated_title">연결이 종료되었습니다</string>
+    <string name="conn_terminated_msg">연결이 종료되었습니다.</string>
+    <string name="error_code_prefix">에러 코드:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">호스트 PC의 IP 주소</string>
+    <string name="searching_pc">로컬 네트워크에서 호스트 PC를 검색하는 중…\n\n
+        호스트 PC에서 Sunshine이 실행 중인지 또는 GeForce Experience SHIELD 설정에서 GameStream이 활성화되어 있는지 확인하세요.</string>
+    <string name="yes">예</string>
+    <string name="no">아니요</string>
+    <string name="lost_connection">PC와의 연결이 끊어졌습니다.</string>
+    <string name="title_details">세부</string>
+    <string name="help">돕다</string>
+    <string name="delete_pc_msg">이 PC를 삭제하시겠습니까\?</string>
+    <string name="slow_connection_msg">PC 연결 속도가 느림\n비트 전송률을 줄이세요</string>
+    <string name="poor_connection_msg">PC와의 연결 불량</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">비디오 스트림: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">디코더: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">네트워크에서 들어오는 프레임 속도: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">렌더링 프레임 속도: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">호스트 처리 지연 시간 최소/최대/평균: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">네트워크 연결로 인해 삭제된 프레임: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">평균 네트워크 지연 시간: %1$dms(차이: %2$dms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">평균 디코딩 시간: %1$.2fms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">PC에 연결하는 중…</string>
+    <string name="applist_menu_resume">세션 재개</string>
+    <string name="applist_menu_quit">세션 종료</string>
+    <string name="applist_menu_quit_and_start">현재 게임을 종료하고 시작</string>
+    <string name="applist_menu_cancel">취소</string>
+    <string name="applist_menu_details">세부 정보보기</string>
+    <string name="applist_menu_scut">바로가기 만들기</string>
+    <string name="applist_menu_tv_channel">채널에 추가</string>
+    <string name="applist_menu_hide_app">앱 숨기기</string>
+    <string name="applist_refresh_title">앱 목록</string>
+    <string name="applist_refresh_msg">앱을 새로 고치는 중…</string>
+    <string name="applist_refresh_error_title">오류</string>
+    <string name="applist_refresh_error_msg">앱 목록을 가져오지 못했습니다.</string>
+    <string name="applist_quit_app">그만두다</string>
+    <string name="applist_quit_success">성공적으로 종료되었습니다</string>
+    <string name="applist_quit_fail">종료하지 못했습니다.</string>
+    <string name="applist_quit_confirmation">실행 중인 앱을 종료하시겠습니까\? 저장하지 않은 데이터는 모두 손실됩니다.</string>
+    <string name="applist_details_id">앱 ID:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">수동으로 PC 추가</string>
+    <string name="msg_add_pc">PC에 연결하는 중…</string>
+    <string name="addpc_fail">지정된 컴퓨터에 연결할 수 없습니다. 필수 포트가 방화벽을 통해 허용되는지 확인하세요.</string>
+    <string name="addpc_success">컴퓨터를 성공적으로 추가했습니다.</string>
+    <string name="addpc_unknown_host">PC 주소를 확인할 수 없습니다. 주소에 오타가 없는지 확인하세요.</string>
+    <string name="addpc_enter_ip">IP 주소를 입력해야 합니다.</string>
+    <string name="addpc_wrong_sitelocal">주소가 잘못된 것 같습니다. 인터넷을 통해 스트리밍하려면 라우터의 공용 IP 주소를 사용해야 합니다.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">기본 설정</string>
+    <string name="title_resolution_list">비디오 해상도</string>
+    <string name="summary_resolution_list">이미지 선명도를 높이려면 높이십시오. 저사양 장치 및 느린 네트워크에서 성능을 높이려면 값을 줄이세요.</string>
+    <string name="title_native_res_dialog">기본 해상도 경고</string>
+    <string name="text_native_res_dialog">기본 해상도 및/또는 FPS는 스트리밍 서버에서 지원되지 않을 수 있습니다. 호스트 PC에 일치하는 사용자 정의 디스플레이 모드를 수동으로 구성해야 할 수도 있습니다.\n\n화면 설정에 맞게 NVIDIA 제어판에서 사용자 정의 해상도를 생성하도록 선택한 경우 NVIDIA\의 경고를 읽고 이해했는지 확인하십시오. 가능한 모니터 손상, PC 불안정 및 기타 잠재적인 문제에 관해.\n\nPC에서 사용자 정의 해상도를 생성하여 발생하는 문제에 대해 당사는 책임을 지지 않습니다.\n\n귀하의 모니터가 필요한 디스플레이 구성을 지원하지 않을 수도 있습니다. 그렇다면 가상 모니터를 설정해 볼 수 있습니다. 마지막으로, 장치나 호스트 PC가 특정 해상도나 새로 고침 빈도로 스트리밍을 지원하지 않는다면 불행하게도 운이 없는 것입니다.</string>
+    <string name="title_fps_list">비디오 프레임 속도</string>
+    <string name="summary_fps_list">더 부드러운 비디오 스트림을 위해 늘리십시오. 저사양 장치에서 더 나은 성능을 얻으려면 줄이세요.</string>
+    <string name="title_seekbar_bitrate">비디오 비트레이트</string>
+    <string name="summary_seekbar_bitrate">더 나은 이미지 품질을 얻으려면 높이세요. 느린 연결에서 성능을 향상시키려면 이 값을 줄이세요.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">비디오를 전체 화면으로 늘이기</string>
+    <string name="title_stretch_video">스트레칭 비디오</string>
+    <string name="resolution_prefix_native">토종의</string>
+    <string name="resolution_prefix_native_fullscreen">기본 전체 화면</string>
+    <string name="resolution_prefix_native_landscape">(풍경)</string>
+    <string name="resolution_prefix_native_portrait">(초상화)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">기본 FPS 경고</string>
+
+    <string name="category_audio_settings">오디오 설정</string>
+    <string name="title_audio_config_list">서라운드 사운드 구성</string>
+    <string name="summary_audio_config_list">홈 시어터 시스템을 위한 5.1 또는 7.1 서라운드 사운드 활성화</string>
+    <string name="title_checkbox_enable_audiofx">시스템 이퀄라이저 지원 활성화</string>
+    <string name="summary_checkbox_enable_audiofx">스트리밍하는 동안 오디오 효과가 작동하도록 허용하지만 오디오 대기 시간이 늘어날 수 있습니다.</string>
+
+    <string name="category_gamepad_settings">게임패드 설정</string>
+    <string name="title_checkbox_multi_controller">자동 게임패드 존재 감지</string>
+    <string name="summary_checkbox_multi_controller">이 옵션을 선택 취소하면 게임패드가 항상 존재하게 됩니다.</string>
+    <string name="title_checkbox_vibrate_fallback">진동으로 럼블 지원을 에뮬레이션</string>
+    <string name="summary_checkbox_vibrate_fallback">게임 패드가 지원하지 않는 경우 장치를 진동시켜 럼블을 에뮬레이션합니다.</string>
+    <string name="title_seekbar_vibrate_fallback_strength">에뮬레이트된 진동 강도 조정</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">장치의 진동 강도를 증폭하거나 줄입니다.</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">아날로그 스틱 데드존 조정</string>
+    <string name="summary_seekbar_deadzone">참고: 일부 게임에서는 Starlight가 사용하도록 구성된 것보다 더 큰 데드존을 적용할 수 있습니다.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Xbox 360/One USB 게임패드 드라이버</string>
+    <string name="summary_checkbox_xb1_driver">기본 Xbox 컨트롤러를 지원하지 않는 장치에 대해 내장 USB 드라이버를 활성화합니다.</string>
+    <string name="title_checkbox_usb_bind_all">기본 Xbox 게임패드 지원 재정의</string>
+    <string name="summary_checkbox_usb_bind_all">기본 Xbox 컨트롤러 지원이 있더라도 지원되는 모든 게임 패드에 Starlight의 USB 드라이버를 사용하세요.</string>
+    <string name="title_checkbox_mouse_emulation">게임패드를 통한 마우스 에뮬레이션</string>
+    <string name="summary_checkbox_mouse_emulation">시작 버튼을 길게 누르면 게임패드가 마우스 모드로 전환됩니다.</string>
+    <string name="title_checkbox_flip_face_buttons">페이스 버튼 뒤집기</string>
+    <string name="summary_checkbox_flip_face_buttons">게임패드 및 화면 컨트롤의 앞면 버튼 A/B 및 X/Y를 전환합니다.</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">항상 터치패드로 마우스를 제어하세요</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">터치패드로 게임패드를 에뮬레이트하는 경우에도 호스트 마우스를 제어하기 위해 게임패드 터치패드 입력을 강제합니다.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">게임패드 모션 센서 사용 허용</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">모션 센서가 있는 게임패드를 에뮬레이션할 때 지원되는 호스트가 모션 센서 데이터를 요청할 수 있도록 합니다. 게임에서 모션 센서를 사용하지 않는 경우 비활성화하면 전력 및 네트워크 사용량이 약간 줄어들 수 있습니다.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">게임패드 모션 센서 지원 에뮬레이션</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">연결된 게임패드 또는 Android 버전에서 게임패드 센서가 지원되지 않는 경우 기기에 내장된 모션 센서를 사용합니다.\n참고: 이 옵션을 활성화하면 게임패드가 호스트에서 PlayStation 컨트롤러로 나타날 수 있습니다.</string>
+
+    <string name="category_input_settings">입력 설정</string>
+    <string name="title_checkbox_touchscreen_trackpad">터치스크린을 트랙패드로 사용</string>
+    <string name="summary_checkbox_touchscreen_trackpad">활성화하면 터치스크린이 트랙패드처럼 작동합니다. 비활성화하면 터치스크린이 마우스 커서를 직접 제어합니다.</string>
+    <string name="title_checkbox_absolute_mouse_mode">원격 데스크톱 마우스 모드</string>
+    <string name="summary_checkbox_absolute_mouse_mode">이렇게 하면 원격 데스크톱 사용 시 마우스 가속이 보다 자연스럽게 작동할 수 있지만 많은 게임과 호환되지 않습니다.</string>
+    <string name="title_checkbox_mouse_nav_buttons">뒤로 및 앞으로 마우스 버튼 활성화</string>
+    <string name="summary_checkbox_mouse_nav_buttons">이 옵션을 활성화하면 일부 버그가 있는 장치에서 마우스 오른쪽 버튼 클릭이 중단될 수 있습니다.</string>
+
+    <string name="category_on_screen_controls_settings">화면 컨트롤 설정</string>
+    <string name="title_checkbox_show_onscreen_controls">화면 컨트롤 표시</string>
+    <string name="summary_checkbox_show_onscreen_controls">터치스크린에 가상 컨트롤러 오버레이 표시</string>
+    <string name="title_checkbox_vibrate_osc">진동 활성화</string>
+    <string name="summary_checkbox_vibrate_osc">화면 컨트롤의 진동을 에뮬레이트하기 위해 장치를 진동시킵니다.</string>
+    <string name="title_only_l3r3">L3 및 R3만 표시</string>
+    <string name="summary_only_l3r3">L3 및 R3을 제외한 모든 가상 버튼 숨기기</string>
+    <string name="title_reset_osc">저장된 화면 컨트롤 레이아웃 지우기</string>
+    <string name="summary_reset_osc">모든 화면 컨트롤을 기본 크기 및 위치로 재설정합니다.</string>
+    <string name="dialog_title_reset_osc">레이아웃 재설정</string>
+    <string name="dialog_text_reset_osc">저장된 화면 컨트롤 레이아웃을 삭제하시겠습니까\?</string>
+    <string name="toast_reset_osc_success">화면 컨트롤이 기본값으로 재설정됨</string>
+    <string name="title_osc_opacity">화면 컨트롤의 불투명도 변경</string>
+    <string name="summary_osc_opacity">화면 컨트롤을 투명하게/덜 투명하게 만듭니다.</string>
+    <string name="dialog_title_osc_opacity">불투명도 변경</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">UI 설정</string>
+    <string name="title_checkbox_enable_pip">Picture-in-Picture 관찰자 모드 활성화</string>
+    <string name="summary_checkbox_enable_pip">멀티태스킹 중에 스트림을 볼 수 있지만 제어할 수는 없습니다.</string>
+    <string name="title_language_list">언어</string>
+    <string name="summary_language_list">Starlight에 사용할 언어</string>
+    <string name="title_checkbox_small_icon_mode">작은 박스 아트 사용</string>
+    <string name="summary_checkbox_small_icon_mode">앱 그리드의 작은 상자 아트를 통해 화면에 더 많은 앱을 표시할 수 있습니다.</string>
+
+    <string name="category_host_settings">호스트 설정</string>
+    <string name="title_checkbox_enable_sops">게임 설정 최적화</string>
+    <string name="summary_checkbox_enable_sops">최적의 스트리밍을 위해 GFE가 게임 설정을 수정하도록 허용</string>
+    <string name="title_checkbox_host_audio">PC에서 오디오 재생</string>
+    <string name="summary_checkbox_host_audio">컴퓨터와 이 장치에서 오디오 재생</string>
+
+    <string name="category_advanced_settings">고급 설정</string>
+    <string name="title_unlock_fps">가능한 모든 프레임 속도 잠금 해제</string>
+    <string name="summary_unlock_fps">90 또는 120FPS로 스트리밍하면 고급 장치에서 지연 시간이 줄어들 수 있지만 이를 지원하지 않는 장치에서는 지연이나 불안정성이 발생할 수 있습니다.</string>
+    <string name="title_checkbox_reduce_refresh_rate">새로 고침 빈도 감소 허용</string>
+    <string name="summary_checkbox_reduce_refresh_rate">디스플레이 새로 고침 빈도가 낮으면 추가 비디오 대기 시간을 희생하여 전력을 절약할 수 있습니다.</string>
+    <string name="title_checkbox_disable_warnings">경고 메시지 비활성화</string>
+    <string name="summary_checkbox_disable_warnings">스트리밍하는 동안 화면 연결 경고 메시지 비활성화</string>
+    <string name="title_disable_frame_drop">절대 프레임을 떨어뜨리지 마세요</string>
+    <string name="summary_disable_frame_drop">일부 장치에서는 미세한 끊김 현상이 줄어들 수 있지만 대기 시간이 늘어날 수 있습니다.</string>
+    <string name="title_video_format">코덱 설정 변경</string>
+    <string name="summary_video_format">최신 코덱은 장치에서 지원하는 경우 비디오 대역폭 요구 사항을 낮출 수 있습니다. 호스트 소프트웨어나 GPU에서 지원하지 않는 경우 코덱 선택이 무시될 수 있습니다.</string>
+    <string name="title_enable_hdr">HDR 활성화(실험적)</string>
+    <string name="summary_enable_hdr">게임과 PC GPU가 지원하는 경우 HDR을 스트리밍하세요. HDR을 사용하려면 HEVC Main 10 인코딩을 지원하는 GPU가 필요합니다.</string>
+    <string name="title_full_range">강제 전체 범위 비디오(장치 의존적)</string>
+    <string name="summary_full_range">장치가 전체 범위의 비디오 콘텐츠를 제대로 표시하지 않으면 밝은 부분과 어두운 부분의 세부 정보가 손실됩니다.</string>
+    <string name="title_enable_perf_overlay">스트리밍하는 동안 성능 통계 표시</string>
+    <string name="summary_enable_perf_overlay">스트리밍하는 동안 실시간 스트리밍 성능 정보 표시</string>
+    <string name="title_enable_post_stream_toast">스트리밍 후 대기 시간 메시지 표시</string>
+    <string name="summary_enable_post_stream_toast">스트림 종료 후 대기 시간 정보 메시지 표시</string>
+
+    <string name="category_help">돕다</string>
+    <string name="title_setup_guide">설정 가이드</string>
+    <string name="summary_setup_guide">스트리밍을 위해 게이밍 PC를 설정하는 방법에 대한 지침 보기</string>
+    <string name="title_troubleshooting">문제 해결 가이드</string>
+    <string name="summary_troubleshooting">일반적인 스트리밍 문제를 진단하고 해결하기 위한 팁 보기</string>
+    <string name="title_privacy_policy">개인 정보 정책</string>
+    <string name="summary_privacy_policy">Starlight의 개인정보 보호정책 보기</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">모션 센서 에뮬레이션으로 인해 게임패드 유형이 변경될 수 있습니다.</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30FPS</string>
+    <string name="fps_60">60FPS</string>
+    <string name="fps_90">90FPS</string>
+    <string name="fps_120">120FPS</string>
+
+    <string name="audioconf_stereo">스테레오</string>
+    <string name="audioconf_51surround">5.1 서라운드 사운드</string>
+    <string name="audioconf_71surround">7.1 서라운드 사운드</string>
+
+    <string name="videoformat_auto">자동(권장)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">AV1 선호(실험적)</string>
+    <string name="videoformat_hevcalways">HEVC 선호</string>
+    <string name="videoformat_h264always">H.264 선호</string>
+
+    <string name="title_frame_pacing">비디오 프레임 속도</string>
+    <string name="summary_frame_pacing">비디오 지연 시간과 부드러움의 균형을 맞추는 방법 지정</string>
+    <string name="pacing_latency">가장 낮은 지연 시간을 선호합니다</string>
+    <string name="pacing_balanced">균형이 잡힌</string>
+    <string name="pacing_balanced_alt">FPS 제한과 균형 유지</string>
+    <string name="pacing_smoothness">가장 부드러운 비디오 선호(지연 시간이 크게 늘어날 수 있음)</string>
+    <string name="title_analog_scrolling">아날로그 스틱을 사용하여 스크롤</string>
+    <string name="summary_analog_scrolling">마우스 에뮬레이션 모드에서 스크롤할 아날로그 스틱을 선택하세요.</string>
+    <string name="analogscroll_none">없음(두 스틱 모두 마우스를 움직입니다)</string>
+    <string name="analogscroll_right">오른쪽 아날로그 스틱</string>
+    <string name="analogscroll_left">왼쪽 아날로그 스틱</string>
+    <string name="games">계략</string>
+    <string name="settings">설정</string>
+    <string name="exit">출구</string>
+    <string name="options">옵션</string>
+    <string name="pending">보류 중</string>
+    <string name="data_collection">데이터 수집</string>
+    <string name="loading_for_first_time_use_please_wait">처음 사용하는 중입니다.... 잠시만 기다려 주세요...</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">이 애플리케이션을 종료하거나 일시 중지하시겠습니까\? 종료하면 저장하지 않은 모든 데이터가 손실됩니다.</string>
+    <string name="confirm_quit">종료 확인</string>
+    <string name="quit">그만두다</string>
+    <string name="pause">정지시키다</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">캐시를 지우시겠습니까\? 그러면 이 창이 닫히나요\?</string>
+    <string name="clear_cache">캐시 지우기</string>
+    <string name="click_ok_to_launch_game">확인을 클릭하여 게임을 시작하세요.</string>
+    <string name="active_internet_connection_required_for_game_details">게임 세부 정보를 보려면 활성 인터넷 연결이 필요합니다.</string>
+    <string name="download">다운로드</string>
+    <string name="download_translations_model">번역 모델 다운로드</string>
+    <string name="download_locale_language_model_to_translate_game_data">게임 데이터를 번역하려면 로케일 언어 모델을 다운로드하세요.</string>
+    <string name="downloading_ml_language_file_please_wait">기다리세요..</string>
+    <string name="download_successful">다운로드 성공</string>
+    <string name="download_error_please_try_again">다운로드 오류: 다시 시도해 주세요.</string>
+    <string name="model_deleted_successfully">모델이 삭제되었습니다.</string>
+    <string name="model_delete_failed_please_try_again">모델을 삭제하지 못했습니다. 다시 시도해 주세요.</string>
+    <string name="delete_language_model">언어 모델 삭제</string>
+    <string name="delete_downloaded_language_model">다운로드한 언어 모델 삭제</string>
+    <string name="support">\"지원하다 \"</string>
+    <string name="cache">캐시 %1$s</string>
+    <string name="hdr_off">\"HDR 끄기\"</string>
+    <string name="hdr_on">\"HDR 켜기\"</string>
+    <string name="cancel">취소</string>
+    <string name="display_does_not_support_hdr10">디스플레이가 HDR10을 지원하지 않습니다.</string>
+    <string name="decoder_does_not_support_hdr10_profile">디코더가 HDR10 프로필을 지원하지 않습니다.</string>
+    <string name="no_hevc_decoder_found">HEVC 디코더를 찾을 수 없습니다.</string>
+    <string name="no_av1_decoder_found">AV1 디코더를 찾을 수 없습니다.</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">이 장치 또는 ROM은 하드웨어 가속 H.264 재생을 지원하지 않습니다.</string>
+    <string name="server_version_malformed">서버 버전이 잘못되었습니다.</string>
+    <string name="device_not_paired_with_computer">장치가 컴퓨터와 페어링되지 않음</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">귀하의 PC GPU는 스트리밍 HDR을 지원하지 않습니다. 스트림은 SDR입니다.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">호스트 PC는 4K 이상의 해상도 스트리밍을 지원하지 않습니다.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">4K 이상의 해상도로 스트리밍하려면 스트리밍 장치가 HEVC 또는 AV1을 지원해야 합니다.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">4K로 스트리밍하려면 GeForce Experience를 업데이트해야 합니다. 스트림은 1080p입니다.</string>
+    <string name="failed_to_resume_existing_session">기존 세션을 재개하지 못했습니다.</string>
+    <string name="this_session_wasn_t_started_by_this_device">이 세션은 이 장치에서 시작되지 않았습니다.</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" 그래서 재개할 수 없습니다. 원본 스트리밍을 종료합니다 \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"장치 또는 PC 자체를 다시 시도하십시오. (오류 코드: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"애플리케이션이 최소화되었습니다. PC에서 수동으로 다시 시작하거나 \"</string>
+    <string name="quit_the_session_and_start_streaming_again">세션을 종료하고 스트리밍을 다시 시작하세요.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">이전 세션을 종료하지 못했습니다. 수동으로 종료해야 합니다.</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" 그래서 종료할 수 없습니다. 원본 스트리밍을 종료합니다 \"</string>
+    <string name="device_or_the_pc_itself_error_code">\"장치 또는 PC 자체. (오류 코드: \"</string>
+    <string name="failed_to_launch_application">애플리케이션을 실행하지 못했습니다.</string>
+    <string name="please_wait_for_the_process_to_complete">프로세스가 완료될 때까지 기다려 주십시오…</string>
+    <string name="enter_api_key_here">여기에 API 키를 입력하세요:</string>
+    <string name="favorites">즐겨찾기</string>
+    <string name="removed_from_favorites">\"즐겨찾기 및 홈채널에서 제거되었습니다.\"</string>
+    <string name="added_to_favorites">\" 즐겨찾기 및 홈채널에 추가되었습니다.\"</string>
+    <string name="clear_favorites">즐겨찾기 지우기</string>
+    <string name="clear_favs_msg">즐겨찾기를 삭제하시겠습니까\? 이렇게 하면 애플리케이션 홈 채널도 삭제되나요\?</string>
+    <string name="app_list_updated">앱 목록이 업데이트되었습니다.</string>
+    <string name="update_the_database"><![CDATA[데이터베이스를 지우고 업데이트하시겠습니까\? 이렇게 하면 이 창이 닫히나요\?]]></string>
+    <string name="update_database">데이터베이스 갱신</string>
+    <string name="database">데이터 베이스</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">즐겨찾기를 모두 삭제하시겠습니까?</string>
+    <string name="resuming_session">세션 재개</string>
+    <string name="app_added_to_favorites">즐겨찾기에 추가됨</string>
+    <string name="app_removed_from_favorites">즐겨찾기에서 제거됨</string>
+    <string name="anonymous_statistics">익명 통계</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">앱 성능을 개선하기 위해 익명의 통계를 전송합니다.</string>
+    <string name="captions">유튜브 동영상 자막</string>
+    <string name="captions_text">YouTube 동영상 자막을 활성화 또는 비활성화합니다.</string>
+    <string name="privacy">은둔</string>
+    <string name="restart_application">응용 프로그램 재시작</string>
+    <string name="restart_now">이렇게 하면 변경 사항을 적용하기 위해 응용 프로그램이 다시 시작됩니다. 지금 다시 시작하시겠습니까\?</string>
+    <string name="database_updating">데이터베이스 업데이트</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">비디오 향상: (x%1$.2f) 셰이더 SGSR1</string>
+    <string name="title_video_sr">비디오 초해상도</string>
+    <string name="summary_video_sr">하드웨어 가속을 활용해 화면 선명도를 향상시키기</string>
+    <string name="aaudio">더 빠른 오디오 응답을 위해 하드웨어에 직접 접근하려는 시도입니다. 일부 안드로이드 TV 또는 스트리밍 기기의 제조사 제한으로 인해 지연이 발생할 수 있으며, 오디오가 불안정해지면 이 옵션을 비활성화하십시오.</string>
+    <string name="enable_aaudio">AAudio 활성화</string>
+    <string name="aaudio_title">AAudio 초저지연(실험적)</string>
+    <string name="aaudio_summary">AAudio 초저지연(서라운드 사운드 지원)</string>
+    <string name="aaudio_summary29">AAudio 초저지연 기능을 활성화합니다.</string>
+    <string name="game_media_library">게임 미디어 라이브러리</string>
+
+    <string name="title_audio_output_mode">오디오 출력 형식</string>
+    <string name="summary_audio_output_mode">PCM은 모든 장치와 호환됩니다. AC-3 및 Dolby Digital Plus는 인코딩된 5.1 채널 오디오를 HDMI/eARC 수신기로 전송하며, 경로가 실패할 경우 PCM으로 전환합니다.</string>
+    <string name="audio_output_mode_pcm">PCM(기본값)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (자동, 실험용)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (힘, 실험용)</string>
+    <string name="audio_output_mode_eac3_auto">돌비 디지털 플러스 / E-AC-3 5.1 (자동, 실험적)</string>
+    <string name="audio_output_mode_eac3_force">돌비 디지털 플러스 / E-AC-3 5.1 (강제, 실험적)</string>
+    <string name="encoded_audio_fallback_to_pcm">인코딩된 오디오 출력을 사용할 수 없습니다. PCM 오디오로 계속 진행합니다.</string>
+    <string name="switch_to_encoded">인코딩된 오디오 출력을 사용할 수 있습니다. 인코딩된 오디오로 전환합니다.</string>
+</resources>

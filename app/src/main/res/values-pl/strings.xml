@@ -1,0 +1,415 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Grać</string>
+    <string name="details">Detale</string>
+    <string name="running">Gra uruchomiona, kliknij przycisk odtwarzania, aby wyświetlić opcje.</string>
+    <string name="No_Details">Przepraszamy, brak szczegółów do wyświetlenia.
+Jeśli dodałeś grę ręcznie, sprawdź tytuł i wyczyść bazę danych.
+Jeśli wybrany element to aplikacja komputerowa, nie będzie żadnych szczegółów do wyświetlenia.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Przyczepy</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Użyj interfejsu użytkownika Leanback</string>
+    <string name="leanback_summary">Wybierz, aby wyświetlać aplikacje w interfejsie użytkownika Leanback</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">Komputer usunięty</string>
+    <string name="scut_not_paired">Komputer nie jest sparowany</string>
+    <string name="scut_pc_not_found">Nie znaleziono komputera</string>
+    <string name="scut_invalid_uuid">Pod warunkiem, że komputer jest nieprawidłowy</string>
+    <string name="scut_invalid_app_id">Dostarczona aplikacja jest nieprawidłowa</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Przeglądarka pomocy</string>
+    <string name="help_loading_msg">Ładowanie strony pomocy…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">online</string>
+    <string name="pcview_menu_header_offline">Nieaktywny</string>
+    <string name="pcview_menu_header_unknown">Orzeźwiający</string>
+    <string name="pcview_menu_app_list">Wyświetl wszystkie aplikacje</string>
+    <string name="pcview_menu_pair_pc">Sparuj z komputerem</string>
+    <string name="pcview_menu_unpair_pc">Rozparuj</string>
+    <string name="pcview_menu_send_wol">Wyślij żądanie Wake-On-LAN</string>
+    <string name="pcview_menu_delete_pc">Usuń komputer</string>
+    <string name="pcview_menu_test_network">Przetestuj połączenie sieciowe</string>
+    <string name="pcview_menu_details">Pokaż szczegóły</string>
+    <string name="pcview_menu_eol">Koniec usługi NVIDIA GameStream</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Testowanie połączenia sieciowego</string>
+    <string name="nettest_text_waiting">Starlight testuje Twoje połączenie sieciowe, aby określić, czy wymagane porty są zablokowane.\n\nMoże to potrwać kilka sekund…</string>
+    <string name="nettest_title_done">Test sieci zakończony</string>
+    <string name="nettest_text_success">Wygląda na to, że Twoja sieć nie blokuje Starlight. Jeśli nadal masz problemy z połączeniem, sprawdź ustawienia zapory sieciowej swojego komputera.\n\nJeśli próbujesz przesyłać strumieniowo przez Internet, zainstaluj narzędzie Moonlight Internet Hosting Tool na swoim komputerze i uruchom dołączony tester transmisji internetowej, aby sprawdzić swój komputer\ połączenie internetowe.</string>
+    <string name="nettest_text_inconclusive">Nie można przeprowadzić testu sieci, ponieważ żaden z serwerów testujących połączenie Starlight nie był osiągalny. Sprawdź swoje połączenie internetowe lub spróbuj ponownie później.</string>
+    <string name="nettest_text_failure">Wydaje się, że obecne połączenie sieciowe Twojego urządzenia blokuje Starlight. Przesyłanie strumieniowe przez Internet może nie działać po podłączeniu do tej sieci.\n\nNastępujące porty sieciowe zostały zablokowane:\n</string>
+    <string name="nettest_text_blocked">Obecne połączenie sieciowe Twojego urządzenia blokuje Starlight. Przesyłanie strumieniowe przez Internet może nie działać po podłączeniu do tej sieci.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Łączenie w pary…</string>
+    <string name="pair_pc_offline">Komputer jest offline</string>
+    <string name="pair_pc_ingame">Komputer jest aktualnie w grze. Przed parowaniem musisz zamknąć grę.</string>
+    <string name="pair_pairing_title">Łączenie w pary</string>
+    <string name="pair_pairing_msg">Wprowadź następujący kod PIN na docelowym komputerze:</string>
+    <string name="pair_pairing_help">Jeśli na komputerze-hoście działa Sunshine, przejdź do internetowego interfejsu użytkownika Sunshine, aby wprowadzić kod PIN.</string>
+    <string name="pair_incorrect_pin">Nieprawidłowy PIN</string>
+    <string name="pair_fail">Parowanie nie powiodło się</string>
+    <string name="pair_already_in_progress">Parowanie już trwa</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">Komputer jest online</string>
+    <string name="wol_no_mac">Nie można obudzić komputera, ponieważ nie ma zapisanego adresu MAC</string>
+    <string name="wol_waking_pc">Budzenie komputera…</string>
+    <string name="wol_waking_msg">Obudzenie komputera może zająć kilka sekund.
+Jeśli tak się nie stanie, upewnij się, że jest poprawnie skonfigurowany do obsługi funkcji Wake-On-LAN.
+    </string>
+    <string name="wol_fail">Nie udało się wysłać pakietów Wake-On-LAN</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Rozparowywanie…</string>
+    <string name="unpair_success">Pomyślnie rozparowano</string>
+    <string name="unpair_fail">Nie udało się rozparować</string>
+    <string name="unpair_error">Urządzenie nie zostało sparowane</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">Komputer jest offline</string>
+    <string name="error_manager_not_running">Usługa ComputerManager nie jest uruchomiona. Poczekaj kilka sekund lub uruchom ponownie aplikację.</string>
+    <string name="error_unknown_host">Nie udało się rozwiązać hosta</string>
+    <string name="error_404">GFE zwróciło błąd HTTP 404. Upewnij się, że Twój komputer ma obsługiwany procesor graficzny.
+Korzystanie z oprogramowania do zdalnego pulpitu może również powodować ten błąd. Spróbuj ponownie uruchomić komputer lub ponownie zainstalować GFE.
+    </string>
+    <string name="title_decoding_error">Dekoder wideo uległ awarii</string>
+    <string name="message_decoding_error">Starlight uległ awarii z powodu niezgodności z dekoderem wideo tego urządzenia. Jeśli awarie będą się powtarzać, spróbuj dostosować ustawienia przesyłania strumieniowego.</string>
+    <string name="title_decoding_reset">Reset ustawień wideo</string>
+    <string name="message_decoding_reset">Dekoder wideo Twojego urządzenia nadal ulega awarii przy wybranych ustawieniach przesyłania strumieniowego. Twoje ustawienia przesyłania strumieniowego zostały zresetowane do ustawień domyślnych.</string>
+    <string name="error_usb_prohibited">Dostęp do USB jest zabroniony przez administratora urządzenia. Sprawdź ustawienia Knox lub MDM.</string>
+    <string name="unable_to_pin_shortcut">Twój obecny program uruchamiający nie pozwala na tworzenie przypiętych skrótów.</string>
+    <string name="video_decoder_init_failed">Nie udało się zainicjować dekodera wideo. Twoje urządzenie może nie obsługiwać wybranej rozdzielczości lub liczby klatek na sekundę.</string>
+    <string name="no_video_received_error">Nie otrzymano wideo od gospodarza.</string>
+    <string name="no_frame_received_error">Twoje połączenie sieciowe nie działa dobrze. Zmniejsz ustawienie szybkości transmisji wideo lub wypróbuj szybsze połączenie.</string>
+    <string name="early_termination_error">Coś poszło nie tak na komputerze hosta podczas uruchamiania strumienia.\n\nUpewnij się, że na komputerze hosta nie jest otwarta żadna zawartość chroniona systemem DRM. Możesz także spróbować ponownie uruchomić komputer hosta.</string>
+    <string name="frame_conversion_error">Komputer-host zgłosił krytyczny błąd kodowania wideo.\n\nSpróbuj wyłączyć tryb HDR, zmienić rozdzielczość przesyłania strumieniowego lub zmienić rozdzielczość wyświetlacza komputera-hosta.</string>
+    <string name="check_ports_msg">Sprawdź swoją zaporę sieciową i reguły przekierowania portów dla portów:</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Nawiązywanie połączenia</string>
+    <string name="conn_establishing_msg">Rozpoczęcie połączenia</string>
+    <string name="conn_metered">Ostrzeżenie: Twoje aktywne połączenie sieciowe jest mierzone!</string>
+    <string name="conn_client_latency">Średnie opóźnienie dekodowania ramki:</string>
+    <string name="conn_client_latency_hw">opóźnienie dekodera sprzętowego:</string>
+    <string name="conn_hardware_latency">Średnie opóźnienie dekodowania sprzętowego:</string>
+    <string name="conn_starting">Startowy</string>
+    <string name="conn_error_title">Błąd połączenia</string>
+    <string name="conn_error_msg">Nie udało sie uruchomić</string>
+    <string name="conn_terminated_title">Połączenie zakończone</string>
+    <string name="conn_terminated_msg">Połączenie zostało zakończone.</string>
+    <string name="error_code_prefix">Kod błędu:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">Adres IP komputera-hosta</string>
+    <string name="searching_pc">Wyszukiwanie komputerów-hostów w sieci lokalnej…\n\n
+        Upewnij się, że na komputerze-hoście działa Sunshine lub włączono funkcję GameStream w ustawieniach GeForce Experience SHIELD.</string>
+    <string name="yes">Tak</string>
+    <string name="no">NIE</string>
+    <string name="lost_connection">Utracono połączenie z komputerem</string>
+    <string name="title_details">Detale</string>
+    <string name="help">Pomoc</string>
+    <string name="delete_pc_msg">Czy na pewno chcesz usunąć ten komputer\?</string>
+    <string name="slow_connection_msg">Powolne połączenie z komputerem\nZmniejsz szybkość transmisji</string>
+    <string name="poor_connection_msg">Słabe połączenie z komputerem</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Strumień wideo: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Dekoder: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Liczba klatek przychodzących z sieci: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Liczba klatek na sekundę podczas renderowania: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Opóźnienie przetwarzania hosta min./maks./średnie: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">Ramki porzucane przez połączenie sieciowe: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Średnie opóźnienie sieci: %1$d ms (odchylenie: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Średni czas dekodowania: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Łączę z komputerem…</string>
+    <string name="applist_menu_resume">Wznów sesję</string>
+    <string name="applist_menu_quit">Opuść sesję</string>
+    <string name="applist_menu_quit_and_start">Wyjdź z bieżącej gry i rozpocznij</string>
+    <string name="applist_menu_cancel">Anulować</string>
+    <string name="applist_menu_details">Pokaż szczegóły</string>
+    <string name="applist_menu_scut">Utwórz skrót</string>
+    <string name="applist_menu_tv_channel">Dodaj do kanału</string>
+    <string name="applist_menu_hide_app">Schowaj aplikacje</string>
+    <string name="applist_refresh_title">Lista aplikacji</string>
+    <string name="applist_refresh_msg">Odświeżanie aplikacji…</string>
+    <string name="applist_refresh_error_title">Błąd</string>
+    <string name="applist_refresh_error_msg">Nie udało się pobrać listy aplikacji</string>
+    <string name="applist_quit_app">Rezygnacja</string>
+    <string name="applist_quit_success">Pomyślnie zrezygnuj</string>
+    <string name="applist_quit_fail">Nie udało się zrezygnować</string>
+    <string name="applist_quit_confirmation">Czy na pewno chcesz zamknąć uruchomioną aplikację\? Wszystkie niezapisane dane zostaną utracone.</string>
+    <string name="applist_details_id">Identyfikator aplikacji:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">Dodaj komputer ręcznie</string>
+    <string name="msg_add_pc">Podłączanie do komputera…</string>
+    <string name="addpc_fail">Nie można połączyć się z określonym komputerem. Upewnij się, że wymagane porty są dozwolone przez zaporę.</string>
+    <string name="addpc_success">Pomyślnie dodano komputer</string>
+    <string name="addpc_unknown_host">Nie można rozpoznać adresu komputera. Upewnij się, że nie popełniłeś literówki w adresie.</string>
+    <string name="addpc_enter_ip">Musisz wprowadzić adres IP</string>
+    <string name="addpc_wrong_sitelocal">Ten adres nie wygląda prawidłowo. Do przesyłania strumieniowego przez Internet należy używać publicznego adresu IP routera.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Podstawowe ustawienia</string>
+    <string name="title_resolution_list">Rozdzielczość wideo</string>
+    <string name="summary_resolution_list">Zwiększ, aby poprawić klarowność obrazu. Zmniejsz w celu uzyskania lepszej wydajności na słabszych urządzeniach końcowych i wolniejszych sieciach.</string>
+    <string name="title_native_res_dialog">Ostrzeżenie o rozdzielczości natywnej</string>
+    <string name="text_native_res_dialog">Natywna rozdzielczość i/lub liczba klatek na sekundę mogą nie być obsługiwane przez serwer przesyłania strumieniowego. Prawdopodobnie będziesz musiał ręcznie skonfigurować pasujący niestandardowy tryb wyświetlania dla komputera-hosta.\n\nJeśli zdecydujesz się utworzyć niestandardową rozdzielczość w Panelu sterowania NVIDIA, aby dopasować ją do ustawień ekranu, upewnij się, że przeczytałeś i zrozumiałeś ostrzeżenie NVIDIA dotyczące możliwego uszkodzenia monitora, niestabilności komputera i innych potencjalnych problemów.\n\nNie ponosimy odpowiedzialności za jakiekolwiek problemy wynikające z utworzenia niestandardowej rozdzielczości na Twoim komputerze.\n\nMoże się zdarzyć, że Twój monitor nie obsługuje niezbędnej konfiguracji wyświetlania. Jeśli tak, możesz spróbować skonfigurować wirtualny monitor. Wreszcie, jeśli Twoje urządzenie lub komputer-host nie obsługuje przesyłania strumieniowego w określonej rozdzielczości lub częstotliwości odświeżania, niestety nie masz szczęścia.</string>
+    <string name="title_fps_list">Ilość klatek</string>
+    <string name="summary_fps_list">Zwiększ, aby uzyskać płynniejszy strumień wideo. Zmniejsz w celu uzyskania lepszej wydajności na urządzeniach z niższej półki.</string>
+    <string name="title_seekbar_bitrate">Szybkość transmisji wideo</string>
+    <string name="summary_seekbar_bitrate">Zwiększ, aby uzyskać lepszą jakość obrazu. Zmniejsz, aby poprawić wydajność na wolniejszych połączeniach.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mb/s</string>
+    <string name="title_checkbox_stretch_video">Rozciągnij wideo na pełny ekran</string>
+    <string name="title_stretch_video">Rozciąganie wideo</string>
+    <string name="resolution_prefix_native">Rodzinny</string>
+    <string name="resolution_prefix_native_fullscreen">Natywny tryb pełnoekranowy</string>
+    <string name="resolution_prefix_native_landscape">(Krajobraz)</string>
+    <string name="resolution_prefix_native_portrait">(Portret)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Ostrzeżenie o natywnym FPS</string>
+
+    <string name="category_audio_settings">Ustawienia dźwięku</string>
+    <string name="title_audio_config_list">Konfiguracja dźwięku przestrzennego</string>
+    <string name="summary_audio_config_list">Włącz dźwięk przestrzenny 5.1 lub 7.1 w systemach kina domowego</string>
+    <string name="title_checkbox_enable_audiofx">Włącz obsługę korektora systemowego</string>
+    <string name="summary_checkbox_enable_audiofx">Umożliwia działanie efektów dźwiękowych podczas przesyłania strumieniowego, ale może zwiększyć opóźnienie dźwięku</string>
+
+    <string name="category_gamepad_settings">Ustawienia gamepada</string>
+    <string name="title_checkbox_multi_controller">Automatyczne wykrywanie obecności gamepada</string>
+    <string name="summary_checkbox_multi_controller">Odznaczenie tej opcji wymusza stałą obecność gamepada</string>
+    <string name="title_checkbox_vibrate_fallback">Emuluj wsparcie dudnienia za pomocą wibracji</string>
+    <string name="summary_checkbox_vibrate_fallback">Wibruje Twoje urządzenie, aby emulować dudnienie, jeśli Twój gamepad tego nie obsługuje</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Dostosuj intensywność emulowanego dudnienia</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Wzmocnij lub zmniejsz intensywność wibracji na swoim urządzeniu</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Dostosuj martwą strefę drążka analogowego</string>
+    <string name="summary_seekbar_deadzone">Uwaga: niektóre gry mogą wymuszać większą martwą strefę niż ta, do której skonfigurowano Starlight.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Sterownik gamepada USB dla konsoli Xbox 360/One</string>
+    <string name="summary_checkbox_xb1_driver">Włącza wbudowany sterownik USB dla urządzeń bez natywnej obsługi kontrolera Xbox</string>
+    <string name="title_checkbox_usb_bind_all">Zastąp natywną obsługę gamepada Xbox</string>
+    <string name="summary_checkbox_usb_bind_all">Użyj sterownika USB Starlight dla wszystkich obsługiwanych gamepadów, nawet jeśli dostępna jest natywna obsługa kontrolera Xbox</string>
+    <string name="title_checkbox_mouse_emulation">Emulacja myszy za pomocą gamepada</string>
+    <string name="summary_checkbox_mouse_emulation">Długie naciśnięcie przycisku Start spowoduje przełączenie gamepada w tryb myszy</string>
+    <string name="title_checkbox_flip_face_buttons">Odwróć przyciski twarzy</string>
+    <string name="summary_checkbox_flip_face_buttons">Przełącza przyciski twarzowe A/B i X/Y dla gamepadów i elementów sterujących na ekranie</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Zawsze steruj myszą za pomocą touchpada</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">Wymusza wprowadzanie danych za pomocą touchpada gamepada w celu sterowania myszą hosta, nawet podczas emulowania gamepada za pomocą touchpada.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Zezwalaj na korzystanie z czujników ruchu gamepada</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Umożliwia obsługiwanym hostom żądanie danych z czujnika ruchu podczas emulacji gamepada z czujnikami ruchu. Wyłączenie może nieznacznie zmniejszyć zużycie energii i sieci, jeśli w grze nie są używane czujniki ruchu.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Emuluj obsługę czujnika ruchu gamepada</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Używa wbudowanych czujników ruchu Twojego urządzenia, jeśli czujniki gamepada nie są obsługiwane przez podłączony gamepad lub wersję Androida.\nUwaga: włączenie tej opcji może spowodować, że Twój gamepad będzie wyświetlany jako kontroler PlayStation na hoście.</string>
+
+    <string name="category_input_settings">Ustawienia wejściowe</string>
+    <string name="title_checkbox_touchscreen_trackpad">Używaj ekranu dotykowego jako gładzika</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Jeśli ta opcja jest włączona, ekran dotykowy działa jak gładzik. Jeśli opcja jest wyłączona, ekran dotykowy bezpośrednio steruje kursorem myszy.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Tryb myszy pulpitu zdalnego</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Może to sprawić, że przyspieszenie myszy będzie zachowywać się bardziej naturalnie w przypadku korzystania ze zdalnego pulpitu, ale jest to niezgodne z wieloma grami.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Włącz przyciski myszy wstecz i do przodu</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Włączenie tej opcji może spowodować uszkodzenie kliknięcia prawym przyciskiem myszy na niektórych wadliwych urządzeniach</string>
+
+    <string name="category_on_screen_controls_settings">Ustawienia elementów sterujących na ekranie</string>
+    <string name="title_checkbox_show_onscreen_controls">Pokaż elementy sterujące na ekranie</string>
+    <string name="summary_checkbox_show_onscreen_controls">Pokaż nakładkę kontrolera wirtualnego na ekranie dotykowym</string>
+    <string name="title_checkbox_vibrate_osc">Włącz wibracje</string>
+    <string name="summary_checkbox_vibrate_osc">Wibruje urządzenie, aby emulować dudnienie elementów sterujących na ekranie</string>
+    <string name="title_only_l3r3">Pokaż tylko L3 i R3</string>
+    <string name="summary_only_l3r3">Ukryj wszystkie wirtualne przyciski z wyjątkiem L3 i R3</string>
+    <string name="title_reset_osc">Wyczyść zapisany układ elementów sterujących na ekranie</string>
+    <string name="summary_reset_osc">Resetuje wszystkie elementy sterujące na ekranie do ich domyślnego rozmiaru i położenia</string>
+    <string name="dialog_title_reset_osc">Zresetuj układ</string>
+    <string name="dialog_text_reset_osc">Czy na pewno chcesz usunąć zapisany układ elementów sterujących na ekranie\?</string>
+    <string name="toast_reset_osc_success">Elementy sterujące na ekranie zostaną zresetowane do ustawień domyślnych</string>
+    <string name="title_osc_opacity">Zmień przezroczystość elementów sterujących na ekranie</string>
+    <string name="summary_osc_opacity">Spraw, aby elementy sterujące na ekranie były bardziej/mniej przejrzyste</string>
+    <string name="dialog_title_osc_opacity">Zmień krycie</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">Ustawienia interfejsu użytkownika</string>
+    <string name="title_checkbox_enable_pip">Włącz tryb obserwatora „obraz w obrazie”.</string>
+    <string name="summary_checkbox_enable_pip">Umożliwia oglądanie strumienia (ale nie kontrolowanie) podczas wykonywania wielu zadań jednocześnie</string>
+    <string name="title_language_list">Język</string>
+    <string name="summary_language_list">Język używany w Starlight</string>
+    <string name="title_checkbox_small_icon_mode">Użyj małej grafiki pudełkowej</string>
+    <string name="summary_checkbox_small_icon_mode">Mniejsza grafika pudełka w siatce aplikacji umożliwia wyświetlenie większej liczby aplikacji na ekranie</string>
+
+    <string name="category_host_settings">Ustawienia hosta</string>
+    <string name="title_checkbox_enable_sops">Zoptymalizuj ustawienia gry</string>
+    <string name="summary_checkbox_enable_sops">Zezwól GFE na modyfikowanie ustawień gry w celu zapewnienia optymalnego przesyłania strumieniowego</string>
+    <string name="title_checkbox_host_audio">Odtwórz dźwięk na komputerze</string>
+    <string name="summary_checkbox_host_audio">Odtwarzaj dźwięk z komputera i tego urządzenia</string>
+
+    <string name="category_advanced_settings">Zaawansowane ustawienia</string>
+    <string name="title_unlock_fps">Odblokuj wszystkie możliwe liczby klatek na sekundę</string>
+    <string name="summary_unlock_fps">Przesyłanie strumieniowe z szybkością 90 lub 120 klatek na sekundę może zmniejszyć opóźnienia na urządzeniach z najwyższej półki, ale może powodować opóźnienia lub niestabilność na urządzeniach, które tego nie obsługują</string>
+    <string name="title_checkbox_reduce_refresh_rate">Zezwalaj na zmniejszenie częstotliwości odświeżania</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Niższe częstotliwości odświeżania wyświetlacza mogą oszczędzać energię kosztem dodatkowego opóźnienia wideo</string>
+    <string name="title_checkbox_disable_warnings">Wyłącz komunikaty ostrzegawcze</string>
+    <string name="summary_checkbox_disable_warnings">Wyłącz komunikaty ostrzegawcze dotyczące połączenia wyświetlane na ekranie podczas przesyłania strumieniowego</string>
+    <string name="title_disable_frame_drop">Nigdy nie upuszczaj klatek</string>
+    <string name="summary_disable_frame_drop">Może zmniejszyć mikrozacinanie się na niektórych urządzeniach, ale może zwiększyć opóźnienia</string>
+    <string name="title_video_format">Zmień ustawienia kodeka</string>
+    <string name="summary_video_format">Nowsze kodeki mogą obniżyć wymagania dotyczące przepustowości wideo, jeśli Twoje urządzenie je obsługuje. Wybrane kodeki mogą zostać zignorowane, jeśli nie są obsługiwane przez oprogramowanie hosta lub procesor graficzny.</string>
+    <string name="title_enable_hdr">Włącz HDR (eksperymentalnie)</string>
+    <string name="summary_enable_hdr">Przesyłaj strumieniowo HDR, jeśli obsługuje go gra i procesor graficzny komputera. HDR wymaga procesora graficznego obsługującego kodowanie HEVC Main 10.</string>
+    <string name="title_full_range">Wymuś wideo w pełnym zakresie (Zależne od urządzenia)</string>
+    <string name="summary_full_range">Spowoduje to utratę szczegółów w jasnych i ciemnych obszarach, jeśli urządzenie nie będzie prawidłowo wyświetlać treści wideo w pełnym zakresie.</string>
+    <string name="title_enable_perf_overlay">Pokaż statystyki wydajności podczas przesyłania strumieniowego</string>
+    <string name="summary_enable_perf_overlay">Wyświetlaj informacje o wydajności transmisji w czasie rzeczywistym podczas transmisji</string>
+    <string name="title_enable_post_stream_toast">Pokaż komunikat o opóźnieniu po transmisji strumieniowej</string>
+    <string name="summary_enable_post_stream_toast">Wyświetl komunikat z informacją o opóźnieniu po zakończeniu strumienia</string>
+
+    <string name="category_help">Pomoc</string>
+    <string name="title_setup_guide">Przewodnik konfiguracji</string>
+    <string name="summary_setup_guide">Zobacz instrukcje dotyczące konfigurowania komputera do gier do przesyłania strumieniowego</string>
+    <string name="title_troubleshooting">Podręcznik rozwiązywania problemów</string>
+    <string name="summary_troubleshooting">Zobacz wskazówki dotyczące diagnozowania i rozwiązywania typowych problemów ze strumieniowaniem</string>
+    <string name="title_privacy_policy">Polityka prywatności</string>
+    <string name="summary_privacy_policy">Zapoznaj się z polityką prywatności Starlight</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">Typ gamepada może ulec zmianie ze względu na emulację czujnika ruchu</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30 klatek na sekundę</string>
+    <string name="fps_60">60 klatek na sekundę</string>
+    <string name="fps_90">90 klatek na sekundę</string>
+    <string name="fps_120">120 klatek na sekundę</string>
+
+    <string name="audioconf_stereo">Stereofoniczny</string>
+    <string name="audioconf_51surround">Dźwięk przestrzenny 5.1</string>
+    <string name="audioconf_71surround">Dźwięk przestrzenny 7.1</string>
+
+    <string name="videoformat_auto">Automatyczny (zalecany)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">Preferuj AV1 (eksperymentalny)</string>
+    <string name="videoformat_hevcalways">Wolę HEVC</string>
+    <string name="videoformat_h264always">Preferuj H.264</string>
+
+    <string name="title_frame_pacing">Tempo klatek wideo</string>
+    <string name="summary_frame_pacing">Określ sposób równoważenia opóźnienia i płynności wideo</string>
+    <string name="pacing_latency">Preferuj najniższe opóźnienia</string>
+    <string name="pacing_balanced">Zrównoważony</string>
+    <string name="pacing_balanced_alt">Zrównoważony z limitem FPS</string>
+    <string name="pacing_smoothness">Preferuj płynniejsze wideo (może znacznie zwiększyć opóźnienie)</string>
+    <string name="title_analog_scrolling">Do przewijania użyj drążka analogowego</string>
+    <string name="summary_analog_scrolling">Wybierz drążek analogowy do przewijania w trybie emulacji myszy</string>
+    <string name="analogscroll_none">Brak (oba drążki poruszają myszą)</string>
+    <string name="analogscroll_right">Prawy drążek analogowy</string>
+    <string name="analogscroll_left">Lewy drążek analogowy</string>
+    <string name="games">Gry</string>
+    <string name="settings">Ustawienia</string>
+    <string name="exit">Wyjście</string>
+    <string name="options">Opcje</string>
+    <string name="pending">Aż do</string>
+    <string name="data_collection">Zbieranie danych</string>
+    <string name="loading_for_first_time_use_please_wait">Ładowanie przy pierwszym użyciu.... Proszę czekać...</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Czy chcesz zakończyć, czy wstrzymać tę aplikację, wszystkie niezapisane dane zostaną utracone po zamknięciu.</string>
+    <string name="confirm_quit">Potwierdź Zakończ</string>
+    <string name="quit">Zrezygnować</string>
+    <string name="pause">Pauza</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Czy na pewno chcesz wyczyścić pamięć podręczną. Spowoduje to zamknięcie tego okna\?</string>
+    <string name="clear_cache">Wyczyść pamięć podręczną</string>
+    <string name="click_ok_to_launch_game">kliknij OK, aby uruchomić grę.</string>
+    <string name="active_internet_connection_required_for_game_details">Aby uzyskać szczegółowe informacje o grze, wymagane jest aktywne połączenie internetowe,</string>
+    <string name="download">Pobierać</string>
+    <string name="download_translations_model">Pobierz model tłumaczeń</string>
+    <string name="download_locale_language_model_to_translate_game_data">Pobierz model języka lokalnego, aby przetłumaczyć dane gry</string>
+    <string name="downloading_ml_language_file_please_wait">Proszę czekać..</string>
+    <string name="download_successful">Pobierz pomyślnie</string>
+    <string name="download_error_please_try_again">Błąd pobierania: spróbuj ponownie</string>
+    <string name="model_deleted_successfully">Model został pomyślnie usunięty</string>
+    <string name="model_delete_failed_please_try_again">Usunięcie modelu nie powiodło się. Spróbuj ponownie</string>
+    <string name="delete_language_model">Usuń model języka</string>
+    <string name="delete_downloaded_language_model">Usuń pobrany model języka</string>
+    <string name="support">\"Wsparcie \"</string>
+    <string name="cache">Pamięć podręczna %1$s</string>
+    <string name="hdr_off">„HDR wyłączony”</string>
+    <string name="hdr_on">„HDR włączony”</string>
+    <string name="cancel">Anulować</string>
+    <string name="display_does_not_support_hdr10">Wyświetlacz nie obsługuje HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">Dekoder nie obsługuje profilu HDR10</string>
+    <string name="no_hevc_decoder_found">Nie znaleziono dekodera HEVC</string>
+    <string name="no_av1_decoder_found">Nie znaleziono dekodera AV1</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">To urządzenie lub pamięć ROM nie obsługuje odtwarzania w formacie H.264 z akceleracją sprzętową.</string>
+    <string name="server_version_malformed">Wersja serwera jest zniekształcona</string>
+    <string name="device_not_paired_with_computer">Urządzenie nie jest sparowane z komputerem</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">Procesor graficzny Twojego komputera nie obsługuje przesyłania strumieniowego HDR. Transmisja będzie w formacie SDR.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">Twój komputer-host nie obsługuje przesyłania strumieniowego w rozdzielczościach powyżej 4K.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">Aby przesyłać strumieniowo w rozdzielczości powyżej 4K, Twoje urządzenie do przesyłania strumieniowego musi obsługiwać HEVC lub AV1.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Aby przesyłać strumieniowo w rozdzielczości 4K, musisz zaktualizować oprogramowanie GeForce Experience. Transmisja będzie w rozdzielczości 1080p.</string>
+    <string name="failed_to_resume_existing_session">Nie udało się wznowić istniejącej sesji</string>
+    <string name="this_session_wasn_t_started_by_this_device">Ta sesja nie została rozpoczęta przez to urządzenie,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\", więc nie można go wznowić. Zakończ przesyłanie strumieniowe na oryginale \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">„urządzenie lub sam komputer i spróbuj ponownie. (Kod błędu: „</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"Aplikacja została zminimalizowana. Wznów ją ręcznie na komputerze lub \"</string>
+    <string name="quit_the_session_and_start_streaming_again">zakończ sesję i ponownie rozpocznij przesyłanie strumieniowe.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Nie udało się zakończyć poprzedniej sesji! Musisz zakończyć to ręcznie</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" więc nie można tego zakończyć. Zakończ przesyłanie strumieniowe na oryginale \"</string>
+    <string name="device_or_the_pc_itself_error_code">„urządzenie lub sam komputer. (Kod błędu: „</string>
+    <string name="failed_to_launch_application">Nie udało się uruchomić aplikacji</string>
+    <string name="please_wait_for_the_process_to_complete">Poczekaj na zakończenie procesu…</string>
+    <string name="enter_api_key_here">Wpisz klucz API tutaj:</string>
+    <string name="favorites">Ulubione</string>
+    <string name="removed_from_favorites">„Usunięto z ulubionych i kanału głównego”</string>
+    <string name="added_to_favorites">„ Dodano do ulubionych i kanału głównego”</string>
+    <string name="clear_favorites">Wyczyść ulubione</string>
+    <string name="clear_favs_msg">Czy na pewno chcesz wyczyścić ulubione\? Spowoduje to również usunięcie aplikacji Home Channels\?</string>
+    <string name="app_list_updated">Lista aplikacji zaktualizowana</string>
+    <string name="update_the_database"><![CDATA[Czy na pewno chcesz wyczyścić i zaktualizować bazę danych\? Spowoduje to zamknięcie tego okna\?]]></string>
+    <string name="update_database">Zaktualizować bazę danych</string>
+    <string name="database">Baza danych</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Czy na pewno chcesz usunąć wszystkie ulubione?</string>
+    <string name="resuming_session">Wznawianie sesji</string>
+    <string name="app_added_to_favorites">Dodano do ulubionych</string>
+    <string name="app_removed_from_favorites">Usunięto z ulubionych</string>
+    <string name="anonymous_statistics">Anonimowe statystyki</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Wysyłaj anonimowe statystyki w celu poprawy wydajności aplikacji.</string>
+    <string name="captions">Napisy do filmów w serwisie YouTube</string>
+    <string name="captions_text">Włącz lub wyłącz napisy do filmów w serwisie YouTube.</string>
+    <string name="privacy">Prywatność</string>
+    <string name="restart_application">Uruchom ponownie aplikację</string>
+    <string name="restart_now">Spowoduje to ponowne uruchomienie aplikacji w celu zastosowania zmian. Czy chcesz ponownie uruchomić aplikację teraz\?</string>
+    <string name="database_updating">Aktualizacja bazy danych</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Ulepszanie wideo: (x%1$.2f) Moduł cieniujący SGSR1</string>
+    <string name="title_video_sr">Super rozdzielczość wideo</string>
+    <string name="summary_video_sr">Wykorzystaj akcelerację sprzętową, aby poprawić klarowność obrazu</string>
+    <string name="aaudio">Próba zabezpieczenia bezpośredniego dostępu do sprzętu w celu szybszej reakcji audio. Ze względu na ograniczenia producentów niektórych telewizorów z systemem Android TV lub urządzeń do strumieniowania mogą występować pewne opóźnienia. Jeśli dźwięk stanie się niestabilny, prosimy o wyłączenie tej opcji.</string>
+    <string name="enable_aaudio">Włącz AAudio</string>
+    <string name="aaudio_title">Audio Ultra Low Latency (eksperymentalne)</string>
+    <string name="aaudio_summary">Dźwięk o ultraniskim opóźnieniu (obsługa dźwięku przestrzennego)</string>
+    <string name="aaudio_summary29">Włącz dźwięk o ultraniskim opóźnieniu</string>
+    <string name="game_media_library">Biblioteka multimediów gier</string>
+
+    <string name="title_audio_output_mode">Format wyjścia audio</string>
+    <string name="summary_audio_output_mode">Format PCM jest kompatybilny ze wszystkimi urządzeniami. AC-3 i Dolby Digital Plus przesyłają zakodowany dźwięk 5.1 do odbiornika HDMI/eARC i przełączają się na PCM w przypadku awarii.</string>
+    <string name="audio_output_mode_pcm">PCM (domyślny)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (automatyczny, eksperymentalny)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (siłowy, eksperymentalny)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (automatyczny, eksperymentalny)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (wymuszony, eksperymentalny)</string>
+    <string name="encoded_audio_fallback_to_pcm">Zakodowane wyjście audio jest niedostępne. Kontynuujemy odtwarzanie dźwięku PCM.</string>
+    <string name="switch_to_encoded">Dostępne jest wyjście audio kodowane, przełączanie na dźwięk kodowany.</string>
+</resources>

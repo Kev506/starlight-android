@@ -1,0 +1,416 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Παίζω</string>
+    <string name="details">Λεπτομέριες</string>
+    <string name="running">Το παιχνίδι τρέχει, κάντε κλικ στην αναπαραγωγή για επιλογές.</string>
+    <string name="No_Details">Λυπούμαστε, δεν υπάρχουν λεπτομέρειες προς εμφάνιση.
+
+Εάν προσθέσατε το παιχνίδι χειροκίνητα, ελέγξτε τον τίτλο και ενημερώστε εκκαθαριστικά τη βάση δεδομένων.
+Εάν το επιλεγμένο στοιχείο είναι μια εφαρμογή για υπολογιστή, δεν θα υπάρχουν λεπτομέρειες προς εμφάνιση.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Ρυμουλκούμενα</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Χρησιμοποιήστε το Leanback UI</string>
+    <string name="leanback_summary">Επιλέξτε για εμφάνιση εφαρμογών στη διεπαφή χρήστη Leanback</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">Ο υπολογιστής διαγράφηκε</string>
+    <string name="scut_not_paired">Ο υπολογιστής δεν έχει συζευχθεί</string>
+    <string name="scut_pc_not_found">Ο υπολογιστής δεν βρέθηκε</string>
+    <string name="scut_invalid_uuid">Ο παρεχόμενος υπολογιστής δεν είναι έγκυρος</string>
+    <string name="scut_invalid_app_id">Η παρεχόμενη εφαρμογή δεν είναι έγκυρη</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Βοήθεια Viewer</string>
+    <string name="help_loading_msg">Φόρτωση σελίδας βοήθειας…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">Σε σύνδεση</string>
+    <string name="pcview_menu_header_offline">Εκτός σύνδεσης</string>
+    <string name="pcview_menu_header_unknown">Δροσιστικός</string>
+    <string name="pcview_menu_app_list">Προβολή όλων των εφαρμογών</string>
+    <string name="pcview_menu_pair_pc">Σύζευξη με υπολογιστή</string>
+    <string name="pcview_menu_unpair_pc">Κατάργηση ζεύξης</string>
+    <string name="pcview_menu_send_wol">Αποστολή αιτήματος Wake-On-LAN</string>
+    <string name="pcview_menu_delete_pc">Διαγραφή υπολογιστή</string>
+    <string name="pcview_menu_test_network">Δοκιμή σύνδεσης δικτύου</string>
+    <string name="pcview_menu_details">Δείτε λεπτομέρειες</string>
+    <string name="pcview_menu_eol">Τέλος υπηρεσίας NVIDIA GameStream</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Δοκιμή σύνδεσης δικτύου</string>
+    <string name="nettest_text_waiting">Το Starlight δοκιμάζει τη σύνδεση δικτύου σας για να προσδιορίσει εάν τυχόν απαιτούμενες θύρες είναι αποκλεισμένες.\n\nΑυτό μπορεί να διαρκέσει μερικά δευτερόλεπτα…</string>
+    <string name="nettest_title_done">Ολοκληρώθηκε η δοκιμή δικτύου</string>
+    <string name="nettest_text_success">Το δίκτυό σας δεν φαίνεται να μπλοκάρει το Starlight. Εάν εξακολουθείτε να αντιμετωπίζετε προβλήματα με τη σύνδεση, ελέγξτε τις ρυθμίσεις του τείχους προστασίας του υπολογιστή σας.\n\nΕάν προσπαθείτε να κάνετε ροή μέσω Internet, εγκαταστήστε το Moonlight Internet Hosting Tool στον υπολογιστή σας και εκτελέστε τον ελεγκτή ροής Internet που περιλαμβάνεται για να ελέγξετε τον υπολογιστή σας\ σύνδεση στο Διαδίκτυο.</string>
+    <string name="nettest_text_inconclusive">Δεν ήταν δυνατή η εκτέλεση της δοκιμής δικτύου επειδή κανένας από τους διακομιστές δοκιμής σύνδεσης του Starlight δεν ήταν προσβάσιμος. Ελέγξτε τη σύνδεσή σας στο Διαδίκτυο ή δοκιμάστε ξανά αργότερα.</string>
+    <string name="nettest_text_failure">Η τρέχουσα σύνδεση δικτύου της συσκευής σας φαίνεται να εμποδίζει το Starlight. Η ροή μέσω Διαδικτύου ενδέχεται να μην λειτουργεί κατά τη σύνδεση σε αυτό το δίκτυο.\n\nΟι ακόλουθες θύρες δικτύου αποκλείστηκαν:\n</string>
+    <string name="nettest_text_blocked">Η τρέχουσα σύνδεση δικτύου της συσκευής σας εμποδίζει το Starlight. Η ροή μέσω Διαδικτύου ενδέχεται να μην λειτουργεί κατά τη σύνδεση σε αυτό το δίκτυο.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Σύζευξη…</string>
+    <string name="pair_pc_offline">Ο υπολογιστής είναι εκτός σύνδεσης</string>
+    <string name="pair_pc_ingame">Ο υπολογιστής βρίσκεται αυτή τη στιγμή σε ένα παιχνίδι. Πρέπει να κλείσετε το παιχνίδι πριν κάνετε σύζευξη.</string>
+    <string name="pair_pairing_title">Σύζευξη</string>
+    <string name="pair_pairing_msg">Εισαγάγετε τον ακόλουθο κωδικό PIN στον υπολογιστή προορισμού:</string>
+    <string name="pair_pairing_help">Εάν ο κεντρικός υπολογιστής σας εκτελεί Sunshine, μεταβείτε στο Sunshine web UI για να εισαγάγετε το PIN.</string>
+    <string name="pair_incorrect_pin">Λανθασμένο PIN</string>
+    <string name="pair_fail">Η σύζευξη απέτυχε</string>
+    <string name="pair_already_in_progress">Η σύζευξη βρίσκεται ήδη σε εξέλιξη</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">Ο υπολογιστής είναι συνδεδεμένος</string>
+    <string name="wol_no_mac">Δεν είναι δυνατή η αφύπνιση του υπολογιστή επειδή δεν υπάρχει αποθηκευμένη διεύθυνση MAC</string>
+    <string name="wol_waking_pc">Ξυπνώντας υπολογιστή…</string>
+    <string name="wol_waking_msg">Μπορεί να χρειαστούν μερικά δευτερόλεπτα για να ξυπνήσει ο υπολογιστής σας.
+Εάν δεν το κάνει, βεβαιωθείτε ότι έχει ρυθμιστεί σωστά για Wake-On-LAN.
+    </string>
+    <string name="wol_fail">Αποτυχία αποστολής πακέτων Wake-On-LAN</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Κατάργηση σύζευξης…</string>
+    <string name="unpair_success">Καταργήθηκε η σύζευξη με επιτυχία</string>
+    <string name="unpair_fail">Αποτυχία σύζευξης</string>
+    <string name="unpair_error">Δεν έγινε σύζευξη της συσκευής</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">Ο υπολογιστής είναι εκτός σύνδεσης</string>
+    <string name="error_manager_not_running">Η υπηρεσία ComputerManager δεν εκτελείται. Περιμένετε μερικά δευτερόλεπτα ή επανεκκινήστε την εφαρμογή.</string>
+    <string name="error_unknown_host">Αποτυχία επίλυσης κεντρικού υπολογιστή</string>
+    <string name="error_404">Το GFE επέστρεψε ένα σφάλμα HTTP 404. Βεβαιωθείτε ότι ο υπολογιστής σας εκτελεί μια υποστηριζόμενη GPU.
+Η χρήση λογισμικού απομακρυσμένης επιφάνειας εργασίας μπορεί επίσης να προκαλέσει αυτό το σφάλμα. Δοκιμάστε να επανεκκινήσετε το μηχάνημά σας ή να εγκαταστήσετε ξανά το GFE.
+    </string>
+    <string name="title_decoding_error">Ο αποκωδικοποιητής βίντεο συνετρίβη</string>
+    <string name="message_decoding_error">Το Starlight διακόπηκε λόγω ασυμβατότητας με τον αποκωδικοποιητή βίντεο αυτής της συσκευής. Δοκιμάστε να προσαρμόσετε τις ρυθμίσεις ροής εάν συνεχιστούν τα σφάλματα.</string>
+    <string name="title_decoding_reset">Επαναφορά ρυθμίσεων βίντεο</string>
+    <string name="message_decoding_reset">Ο αποκωδικοποιητής βίντεο της συσκευής σας συνεχίζει να κολλάει στις επιλεγμένες ρυθμίσεις ροής. Οι ρυθμίσεις ροής σας επαναφέρθηκαν στις προεπιλογές.</string>
+    <string name="error_usb_prohibited">Η πρόσβαση USB απαγορεύεται από τον διαχειριστή της συσκευής σας. Ελέγξτε τις ρυθμίσεις Knox ή MDM.</string>
+    <string name="unable_to_pin_shortcut">Η τρέχουσα εκκίνηση δεν επιτρέπει τη δημιουργία καρφιτσωμένων συντομεύσεων.</string>
+    <string name="video_decoder_init_failed">Απέτυχε η προετοιμασία του αποκωδικοποιητή βίντεο. Η συσκευή σας ενδέχεται να μην υποστηρίζει την επιλεγμένη ανάλυση ή ρυθμό καρέ.</string>
+    <string name="no_video_received_error">Δεν ελήφθη βίντεο από τον οικοδεσπότη.</string>
+    <string name="no_frame_received_error">Η σύνδεσή σας στο δίκτυο δεν λειτουργεί καλά. Μειώστε τη ρύθμιση του ρυθμού bit του βίντεο ή δοκιμάστε μια πιο γρήγορη σύνδεση.</string>
+    <string name="early_termination_error">Κάτι πήγε στραβά στον κεντρικό υπολογιστή σας κατά την έναρξη της ροής.\n\nΒεβαιωθείτε ότι δεν έχετε ανοιχτό περιεχόμενο με προστασία DRM στον κεντρικό υπολογιστή σας. Μπορείτε επίσης να δοκιμάσετε να επανεκκινήσετε τον κεντρικό υπολογιστή σας.</string>
+    <string name="frame_conversion_error">Ο κεντρικός υπολογιστής ανέφερε ένα μοιραίο σφάλμα κωδικοποίησης βίντεο.\n\nΔοκιμάστε να απενεργοποιήσετε τη λειτουργία HDR, να αλλάξετε την ανάλυση ροής ή να αλλάξετε την ανάλυση οθόνης του κεντρικού υπολογιστή σας.</string>
+    <string name="check_ports_msg">Ελέγξτε το τείχος προστασίας και τους κανόνες προώθησης θυρών για θύρες:</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Δημιουργία σύνδεσης</string>
+    <string name="conn_establishing_msg">Έναρξη σύνδεσης</string>
+    <string name="conn_metered">Προειδοποίηση: Η ενεργή σύνδεση δικτύου σας έχει μετρηθεί!</string>
+    <string name="conn_client_latency">Μέση καθυστέρηση αποκωδικοποίησης πλαισίου:</string>
+    <string name="conn_client_latency_hw">Καθυστέρηση αποκωδικοποιητή υλικού:</string>
+    <string name="conn_hardware_latency">Μέση καθυστέρηση αποκωδικοποίησης υλικού:</string>
+    <string name="conn_starting">Εκκίνηση</string>
+    <string name="conn_error_title">Σφάλμα σύνδεσης</string>
+    <string name="conn_error_msg">Απέτυχε να ξεκινήσει</string>
+    <string name="conn_terminated_title">Η σύνδεση τερματίστηκε</string>
+    <string name="conn_terminated_msg">Η σύνδεση τερματίστηκε.</string>
+    <string name="error_code_prefix">Κωδικός λάθους:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">Διεύθυνση IP του κεντρικού υπολογιστή</string>
+    <string name="searching_pc">Αναζήτηση για κεντρικούς υπολογιστές στο τοπικό σας δίκτυο…\n\n
+        Βεβαιωθείτε ότι το Sunshine εκτελείται στον κεντρικό υπολογιστή σας ή το GameStream είναι ενεργοποιημένο στις ρυθμίσεις GeForce Experience SHIELD.</string>
+    <string name="yes">Ναί</string>
+    <string name="no">Οχι</string>
+    <string name="lost_connection">Χάθηκε η σύνδεση με τον υπολογιστή</string>
+    <string name="title_details">Λεπτομέριες</string>
+    <string name="help">Βοήθεια</string>
+    <string name="delete_pc_msg">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτόν τον υπολογιστή;</string>
+    <string name="slow_connection_msg">Αργή σύνδεση με υπολογιστή\nΜειώστε τον ρυθμό μετάδοσης bit</string>
+    <string name="poor_connection_msg">Κακή σύνδεση με υπολογιστή</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Ροή βίντεο: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Αποκωδικοποιητής: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Ρυθμός εισερχόμενων καρέ από το δίκτυο: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Ρυθμός καρέ απόδοσης: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Λάθος καθυστέρησης επεξεργασίας κεντρικού υπολογιστή ελάχ./μέγιστο/μέσος όρος: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">Καρέ που απορρίφθηκαν από τη σύνδεσή σας στο δίκτυο: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Μέση καθυστέρηση δικτύου: %1$d ms (διακύμανση: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Μέσος χρόνος αποκωδικοποίησης: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Σύνδεση σε υπολογιστή…</string>
+    <string name="applist_menu_resume">Συνέχεια Συνεδρίας</string>
+    <string name="applist_menu_quit">Έξοδος από τη συνεδρία</string>
+    <string name="applist_menu_quit_and_start">Κλείστε το τρέχον παιχνίδι και ξεκινήστε</string>
+    <string name="applist_menu_cancel">Ματαίωση</string>
+    <string name="applist_menu_details">Δείτε λεπτομέρειες</string>
+    <string name="applist_menu_scut">Δημιουργία συντόμευσης</string>
+    <string name="applist_menu_tv_channel">Προσθήκη στο κανάλι</string>
+    <string name="applist_menu_hide_app">Απόκρυψη εφαρμογής</string>
+    <string name="applist_refresh_title">Λίστα εφαρμογών</string>
+    <string name="applist_refresh_msg">Ανανέωση εφαρμογών…</string>
+    <string name="applist_refresh_error_title">Λάθος</string>
+    <string name="applist_refresh_error_msg">Η λήψη της λίστας εφαρμογών απέτυχε</string>
+    <string name="applist_quit_app">Εγκατάλειψη</string>
+    <string name="applist_quit_success">Έφυγε με επιτυχία</string>
+    <string name="applist_quit_fail">Αποτυχία διακοπής</string>
+    <string name="applist_quit_confirmation">Είστε βέβαιοι ότι θέλετε να τερματίσετε την εφαρμογή που εκτελείται; Όλα τα μη αποθηκευμένα δεδομένα θα χαθούν.</string>
+    <string name="applist_details_id">Αναγνωριστικό εφαρμογής:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">Προσθήκη υπολογιστή με μη αυτόματο τρόπο</string>
+    <string name="msg_add_pc">Σύνδεση στον υπολογιστή…</string>
+    <string name="addpc_fail">Δεν είναι δυνατή η σύνδεση στον καθορισμένο υπολογιστή. Βεβαιωθείτε ότι οι απαιτούμενες θύρες επιτρέπονται μέσω του τείχους προστασίας.</string>
+    <string name="addpc_success">Ο υπολογιστής προστέθηκε με επιτυχία</string>
+    <string name="addpc_unknown_host">Δεν είναι δυνατή η επίλυση της διεύθυνσης υπολογιστή. Βεβαιωθείτε ότι δεν κάνατε τυπογραφικό λάθος στη διεύθυνση.</string>
+    <string name="addpc_enter_ip">Πρέπει να εισαγάγετε μια διεύθυνση IP</string>
+    <string name="addpc_wrong_sitelocal">Αυτή η διεύθυνση δεν φαίνεται σωστή. Πρέπει να χρησιμοποιήσετε τη δημόσια διεύθυνση IP του δρομολογητή σας για ροή μέσω Internet.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Βασικές ρυθμίσεις</string>
+    <string name="title_resolution_list">Ανάλυση βίντεο</string>
+    <string name="summary_resolution_list">Αύξηση για βελτίωση της καθαρότητας της εικόνας. Μείωση για καλύτερη απόδοση σε συσκευές χαμηλότερης τεχνολογίας και πιο αργά δίκτυα.</string>
+    <string name="title_native_res_dialog">Προειδοποίηση εγγενούς ανάλυσης</string>
+    <string name="text_native_res_dialog">Η εγγενής ανάλυση και/ή το FPS ενδέχεται να μην υποστηρίζονται από τον διακομιστή ροής. Πιθανότατα θα χρειαστεί να διαμορφώσετε μια προσαρμοσμένη λειτουργία εμφάνισης για τον κεντρικό υπολογιστή με μη αυτόματο τρόπο.\n\nΕάν επιλέξετε να δημιουργήσετε μια προσαρμοσμένη ανάλυση στον Πίνακα Ελέγχου NVIDIA ώστε να ταιριάζει με τις ρυθμίσεις της οθόνης σας, βεβαιωθείτε ότι έχετε διαβάσει και κατανοήσει την προειδοποίηση της NVIDIA σχετικά με πιθανή βλάβη της οθόνης, αστάθεια του υπολογιστή και άλλα πιθανά προβλήματα.\n\nΔεν φέρουμε ευθύνη για τυχόν προβλήματα που προκύπτουν από τη δημιουργία προσαρμοσμένης ανάλυσης στον υπολογιστή σας.\n\nΜπορεί η οθόνη σας να μην υποστηρίζει την απαραίτητη διαμόρφωση οθόνης. Εάν ναι, μπορείτε να προσπαθήσετε να ρυθμίσετε μια εικονική οθόνη. Τέλος, εάν η συσκευή ή ο κεντρικός υπολογιστής σας δεν υποστηρίζει ροή σε συγκεκριμένη ανάλυση ή ρυθμό ανανέωσης, δυστυχώς δεν έχετε τύχη.</string>
+    <string name="title_fps_list">Ρυθμός καρέ βίντεο</string>
+    <string name="summary_fps_list">Αύξηση για πιο ομαλή ροή βίντεο. Μείωση για καλύτερη απόδοση σε συσκευές χαμηλότερης τεχνολογίας.</string>
+    <string name="title_seekbar_bitrate">Ρυθμός bit βίντεο</string>
+    <string name="summary_seekbar_bitrate">Αύξηση για καλύτερη ποιότητα εικόνας. Μειώστε για να βελτιώσετε την απόδοση σε πιο αργές συνδέσεις.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">Επεκτείνετε το βίντεο σε πλήρη οθόνη</string>
+    <string name="title_stretch_video">Stretch βίντεο</string>
+    <string name="resolution_prefix_native">Ντόπιος</string>
+    <string name="resolution_prefix_native_fullscreen">Εγγενής πλήρης οθόνη</string>
+    <string name="resolution_prefix_native_landscape">(Τοπίο)</string>
+    <string name="resolution_prefix_native_portrait">(Πορτρέτο)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Προειδοποίηση εγγενούς FPS</string>
+
+    <string name="category_audio_settings">Ρυθμίσεις ήχου</string>
+    <string name="title_audio_config_list">Διαμόρφωση ήχου surround</string>
+    <string name="summary_audio_config_list">Ενεργοποιήστε τον ήχο surround 5.1 ή 7.1 για συστήματα home theater</string>
+    <string name="title_checkbox_enable_audiofx">Ενεργοποιήστε την υποστήριξη του ισοσταθμιστή συστήματος</string>
+    <string name="summary_checkbox_enable_audiofx">Επιτρέπει τη λειτουργία ηχητικών εφέ κατά τη ροή, αλλά μπορεί να αυξήσει τον λανθάνοντα χρόνο ήχου</string>
+
+    <string name="category_gamepad_settings">Ρυθμίσεις Gamepad</string>
+    <string name="title_checkbox_multi_controller">Αυτόματη ανίχνευση παρουσίας gamepad</string>
+    <string name="summary_checkbox_multi_controller">Η αποεπιλογή αυτής της επιλογής αναγκάζει ένα gamepad να είναι πάντα παρόν</string>
+    <string name="title_checkbox_vibrate_fallback">Μιμηθείτε την υποστήριξη rumble με δόνηση</string>
+    <string name="summary_checkbox_vibrate_fallback">Δονεί τη συσκευή σας για να μιμηθεί το rumble εάν το gamepad σας δεν το υποστηρίζει</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Προσαρμόστε την ένταση του μιμούμενου βουητού</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Ενισχύστε ή μειώστε την ένταση των κραδασμών στη συσκευή σας</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Ρύθμιση νεκρής ζώνης αναλογικού στικ</string>
+    <string name="summary_seekbar_deadzone">Σημείωση: Ορισμένα παιχνίδια μπορούν να επιβάλουν μεγαλύτερη νεκρή ζώνη από αυτή που έχει ρυθμιστεί να χρησιμοποιεί το Starlight.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Πρόγραμμα οδήγησης για Xbox 360/One USB gamepad</string>
+    <string name="summary_checkbox_xb1_driver">Ενεργοποιεί ένα ενσωματωμένο πρόγραμμα οδήγησης USB για συσκευές χωρίς υποστήριξη εγγενούς ελεγκτή Xbox</string>
+    <string name="title_checkbox_usb_bind_all">Παράκαμψη της εγγενούς υποστήριξης παιχνιδιών Xbox</string>
+    <string name="summary_checkbox_usb_bind_all">Χρησιμοποιήστε το πρόγραμμα οδήγησης USB του Starlight για όλα τα υποστηριζόμενα gamepad, ακόμα κι αν υπάρχει υποστήριξη εγγενούς χειριστηρίου Xbox</string>
+    <string name="title_checkbox_mouse_emulation">Εξομοίωση ποντικιού μέσω gamepad</string>
+    <string name="summary_checkbox_mouse_emulation">Με παρατεταμένο πάτημα του κουμπιού Έναρξη θα αλλάξει το gamepad σε λειτουργία ποντικιού</string>
+    <string name="title_checkbox_flip_face_buttons">Κουμπιά αναστροφής προσώπου</string>
+    <string name="summary_checkbox_flip_face_buttons">Εναλλάσσει τα κουμπιά προσώπου A/B και X/Y για τα gamepad και τα χειριστήρια στην οθόνη</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Να ελέγχετε πάντα το ποντίκι με touchpad</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">Αναγκάζει την είσοδο του χειριστηρίου αφής για τον έλεγχο του ποντικιού του κεντρικού υπολογιστή, ακόμη και όταν γίνεται εξομοίωση ενός gamepad με ένα touchpad.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Να επιτρέπεται η χρήση αισθητήρων κίνησης gamepad</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Επιτρέπει στους υποστηριζόμενους κεντρικούς υπολογιστές να ζητούν δεδομένα αισθητήρα κίνησης κατά την εξομοίωση ενός gamepad με αισθητήρες κίνησης. Η απενεργοποίηση μπορεί να μειώσει ελαφρώς τη χρήση ενέργειας και δικτύου, εάν δεν χρησιμοποιούνται αισθητήρες κίνησης στο παιχνίδι.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Μιμηθείτε την υποστήριξη αισθητήρα κίνησης gamepad</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Χρησιμοποιεί τους ενσωματωμένους αισθητήρες κίνησης της συσκευής σας, εάν οι αισθητήρες του gamepad δεν υποστηρίζονται από το συνδεδεμένο gamepad ή την έκδοση Android.\nΣημείωση: Η ενεργοποίηση αυτής της επιλογής μπορεί να προκαλέσει την εμφάνιση του gamepad ως ελεγκτή PlayStation στον κεντρικό υπολογιστή.</string>
+
+    <string name="category_input_settings">Ρυθμίσεις εισαγωγής</string>
+    <string name="title_checkbox_touchscreen_trackpad">Χρησιμοποιήστε την οθόνη αφής ως επιφάνεια αφής</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Εάν είναι ενεργοποιημένη, η οθόνη αφής λειτουργεί σαν επιφάνεια αφής. Εάν είναι απενεργοποιημένη, η οθόνη αφής ελέγχει απευθείας τον κέρσορα του ποντικιού.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Λειτουργία ποντικιού απομακρυσμένης επιφάνειας εργασίας</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Αυτό μπορεί να κάνει την επιτάχυνση του ποντικιού να συμπεριφέρεται πιο φυσικά για χρήση απομακρυσμένης επιφάνειας εργασίας, αλλά δεν είναι συμβατή με πολλά παιχνίδια.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Ενεργοποιήστε τα κουμπιά πίσω και εμπρός του ποντικιού</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Η ενεργοποίηση αυτής της επιλογής μπορεί να σπάσει κάνοντας δεξί κλικ σε ορισμένες συσκευές με σφάλματα</string>
+
+    <string name="category_on_screen_controls_settings">Ρυθμίσεις ελέγχου επί της οθόνης</string>
+    <string name="title_checkbox_show_onscreen_controls">Εμφάνιση στοιχείων ελέγχου στην οθόνη</string>
+    <string name="summary_checkbox_show_onscreen_controls">Εμφάνιση εικονικής επικάλυψης ελεγκτή στην οθόνη αφής</string>
+    <string name="title_checkbox_vibrate_osc">Ενεργοποίηση δόνησης</string>
+    <string name="summary_checkbox_vibrate_osc">Δονεί τη συσκευή σας για να μιμηθεί το rumble για τα χειριστήρια στην οθόνη</string>
+    <string name="title_only_l3r3">Εμφάνιση μόνο των L3 και R3</string>
+    <string name="summary_only_l3r3">Απόκρυψη όλων των εικονικών κουμπιών εκτός από τα L3 και R3</string>
+    <string name="title_reset_osc">Διαγράψτε τη διάταξη των αποθηκευμένων στοιχείων ελέγχου στην οθόνη</string>
+    <string name="summary_reset_osc">Επαναφέρει όλα τα στοιχεία ελέγχου στην οθόνη στο προεπιλεγμένο μέγεθος και θέση τους</string>
+    <string name="dialog_title_reset_osc">Επαναφορά διάταξης</string>
+    <string name="dialog_text_reset_osc">Είστε βέβαιοι ότι θέλετε να διαγράψετε τη διάταξη των αποθηκευμένων στοιχείων ελέγχου στην οθόνη;</string>
+    <string name="toast_reset_osc_success">Τα στοιχεία ελέγχου επί της οθόνης επαναφέρονται στις προεπιλογές</string>
+    <string name="title_osc_opacity">Αλλαγή της αδιαφάνειας των στοιχείων ελέγχου στην οθόνη</string>
+    <string name="summary_osc_opacity">Κάντε τα χειριστήρια στην οθόνη περισσότερο/λιγότερο διαφανή</string>
+    <string name="dialog_title_osc_opacity">Αλλαγή αδιαφάνειας</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">Ρυθμίσεις διεπαφής χρήστη</string>
+    <string name="title_checkbox_enable_pip">Ενεργοποιήστε τη λειτουργία παρατήρησης εικόνας σε εικόνα</string>
+    <string name="summary_checkbox_enable_pip">Επιτρέπει την προβολή της ροής (αλλά όχι τον έλεγχο) κατά την εκτέλεση πολλαπλών εργασιών</string>
+    <string name="title_language_list">Γλώσσα</string>
+    <string name="summary_language_list">Γλώσσα που χρησιμοποιείται για το Starlight</string>
+    <string name="title_checkbox_small_icon_mode">Χρησιμοποιήστε μικρά κουτιά</string>
+    <string name="summary_checkbox_small_icon_mode">Το μικρότερο box art στο πλέγμα εφαρμογών επιτρέπει σε περισσότερες εφαρμογές να είναι ορατές στην οθόνη</string>
+
+    <string name="category_host_settings">Ρυθμίσεις κεντρικού υπολογιστή</string>
+    <string name="title_checkbox_enable_sops">Βελτιστοποιήστε τις ρυθμίσεις του παιχνιδιού</string>
+    <string name="summary_checkbox_enable_sops">Επιτρέψτε στο GFE να τροποποιεί τις ρυθμίσεις του παιχνιδιού για βέλτιστη ροή</string>
+    <string name="title_checkbox_host_audio">Αναπαραγωγή ήχου σε υπολογιστή</string>
+    <string name="summary_checkbox_host_audio">Αναπαραγωγή ήχου από τον υπολογιστή και τη συσκευή</string>
+
+    <string name="category_advanced_settings">Προηγμένες ρυθμίσεις</string>
+    <string name="title_unlock_fps">Ξεκλειδώστε όλους τους πιθανούς ρυθμούς καρέ</string>
+    <string name="summary_unlock_fps">Η ροή στα 90 ή 120 FPS μπορεί να μειώσει τον λανθάνοντα χρόνο σε συσκευές προηγμένης τεχνολογίας, αλλά μπορεί να προκαλέσει καθυστέρηση ή αστάθεια σε συσκευές που δεν μπορούν να το υποστηρίξουν</string>
+    <string name="title_checkbox_reduce_refresh_rate">Επιτρέψτε τη μείωση του ρυθμού ανανέωσης</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Οι χαμηλότεροι ρυθμοί ανανέωσης της οθόνης μπορούν να εξοικονομήσουν ενέργεια σε βάρος κάποιου πρόσθετου λανθάνοντος χρόνου βίντεο</string>
+    <string name="title_checkbox_disable_warnings">Απενεργοποιήστε τα προειδοποιητικά μηνύματα</string>
+    <string name="summary_checkbox_disable_warnings">Απενεργοποιήστε τα προειδοποιητικά μηνύματα σύνδεσης στην οθόνη κατά τη ροή</string>
+    <string name="title_disable_frame_drop">Μην ρίχνετε ποτέ καρέ</string>
+    <string name="summary_disable_frame_drop">Μπορεί να μειώσει τον μικροτραυλισμό σε ορισμένες συσκευές, αλλά μπορεί να αυξήσει τον λανθάνοντα χρόνο</string>
+    <string name="title_video_format">Αλλάξτε τις ρυθμίσεις κωδικοποιητή</string>
+    <string name="summary_video_format">Οι νεότεροι κωδικοποιητές μπορούν να μειώσουν τις απαιτήσεις εύρους ζώνης βίντεο, εάν τους υποστηρίζει η συσκευή σας. Οι επιλογές κωδικοποιητή ενδέχεται να αγνοηθούν εάν δεν υποστηρίζονται από το λογισμικό κεντρικού υπολογιστή ή την GPU.</string>
+    <string name="title_enable_hdr">Ενεργοποίηση HDR (Πειραματικό)</string>
+    <string name="summary_enable_hdr">Μεταδώστε ροή HDR όταν το παιχνίδι και η GPU του υπολογιστή το υποστηρίζουν. Το HDR απαιτεί GPU με υποστήριξη κωδικοποίησης HEVC Main 10.</string>
+    <string name="title_full_range">Επιβολή βίντεο πλήρους εύρους (Εξαρτάται από τη συσκευή)</string>
+    <string name="summary_full_range">Αυτό θα προκαλέσει απώλεια λεπτομέρειας σε φωτεινές και σκοτεινές περιοχές, εάν η συσκευή σας δεν εμφανίζει σωστά περιεχόμενο βίντεο πλήρους εύρους.</string>
+    <string name="title_enable_perf_overlay">Εμφάνιση στατιστικών απόδοσης κατά τη ροή</string>
+    <string name="summary_enable_perf_overlay">Εμφάνιση πληροφοριών απόδοσης ροής σε πραγματικό χρόνο κατά τη ροή</string>
+    <string name="title_enable_post_stream_toast">Εμφάνιση μηνύματος καθυστέρησης μετά τη ροή</string>
+    <string name="summary_enable_post_stream_toast">Εμφανίστε ένα μήνυμα πληροφοριών λανθάνοντος χρόνου μετά τη λήξη της ροής</string>
+
+    <string name="category_help">Βοήθεια</string>
+    <string name="title_setup_guide">Οδηγός εγκατάστασης</string>
+    <string name="summary_setup_guide">Δείτε οδηγίες σχετικά με τον τρόπο ρύθμισης του υπολογιστή παιχνιδιών σας για ροή</string>
+    <string name="title_troubleshooting">Οδηγός επίλυσης προβλημάτων</string>
+    <string name="summary_troubleshooting">Δείτε συμβουλές για τη διάγνωση και τη διόρθωση κοινών προβλημάτων ροής</string>
+    <string name="title_privacy_policy">Πολιτική απορρήτου</string>
+    <string name="summary_privacy_policy">Δείτε την πολιτική απορρήτου του Starlight</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">Ο τύπος του gamepad μπορεί να αλλάξει λόγω εξομοίωσης αισθητήρα κίνησης</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440 p</string>
+    <string name="resolution_4k">4Κ</string>
+
+    <string name="fps_30">30 FPS</string>
+    <string name="fps_60">60 FPS</string>
+    <string name="fps_90">90 FPS</string>
+    <string name="fps_120">120 FPS</string>
+
+    <string name="audioconf_stereo">Στέρεο</string>
+    <string name="audioconf_51surround">5.1 Ήχος Surround</string>
+    <string name="audioconf_71surround">7.1 Ήχος Surround</string>
+
+    <string name="videoformat_auto">Αυτόματο (Συνιστάται)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">Προτιμήστε το AV1 (Πειραματικό)</string>
+    <string name="videoformat_hevcalways">Προτιμήστε HEVC</string>
+    <string name="videoformat_h264always">Προτιμήστε H.264</string>
+
+    <string name="title_frame_pacing">Βηματοδότηση καρέ βίντεο</string>
+    <string name="summary_frame_pacing">Καθορίστε τον τρόπο εξισορρόπησης της καθυστέρησης και της ομαλότητας του βίντεο</string>
+    <string name="pacing_latency">Προτιμήστε τη χαμηλότερη καθυστέρηση</string>
+    <string name="pacing_balanced">Ισορροπημένο</string>
+    <string name="pacing_balanced_alt">Ισορροπημένο με όριο FPS</string>
+    <string name="pacing_smoothness">Προτιμήστε το πιο ομαλό βίντεο (μπορεί να αυξήσει σημαντικά τον λανθάνοντα χρόνο)</string>
+    <string name="title_analog_scrolling">Χρησιμοποιήστε ένα αναλογικό μοχλό για κύλιση</string>
+    <string name="summary_analog_scrolling">Επιλέξτε ένα αναλογικό μοχλό για κύλιση όταν βρίσκεστε σε λειτουργία εξομοίωσης ποντικιού</string>
+    <string name="analogscroll_none">Κανένα (και τα δύο μπαστούνια κινούν το ποντίκι)</string>
+    <string name="analogscroll_right">Δεξί αναλογικό στικ</string>
+    <string name="analogscroll_left">Αριστερό αναλογικό μοχλό</string>
+    <string name="games">Παιχνίδια</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="exit">Εξοδος</string>
+    <string name="options">Επιλογές</string>
+    <string name="pending">εκκρεμής</string>
+    <string name="data_collection">Συλλογή δεδομένων</string>
+    <string name="loading_for_first_time_use_please_wait">Φόρτωση για πρώτη χρήση.... Περιμένετε...</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Εάν θέλετε να κλείσετε ή να θέσετε σε παύση αυτήν την εφαρμογή, όλα τα μη αποθηκευμένα δεδομένα θα χαθούν κατά την έξοδο.</string>
+    <string name="confirm_quit">Επιβεβαιώστε την έξοδο</string>
+    <string name="quit">Εγκαταλείπω</string>
+    <string name="pause">Παύση</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Είστε βέβαιοι ότι θέλετε να διαγράψετε την προσωρινή μνήμη, αυτό θα κλείσει αυτό το παράθυρο;</string>
+    <string name="clear_cache">Εκκαθάριση προσωρινής μνήμης</string>
+    <string name="click_ok_to_launch_game">κάντε κλικ στο OK για να ξεκινήσει το παιχνίδι.</string>
+    <string name="active_internet_connection_required_for_game_details">Απαιτείται ενεργή σύνδεση στο Διαδίκτυο για λεπτομέρειες παιχνιδιού,</string>
+    <string name="download">Κατεβάστε</string>
+    <string name="download_translations_model">Λήψη μοντέλου μεταφράσεων</string>
+    <string name="download_locale_language_model_to_translate_game_data">Κατεβάστε το μοντέλο γλώσσας τοπικών ρυθμίσεων για να μεταφράσετε δεδομένα παιχνιδιού</string>
+    <string name="downloading_ml_language_file_please_wait">Παρακαλώ περιμένετε.</string>
+    <string name="download_successful">Η λήψη ήταν επιτυχής</string>
+    <string name="download_error_please_try_again">Σφάλμα λήψης: Δοκιμάστε ξανά</string>
+    <string name="model_deleted_successfully">Το μοντέλο διαγράφηκε με επιτυχία</string>
+    <string name="model_delete_failed_please_try_again">Η διαγραφή μοντέλου απέτυχε, δοκιμάστε ξανά</string>
+    <string name="delete_language_model">Διαγραφή μοντέλου γλώσσας</string>
+    <string name="delete_downloaded_language_model">Διαγραφή ληφθέντος μοντέλου γλώσσας</string>
+    <string name="support">\"Υποστήριξη \"</string>
+    <string name="cache">Προσωρινή μνήμη %1$s</string>
+    <string name="hdr_off">\"HDR Off\"</string>
+    <string name="hdr_on">\"HDR On\"</string>
+    <string name="cancel">Ματαίωση</string>
+    <string name="display_does_not_support_hdr10">Η οθόνη δεν υποστηρίζει HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">Ο αποκωδικοποιητής δεν υποστηρίζει προφίλ HDR10</string>
+    <string name="no_hevc_decoder_found">Δεν βρέθηκε αποκωδικοποιητής HEVC</string>
+    <string name="no_av1_decoder_found">Δεν βρέθηκε αποκωδικοποιητής AV1</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">Αυτή η συσκευή ή η ROM δεν υποστηρίζει αναπαραγωγή H.264 με επιτάχυνση υλικού.</string>
+    <string name="server_version_malformed">Η έκδοση διακομιστή είναι εσφαλμένη</string>
+    <string name="device_not_paired_with_computer">Η συσκευή δεν έχει συζευχθεί με υπολογιστή</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">Η GPU του υπολογιστή σας δεν υποστηρίζει ροή HDR. Η ροή θα είναι SDR.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">Ο κεντρικός υπολογιστής σας δεν υποστηρίζει ροή σε αναλύσεις πάνω από 4K.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">Η συσκευή ροής σας πρέπει να υποστηρίζει HEVC ή AV1 για ροή σε αναλύσεις πάνω από 4K.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Πρέπει να ενημερώσετε το GeForce Experience για ροή σε 4K. Η ροή θα είναι 1080p.</string>
+    <string name="failed_to_resume_existing_session">Η συνέχιση της υπάρχουσας συνεδρίας απέτυχε</string>
+    <string name="this_session_wasn_t_started_by_this_device">Αυτή η συνεδρία δεν ξεκίνησε από αυτήν τη συσκευή,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" επομένως δεν μπορεί να συνεχιστεί. Τερματισμός ροής στο πρωτότυπο \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"η συσκευή ή ο ίδιος ο υπολογιστής και δοκιμάστε ξανά. (Κωδικός σφάλματος: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"Η εφαρμογή έχει ελαχιστοποιηθεί. Συνεχίστε την στον υπολογιστή με μη αυτόματο τρόπο ή \"</string>
+    <string name="quit_the_session_and_start_streaming_again">κλείστε τη συνεδρία και ξεκινήστε ξανά τη ροή.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Αποτυχία τερματισμού της προηγούμενης συνεδρίας! Πρέπει να το κλείσετε χειροκίνητα</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\"άρα δεν μπορεί να διακοπεί. Τερματισμός ροής στο πρωτότυπο\"</string>
+    <string name="device_or_the_pc_itself_error_code">\"συσκευή ή τον ίδιο τον υπολογιστή. (Κωδικός σφάλματος: \"</string>
+    <string name="failed_to_launch_application">Απέτυχε η εκκίνηση της εφαρμογής</string>
+    <string name="please_wait_for_the_process_to_complete">Περιμένετε να ολοκληρωθεί η διαδικασία…</string>
+    <string name="enter_api_key_here">Εισαγάγετε το κλειδί API εδώ:</string>
+    <string name="favorites">Αγαπημένα</string>
+    <string name="removed_from_favorites">\"Καταργήθηκε από τα αγαπημένα και το Home Channel\"</string>
+    <string name="added_to_favorites">\"Προστέθηκε στα αγαπημένα και στο Home Channel\"</string>
+    <string name="clear_favorites">Διαγραφή αγαπημένων</string>
+    <string name="clear_favs_msg">Είστε βέβαιοι ότι θέλετε να διαγράψετε τα αγαπημένα, αυτό θα καταργήσει επίσης την εφαρμογή Αρχικά κανάλια;</string>
+    <string name="app_list_updated">Η λίστα εφαρμογών ενημερώθηκε</string>
+    <string name="update_the_database"><![CDATA[Είστε βέβαιοι ότι θέλετε να διαγράψετε και να ενημερώσετε τη βάση δεδομένων και αυτό θα κλείσει αυτό το παράθυρο;]]></string>
+    <string name="update_database">Ενημέρωση βάσης δεδομένων</string>
+    <string name="database">Βάση δεδομένων</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Eíste vévaioi óti thélete na diagrápsete óla ta agapiména?</string>
+    <string name="resuming_session">Συνέχιση συνεδρίας</string>
+    <string name="app_added_to_favorites">Προστέθηκε στα αγαπημένα</string>
+    <string name="app_removed_from_favorites">Καταργήθηκε από τα αγαπημένα</string>
+    <string name="anonymous_statistics">Ανώνυμα στατιστικά στοιχεία</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Στείλτε ανώνυμα στατιστικά στοιχεία για να βελτιώσετε την απόδοση της εφαρμογής.</string>
+    <string name="captions">Υπότιτλοι βίντεο YouTube</string>
+    <string name="captions_text">Ενεργοποίηση ή απενεργοποίηση υποτίτλων βίντεο YouTube.</string>
+    <string name="privacy">Μυστικότητα</string>
+    <string name="restart_application">Επανεκκινήστε την εφαρμογή</string>
+    <string name="restart_now">Αυτό θα επανεκκινήσει την εφαρμογή για να εφαρμόσει τις αλλαγές. Θέλετε να κάνετε επανεκκίνηση τώρα;</string>
+    <string name="database_updating">Ενημέρωση βάσης δεδομένων</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Βελτίωση βίντεο: (x%1$.2f) Shader SGSR1</string>
+    <string name="title_video_sr">Σούπερ ανάλυση βίντεο</string>
+    <string name="summary_video_sr">Αξιοποιήστε την επιτάχυνση υλικού για να βελτιώσετε την ευκρίνεια της εικόνας</string>
+    <string name="aaudio">Προσπάθειες για την εξασφάλιση άμεσης πρόσβασης στο υλικό για ταχύτερη απόκριση ήχου. Λόγω περιορισμών του κατασκευαστή σε ορισμένες τηλεοράσεις Android ή συσκευές ροής, ενδέχεται να υπάρξει κάποια καθυστέρηση. Εάν ο ήχος γίνει ασταθής, απενεργοποιήστε αυτήν την επιλογή.</string>
+    <string name="enable_aaudio">Ενεργοποίηση AAudio</string>
+    <string name="aaudio_title">AAudio Εξαιρετικά Χαμηλή Λανθάνουσα Κατάσταση (Πειραματικό)</string>
+    <string name="aaudio_summary">AAudio Εξαιρετικά Χαμηλή Λανθάνουσα Κατάσταση με (Υποστήριξη Surround Sound)</string>
+    <string name="aaudio_summary29">Ενεργοποίηση εξαιρετικά χαμηλής καθυστέρησης AAudio</string>
+    <string name="game_media_library">Βιβλιοθήκη πολυμέσων παιχνιδιών</string>
+
+    <string name="title_audio_output_mode">Μορφή εξόδου ήχου</string>
+    <string name="summary_audio_output_mode">Το PCM είναι συμβατό με όλες τις συσκευές. Τα AC-3 και Dolby Digital Plus στέλνουν κωδικοποιημένο ήχο 5.1 σε έναν δέκτη HDMI/eARC και επιστρέφουν στο PCM εάν η διαδρομή αποτύχει.</string>
+    <string name="audio_output_mode_pcm">PCM (προεπιλογή)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (αυτόματο, πειραματικό)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (δύναμη, πειραματική)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (αυτόματο, πειραματικό)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (δυναμική, πειραματική)</string>
+    <string name="encoded_audio_fallback_to_pcm">Η κωδικοποιημένη έξοδος ήχου δεν είναι διαθέσιμη. Συνέχεια με ήχο PCM.</string>
+    <string name="switch_to_encoded">Διατίθεται κωδικοποιημένη έξοδος ήχου, με εναλλαγή σε κωδικοποιημένο ήχο.</string>
+</resources>

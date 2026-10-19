@@ -1,0 +1,415 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Spille</string>
+    <string name="details">Detaljer</string>
+    <string name="running">Spillet kjører, klikk på spill for alternativer.</string>
+    <string name="No_Details">Beklager, ingen detaljer å vise.
+Hvis du la til spillet manuelt, må du sjekke tittelen og oppdatere databasen.
+Hvis det valgte elementet er et skrivebordsprogram, vil det ikke være noen detaljer å vise.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Tilhengere</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Bruk Leanback UI</string>
+    <string name="leanback_summary">Velg for å vise apper i Leanback-grensesnittet</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PC slettet</string>
+    <string name="scut_not_paired">PC ikke paret</string>
+    <string name="scut_pc_not_found">Finner ikke PC</string>
+    <string name="scut_invalid_uuid">Forutsatt at PC-en ikke er gyldig</string>
+    <string name="scut_invalid_app_id">Den medfølgende appen er ikke gyldig</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Hjelpeviser</string>
+    <string name="help_loading_msg">Laster inn hjelpesiden …</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">på nett</string>
+    <string name="pcview_menu_header_offline">Frakoblet</string>
+    <string name="pcview_menu_header_unknown">Forfriskende</string>
+    <string name="pcview_menu_app_list">Se alle apper</string>
+    <string name="pcview_menu_pair_pc">Par med PC</string>
+    <string name="pcview_menu_unpair_pc">Fjern paring</string>
+    <string name="pcview_menu_send_wol">Send Wake-On-LAN-forespørsel</string>
+    <string name="pcview_menu_delete_pc">Slett PC</string>
+    <string name="pcview_menu_test_network">Test nettverkstilkobling</string>
+    <string name="pcview_menu_details">Vis detaljer</string>
+    <string name="pcview_menu_eol">NVIDIA GameStream avsluttet tjeneste</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Tester nettverkstilkobling</string>
+    <string name="nettest_text_waiting">Starlight tester nettverkstilkoblingen din for å finne ut om noen nødvendige porter er blokkert.\n\nDette kan ta noen sekunder…</string>
+    <string name="nettest_title_done">Nettverkstest fullført</string>
+    <string name="nettest_text_success">Nettverket ditt ser ikke ut til å blokkere Starlight. Hvis du fortsatt har problemer med å koble til, sjekk PC-ens brannmurinnstillinger.\n\nHvis du prøver å strømme over Internett, installer Moonlight Internet Hosting Tool på PC-en og kjør den medfølgende Internet Streaming-testeren for å sjekke PC-en din. sin Internett-tilkobling.</string>
+    <string name="nettest_text_inconclusive">Nettverkstesten kunne ikke utføres fordi ingen av Starlights tilkoblingstestservere var tilgjengelige. Sjekk Internett-tilkoblingen eller prøv igjen senere.</string>
+    <string name="nettest_text_failure">Enhetens nåværende nettverkstilkobling ser ut til å blokkere Starlight. Strømming over Internett fungerer kanskje ikke mens du er koblet til dette nettverket.\n\nFølgende nettverksporter ble blokkert:\n</string>
+    <string name="nettest_text_blocked">Enhetens nåværende nettverkstilkobling blokkerer Starlight. Strømming over Internett fungerer kanskje ikke mens du er koblet til dette nettverket.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Sammenkobler …</string>
+    <string name="pair_pc_offline">Datamaskinen er frakoblet</string>
+    <string name="pair_pc_ingame">Datamaskinen er for øyeblikket i et spill. Du må lukke spillet før paring.</string>
+    <string name="pair_pairing_title">Sammenkobling</string>
+    <string name="pair_pairing_msg">Vennligst skriv inn følgende PIN-kode på mål-PCen:</string>
+    <string name="pair_pairing_help">Hvis verts-PC-en din kjører Sunshine, naviger til Sunshine-nettgrensesnittet for å angi PIN-koden.</string>
+    <string name="pair_incorrect_pin">Feil PIN-kode</string>
+    <string name="pair_fail">Sammenkoblingen mislyktes</string>
+    <string name="pair_already_in_progress">Sammenkobling er allerede i gang</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">Datamaskinen er på nett</string>
+    <string name="wol_no_mac">Kan ikke vekke PC-en fordi det ikke er noen lagret MAC-adresse</string>
+    <string name="wol_waking_pc">Vekker PC…</string>
+    <string name="wol_waking_msg">Det kan ta noen sekunder før PC-en din våkner.
+Hvis den ikke gjør det, sørg for at den er riktig konfigurert for Wake-On-LAN.
+    </string>
+    <string name="wol_fail">Kunne ikke sende Wake-On-LAN-pakker</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Opphever sammenkoblingen …</string>
+    <string name="unpair_success">Koblet fra</string>
+    <string name="unpair_fail">Kunne ikke oppheve sammenkoblingen</string>
+    <string name="unpair_error">Enheten ble ikke paret</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">Datamaskinen er frakoblet</string>
+    <string name="error_manager_not_running">ComputerManager-tjenesten kjører ikke. Vent noen sekunder eller start appen på nytt.</string>
+    <string name="error_unknown_host">Kunne ikke løse verten</string>
+    <string name="error_404">GFE returnerte en HTTP 404-feil. Sørg for at PC-en din kjører en støttet GPU.
+Bruk av eksternt skrivebordsprogramvare kan også forårsake denne feilen. Prøv å starte maskinen på nytt eller installer GFE på nytt.
+    </string>
+    <string name="title_decoding_error">Videodekoder krasjet</string>
+    <string name="message_decoding_error">Starlight har krasjet på grunn av inkompatibilitet med denne enhetens videodekoder. Prøv å justere strømmeinnstillingene hvis krasjene fortsetter.</string>
+    <string name="title_decoding_reset">Tilbakestill videoinnstillinger</string>
+    <string name="message_decoding_reset">Enhetens videodekoder fortsetter å krasje ved de valgte strømmeinnstillingene. Strømmeinnstillingene dine er tilbakestilt til standard.</string>
+    <string name="error_usb_prohibited">USB-tilgang er forbudt av enhetsadministratoren. Sjekk Knox- eller MDM-innstillingene.</string>
+    <string name="unable_to_pin_shortcut">Den nåværende oppstarteren tillater ikke å lage festede snarveier.</string>
+    <string name="video_decoder_init_failed">Videodekoder kunne ikke initialiseres. Enheten din støtter kanskje ikke den valgte oppløsningen eller bildefrekvensen.</string>
+    <string name="no_video_received_error">Ingen video mottatt fra verten.</string>
+    <string name="no_frame_received_error">Nettverkstilkoblingen din fungerer ikke bra. Reduser videobithastighetsinnstillingen eller prøv en raskere tilkobling.</string>
+    <string name="early_termination_error">Noe gikk galt på verts-PC-en da du startet strømmen.\n\nSørg for at du ikke har noe DRM-beskyttet innhold åpent på verts-PC-en. Du kan også prøve å starte verts-PC-en på nytt.</string>
+    <string name="frame_conversion_error">Verts-PC-en rapporterte en fatal videokodingsfeil.\n\nPrøv å deaktivere HDR-modus, endre strømmeoppløsningen eller endre verts-PC-ens skjermoppløsning.</string>
+    <string name="check_ports_msg">Sjekk brannmuren og reglene for portvideresending for port(er):</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Etablering av forbindelse</string>
+    <string name="conn_establishing_msg">Starter tilkobling</string>
+    <string name="conn_metered">Advarsel: Din aktive nettverkstilkobling er målt!</string>
+    <string name="conn_client_latency">Gjennomsnittlig ventetid for rammedekoding:</string>
+    <string name="conn_client_latency_hw">maskinvaredekoderforsinkelse:</string>
+    <string name="conn_hardware_latency">Gjennomsnittlig maskinvaredekodingsforsinkelse:</string>
+    <string name="conn_starting">Starter</string>
+    <string name="conn_error_title">Tilkoblingsfeil</string>
+    <string name="conn_error_msg">Kunne ikke starte</string>
+    <string name="conn_terminated_title">Tilkobling avsluttet</string>
+    <string name="conn_terminated_msg">Forbindelsen ble avsluttet.</string>
+    <string name="error_code_prefix">Feil kode:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">IP-adresse til verts-PC</string>
+    <string name="searching_pc">Søker etter verts-PC-er på ditt lokale nettverk…\n\n
+        Sørg for at Sunshine kjører på verts-PCen eller at GameStream er aktivert i GeForce Experience SHIELD-innstillingene.</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nei</string>
+    <string name="lost_connection">Mistet forbindelsen til PC</string>
+    <string name="title_details">Detaljer</string>
+    <string name="help">Hjelp</string>
+    <string name="delete_pc_msg">Er du sikker på at du vil slette denne PC-en\?</string>
+    <string name="slow_connection_msg">Treg tilkobling til PC\nReduser bithastigheten</string>
+    <string name="poor_connection_msg">Dårlig tilkobling til PC</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Videostrøm: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Dekoder: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Innkommende bildefrekvens fra nettverk: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Gjengivelsesbildefrekvens: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Vertsbehandlingsforsinkelse min/maks/gjennomsnitt: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">Rammer falt av nettverkstilkoblingen din: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Gjennomsnittlig nettverksforsinkelse: %1$d ms (varians: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Gjennomsnittlig dekodingstid: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Kobler til PC…</string>
+    <string name="applist_menu_resume">Gjenoppta økten</string>
+    <string name="applist_menu_quit">Avslutt økten</string>
+    <string name="applist_menu_quit_and_start">Avslutt gjeldende spill og start</string>
+    <string name="applist_menu_cancel">Avbryt</string>
+    <string name="applist_menu_details">Vis detaljer</string>
+    <string name="applist_menu_scut">Lag snarvei</string>
+    <string name="applist_menu_tv_channel">Legg til i kanal</string>
+    <string name="applist_menu_hide_app">Skjul app</string>
+    <string name="applist_refresh_title">Appliste</string>
+    <string name="applist_refresh_msg">Oppdaterer apper …</string>
+    <string name="applist_refresh_error_title">Feil</string>
+    <string name="applist_refresh_error_msg">Kunne ikke hente applisten</string>
+    <string name="applist_quit_app">Slutter</string>
+    <string name="applist_quit_success">Avslutt vellykket</string>
+    <string name="applist_quit_fail">Kunne ikke avslutte</string>
+    <string name="applist_quit_confirmation">Er du sikker på at du vil avslutte løpeappen\? Alle ulagrede data vil gå tapt.</string>
+    <string name="applist_details_id">App-ID:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">Legg til PC manuelt</string>
+    <string name="msg_add_pc">Kobler til PC…</string>
+    <string name="addpc_fail">Kan ikke koble til den angitte datamaskinen. Sørg for at de nødvendige portene tillates gjennom brannmuren.</string>
+    <string name="addpc_success">Datamaskinen ble lagt til</string>
+    <string name="addpc_unknown_host">Kan ikke løse PC-adressen. Pass på at du ikke har skrevet en skrivefeil i adressen.</string>
+    <string name="addpc_enter_ip">Du må angi en IP-adresse</string>
+    <string name="addpc_wrong_sitelocal">Den adressen ser ikke riktig ut. Du må bruke ruterens offentlige IP-adresse for strømming over Internett.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Grunnleggende innstillinger</string>
+    <string name="title_resolution_list">Videooppløsning</string>
+    <string name="summary_resolution_list">Øk for å forbedre bildets klarhet. Reduser for bedre ytelse på lavere enheter og tregere nettverk.</string>
+    <string name="title_native_res_dialog">Advarsel om opprinnelig oppløsning</string>
+    <string name="text_native_res_dialog">Innebygd oppløsning og/eller FPS støttes kanskje ikke av strømmeserveren. Du må sannsynligvis konfigurere en matchende tilpasset visningsmodus for verts-PC-en manuelt.\n\nHvis du velger å opprette en egendefinert oppløsning i NVIDIA-kontrollpanelet for å matche skjerminnstillingene dine, må du sørge for at du har lest og forstått NVIDIAs advarsel angående mulig skjermskade, PC-ustabilitet og andre potensielle problemer.\n\nVi er ikke ansvarlige for eventuelle problemer som følge av å lage en tilpasset oppløsning på PC-en din.\n\nDet kan hende at skjermen ikke støtter en nødvendig skjermkonfigurasjon. I så fall kan du prøve å sette opp en virtuell skjerm. Til slutt, hvis enheten eller verts-PCen din ikke støtter strømming med en bestemt oppløsning eller oppdateringsfrekvens, er du dessverre uheldig.</string>
+    <string name="title_fps_list">Videobildefrekvens</string>
+    <string name="summary_fps_list">Øk for en jevnere videostrøm. Reduser for bedre ytelse på lavere enheter.</string>
+    <string name="title_seekbar_bitrate">Video bitrate</string>
+    <string name="summary_seekbar_bitrate">Øk for bedre bildekvalitet. Reduser for å forbedre ytelsen på tregere tilkoblinger.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">Strekk video til fullskjerm</string>
+    <string name="title_stretch_video">Strekkvideo</string>
+    <string name="resolution_prefix_native">Innfødt</string>
+    <string name="resolution_prefix_native_fullscreen">Innfødt fullskjerm</string>
+    <string name="resolution_prefix_native_landscape">(Landskap)</string>
+    <string name="resolution_prefix_native_portrait">(Portrett)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Native FPS-advarsel</string>
+
+    <string name="category_audio_settings">Lydinnstillinger</string>
+    <string name="title_audio_config_list">Surroundlydkonfigurasjon</string>
+    <string name="summary_audio_config_list">Aktiver 5.1 eller 7.1 surroundlyd for hjemmekinoanlegg</string>
+    <string name="title_checkbox_enable_audiofx">Aktiver støtte for systemequalizer</string>
+    <string name="summary_checkbox_enable_audiofx">Lar lydeffekter fungere under strømming, men kan øke lydforsinkelsen</string>
+
+    <string name="category_gamepad_settings">Innstillinger for håndkontroll</string>
+    <string name="title_checkbox_multi_controller">Automatisk tilstedeværelsesdeteksjon av gamepad</string>
+    <string name="summary_checkbox_multi_controller">Hvis du fjerner merket for dette alternativet, tvinger du en gamepad til å alltid være til stede</string>
+    <string name="title_checkbox_vibrate_fallback">Etterligne rumlestøtte med vibrasjon</string>
+    <string name="summary_checkbox_vibrate_fallback">Vibrerer enheten for å etterligne rumble hvis gamepaden ikke støtter den</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Juster emulert rumlingintensitet</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Forsterk eller reduser vibrasjonsintensiteten på enheten din</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Juster analog pinne dødsone</string>
+    <string name="summary_seekbar_deadzone">Merk: Noen spill kan håndheve en større dødsone enn det Starlight er konfigurert til å bruke.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Xbox 360/One USB gamepad-driver</string>
+    <string name="summary_checkbox_xb1_driver">Aktiverer en innebygd USB-driver for enheter uten innebygd Xbox-kontrollerstøtte</string>
+    <string name="title_checkbox_usb_bind_all">Overstyr native Xbox gamepad-støtte</string>
+    <string name="summary_checkbox_usb_bind_all">Bruk Starlights USB-driver for alle støttede gamepads, selv om det er støtte for innebygd Xbox-kontroller</string>
+    <string name="title_checkbox_mouse_emulation">Musemulering via gamepad</string>
+    <string name="summary_checkbox_mouse_emulation">Et langt trykk på Start-knappen vil bytte gamepad til musemodus</string>
+    <string name="title_checkbox_flip_face_buttons">Vend ansiktsknapper</string>
+    <string name="summary_checkbox_flip_face_buttons">Bytter ansiktsknappene A/B og X/Y for gamepads og kontrollene på skjermen</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Kontroller alltid musen med pekeplaten</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">Tvinger inndata for gamepad-berøringsplate til å kontrollere vertsmusen, selv når du emulerer en gamepad med en berøringsplate.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Tillat bruk av gamepad-bevegelsessensorer</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Gjør det mulig for støttede verter å be om bevegelsessensordata når de emulerer en gamepad med bevegelsessensorer. Deaktivering kan redusere strøm- og nettverksbruken litt hvis bevegelsessensorer ikke brukes i spillet.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Emuler støtte for gamepad-bevegelsessensor</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Bruker enhetens innebygde bevegelsessensorer hvis gamepad-sensorer ikke støttes av den tilkoblede gamepaden eller Android-versjonen din.\nMerk: Aktivering av dette alternativet kan føre til at gamepad-en din vises som en PlayStation-kontroller på verten.</string>
+
+    <string name="category_input_settings">Inndatainnstillinger</string>
+    <string name="title_checkbox_touchscreen_trackpad">Bruk berøringsskjermen som styreflate</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Hvis den er aktivert, fungerer berøringsskjermen som en styreflate. Hvis den er deaktivert, kontrollerer berøringsskjermen direkte musepekeren.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Eksternt skrivebordsmusemodus</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Dette kan få museakselerasjon til å oppføre seg mer naturlig for eksternt skrivebordsbruk, men det er inkompatibelt med mange spill.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Aktiver tilbake og forover museknapper</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Aktivering av dette alternativet kan avbryte høyreklikking på enkelte buggy-enheter</string>
+
+    <string name="category_on_screen_controls_settings">Innstillinger for kontroller på skjermen</string>
+    <string name="title_checkbox_show_onscreen_controls">Vis kontroller på skjermen</string>
+    <string name="summary_checkbox_show_onscreen_controls">Vis virtuell kontrolleroverlegg på berøringsskjermen</string>
+    <string name="title_checkbox_vibrate_osc">Aktiver vibrasjon</string>
+    <string name="summary_checkbox_vibrate_osc">Vibrerer enheten din for å etterligne rumling for kontrollene på skjermen</string>
+    <string name="title_only_l3r3">Vis kun L3 og R3</string>
+    <string name="summary_only_l3r3">Skjul alle virtuelle knapper unntatt L3 og R3</string>
+    <string name="title_reset_osc">Tøm oppsett for lagrede kontroller på skjermen</string>
+    <string name="summary_reset_osc">Tilbakestiller alle kontroller på skjermen til standard størrelse og posisjon</string>
+    <string name="dialog_title_reset_osc">Tilbakestill layout</string>
+    <string name="dialog_text_reset_osc">Er du sikker på at du vil slette det lagrede kontrolloppsettet på skjermen\?</string>
+    <string name="toast_reset_osc_success">Kontrollene på skjermen tilbakestilles til standard</string>
+    <string name="title_osc_opacity">Endre opasiteten til kontrollene på skjermen</string>
+    <string name="summary_osc_opacity">Gjør kontrollene på skjermen mer/mindre gjennomsiktige</string>
+    <string name="dialog_title_osc_opacity">Endre opasitet</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">UI-innstillinger</string>
+    <string name="title_checkbox_enable_pip">Aktiver bilde-i-bilde-observatørmodus</string>
+    <string name="summary_checkbox_enable_pip">Lar strømmen sees (men ikke kontrollert) mens du utfører multitasking</string>
+    <string name="title_language_list">Språk</string>
+    <string name="summary_language_list">Språk som skal brukes for Starlight</string>
+    <string name="title_checkbox_small_icon_mode">Bruk liten bokskunst</string>
+    <string name="summary_checkbox_small_icon_mode">Mindre bokskunst i apprutenettet lar flere apper være synlige på skjermen</string>
+
+    <string name="category_host_settings">Vertsinnstillinger</string>
+    <string name="title_checkbox_enable_sops">Optimaliser spillinnstillingene</string>
+    <string name="summary_checkbox_enable_sops">Tillat GFE å endre spillinnstillingene for optimal strømming</string>
+    <string name="title_checkbox_host_audio">Spill av lyd på PC</string>
+    <string name="summary_checkbox_host_audio">Spill av lyd fra datamaskinen og denne enheten</string>
+
+    <string name="category_advanced_settings">Avanserte innstillinger</string>
+    <string name="title_unlock_fps">Lås opp alle mulige bildefrekvenser</string>
+    <string name="summary_unlock_fps">Streaming med 90 eller 120 FPS kan redusere ventetiden på avanserte enheter, men kan forårsake forsinkelse eller ustabilitet på enheter som ikke støtter det</string>
+    <string name="title_checkbox_reduce_refresh_rate">Tillat reduksjon av oppdateringsfrekvens</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Lavere skjermoppdateringsfrekvenser kan spare strøm på bekostning av litt ekstra videoforsinkelse</string>
+    <string name="title_checkbox_disable_warnings">Deaktiver advarselsmeldinger</string>
+    <string name="summary_checkbox_disable_warnings">Deaktiver advarselsmeldinger for tilkobling på skjermen mens du strømmer</string>
+    <string name="title_disable_frame_drop">Slipp aldri rammer</string>
+    <string name="summary_disable_frame_drop">Kan redusere mikrostamming på enkelte enheter, men kan øke ventetiden</string>
+    <string name="title_video_format">Endre kodekinnstillinger</string>
+    <string name="summary_video_format">Nyere kodeker kan redusere kravene til videobåndbredde hvis enheten din støtter dem. Kodekvalg kan ignoreres hvis de ikke støttes av vertsprogramvaren eller GPU.</string>
+    <string name="title_enable_hdr">Aktiver HDR (eksperimentell)</string>
+    <string name="summary_enable_hdr">Stream HDR når spillet og PC GPU støtter det. HDR krever en GPU med støtte for HEVC Main 10-koding.</string>
+    <string name="title_full_range">Force full-range video (Enhetsavhengig)</string>
+    <string name="summary_full_range">Dette vil føre til tap av detaljer i lyse og mørke områder hvis enheten ikke viser fullstendig videoinnhold på riktig måte.</string>
+    <string name="title_enable_perf_overlay">Vis ytelsesstatistikk mens du strømmer</string>
+    <string name="summary_enable_perf_overlay">Vis informasjon om strømmeytelse i sanntid mens du strømmer</string>
+    <string name="title_enable_post_stream_toast">Vis latensmelding etter strømming</string>
+    <string name="summary_enable_post_stream_toast">Vis en forsinkelsesinformasjonsmelding etter at strømmen er avsluttet</string>
+
+    <string name="category_help">Hjelp</string>
+    <string name="title_setup_guide">Oppsettveiledning</string>
+    <string name="summary_setup_guide">Se instruksjoner for hvordan du konfigurerer spill-PC-en for streaming</string>
+    <string name="title_troubleshooting">Feilsøkingsveiledning</string>
+    <string name="summary_troubleshooting">Se tips for å diagnostisere og fikse vanlige strømmeproblemer</string>
+    <string name="title_privacy_policy">Personvernerklæring</string>
+    <string name="summary_privacy_policy">Se Starlights personvernerklæring</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">Gamepad-type kan endres på grunn av bevegelsessensoremulering</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30 FPS</string>
+    <string name="fps_60">60 FPS</string>
+    <string name="fps_90">90 FPS</string>
+    <string name="fps_120">120 FPS</string>
+
+    <string name="audioconf_stereo">Stereo</string>
+    <string name="audioconf_51surround">5.1 Surround Sound</string>
+    <string name="audioconf_71surround">7.1 Surround Sound</string>
+
+    <string name="videoformat_auto">Automatisk (anbefalt)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">Foretrekker AV1 (eksperimentell)</string>
+    <string name="videoformat_hevcalways">Foretrekker HEVC</string>
+    <string name="videoformat_h264always">Foretrekker H.264</string>
+
+    <string name="title_frame_pacing">Videoframe pacing</string>
+    <string name="summary_frame_pacing">Spesifiser hvordan videoforsinkelse og jevnhet skal balanseres</string>
+    <string name="pacing_latency">Foretrekker lavest ventetid</string>
+    <string name="pacing_balanced">Balansert</string>
+    <string name="pacing_balanced_alt">Balansert med FPS-grense</string>
+    <string name="pacing_smoothness">Foretrekker den jevneste videoen (kan øke ventetiden betydelig)</string>
+    <string name="title_analog_scrolling">Bruk en analog pinne for å bla</string>
+    <string name="summary_analog_scrolling">Velg en analog pinne for å rulle når du er i muse-emuleringsmodus</string>
+    <string name="analogscroll_none">Ingen (begge pinner beveger musen)</string>
+    <string name="analogscroll_right">Høyre analog pinne</string>
+    <string name="analogscroll_left">Venstre analog pinne</string>
+    <string name="games">Spill</string>
+    <string name="settings">Innstillinger</string>
+    <string name="exit">Exit</string>
+    <string name="options">Alternativer</string>
+    <string name="pending">Avventer</string>
+    <string name="data_collection">Datainnsamling</string>
+    <string name="loading_for_first_time_use_please_wait">Laster for første gangs bruk… Vennligst vent…</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Vil du avslutte eller sette denne applikasjonen på pause, vil alle ulagrede data gå tapt ved avslutning.</string>
+    <string name="confirm_quit">Bekreft Avslutt</string>
+    <string name="quit">Slutte</string>
+    <string name="pause">Pause</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Er du sikker på at du vil tømme hurtigbufferen, vil dette lukke dette vinduet\?</string>
+    <string name="clear_cache">Tøm cache</string>
+    <string name="click_ok_to_launch_game">klikk OK for å starte spillet.</string>
+    <string name="active_internet_connection_required_for_game_details">Aktiv Internett-tilkobling kreves for spilldetaljer,</string>
+    <string name="download">nedlasting</string>
+    <string name="download_translations_model">Last ned oversettelsesmodell</string>
+    <string name="download_locale_language_model_to_translate_game_data">Last ned språkmodell for språk for å oversette spilldata</string>
+    <string name="downloading_ml_language_file_please_wait">Vennligst vent..</string>
+    <string name="download_successful">Last ned vellykket</string>
+    <string name="download_error_please_try_again">Nedlastingsfeil: Prøv igjen</string>
+    <string name="model_deleted_successfully">Modellen ble slettet</string>
+    <string name="model_delete_failed_please_try_again">Sletting av modell mislyktes. Prøv igjen</string>
+    <string name="delete_language_model">Slett språkmodell</string>
+    <string name="delete_downloaded_language_model">Slett nedlastet språkmodell</string>
+    <string name="support">\"Brukerstøtte \"</string>
+    <string name="cache">Buffer %1$s</string>
+    <string name="hdr_off">\"HDR av\"</string>
+    <string name="hdr_on">\"HDR på\"</string>
+    <string name="cancel">Avbryt</string>
+    <string name="display_does_not_support_hdr10">Skjermen støtter ikke HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">Dekoderen støtter ikke HDR10-profilen</string>
+    <string name="no_hevc_decoder_found">Ingen HEVC-dekoder funnet</string>
+    <string name="no_av1_decoder_found">Ingen AV1-dekoder funnet</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">Denne enheten eller ROM-en støtter ikke maskinvareakselerert H.264-avspilling.</string>
+    <string name="server_version_malformed">Serverversjonen er feil utformet</string>
+    <string name="device_not_paired_with_computer">Enheten er ikke paret med datamaskinen</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">PC-GPUen din støtter ikke streaming av HDR. Strømmen vil være SDR.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">Verts-PC-en din støtter ikke streaming ved oppløsninger over 4K.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">Strømmeenheten din må støtte HEVC eller AV1 for å strømme med oppløsninger over 4K.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Du må oppdatere GeForce Experience for å strømme i 4K. Strømmen vil være 1080p.</string>
+    <string name="failed_to_resume_existing_session">Kunne ikke gjenoppta eksisterende økt</string>
+    <string name="this_session_wasn_t_started_by_this_device">Denne økten ble ikke startet av denne enheten,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" så den kan ikke gjenopptas. Avslutt strømming på originalen \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"enhet eller selve PC-en og prøv igjen. (Feilkode: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"Applikasjonen er minimert. Gjenoppta den på PC-en manuelt eller \"</string>
+    <string name="quit_the_session_and_start_streaming_again">avslutt økten og begynn å strømme igjen.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Kunne ikke avslutte forrige økt! Du må avslutte det manuelt</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" så den kan ikke avsluttes. Avslutt streaming på originalen \"</string>
+    <string name="device_or_the_pc_itself_error_code">\"enhet eller selve PC-en. (Feilkode: \"</string>
+    <string name="failed_to_launch_application">Kunne ikke starte programmet</string>
+    <string name="please_wait_for_the_process_to_complete">Vennligst vent til prosessen er fullført…</string>
+    <string name="enter_api_key_here">Skriv inn API-nøkkel her:</string>
+    <string name="favorites">Favoritter</string>
+    <string name="removed_from_favorites">\"Fjernet fra favoritter og hjemmekanal\"</string>
+    <string name="added_to_favorites">\"Lagt til favoritter og hjemmekanal\"</string>
+    <string name="clear_favorites">Fjern favoritter</string>
+    <string name="clear_favs_msg">Er du sikker på at du vil slette favoritter, vil dette også fjerne applikasjonen Hjemmekanaler\?</string>
+    <string name="app_list_updated">Appliste oppdatert</string>
+    <string name="update_the_database"><![CDATA[Er du sikker på at du vil slette og oppdatere databasen, dette vil lukke dette vinduet\?]]></string>
+    <string name="update_database">Oppdatere database</string>
+    <string name="database">Database</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Er du sikker på at du vil slette alle favoritter?</string>
+    <string name="resuming_session">Gjenopptar økten</string>
+    <string name="app_added_to_favorites">Lagt til i favoritter</string>
+    <string name="app_removed_from_favorites">Fjernet fra favoritter</string>
+    <string name="anonymous_statistics">Anonym statistikk</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Send anonym statistikk for å forbedre appytelsen.</string>
+    <string name="captions">YouTube-videotekster</string>
+    <string name="captions_text">Aktiver eller deaktiver teksting for YouTube-videoer.</string>
+    <string name="privacy">Privatliv</string>
+    <string name="restart_application">Start applikasjonen på nytt</string>
+    <string name="restart_now">Dette vil starte programmet på nytt for å bruke endringene. Vil du starte på nytt nå\?</string>
+    <string name="database_updating">Databaseoppdatering</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Videoforbedring: (x%1$.2f) Shader SGSR1</string>
+    <string name="title_video_sr">Video Superoppløsning</string>
+    <string name="summary_video_sr">Utnytt maskinvareakselerasjon for å forbedre bildeklarheten</string>
+    <string name="aaudio">Forsøker å sikre direkte maskinvaretilgang for raskere lydrespons. På grunn av produsentbegrensninger på enkelte Android TV-er eller strømmeenheter kan det oppstå noe forsinkelse. Hvis lyden blir ustabil, må du deaktivere dette alternativet.</string>
+    <string name="enable_aaudio">Aktiver AAudio</string>
+    <string name="aaudio_title">AAudio Ultra Low Latency (eksperimentell)</string>
+    <string name="aaudio_summary">AAudio Ultra Low Latency med (støtte for surroundlyd)</string>
+    <string name="aaudio_summary29">Aktiver AAudio ultralav latens</string>
+    <string name="game_media_library">Spillmediebibliotek</string>
+
+    <string name="title_audio_output_mode">Lydutgangsformat</string>
+    <string name="summary_audio_output_mode">PCM er kompatibelt med alle enheter. AC-3 og Dolby Digital Plus sender kodet 5.1-lyd til en HDMI/eARC-mottaker og går tilbake til PCM hvis ruten mislykkes.</string>
+    <string name="audio_output_mode_pcm">PCM (standard)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (automatisk, eksperimentell)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (kraft, eksperimentell)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (automatisk, eksperimentell)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (force, eksperimentell)</string>
+    <string name="encoded_audio_fallback_to_pcm">Kodet lydutgang er ikke tilgjengelig. Fortsetter med PCM-lyd.</string>
+    <string name="switch_to_encoded">Kodet lydutgang er tilgjengelig, og bytter til kodet lyd.</string>
+</resources>
