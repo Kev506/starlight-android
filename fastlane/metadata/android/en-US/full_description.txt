@@ -1,43 +1,39 @@
-Starlight is an implementation of the excellent moonlight-android. Now supports game details provided by IGDB,
-updated to AndroidX. New updated layouts.  With the ongoing changes to this, this only supports android API 29+ any API below will not function.
+Starlight ist eine Implementierung des hervorragenden „moonlight-android“. Es unterstützt nun Spieldetails, die von IGDB bereitgestellt werden, und wurde auf AndroidX sowie „Compose for TV“ aktualisiert. Zudem wurden die Layouts überarbeitet. Aufgrund der laufenden Weiterentwicklungen wird Android API 29 oder höher vorausgesetzt; ältere Versionen werden nicht unterstützt.
 
-This is totally free, no ads, IAP's or Pro builds.
+Die App ist komplett kostenlos – ohne Werbung, In-App-Käufe oder „Pro“-Versionen.
 
-This app streams games, programs, or your full desktop from an NVIDIA GameStream-compatible PC on your local network using NVIDIA GeForce Experience or Sunshine.
-Mouse, keyboard, and controller input is sent from your Android device to the PC.
+Diese App ermöglicht das Streaming von Spielen, Programmen oder dem gesamten Desktop von einem NVIDIA GameStream-kompatiblen PC in deinem lokalen Netzwerk – unter Verwendung von NVIDIA GeForce Experience oder Sunshine.
+Eingaben von Maus, Tastatur und Controller werden von deinem Android-Gerät an den PC übertragen.
 
-Streaming performance may vary based on your client device and network setup. HDR requires an HDR10-capable device, GTX 1000-series GPU, and HDR10-enabled game.
+Die Streaming-Leistung kann je nach verwendetem Gerät und Netzwerkkonfiguration variieren. Für HDR sind ein HDR10-fähiges Gerät, eine GPU der GTX 1000-Serie (oder neuer) sowie ein HDR10-unterstütztes Spiel erforderlich.
 
-'''Features'''
-* Open-source and completely free (no ads, IAPs, or "Pro")
-* Streams games purchased from any store
-* Works on your home network.
-* Up to 4K 120 FPS HDR streaming with 7.1 surround sound
-* Keyboard and mouse support (best with Android 9.0 or later)
-* Stylus/S-Pen support
-* Supports PS3, PS4, Xbox 360, Xbox One, and Android gamepads
-* Force feedback support
-* Local co-op with up to 4 connected controllers
-* Mouse control via gamepad by long-pressing Start
+'''Funktionen'''
+* Open-Source und komplett kostenlos (keine Werbung, In-App-Käufe oder „Pro“-Versionen)
+* Streaming von Spielen, die in beliebigen Stores erworben wurden
+* Funktioniert im heimischen Netzwerk
+* Streaming mit bis zu 4K, 120 FPS und HDR sowie 7.1-Surround-Sound
+* Unterstützung für Tastatur und Maus (am besten unter Android 10 oder neuer)
+* Unterstützung für PS3-, PS4-, Xbox 360-, Xbox One- und Android-Gamepads
+* Unterstützung für Force-Feedback
+* Lokaler Koop-Modus mit bis zu 4 angeschlossenen Controllern
+* Maussteuerung über das Gamepad durch langes Drücken der Start-Taste
 
-'''PC Requirements'''
-* NVIDIA GeForce GTX/RTX or NVIDIA Quadro GPU
-* Windows 7 or later
-* NVIDIA GeForce Experience or NVIDIA Quadro Experience installed
+'''PC-Anforderungen'''
+* NVIDIA GeForce GTX/RTX- oder NVIDIA Quadro-GPU
+* Windows 7 oder neuer
+* Installiertes NVIDIA GeForce Experience oder NVIDIA Quadro Experience
 * Sunshine
 
-'''Quick Setup Instructions'''
-# Make sure GeForce/Quadro Experience is open on your PC. Turn on GameStream in the SHIELD settings page.
-# Tap on the PC in Starlight and type the PIN on your PC
-# Database will now update, wait for completion
-# Start streaming!
+'''Kurzanleitung zur Einrichtung'''
+# Stelle sicher, dass GeForce Experience bzw. Quadro Experience auf deinem PC geöffnet ist. Aktiviere „GameStream“ in den SHIELD-Einstellungen.
+# Wähle in Starlight deinen PC aus und gib die angezeigte PIN auf deinem PC ein.
+# Die Datenbank wird nun aktualisiert – bitte warte, bis der Vorgang abgeschlossen ist.
+# Starte das Streaming! Für ein optimales Erlebnis benötigen Sie einen WLAN-Router der Mittel- bis Oberklasse, der eine gute Funkverbindung zu Ihrem Android-Gerät aufbaut (5-GHz-WLAN wird dringend empfohlen). Zudem ist eine stabile Verbindung zwischen Ihrem PC und dem Router erforderlich (eine Ethernet-Verbindung wird dringend empfohlen).
 
-To have a good experience, you need a mid to high-end wireless router with a good wireless connection to your Android device (5 GHz highly recommended) and a good connection from your PC to your router (Ethernet highly recommended).
-
-'''Detailed Setup Instructions'''
-See the full setup guide https://tiki.starlight-stream.com/tiki-index.php?page=Setup+Guide for:
-* Adding a PC manually (if your PC is not detected)
-* Using a controller connected directly to your PC
-* Streaming your full desktop
-* Adding custom apps to stream
-* Read the setup instructions to avoid any issues
+'''Detaillierte Einrichtungsanleitung'''
+Die vollständige Einrichtungsanleitung finden Sie unter https://tiki.starlight-stream.com/tiki-index.php?page=Setup+Guide. Dort erfahren Sie unter anderem, wie Sie:
+* einen PC manuell hinzufügen (falls dieser nicht automatisch erkannt wird),
+* einen direkt an Ihren PC angeschlossenen Controller verwenden,
+* Ihren gesamten Desktop streamen,
+* weitere Apps zum Streamen hinzufügen.
+* Bitte lesen Sie die Einrichtungsanleitung sorgfältig durch, um mögliche Probleme zu vermeiden.

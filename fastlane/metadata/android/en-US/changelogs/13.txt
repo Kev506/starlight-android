@@ -1,4 +1,3 @@
 UPDATES FROM STARLIGHT MAIN
--Added themes
 -Updated layouts for improved user exeperience
--Migrated to AndroidX with full support for backward compatability
+-Migrated to AndroidX and refactored to Compose for TV
