@@ -1,0 +1,417 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Játék</string>
+    <string name="details">Részletek</string>
+    <string name="running">A játék fut, a lehetőségekért kattintson a Lejátszás gombra.</string>
+    <string name="No_Details">Sajnáljuk, nincsenek megjeleníthető részletek.
+
+Ha manuálisan adtad hozzá a játékot, kérlek ellenőrizd a címét, és frissítsd az adatbázist.
+
+Ha a kiválasztott elem egy asztali alkalmazás, akkor nem lesznek megjeleníthető részletek.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Pótkocsik</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Használja a Leanback felhasználói felületet</string>
+    <string name="leanback_summary">Válassza az alkalmazások Leanback felhasználói felületen való megjelenítéséhez</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PC törölve</string>
+    <string name="scut_not_paired">A számítógép nincs párosítva</string>
+    <string name="scut_pc_not_found">PC nem található</string>
+    <string name="scut_invalid_uuid">A mellékelt PC nem érvényes</string>
+    <string name="scut_invalid_app_id">A megadott alkalmazás nem érvényes</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Help Viewer</string>
+    <string name="help_loading_msg">Súgóoldal betöltése…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">Online</string>
+    <string name="pcview_menu_header_offline">Offline</string>
+    <string name="pcview_menu_header_unknown">Üdítő</string>
+    <string name="pcview_menu_app_list">Az összes alkalmazás megtekintése</string>
+    <string name="pcview_menu_pair_pc">Párosítás PC-vel</string>
+    <string name="pcview_menu_unpair_pc">Párosítás megszüntetése</string>
+    <string name="pcview_menu_send_wol">Wake-On-LAN kérés küldése</string>
+    <string name="pcview_menu_delete_pc">Számítógép törlése</string>
+    <string name="pcview_menu_test_network">Hálózati kapcsolat tesztelése</string>
+    <string name="pcview_menu_details">Részletek megtekintése</string>
+    <string name="pcview_menu_eol">NVIDIA GameStream szolgáltatás vége</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Hálózati kapcsolat tesztelése</string>
+    <string name="nettest_text_waiting">A Starlight teszteli a hálózati kapcsolatot, hogy megállapítsa, nincs-e blokkolva valamelyik szükséges port.\n\nEz eltarthat néhány másodpercig…</string>
+    <string name="nettest_title_done">A hálózati teszt befejeződött</string>
+    <string name="nettest_text_success">Úgy tűnik, hogy a hálózata nem blokkolja a Starlightot. Ha továbbra is problémái vannak a csatlakozással, ellenőrizze számítógépe tűzfalának beállításait.\n\nHa az interneten keresztül próbál streamelni, telepítse a Moonlight Internet Hosting Tool eszközt a számítógépére, és futtassa a mellékelt Internet Streaming Testert a számítógép ellenőrzéséhez\ internetkapcsolata.</string>
+    <string name="nettest_text_inconclusive">A hálózati tesztet nem lehetett végrehajtani, mert a Starlight egyik kapcsolattesztelő szervere sem volt elérhető. Ellenőrizze az internetkapcsolatot, vagy próbálja újra később.</string>
+    <string name="nettest_text_failure">Úgy tűnik, hogy eszköze jelenlegi hálózati kapcsolata blokkolja a Starlightot. Előfordulhat, hogy az interneten keresztüli streamelés nem működik, amíg ehhez a hálózathoz csatlakozik.\n\nA következő hálózati portok blokkolva lettek:\n</string>
+    <string name="nettest_text_blocked">Az eszköz jelenlegi hálózati kapcsolata blokkolja a Starlightot. Előfordulhat, hogy az interneten keresztüli streamelés nem működik, amíg ehhez a hálózathoz csatlakozik.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Párosítás…</string>
+    <string name="pair_pc_offline">A számítógép offline állapotban van</string>
+    <string name="pair_pc_ingame">A számítógép jelenleg játékban van. A párosítás előtt be kell zárni a játékot.</string>
+    <string name="pair_pairing_title">Párosítás</string>
+    <string name="pair_pairing_msg">Kérjük, írja be a következő PIN-kódot a célszámítógépen:</string>
+    <string name="pair_pairing_help">Ha a gazdagépen a Sunshine fut, lépjen a Sunshine webes felhasználói felületére a PIN-kód megadásához.</string>
+    <string name="pair_incorrect_pin">Helytelen PIN-kód</string>
+    <string name="pair_fail">A párosítás nem sikerült</string>
+    <string name="pair_already_in_progress">A párosítás már folyamatban van</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">A számítógép online</string>
+    <string name="wol_no_mac">Nem lehet felébreszteni a számítógépet, mert nincs tárolt MAC-cím</string>
+    <string name="wol_waking_pc">Ébresztő PC…</string>
+    <string name="wol_waking_msg">Eltarthat néhány másodpercig, amíg a számítógép felébred.
+Ha nem, ellenőrizze, hogy megfelelően van-e konfigurálva a Wake-On-LAN számára.
+    </string>
+    <string name="wol_fail">Nem sikerült elküldeni a Wake-On-LAN csomagokat</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Párosítás megszüntetése…</string>
+    <string name="unpair_success">Sikeresen megszüntetve a párosítást</string>
+    <string name="unpair_fail">Nem sikerült megszüntetni a párosítást</string>
+    <string name="unpair_error">Az eszköz nem lett párosítva</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">A számítógép offline állapotban van</string>
+    <string name="error_manager_not_running">A ComputerManager szolgáltatás nem fut. Kérjük, várjon néhány másodpercet, vagy indítsa újra az alkalmazást.</string>
+    <string name="error_unknown_host">Nem sikerült feloldani a gazdagépet</string>
+    <string name="error_404">A GFE HTTP 404-es hibát adott vissza. Győződjön meg arról, hogy számítógépe támogatott GPU-t futtat.
+A távoli asztali szoftver használata is okozhatja ezt a hibát. Próbálja újraindítani a gépet, vagy telepítse újra a GFE-t.
+    </string>
+    <string name="title_decoding_error">A videodekóder összeomlott</string>
+    <string name="message_decoding_error">A Starlight összeomlott, mert nem kompatibilis az eszköz videodekóderével. Ha az összeomlások folytatódnak, próbálja meg módosítani a streamelési beállításokat.</string>
+    <string name="title_decoding_reset">Videobeállítások visszaállítása</string>
+    <string name="message_decoding_reset">Az eszköz videodekódere továbbra is összeomlik a kiválasztott streamelési beállítások mellett. A streamelési beállításokat visszaállítottuk az alapértelmezettre.</string>
+    <string name="error_usb_prohibited">Az eszköz rendszergazdája tiltja az USB-hozzáférést. Ellenőrizze a Knox vagy MDM beállításait.</string>
+    <string name="unable_to_pin_shortcut">A jelenlegi indító nem teszi lehetővé rögzített parancsikonok létrehozását.</string>
+    <string name="video_decoder_init_failed">A videodekódoló inicializálása nem sikerült. Előfordulhat, hogy készüléke nem támogatja a kiválasztott felbontást vagy képkockasebességet.</string>
+    <string name="no_video_received_error">Nem érkezett videó a házigazdától.</string>
+    <string name="no_frame_received_error">A hálózati kapcsolat nem működik megfelelően. Csökkentse a videó bitsebességét, vagy próbálkozzon gyorsabb kapcsolattal.</string>
+    <string name="early_termination_error">Valami hiba történt a gazdagépen az adatfolyam indításakor.\n\nGyőződjön meg arról, hogy nincs DRM-védett tartalom nyitva a gazdagépen. Megpróbálhatja újraindítani a gazdagépet is.</string>
+    <string name="frame_conversion_error">A gazdaszámítógép végzetes videókódolási hibát jelentett.\n\nPróbálja meg letiltani a HDR módot, módosítani a streamelési felbontást vagy a gazdaszámítógép képernyőfelbontását.</string>
+    <string name="check_ports_msg">Ellenőrizze a tűzfalat és a portok továbbítási szabályait:</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Kapcsolat létesítése</string>
+    <string name="conn_establishing_msg">Csatlakozás indítása</string>
+    <string name="conn_metered">Figyelmeztetés: Az aktív hálózati kapcsolat mérve van!</string>
+    <string name="conn_client_latency">Átlagos képkocka-dekódolási késleltetés:</string>
+    <string name="conn_client_latency_hw">hardveres dekódoló késleltetése:</string>
+    <string name="conn_hardware_latency">Átlagos hardveres dekódolási késleltetés:</string>
+    <string name="conn_starting">Indulás</string>
+    <string name="conn_error_title">Kapcsolati hiba</string>
+    <string name="conn_error_msg">Nem sikerült elindítani</string>
+    <string name="conn_terminated_title">A kapcsolat megszakadt</string>
+    <string name="conn_terminated_msg">A kapcsolat megszakadt.</string>
+    <string name="error_code_prefix">Hibakód:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">A fogadó számítógép IP-címe</string>
+    <string name="searching_pc">Gazdaszámítógépek keresése a helyi hálózaton…\n\n
+        Győződjön meg arról, hogy a Sunshine fut a gazdagépen, vagy hogy a GameStream engedélyezve van-e a GeForce Experience SHIELD beállításaiban.</string>
+    <string name="yes">Igen</string>
+    <string name="no">Nem</string>
+    <string name="lost_connection">Megszakadt a kapcsolat a számítógéppel</string>
+    <string name="title_details">Részletek</string>
+    <string name="help">Segítség</string>
+    <string name="delete_pc_msg">Biztosan törli ezt a számítógépet\?</string>
+    <string name="slow_connection_msg">Lassú csatlakozás a számítógéphez\nCsökkentse a bitrátát</string>
+    <string name="poor_connection_msg">Rossz kapcsolat a számítógéppel</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Videofolyam: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Dekóder: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Bejövő képkockasebesség a hálózatról: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Megjelenítési képkockasebesség: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Gazdafeldolgozási várakozási idő min/max/átlag: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">A hálózati kapcsolat miatt kiesett képkockák száma: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Átlagos hálózati késleltetés: %1$d ms (szórás: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Átlagos dekódolási idő: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Csatlakozás a számítógéphez…</string>
+    <string name="applist_menu_resume">Munkamenet folytatása</string>
+    <string name="applist_menu_quit">Lépjen ki a munkamenetből</string>
+    <string name="applist_menu_quit_and_start">Lépjen ki az aktuális játékból, és indítsa el</string>
+    <string name="applist_menu_cancel">Megszünteti</string>
+    <string name="applist_menu_details">Részletek megtekintése</string>
+    <string name="applist_menu_scut">Parancsikon létrehozása</string>
+    <string name="applist_menu_tv_channel">Hozzáadás a csatornához</string>
+    <string name="applist_menu_hide_app">Alkalmazás elrejtése</string>
+    <string name="applist_refresh_title">Alkalmazáslista</string>
+    <string name="applist_refresh_msg">Alkalmazások frissítése…</string>
+    <string name="applist_refresh_error_title">Hiba</string>
+    <string name="applist_refresh_error_msg">Nem sikerült lekérni az alkalmazáslistát</string>
+    <string name="applist_quit_app">Kilépés</string>
+    <string name="applist_quit_success">Sikeres kilépés</string>
+    <string name="applist_quit_fail">Nem sikerült kilépni</string>
+    <string name="applist_quit_confirmation">Biztos benne, hogy ki akar lépni a futó alkalmazásból\? Minden nem mentett adat elvész.</string>
+    <string name="applist_details_id">Alkalmazásazonosító:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">PC manuális hozzáadása</string>
+    <string name="msg_add_pc">Csatlakozás a számítógéphez…</string>
+    <string name="addpc_fail">Nem lehet csatlakozni a megadott számítógéphez. Győződjön meg arról, hogy a szükséges portok át vannak engedve a tűzfalon.</string>
+    <string name="addpc_success">A számítógép sikeresen hozzáadva</string>
+    <string name="addpc_unknown_host">Nem sikerült feloldani a számítógép címét. Győződjön meg arról, hogy nem hibázott el a címben.</string>
+    <string name="addpc_enter_ip">Meg kell adnia egy IP-címet</string>
+    <string name="addpc_wrong_sitelocal">Ez a cím nem jó. Az interneten keresztüli adatfolyamhoz az útválasztó nyilvános IP-címét kell használnia.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Alapbeállítások</string>
+    <string name="title_resolution_list">Videó felbontás</string>
+    <string name="summary_resolution_list">Növelje a kép tisztaságának javítása érdekében. Csökkentse a jobb teljesítmény érdekében alacsonyabb kategóriás eszközökön és lassabb hálózatokon.</string>
+    <string name="title_native_res_dialog">Figyelmeztetés a natív felbontásra</string>
+    <string name="text_native_res_dialog">Előfordulhat, hogy a streaming szerver nem támogatja a natív felbontást és/vagy az FPS-t. Valószínűleg manuálisan kell beállítania a megfelelő egyéni megjelenítési módot a gazdagéphez.\n\nHa úgy dönt, hogy egyéni felbontást hoz létre az NVIDIA Vezérlőpulton a képernyőbeállításoknak megfelelően, kérjük, olvassa el és értelmezze az NVIDIA figyelmeztetését. a monitor lehetséges károsodásával, a számítógép instabilitásával és egyéb lehetséges problémákkal kapcsolatban.\n\nNem vállalunk felelősséget az egyéni felbontás létrehozásából adódó problémákért.\n\nElképzelhető, hogy a monitor nem támogatja a szükséges megjelenítési konfigurációt. Ha igen, megpróbálhat beállítani egy virtuális monitort. Végül, ha eszköze vagy gazdaszámítógépe nem támogatja a streamelést meghatározott felbontással vagy frissítési gyakorisággal, akkor sajnos nincs szerencséje.</string>
+    <string name="title_fps_list">Videó képkockasebesség</string>
+    <string name="summary_fps_list">Növelje a simább videófolyam érdekében. Csökkentse a jobb teljesítmény érdekében az alacsonyabb kategóriás eszközökön.</string>
+    <string name="title_seekbar_bitrate">Videó bitráta</string>
+    <string name="summary_seekbar_bitrate">Növelje a jobb képminőség érdekében. Csökkentse a teljesítmény javítása érdekében lassabb kapcsolatokon.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">Nyújtsa ki a videót teljes képernyőre</string>
+    <string name="title_stretch_video">Nyújtott videó</string>
+    <string name="resolution_prefix_native">Anyanyelvi</string>
+    <string name="resolution_prefix_native_fullscreen">Natív teljes képernyős</string>
+    <string name="resolution_prefix_native_landscape">(Tájkép)</string>
+    <string name="resolution_prefix_native_portrait">(Portré)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Natív FPS figyelmeztetés</string>
+
+    <string name="category_audio_settings">Hangbeállítások</string>
+    <string name="title_audio_config_list">Surround hang konfiguráció</string>
+    <string name="summary_audio_config_list">Engedélyezze az 5.1-es vagy 7.1-es térhatású hangzást házimozirendszerekhez</string>
+    <string name="title_checkbox_enable_audiofx">Engedélyezze a rendszer hangszínszabályzó támogatását</string>
+    <string name="summary_checkbox_enable_audiofx">Lehetővé teszi az audioeffektusok működését streamelés közben, de növelheti a hang késését</string>
+
+    <string name="category_gamepad_settings">Gamepad beállítások</string>
+    <string name="title_checkbox_multi_controller">Automatikus gamepad jelenlétérzékelés</string>
+    <string name="summary_checkbox_multi_controller">Ennek az opciónak a kijelölésének törlése kényszeríti a játékvezérlőt, hogy mindig jelen legyen</string>
+    <string name="title_checkbox_vibrate_fallback">Emulálja a dübörgés támogatását vibrációval</string>
+    <string name="summary_checkbox_vibrate_fallback">Rezgeti az eszközt, hogy emulálja a dübörgést, ha a játékvezérlő nem támogatja</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Állítsa be az emulált dübörgés intenzitását</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Erősítse vagy csökkentse a rezgés intenzitását az eszközön</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Állítsa be az analóg stick holtzónáját</string>
+    <string name="summary_seekbar_deadzone">Megjegyzés: Egyes játékok nagyobb holtzónát is kikényszeríthetnek, mint amennyire a Starlight be van állítva.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Xbox 360/One USB gamepad illesztőprogram</string>
+    <string name="summary_checkbox_xb1_driver">Lehetővé teszi a beépített USB-illesztőprogram használatát a natív Xbox-vezérlőt nem támogató eszközök számára</string>
+    <string name="title_checkbox_usb_bind_all">A natív Xbox gamepad támogatás felülbírálása</string>
+    <string name="summary_checkbox_usb_bind_all">Használja a Starlight USB-illesztőprogramját az összes támogatott játékvezérlőhöz, még akkor is, ha van natív Xbox-vezérlő támogatás</string>
+    <string name="title_checkbox_mouse_emulation">Egér emuláció gamepaden keresztül</string>
+    <string name="summary_checkbox_mouse_emulation">A Start gomb hosszú lenyomásával a játékvezérlő egér módba kapcsol</string>
+    <string name="title_checkbox_flip_face_buttons">Flip arc gombok</string>
+    <string name="summary_checkbox_flip_face_buttons">Átkapcsolja az A/B és X/Y arcgombokat a játékvezérlők és a képernyőn megjelenő vezérlők között</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Az egeret mindig érintőpaddal vezérelje</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">A játékpad érintőpadjának bemenetét kényszeríti a gazdagép egér vezérlésére, még akkor is, ha a játékpadot érintőpaddal emulál.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Engedélyezze a játékvezérlő mozgásérzékelőinek használatát</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Lehetővé teszi a támogatott gazdagépek számára, hogy mozgásérzékelő adatokat kérjenek, amikor egy játékvezérlőt emulálnak mozgásérzékelőkkel. Ha a játékban nem használnak mozgásérzékelőket, a letiltás némileg csökkentheti az áram- és hálózathasználatot.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Emulálja a gamepad mozgásérzékelő támogatását</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Az eszköz beépített mozgásérzékelőit használja, ha a csatlakoztatott játékvezérlő vagy Android-verziója nem támogatja a játékvezérlő érzékelőit.\nMegjegyzés: Ha engedélyezi ezt a lehetőséget, a játékvezérlő PlayStation-vezérlőként jelenhet meg a gazdagépen.</string>
+
+    <string name="category_input_settings">Bemeneti beállítások</string>
+    <string name="title_checkbox_touchscreen_trackpad">Használja az érintőképernyőt trackpadként</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Ha engedélyezve van, az érintőképernyő görgetőpadként működik. Ha le van tiltva, az érintőképernyő közvetlenül vezérli az egérkurzort.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Távoli asztali egér mód</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Ez természetesebbé teheti az egér gyorsítását távoli asztali használat esetén, de sok játékkal nem kompatibilis.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Engedélyezze a vissza és előre gombokat</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Ennek az opciónak az engedélyezése egyes hibás eszközökön megszakíthatja a jobb kattintást</string>
+
+    <string name="category_on_screen_controls_settings">A képernyőn megjelenő vezérlők beállításai</string>
+    <string name="title_checkbox_show_onscreen_controls">A képernyőn megjelenő vezérlők megjelenítése</string>
+    <string name="summary_checkbox_show_onscreen_controls">Virtuális vezérlő fedvény megjelenítése az érintőképernyőn</string>
+    <string name="title_checkbox_vibrate_osc">Rezgés engedélyezése</string>
+    <string name="summary_checkbox_vibrate_osc">Rezgeti az eszközt, hogy emulálja a képernyőn megjelenő vezérlők zúgását</string>
+    <string name="title_only_l3r3">Csak az L3 és az R3 megjelenítése</string>
+    <string name="summary_only_l3r3">Az L3 és R3 kivételével az összes virtuális gomb elrejtése</string>
+    <string name="title_reset_osc">A mentett képernyő-vezérlők elrendezésének törlése</string>
+    <string name="summary_reset_osc">Visszaállítja az összes képernyő-vezérlőt az alapértelmezett méretre és pozícióra</string>
+    <string name="dialog_title_reset_osc">Elrendezés alaphelyzetbe állítása</string>
+    <string name="dialog_text_reset_osc">Biztosan törli a mentett képernyő-vezérlőelrendezést\?</string>
+    <string name="toast_reset_osc_success">A képernyőn megjelenő vezérlők visszaállnak az alapértelmezett értékekre</string>
+    <string name="title_osc_opacity">A képernyőn megjelenő vezérlők átlátszatlanságának módosítása</string>
+    <string name="summary_osc_opacity">Tegye átláthatóbbá/kevésbé átláthatóvá a képernyőn megjelenő vezérlőket</string>
+    <string name="dialog_title_osc_opacity">Változtassa meg az átlátszatlanságot</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">UI beállítások</string>
+    <string name="title_checkbox_enable_pip">Kép a képben megfigyelő mód engedélyezése</string>
+    <string name="summary_checkbox_enable_pip">Lehetővé teszi az adatfolyam megtekintését (de nem vezérlését) többfeladatos munka közben</string>
+    <string name="title_language_list">Nyelv</string>
+    <string name="summary_language_list">A Holdfényhez használható nyelv</string>
+    <string name="title_checkbox_small_icon_mode">Használjon kis doboz rajzot</string>
+    <string name="summary_checkbox_small_icon_mode">Az alkalmazásrácsban található kisebb dobozok lehetővé teszik, hogy több alkalmazás legyen látható a képernyőn</string>
+
+    <string name="category_host_settings">Gazda beállításai</string>
+    <string name="title_checkbox_enable_sops">A játékbeállítások optimalizálása</string>
+    <string name="summary_checkbox_enable_sops">Engedélyezze a GFE-nek a játékbeállítások módosítását az optimális streamelés érdekében</string>
+    <string name="title_checkbox_host_audio">Hang lejátszása számítógépen</string>
+    <string name="summary_checkbox_host_audio">Hang lejátszása a számítógépről és erről az eszközről</string>
+
+    <string name="category_advanced_settings">További beállítások</string>
+    <string name="title_unlock_fps">Oldja fel az összes lehetséges képkockasebességet</string>
+    <string name="summary_unlock_fps">A 90 vagy 120 FPS sebességű streamelés csökkentheti a késleltetést csúcskategóriás eszközökön, de késést vagy instabilitást okozhat azokon az eszközökön, amelyek nem támogatják</string>
+    <string name="title_checkbox_reduce_refresh_rate">Engedélyezze a frissítési gyakoriság csökkentését</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Az alacsonyabb képernyő-frissítési gyakoriság energiát takaríthat meg a további videó késleltetés rovására</string>
+    <string name="title_checkbox_disable_warnings">Figyelmeztető üzenetek letiltása</string>
+    <string name="summary_checkbox_disable_warnings">Kapcsolja ki a képernyőn megjelenő kapcsolatra figyelmeztető üzeneteket streamelés közben</string>
+    <string name="title_disable_frame_drop">Soha ne ejtse le a kereteket</string>
+    <string name="summary_disable_frame_drop">Egyes eszközökön csökkentheti a mikro-akadozást, de növelheti a késleltetést</string>
+    <string name="title_video_format">Módosítsa a kodek beállításait</string>
+    <string name="summary_video_format">Az újabb kodekek csökkenthetik a videó sávszélesség követelményeit, ha az eszköz támogatja őket. A kodek kiválasztása figyelmen kívül hagyható, ha a gazdagép szoftver vagy a GPU nem támogatja.</string>
+    <string name="title_enable_hdr">HDR engedélyezése (kísérleti)</string>
+    <string name="summary_enable_hdr">Streamelj HDR-t, ha a játék és a PC GPU támogatja. A HDR-hez olyan GPU-ra van szükség, amely támogatja a HEVC Main 10 kódolást.</string>
+    <string name="title_full_range">Teljes körű videó kényszerítése (Eszközfüggő)</string>
+    <string name="summary_full_range">Ez a világos és sötét területeken a részletek elvesztését okozza, ha eszköze nem jeleníti meg megfelelően a teljes videotartalmat.</string>
+    <string name="title_enable_perf_overlay">Teljesítménystatisztikák megjelenítése streamelés közben</string>
+    <string name="summary_enable_perf_overlay">Valós idejű adatfolyam-teljesítmény-információ megjelenítése streamelés közben</string>
+    <string name="title_enable_post_stream_toast">A várakozási idő üzenet megjelenítése streamelés után</string>
+    <string name="summary_enable_post_stream_toast">Az adatfolyam befejezése után késleltetési információs üzenet megjelenítése</string>
+
+    <string name="category_help">Segítség</string>
+    <string name="title_setup_guide">Beállítási útmutató</string>
+    <string name="summary_setup_guide">Tekintse meg a játék PC-jének streamelésre való beállítására vonatkozó utasításokat</string>
+    <string name="title_troubleshooting">Hibaelhárítási útmutató</string>
+    <string name="summary_troubleshooting">Tekintse meg a gyakori streamelési problémák diagnosztizálására és kijavítására vonatkozó tippeket</string>
+    <string name="title_privacy_policy">Adatvédelmi irányelvek</string>
+    <string name="summary_privacy_policy">Tekintse meg a Starlight adatvédelmi szabályzatát</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">A játékvezérlő típusa megváltozhat a mozgásérzékelő emuláció miatt</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30 FPS</string>
+    <string name="fps_60">60 FPS</string>
+    <string name="fps_90">90 FPS</string>
+    <string name="fps_120">120 FPS</string>
+
+    <string name="audioconf_stereo">Sztereó</string>
+    <string name="audioconf_51surround">5.1 Térhatású hang</string>
+    <string name="audioconf_71surround">7.1 Térhatású hang</string>
+
+    <string name="videoformat_auto">Automatikus (ajánlott)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">AV1 előnyben részesítése (kísérleti)</string>
+    <string name="videoformat_hevcalways">Inkább HEVC</string>
+    <string name="videoformat_h264always">Inkább H.264</string>
+
+    <string name="title_frame_pacing">Videó képkocka ütemezése</string>
+    <string name="summary_frame_pacing">Határozza meg, hogyan lehet egyensúlyban tartani a videó késleltetését és simaságát</string>
+    <string name="pacing_latency">A legalacsonyabb késleltetést részesítse előnyben</string>
+    <string name="pacing_balanced">Kiegyensúlyozott</string>
+    <string name="pacing_balanced_alt">Kiegyensúlyozott FPS limittel</string>
+    <string name="pacing_smoothness">A legsimább videó preferálása (jelentősen megnövelheti a várakozási időt)</string>
+    <string name="title_analog_scrolling">Használjon analóg pálcát a görgetéshez</string>
+    <string name="summary_analog_scrolling">Válasszon egy analóg sticket a görgetéshez, amikor egéremulációs módban van</string>
+    <string name="analogscroll_none">Nincs (mindkét pálca mozgatja az egeret)</string>
+    <string name="analogscroll_right">Jobb analóg kar</string>
+    <string name="analogscroll_left">Bal analóg kar</string>
+    <string name="games">Játékok</string>
+    <string name="settings">Beállítások</string>
+    <string name="exit">Kijárat</string>
+    <string name="options">Lehetőségek</string>
+    <string name="pending">Függőben levő</string>
+    <string name="data_collection">Adatgyűjtés</string>
+    <string name="loading_for_first_time_use_please_wait">Betöltés az első használathoz… Kérjük, várjon…</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Ha ki szeretné lépni vagy szüneteltetni szeretné ezt az alkalmazást, a kilépéskor minden nem mentett adat elveszik.</string>
+    <string name="confirm_quit">Erősítse meg a Kilépést</string>
+    <string name="quit">Kilépés</string>
+    <string name="pause">Szünet</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Biztosan törli a gyorsítótárat, ezzel bezárja ezt az ablakot\?</string>
+    <string name="clear_cache">Törölje a gyorsítótárat</string>
+    <string name="click_ok_to_launch_game">kattintson az OK gombra a játék elindításához.</string>
+    <string name="active_internet_connection_required_for_game_details">A játék részleteihez aktív internetkapcsolat szükséges,</string>
+    <string name="download">Letöltés</string>
+    <string name="download_translations_model">Fordítási modell letöltése</string>
+    <string name="download_locale_language_model_to_translate_game_data">Töltse le a nyelvi modellt a játékadatok lefordításához</string>
+    <string name="downloading_ml_language_file_please_wait">Kérlek várj..</string>
+    <string name="download_successful">Letöltés sikeres</string>
+    <string name="download_error_please_try_again">Letöltési hiba: Kérjük, próbálja újra</string>
+    <string name="model_deleted_successfully">A modell sikeresen törölve</string>
+    <string name="model_delete_failed_please_try_again">A modell törlése sikertelen, próbálkozzon újra</string>
+    <string name="delete_language_model">Nyelvi modell törlése</string>
+    <string name="delete_downloaded_language_model">Törölje a letöltött nyelvi modellt</string>
+    <string name="support">\"Támogatás\"</string>
+    <string name="cache">Gyorsítótár: %1$s</string>
+    <string name="hdr_off">\"HDR kikapcsolva\"</string>
+    <string name="hdr_on">\"HDR bekapcsolva\"</string>
+    <string name="cancel">Megszünteti</string>
+    <string name="display_does_not_support_hdr10">A kijelző nem támogatja a HDR10-et</string>
+    <string name="decoder_does_not_support_hdr10_profile">A dekóder nem támogatja a HDR10 profilt</string>
+    <string name="no_hevc_decoder_found">Nem található HEVC dekóder</string>
+    <string name="no_av1_decoder_found">Nem található AV1 dekóder</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">Ez az eszköz vagy ROM nem támogatja a hardveresen gyorsított H.264 lejátszást.</string>
+    <string name="server_version_malformed">A szerver verziója hibás</string>
+    <string name="device_not_paired_with_computer">Az eszköz nincs párosítva számítógéppel</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">A PC GPU nem támogatja a HDR streaminget. A stream SDR lesz.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">A gazdaszámítógép nem támogatja a 4K feletti felbontású adatfolyamot.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">A streamelő eszköznek támogatnia kell a HEVC-t vagy az AV1-et a 4K feletti streameléshez.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Frissítenie kell a GeForce Experience-et, hogy 4K-ban streameljen. A stream 1080p lesz.</string>
+    <string name="failed_to_resume_existing_session">Nem sikerült folytatni a meglévő munkamenetet</string>
+    <string name="this_session_wasn_t_started_by_this_device">Ezt a munkamenetet nem ez az eszköz indította el,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" tehát nem lehet folytatni. A streamelés befejezése az eredetin \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"eszközt vagy magát a számítógépet, és próbálja újra. (Hibakód: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"Az alkalmazás minimalizálva van. Indítsa újra a számítógépen manuálisan vagy \"</string>
+    <string name="quit_the_session_and_start_streaming_again">lépjen ki a munkamenetből, és indítsa újra a streamelést.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Nem sikerült kilépni az előző munkamenetből! Manuálisan kell kilépnie</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" tehát nem lehet kilépni. A streamelés befejezése az eredetinél \"</string>
+    <string name="device_or_the_pc_itself_error_code">\"eszköz vagy maga a számítógép. (Hibakód: \"</string>
+    <string name="failed_to_launch_application">Nem sikerült elindítani az alkalmazást</string>
+    <string name="please_wait_for_the_process_to_complete">Kérjük, várja meg, amíg a folyamat befejeződik…</string>
+    <string name="enter_api_key_here">Ide írja be az API-kulcsot:</string>
+    <string name="favorites">Kedvencek</string>
+    <string name="removed_from_favorites">\"Eltávolítva a kedvencek közül és a hazai csatornából\"</string>
+    <string name="added_to_favorites">\"Hozzáadva a kedvencekhez és a hazai csatornához\"</string>
+    <string name="clear_favorites">Kedvencek törlése</string>
+    <string name="clear_favs_msg">Biztosan törölni szeretné a kedvenceket, ezzel a Home Channels alkalmazást is eltávolítja\?</string>
+    <string name="app_list_updated">Az alkalmazáslista frissítve</string>
+    <string name="update_the_database"><![CDATA[Biztosan törli és frissíti az adatbázist, ezzel bezárja ezt az ablakot\?]]></string>
+    <string name="update_database">Adatbázis frissítése</string>
+    <string name="database">Adatbázis</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Biztosan törli az összes kedvencet?</string>
+    <string name="resuming_session">Munkamenet folytatása</string>
+    <string name="app_added_to_favorites">Hozzáadva a kedvencekhez</string>
+    <string name="app_removed_from_favorites">Eltávolítva a kedvencek közül</string>
+    <string name="anonymous_statistics">Névtelen statisztika</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Névtelen statisztikák küldése az alkalmazások teljesítményének javítása érdekében.</string>
+    <string name="captions">YouTube-videók feliratai</string>
+    <string name="captions_text">YouTube-videók feliratainak engedélyezése vagy letiltása.</string>
+    <string name="privacy">Magánélet</string>
+    <string name="restart_application">Indítsa újra az alkalmazást</string>
+    <string name="restart_now">Ezzel újraindítja az alkalmazást a módosítások alkalmazásához. Szeretné most újraindítani\?</string>
+    <string name="database_updating">Adatbázis frissítése</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Videó fejlesztés: (x%1$.2f) Shader SGSR1</string>
+    <string name="title_video_sr">Video szuperfelbontás</string>
+    <string name="summary_video_sr">Használja ki a hardveres gyorsítást a kép tisztaságának javítására</string>
+    <string name="aaudio">A gyorsabb hangátvitel érdekében közvetlen hardveres hozzáférést próbál biztosítani. Egyes Android TV-k vagy streaming eszközök gyártói korlátozásai miatt némi késleltetés előfordulhat, ha a hang instabillá válik, kérjük, tiltsa le ezt a beállítást.</string>
+    <string name="enable_aaudio">AAudio engedélyezése</string>
+    <string name="aaudio_title">AAudio Ultra Low Latency (kísérleti)</string>
+    <string name="aaudio_summary">AAudio Ultra Low Latency (térhatású hangzás támogatással)</string>
+    <string name="aaudio_summary29">AAudio Ultra Low Latency engedélyezése</string>
+    <string name="game_media_library">Játék médiakönyvtár</string>
+
+    <string name="title_audio_output_mode">Hangkimeneti formátum</string>
+    <string name="summary_audio_output_mode">A PCM minden eszközzel kompatibilis. Az AC-3 és a Dolby Digital Plus kódolt 5.1-es hangot küld egy HDMI/eARC vevőegységnek, és ha az útvonal nem működik, PCM-re vált.</string>
+    <string name="audio_output_mode_pcm">PCM (alapértelmezett)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (automata, kísérleti)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (erőszakos, kísérleti)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (automatikus, kísérleti)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (kényszerített, kísérleti)</string>
+    <string name="encoded_audio_fallback_to_pcm">Kódolt hangkimenet nem érhető el. Folytatás PCM hanggal.</string>
+    <string name="switch_to_encoded">Kódolt hangkimenet érhető, átvált kódolt hangra.</string>
+</resources>

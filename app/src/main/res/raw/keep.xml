@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@layout/pref_delete_button,
+@drawable/lb_grid_background,@drawable/alert_dark,@drawable/ic_baseline_hdr_off_24_small,
+@drawable/ic_baseline_hdr_on_24_small,@drawable/ic_baseline_videogame_asset_24,@drawable/ic_lock_light,
+@drawable/ic_pc_offline_light,@drawable/ic_play_gamer,@drawable/ic_play_light,@drawable/image_border_light,
+@drawable/more_icon_selected,@mipmap/ic_banner,@string/please_wait_for_the_process_to_complete,@string/toast_reset_osc_success,
+@style/buttons_light,@style/image_view_light,@color/tv_channel_logo_height"/>

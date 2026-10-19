@@ -1,0 +1,417 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Joaca</string>
+    <string name="details">Detalii</string>
+    <string name="running">Jocul rulează, dați clic pe play pentru opțiuni.</string>
+    <string name="No_Details">Ne pare rău, nu există detalii de afișat.
+
+Dacă ați adăugat jocul manual, vă rugăm să verificați titlul și să actualizați baza de date.
+
+Dacă elementul selectat este o aplicație desktop, nu vor exista detalii de afișat.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Remorci</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Utilizați interfața de utilizare Leanback</string>
+    <string name="leanback_summary">Selectați pentru a afișa aplicațiile în interfața de utilizare Leanback</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PC-ul a fost șters</string>
+    <string name="scut_not_paired">PC-ul nu este asociat</string>
+    <string name="scut_pc_not_found">PC nu a fost găsit</string>
+    <string name="scut_invalid_uuid">PC-ul furnizat nu este valid</string>
+    <string name="scut_invalid_app_id">Aplicația furnizată nu este validă</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Vizualizator de ajutor</string>
+    <string name="help_loading_msg">Se încarcă pagina de ajutor…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">Pe net</string>
+    <string name="pcview_menu_header_offline">Deconectat</string>
+    <string name="pcview_menu_header_unknown">Înviorător</string>
+    <string name="pcview_menu_app_list">Vizualizați toate aplicațiile</string>
+    <string name="pcview_menu_pair_pc">Asociați cu computerul</string>
+    <string name="pcview_menu_unpair_pc">Deconectați</string>
+    <string name="pcview_menu_send_wol">Trimiteți cererea Wake-On-LAN</string>
+    <string name="pcview_menu_delete_pc">Șterge computerul</string>
+    <string name="pcview_menu_test_network">Testați conexiunea la rețea</string>
+    <string name="pcview_menu_details">Vezi detalii</string>
+    <string name="pcview_menu_eol">Încheierea serviciului NVIDIA GameStream</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Testarea conexiunii la rețea</string>
+    <string name="nettest_text_waiting">Starlight testează conexiunea la rețea pentru a determina dacă vreunul dintre porturile necesare este blocat.\n\nAcest lucru poate dura câteva secunde…</string>
+    <string name="nettest_title_done">Test de rețea finalizat</string>
+    <string name="nettest_text_success">Rețeaua dvs. nu pare să blocheze Starlight. Dacă întâmpinați în continuare probleme de conectare, verificați setările paravanului de protecție ale computerului.\n\nDacă încercați să transmiteți în flux prin Internet, instalați Instrumentul de găzduire pe internet Moonlight pe computer și rulați Testerul de streaming inclus pentru a verifica computerul\ conexiunea la internet a lui.</string>
+    <string name="nettest_text_inconclusive">Testul de rețea nu a putut fi efectuat deoarece niciunul dintre serverele de testare a conexiunii de la Starlight nu a fost accesibil. Verificați conexiunea la internet sau încercați din nou mai târziu.</string>
+    <string name="nettest_text_failure">Conexiunea actuală la rețea a dispozitivului dvs. pare să blocheze Starlight. Este posibil ca redarea în flux prin Internet să nu funcționeze când este conectat la această rețea.\n\nUrmătoarele porturi de rețea au fost blocate:\n</string>
+    <string name="nettest_text_blocked">Conexiunea curentă la rețea a dispozitivului dvs. blochează Starlight. Este posibil ca redarea în flux prin Internet să nu funcționeze când este conectat la această rețea.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Asociere…</string>
+    <string name="pair_pc_offline">Computerul este offline</string>
+    <string name="pair_pc_ingame">Computerul este în prezent într-un joc. Trebuie să închideți jocul înainte de a asocia.</string>
+    <string name="pair_pairing_title">Împerechere</string>
+    <string name="pair_pairing_msg">Vă rugăm să introduceți următorul PIN pe computerul țintă:</string>
+    <string name="pair_pairing_help">Dacă computerul gazdă rulează Sunshine, navigați la interfața web Sunshine pentru a introduce codul PIN.</string>
+    <string name="pair_incorrect_pin">PIN incorect</string>
+    <string name="pair_fail">Asocierea nu a reușit</string>
+    <string name="pair_already_in_progress">Împerecherea este deja în curs</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">Computerul este online</string>
+    <string name="wol_no_mac">Imposibil de activat computerul deoarece nu există nicio adresă MAC stocată</string>
+    <string name="wol_waking_pc">Se trezește computerul…</string>
+    <string name="wol_waking_msg">Este posibil să dureze câteva secunde pentru ca computerul să se trezească.
+Dacă nu, asigurați-vă că este configurat corect pentru Wake-On-LAN.
+    </string>
+    <string name="wol_fail">Trimiterea pachetelor Wake-On-LAN a eșuat</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Se anulează împerecherea…</string>
+    <string name="unpair_success">Deconectat cu succes</string>
+    <string name="unpair_fail">Nu s-a putut deconecta</string>
+    <string name="unpair_error">Dispozitivul nu a fost asociat</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">Computerul este offline</string>
+    <string name="error_manager_not_running">Serviciul ComputerManager nu rulează. Vă rugăm să așteptați câteva secunde sau reporniți aplicația.</string>
+    <string name="error_unknown_host">Nu s-a putut rezolva gazda</string>
+    <string name="error_404">GFE a returnat o eroare HTTP 404. Asigurați-vă că computerul dvs. rulează un GPU acceptat.
+Utilizarea software-ului pentru desktop la distanță poate provoca, de asemenea, această eroare. Încercați să reporniți mașina sau să reinstalați GFE.
+    </string>
+    <string name="title_decoding_error">Decodorul video s-a prăbușit</string>
+    <string name="message_decoding_error">Starlight s-a prăbușit din cauza unei incompatibilități cu decodorul video al acestui dispozitiv. Încercați să ajustați setările de streaming dacă blocările continuă.</string>
+    <string name="title_decoding_reset">Resetarea setărilor video</string>
+    <string name="message_decoding_reset">Decodorul video al dispozitivului dvs. continuă să se blocheze la setările de streaming selectate. Setările dvs. de streaming au fost resetate la valorile prestabilite.</string>
+    <string name="error_usb_prohibited">Accesul USB este interzis de administratorul dispozitivului. Verificați setările Knox sau MDM.</string>
+    <string name="unable_to_pin_shortcut">Lansatorul actual nu permite crearea de comenzi rapide fixate.</string>
+    <string name="video_decoder_init_failed">Decodorul video nu s-a inițializat. Este posibil ca dispozitivul dvs. să nu accepte rezoluția sau rata de cadre selectate.</string>
+    <string name="no_video_received_error">Nu a primit niciun videoclip de la gazdă.</string>
+    <string name="no_frame_received_error">Conexiunea dvs. la rețea nu funcționează bine. Reduceți setarea ratei de biți video sau încercați o conexiune mai rapidă.</string>
+    <string name="early_termination_error">Ceva a mers prost pe computerul gazdă la pornirea fluxului.\n\nAsigurați-vă că nu aveți niciun conținut protejat prin DRM deschis pe computerul gazdă. De asemenea, puteți încerca să reporniți computerul gazdă.</string>
+    <string name="frame_conversion_error">PC-ul gazdă a raportat o eroare fatală de codificare video.\n\nÎncercați să dezactivați modul HDR, să schimbați rezoluția de streaming sau să schimbați rezoluția de afișare a computerului gazdă.</string>
+    <string name="check_ports_msg">Verificați firewall-ul și regulile de redirecționare a portului pentru porturi:</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Stabilirea conexiunii</string>
+    <string name="conn_establishing_msg">Se începe conexiunea</string>
+    <string name="conn_metered">Avertisment: conexiunea dvs. activă la rețea este măsurată!</string>
+    <string name="conn_client_latency">Latența medie de decodare a cadrelor:</string>
+    <string name="conn_client_latency_hw">latența decodorului hardware:</string>
+    <string name="conn_hardware_latency">Latența medie de decodare hardware:</string>
+    <string name="conn_starting">Pornire</string>
+    <string name="conn_error_title">Eroare de conexiune</string>
+    <string name="conn_error_msg">Nu s-a putut porni</string>
+    <string name="conn_terminated_title">Conexiune terminată</string>
+    <string name="conn_terminated_msg">Conexiunea a fost întreruptă.</string>
+    <string name="error_code_prefix">Cod de eroare:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">Adresa IP a PC-ului gazdă</string>
+    <string name="searching_pc">Se caută computere gazdă în rețeaua locală…\n\n
+        Asigurați-vă că Sunshine rulează pe computerul gazdă sau GameStream este activat în setările GeForce Experience SHIELD.</string>
+    <string name="yes">da</string>
+    <string name="no">Nu</string>
+    <string name="lost_connection">S-a pierdut conexiunea la PC</string>
+    <string name="title_details">Detalii</string>
+    <string name="help">Ajutor</string>
+    <string name="delete_pc_msg">Sigur doriți să ștergeți acest computer\?</string>
+    <string name="slow_connection_msg">Conexiune lentă la PC\nReduceți rata de biți</string>
+    <string name="poor_connection_msg">Conexiune slabă la PC</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Flux video: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Decodor: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Rata de cadre primite din rețea: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Rata de redare a cadrelor: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Latența de procesare a gazdei min/max/medie: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">Cadre pierdute de conexiunea dvs. la rețea: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Latența medie a rețelei: %1$d ms (varianță: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Timp mediu de decodare: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Se conectează la PC…</string>
+    <string name="applist_menu_resume">Reluați sesiunea</string>
+    <string name="applist_menu_quit">Ieșiți din sesiune</string>
+    <string name="applist_menu_quit_and_start">Închideți jocul curent și începeți</string>
+    <string name="applist_menu_cancel">Anulare</string>
+    <string name="applist_menu_details">Vezi detalii</string>
+    <string name="applist_menu_scut">Crează o scurtătură</string>
+    <string name="applist_menu_tv_channel">Adaugă la canal</string>
+    <string name="applist_menu_hide_app">Ascunde aplicația</string>
+    <string name="applist_refresh_title">Lista de aplicații</string>
+    <string name="applist_refresh_msg">Se reîmprospătează aplicațiile…</string>
+    <string name="applist_refresh_error_title">Eroare</string>
+    <string name="applist_refresh_error_msg">Nu s-a putut obține lista de aplicații</string>
+    <string name="applist_quit_app">Renunțând</string>
+    <string name="applist_quit_success">Renunțați cu succes</string>
+    <string name="applist_quit_fail">Nu s-a renunțat</string>
+    <string name="applist_quit_confirmation">Sigur doriți să părăsiți aplicația care rulează\? Toate datele nesalvate se vor pierde.</string>
+    <string name="applist_details_id">ID aplicație:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">Adăugați PC-ul manual</string>
+    <string name="msg_add_pc">Se conectează la PC…</string>
+    <string name="addpc_fail">Nu se poate conecta la computerul specificat. Asigurați-vă că porturile necesare sunt permise prin firewall.</string>
+    <string name="addpc_success">Computer adăugat cu succes</string>
+    <string name="addpc_unknown_host">Nu se poate rezolva adresa PC-ului. Asigurați-vă că nu ați greșit la adresa.</string>
+    <string name="addpc_enter_ip">Trebuie să introduceți o adresă IP</string>
+    <string name="addpc_wrong_sitelocal">Adresa nu pare corectă. Trebuie să utilizați adresa IP publică a routerului pentru transmiterea în flux prin Internet.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Setări de bază</string>
+    <string name="title_resolution_list">Rezoluție video</string>
+    <string name="summary_resolution_list">Măriți pentru a îmbunătăți claritatea imaginii. Reduceți pentru o performanță mai bună pe dispozitivele de gamă inferioară și rețelele mai lente.</string>
+    <string name="title_native_res_dialog">Avertisment privind rezoluția nativă</string>
+    <string name="text_native_res_dialog">Este posibil ca rezoluția nativă și/sau FPS să nu fie acceptată de serverul de streaming. Probabil va trebui să configurați manual un mod de afișare personalizat potrivit pentru computerul gazdă.\n\nDacă alegeți să creați o rezoluție personalizată în Panoul de control NVIDIA pentru a se potrivi cu setările ecranului, asigurați-vă că ați citit și înțeles avertismentul NVIDIA în ceea ce privește posibilele deteriorări ale monitorului, instabilitatea computerului și alte probleme potențiale.\n\nNu suntem responsabili pentru nicio problemă care rezultă din crearea unei rezoluții personalizate pe computerul dvs..\n\nEste posibil ca monitorul dvs. să nu accepte o configurație necesară de afișare. Dacă da, puteți încerca să configurați un monitor virtual. În cele din urmă, dacă dispozitivul sau computerul gazdă nu acceptă streaming la o anumită rezoluție sau o rată de reîmprospătare, din păcate, nu ai noroc.</string>
+    <string name="title_fps_list">Rata de cadre video</string>
+    <string name="summary_fps_list">Măriți pentru un flux video mai fluid. Reduceți pentru o performanță mai bună pe dispozitivele de gamă inferioară.</string>
+    <string name="title_seekbar_bitrate">Rata de transfer video</string>
+    <string name="summary_seekbar_bitrate">Măriți pentru o calitate mai bună a imaginii. Reduceți pentru a îmbunătăți performanța la conexiunile mai lente.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">Întindeți videoclipul pe ecran complet</string>
+    <string name="title_stretch_video">Videoclip extensibil</string>
+    <string name="resolution_prefix_native">Nativ</string>
+    <string name="resolution_prefix_native_fullscreen">Ecran complet nativ</string>
+    <string name="resolution_prefix_native_landscape">(Peisaj)</string>
+    <string name="resolution_prefix_native_portrait">(Portret)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Avertisment nativ FPS</string>
+
+    <string name="category_audio_settings">Setari audio</string>
+    <string name="title_audio_config_list">Configurare sunet surround</string>
+    <string name="summary_audio_config_list">Activați sunetul surround 5.1 sau 7.1 pentru sistemele home theater</string>
+    <string name="title_checkbox_enable_audiofx">Activați suportul pentru egalizatorul de sistem</string>
+    <string name="summary_checkbox_enable_audiofx">Permite efectelor audio să funcționeze în timpul transmiterii în flux, dar poate crește latența audio</string>
+
+    <string name="category_gamepad_settings">Setări Gamepad</string>
+    <string name="title_checkbox_multi_controller">Detectare automată a prezenței gamepadului</string>
+    <string name="summary_checkbox_multi_controller">Debifarea acestei opțiuni obligă un gamepad să fie mereu prezent</string>
+    <string name="title_checkbox_vibrate_fallback">Emulați suportul pentru zgomot cu vibrații</string>
+    <string name="summary_checkbox_vibrate_fallback">Vibrează dispozitivul pentru a emula zgomotul dacă gamepad-ul nu îl acceptă</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Reglați intensitatea bubuitului emulat</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Amplifică sau reduce intensitatea vibrațiilor pe dispozitiv</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Reglați zona moartă a stickului analogic</string>
+    <string name="summary_seekbar_deadzone">Notă: Unele jocuri pot impune o zonă moartă mai mare decât ceea ce Starlight este configurat să utilizeze.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Driver pentru gamepad Xbox 360/One USB</string>
+    <string name="summary_checkbox_xb1_driver">Activează un driver USB încorporat pentru dispozitivele fără suport nativ pentru controler Xbox</string>
+    <string name="title_checkbox_usb_bind_all">Ignorați suportul nativ pentru gamepad Xbox</string>
+    <string name="summary_checkbox_usb_bind_all">Utilizați driverul USB al Starlight pentru toate gamepad-urile acceptate, chiar dacă este prezent suportul nativ pentru controlerul Xbox</string>
+    <string name="title_checkbox_mouse_emulation">Emularea mouse-ului prin gamepad</string>
+    <string name="summary_checkbox_mouse_emulation">Apăsarea lungă a butonului Start va trece gamepad-ul în modul mouse</string>
+    <string name="title_checkbox_flip_face_buttons">Butoanele cu fața răsturnată</string>
+    <string name="summary_checkbox_flip_face_buttons">Comută butoanele de față A/B și X/Y pentru gamepad-uri și comenzile de pe ecran</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Controlați întotdeauna mouse-ul cu touchpad</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">Forțează intrarea touchpad-ului pentru gamepad să controleze mouse-ul gazdă, chiar și atunci când emulați un gamepad cu un touchpad.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Permiteți utilizarea senzorilor de mișcare gamepad</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Permite gazdelor acceptate să solicite date senzorului de mișcare atunci când emulează un gamepad cu senzori de mișcare. Dezactivarea poate reduce ușor puterea și utilizarea rețelei dacă senzorii de mișcare nu sunt utilizați în joc.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Emulați suportul senzorului de mișcare pentru gamepad</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Utilizează senzorii de mișcare încorporați ai dispozitivului dvs. dacă senzorii gamepad-ului nu sunt acceptați de gamepad-ul conectat sau de versiunea dvs. Android.\nNotă: activarea acestei opțiuni poate face ca gamepad-ul dvs. să apară ca controler PlayStation pe gazdă.</string>
+
+    <string name="category_input_settings">Setări de intrare</string>
+    <string name="title_checkbox_touchscreen_trackpad">Utilizați ecranul tactil ca trackpad</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Dacă este activat, ecranul tactil acționează ca un trackpad. Dacă este dezactivat, ecranul tactil controlează direct cursorul mouse-ului.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Modul mouse pentru desktop la distanță</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Acest lucru poate face ca accelerarea mouse-ului să se comporte mai natural pentru utilizarea desktopului la distanță, dar este incompatibilă cu multe jocuri.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Activați butoanele mouse-ului înapoi și înainte</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Activarea acestei opțiuni poate întrerupe clic dreapta pe unele dispozitive cu erori</string>
+
+    <string name="category_on_screen_controls_settings">Setări de comenzi de pe ecran</string>
+    <string name="title_checkbox_show_onscreen_controls">Afișați comenzile de pe ecran</string>
+    <string name="summary_checkbox_show_onscreen_controls">Afișați suprapunerea controlerului virtual pe ecranul tactil</string>
+    <string name="title_checkbox_vibrate_osc">Activați vibrația</string>
+    <string name="summary_checkbox_vibrate_osc">Vibrează dispozitivul pentru a emula zgomotul pentru comenzile de pe ecran</string>
+    <string name="title_only_l3r3">Arată doar L3 și R3</string>
+    <string name="summary_only_l3r3">Ascunde toate butoanele virtuale, cu excepția L3 și R3</string>
+    <string name="title_reset_osc">Ștergeți aspectul comenzilor salvate pe ecran</string>
+    <string name="summary_reset_osc">Resetează toate comenzile de pe ecran la dimensiunea și poziția implicită</string>
+    <string name="dialog_title_reset_osc">Resetați aspectul</string>
+    <string name="dialog_text_reset_osc">Sigur doriți să ștergeți aspectul comenzilor de pe ecran salvat\?</string>
+    <string name="toast_reset_osc_success">Comenzile de pe ecran revin la valorile implicite</string>
+    <string name="title_osc_opacity">Schimbați opacitatea comenzilor de pe ecran</string>
+    <string name="summary_osc_opacity">Faceți controalele de pe ecran mai/mai puțin transparente</string>
+    <string name="dialog_title_osc_opacity">Schimbați opacitatea</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">Setări UI</string>
+    <string name="title_checkbox_enable_pip">Activați modul de observare Picture-in-Picture</string>
+    <string name="summary_checkbox_enable_pip">Permite vizualizarea fluxului (dar nu controlat) în timpul multitasking</string>
+    <string name="title_language_list">Limba</string>
+    <string name="summary_language_list">Limbă de folosit pentru Starlight</string>
+    <string name="title_checkbox_small_icon_mode">Folosiți cutie mică de artă</string>
+    <string name="summary_checkbox_small_icon_mode">Cutia mai mică din grila de aplicații permite ca mai multe aplicații să fie vizibile pe ecran</string>
+
+    <string name="category_host_settings">Setări gazdă</string>
+    <string name="title_checkbox_enable_sops">Optimizați setările jocului</string>
+    <string name="summary_checkbox_enable_sops">Permiteți GFE să modifice setările jocului pentru streaming optim</string>
+    <string name="title_checkbox_host_audio">Redați audio pe PC</string>
+    <string name="summary_checkbox_host_audio">Redați sunet de pe computer și de pe acest dispozitiv</string>
+
+    <string name="category_advanced_settings">Setari avansate</string>
+    <string name="title_unlock_fps">Deblocați toate ratele de cadre posibile</string>
+    <string name="summary_unlock_fps">Redarea în flux la 90 sau 120 FPS poate reduce latența pe dispozitivele de ultimă generație, dar poate provoca întârziere sau instabilitate pe dispozitivele care nu o acceptă</string>
+    <string name="title_checkbox_reduce_refresh_rate">Permiteți reducerea ratei de reîmprospătare</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Ratele mai mici de reîmprospătare ale afișajului pot economisi energie în detrimentul unei latențe video suplimentare</string>
+    <string name="title_checkbox_disable_warnings">Dezactivați mesajele de avertizare</string>
+    <string name="summary_checkbox_disable_warnings">Dezactivați mesajele de avertizare de conexiune de pe ecran în timpul transmiterii în flux</string>
+    <string name="title_disable_frame_drop">Nu aruncați niciodată cadre</string>
+    <string name="summary_disable_frame_drop">Poate reduce micro-bâlbâiala pe unele dispozitive, dar poate crește latența</string>
+    <string name="title_video_format">Schimbați setările de codec</string>
+    <string name="summary_video_format">Codecurile mai noi pot reduce cerințele de lățime de bandă video dacă dispozitivul dvs. le acceptă. Selecțiile de codec pot fi ignorate dacă nu sunt acceptate de software-ul gazdă sau GPU.</string>
+    <string name="title_enable_hdr">Activați HDR (experimental)</string>
+    <string name="summary_enable_hdr">Transmiteți în flux HDR atunci când jocul și GPU-ul PC-ului îl acceptă. HDR necesită un GPU cu suport pentru codificare HEVC Main 10.</string>
+    <string name="title_full_range">Forțați videoclipul cu gamă completă (Dependent de dispozitiv)</string>
+    <string name="summary_full_range">Acest lucru va duce la pierderea detaliilor în zonele luminoase și întunecate, dacă dispozitivul dvs. nu afișează în mod corespunzător conținut video de gamă completă.</string>
+    <string name="title_enable_perf_overlay">Afișați statistici de performanță în timp ce transmiteți în flux</string>
+    <string name="summary_enable_perf_overlay">Afișați informații despre performanța fluxului în timp real în timp ce transmiteți în flux</string>
+    <string name="title_enable_post_stream_toast">Afișează mesajul de latență după streaming</string>
+    <string name="summary_enable_post_stream_toast">Afișează un mesaj cu informații despre latență după încheierea fluxului</string>
+
+    <string name="category_help">Ajutor</string>
+    <string name="title_setup_guide">Ghid de instalare</string>
+    <string name="summary_setup_guide">Vizualizați instrucțiuni despre cum să vă configurați computerul de jocuri pentru streaming</string>
+    <string name="title_troubleshooting">Ghid de depanare</string>
+    <string name="summary_troubleshooting">Vedeți sfaturi pentru diagnosticarea și remedierea problemelor frecvente de streaming</string>
+    <string name="title_privacy_policy">Politica de confidențialitate</string>
+    <string name="summary_privacy_policy">Vezi politica de confidențialitate a Starlight</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">Tipul de gamepad poate fi modificat din cauza emulării senzorului de mișcare</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30 FPS</string>
+    <string name="fps_60">60 FPS</string>
+    <string name="fps_90">90 FPS</string>
+    <string name="fps_120">120 FPS</string>
+
+    <string name="audioconf_stereo">Stereo</string>
+    <string name="audioconf_51surround">5.1 Sunet surround</string>
+    <string name="audioconf_71surround">7.1 Sunet surround</string>
+
+    <string name="videoformat_auto">Automat (recomandat)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">Prefer AV1 (experimental)</string>
+    <string name="videoformat_hevcalways">Prefer HEVC</string>
+    <string name="videoformat_h264always">Prefer H.264</string>
+
+    <string name="title_frame_pacing">Stimularea cadrului video</string>
+    <string name="summary_frame_pacing">Specificați cum să echilibrați latența și fluiditatea video</string>
+    <string name="pacing_latency">Prefer cea mai mică latență</string>
+    <string name="pacing_balanced">Echilibrat</string>
+    <string name="pacing_balanced_alt">Echilibrat cu limita FPS</string>
+    <string name="pacing_smoothness">Prefer cel mai fluid videoclip (poate crește semnificativ latența)</string>
+    <string name="title_analog_scrolling">Utilizați un stick analogic pentru a derula</string>
+    <string name="summary_analog_scrolling">Selectați un stick analog pentru a derula în modul de emulare a mouse-ului</string>
+    <string name="analogscroll_none">Niciuna (ambele stick-uri mișcă mouse-ul)</string>
+    <string name="analogscroll_right">Stick analog dreapta</string>
+    <string name="analogscroll_left">Stick analog din stânga</string>
+    <string name="games">Jocuri</string>
+    <string name="settings">Setări</string>
+    <string name="exit">Ieșire</string>
+    <string name="options">Opțiuni</string>
+    <string name="pending">In asteptarea</string>
+    <string name="data_collection">Colectare de date</string>
+    <string name="loading_for_first_time_use_please_wait">Se încarcă pentru prima utilizare.... Vă rugăm să așteptați...</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Doriți să închideți sau să întrerupeți această aplicație, toate datele nesalvate se vor pierde la ieșire.</string>
+    <string name="confirm_quit">Confirmați Ieșire</string>
+    <string name="quit">Părăsi</string>
+    <string name="pause">Pauză</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Sigur doriți să ștergeți memoria cache, aceasta va închide această fereastră\?</string>
+    <string name="clear_cache">Goliți memoria cache</string>
+    <string name="click_ok_to_launch_game">faceți clic pe OK pentru a lansa jocul.</string>
+    <string name="active_internet_connection_required_for_game_details">Este necesară o conexiune la internet activă pentru detaliile jocului,</string>
+    <string name="download">Descarca</string>
+    <string name="download_translations_model">Descărcați modelul de traduceri</string>
+    <string name="download_locale_language_model_to_translate_game_data">Descărcați modelul lingvistic local pentru a traduce datele jocului</string>
+    <string name="downloading_ml_language_file_please_wait">Va rugam asteptati..</string>
+    <string name="download_successful">Descărcare reușită</string>
+    <string name="download_error_please_try_again">Eroare de descărcare: Vă rugăm să încercați din nou</string>
+    <string name="model_deleted_successfully">Modelul a fost șters cu succes</string>
+    <string name="model_delete_failed_please_try_again">Ștergerea modelului nu a reușit, încercați din nou</string>
+    <string name="delete_language_model">Ștergeți modelul de limbă</string>
+    <string name="delete_downloaded_language_model">Ștergeți modelul de limbă descărcat</string>
+    <string name="support">\"A sustine \"</string>
+    <string name="cache">Memorați în cache %1$s</string>
+    <string name="hdr_off">„HDR dezactivat”</string>
+    <string name="hdr_on">„HDR activat”</string>
+    <string name="cancel">Anulare</string>
+    <string name="display_does_not_support_hdr10">Ecranul nu acceptă HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">Decodorul nu acceptă profilul HDR10</string>
+    <string name="no_hevc_decoder_found">Nu a fost găsit niciun decodor HEVC</string>
+    <string name="no_av1_decoder_found">Nu a fost găsit niciun decodor AV1</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">Acest dispozitiv sau ROM nu acceptă redarea H.264 accelerată hardware.</string>
+    <string name="server_version_malformed">Versiunea serverului este incorectă</string>
+    <string name="device_not_paired_with_computer">Dispozitivul nu este asociat cu computerul</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">GPU-ul computerului dvs. nu acceptă streaming HDR. Fluxul va fi SDR.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">PC-ul gazdă nu acceptă streaming la rezoluții mai mari de 4K.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">Dispozitivul dvs. de streaming trebuie să accepte HEVC sau AV1 pentru a transmite în flux la rezoluții de peste 4K.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Trebuie să actualizați GeForce Experience pentru a transmite în flux în 4K. Fluxul va fi 1080p.</string>
+    <string name="failed_to_resume_existing_session">Nu s-a reluat sesiunea existentă</string>
+    <string name="this_session_wasn_t_started_by_this_device">Această sesiune nu a fost începută de acest dispozitiv,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" deci nu poate fi reluat. Încheiați fluxul pe versiunea originală \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"dispozitiv sau computerul însuși și încercați din nou. (Cod de eroare: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"Aplicația este minimizată. Reluați-o pe computer manual sau \"</string>
+    <string name="quit_the_session_and_start_streaming_again">ieșiți din sesiune și începeți din nou difuzarea.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Nu s-a putut ieși din sesiunea anterioară! Trebuie să renunți manual</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">„ deci nu poate fi oprit. Încheiați fluxul pe versiunea originală ”</string>
+    <string name="device_or_the_pc_itself_error_code">\"dispozitiv sau computerul însuși. (Cod de eroare: \"</string>
+    <string name="failed_to_launch_application">Lansarea aplicației a eșuat</string>
+    <string name="please_wait_for_the_process_to_complete">Vă rugăm să așteptați finalizarea procesului…</string>
+    <string name="enter_api_key_here">Introdu cheia API aici:</string>
+    <string name="favorites">Favorite</string>
+    <string name="removed_from_favorites">„Eliminat din Favorite și Canalul Acasă”</string>
+    <string name="added_to_favorites">„Adăugat la favorite și la canalul principal”</string>
+    <string name="clear_favorites">Ștergeți Favoritele</string>
+    <string name="clear_favs_msg">Sigur doriți să ștergeți favoritele, acest lucru va elimina și aplicația Canale de acasă\?</string>
+    <string name="app_list_updated">Lista de aplicații a fost actualizată</string>
+    <string name="update_the_database"><![CDATA[Sigur doriți să ștergeți și să actualizați baza de date, aceasta va închide această fereastră\?]]></string>
+    <string name="update_database">Actualizarea bazei de date</string>
+    <string name="database">Bază de date</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Sigur doriți să ștergeți toate favoritele?</string>
+    <string name="resuming_session">Reluarea sesiunii</string>
+    <string name="app_added_to_favorites">Adăugat la favorite</string>
+    <string name="app_removed_from_favorites">Eliminat din favorite</string>
+    <string name="anonymous_statistics">Statistici anonime</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Trimiteți statistici anonime pentru a îmbunătăți performanța aplicației.</string>
+    <string name="captions">Subtitrări video YouTube</string>
+    <string name="captions_text">Activează sau dezactivează subtitrările videoclipurilor YouTube.</string>
+    <string name="privacy">Confidențialitate</string>
+    <string name="restart_application">Reporniți aplicația</string>
+    <string name="restart_now">Aceasta va reporni aplicația pentru a aplica modificările. Doriți să reporniți acum\?</string>
+    <string name="database_updating">Actualizarea bazei de date</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Îmbunătățire video: (x%1$.2f) Shader SGSR1</string>
+    <string name="title_video_sr">Super Rezoluție Video</string>
+    <string name="summary_video_sr">Folosește accelerarea hardware pentru a îmbunătăți claritatea imaginii</string>
+    <string name="aaudio">Încercări de a securiza accesul direct la hardware pentru un răspuns audio mai rapid. Din cauza restricțiilor impuse de producător pentru unele televizoare Android sau dispozitive de streaming, poate apărea o anumită latență. Dacă sunetul devine instabil, vă rugăm să dezactivați această opțiune.</string>
+    <string name="enable_aaudio">Activează AAudio</string>
+    <string name="aaudio_title">AAudio Latență Ultra Redusă (Experimental)</string>
+    <string name="aaudio_summary">AAudio Ultra Low Latency cu (suport pentru sunet surround)</string>
+    <string name="aaudio_summary29">Activează latența ultra-scăzută AAudio</string>
+    <string name="game_media_library">Biblioteca media de jocuri</string>
+
+    <string name="title_audio_output_mode">Format de ieșire audio</string>
+    <string name="summary_audio_output_mode">PCM este compatibil cu toate dispozitivele. AC-3 și Dolby Digital Plus trimit sunet 5.1 codat către un receptor HDMI/eARC și revin la PCM dacă ruta eșuează.</string>
+    <string name="audio_output_mode_pcm">PCM (implicit)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (automat, experimental)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (forță, experimental)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (automat, experimental)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (forțat, experimental)</string>
+    <string name="encoded_audio_fallback_to_pcm">Ieșirea audio codificată nu este disponibilă. Continuăm cu audio PCM.</string>
+    <string name="switch_to_encoded">Ieșirea audio codificată este disponibilă, se comută la audio codificat.</string>
+</resources>

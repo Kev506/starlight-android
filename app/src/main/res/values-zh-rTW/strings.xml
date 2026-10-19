@@ -1,0 +1,417 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">玩</string>
+    <string name="details">細節</string>
+    <string name="running">遊戲運行，點選播放選項。</string>
+    <string name="No_Details">抱歉，沒有詳細資訊可供顯示。
+
+如果您是手動新增的遊戲，請檢查遊戲標題並清除並更新資料庫。
+
+如果所選項目是桌面應用程序，則不會顯示任何詳細資訊。</string>
+    
+    
+    
+    
+    
+    <string name="trailers">預告片</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">使用 Leanback UI</string>
+    <string name="leanback_summary">選擇在 Leanback UI 中顯示應用程式</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">電腦已刪除</string>
+    <string name="scut_not_paired">電腦未配對</string>
+    <string name="scut_pc_not_found">未找到電腦</string>
+    <string name="scut_invalid_uuid">所提供的 PC 無效</string>
+    <string name="scut_invalid_app_id">提供的應用程式無效</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">幫助查看器</string>
+    <string name="help_loading_msg">正在載入幫助頁面…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">在線的</string>
+    <string name="pcview_menu_header_offline">離線</string>
+    <string name="pcview_menu_header_unknown">清爽</string>
+    <string name="pcview_menu_app_list">查看所有應用程式</string>
+    <string name="pcview_menu_pair_pc">與電腦配對</string>
+    <string name="pcview_menu_unpair_pc">取消配對</string>
+    <string name="pcview_menu_send_wol">發送 LAN 喚醒請求</string>
+    <string name="pcview_menu_delete_pc">刪除電腦</string>
+    <string name="pcview_menu_test_network">測試網路連接</string>
+    <string name="pcview_menu_details">看詳情</string>
+    <string name="pcview_menu_eol">NVIDIA GameStream 服務終止</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">測試網路連接</string>
+    <string name="nettest_text_waiting">Starlight 正在測試您的網路連線以確定是否有任何所需的連接埠被封鎖。\n\n這可能需要幾秒鐘…</string>
+    <string name="nettest_title_done">網路測試完成</string>
+    <string name="nettest_text_success">您的網路似乎沒有阻止月光。如果連線仍然遇到問題，請檢查 PC 的防火牆設定。\n\n 如果您嘗試透過 Internet 進行串流傳輸，請在 PC 上安裝 Moonlight Internet Hosting Tool 並執行隨附的 Internet Streaming Tester 以檢查您的 PC\的網路連線。</string>
+    <string name="nettest_text_inconclusive">由於無法存取 Starlight 的所有連接測試伺服器，因此無法執行網路測試。檢查您的網路連線或稍後重試。</string>
+    <string name="nettest_text_failure">您設備目前的網路連線似乎阻止了 Starlight。連接到此網路時，可能無法透過 Internet 進行串流傳輸。\n\n以下網路連接埠被封鎖:\n</string>
+    <string name="nettest_text_blocked">您裝置目前的網路連線正在阻止 Starlight。連接到此網路時，可能無法透過 Internet 進行串流傳輸。</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">配對…</string>
+    <string name="pair_pc_offline">電腦離線</string>
+    <string name="pair_pc_ingame">電腦目前正在玩遊戲。配對前您必須關閉遊戲。</string>
+    <string name="pair_pairing_title">配對</string>
+    <string name="pair_pairing_msg">請在目標 PC 上輸入以下 PIN：</string>
+    <string name="pair_pairing_help">如果您的主機 PC 正在執行 Sunshine，請導覽至 Sunshine Web UI 以輸入 PIN。</string>
+    <string name="pair_incorrect_pin">PIN 碼不正確</string>
+    <string name="pair_fail">配對失敗</string>
+    <string name="pair_already_in_progress">配對已在進行中</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">電腦已上線</string>
+    <string name="wol_no_mac">由於沒有儲存 MAC 位址，無法喚醒 PC</string>
+    <string name="wol_waking_pc">喚醒電腦…</string>
+    <string name="wol_waking_msg">您的電腦可能需要幾秒鐘的時間才能喚醒。
+如果沒有，請確保已正確設定 LAN 喚醒。
+    </string>
+    <string name="wol_fail">發送 LAN 喚醒封包失敗</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">正在取消配對…</string>
+    <string name="unpair_success">取消配對成功</string>
+    <string name="unpair_fail">取消配對失敗</string>
+    <string name="unpair_error">裝置未配對</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">電腦離線</string>
+    <string name="error_manager_not_running">ComputerManager 服務未執行。請等待幾秒鐘或重新啟動應用程式。</string>
+    <string name="error_unknown_host">無法解析主機</string>
+    <string name="error_404">GFE 回傳 HTTP 404 錯誤。確保您的電腦正在運行受支援的 GPU。
+使用遠端桌面軟體也可能導致此錯誤。嘗試重新啟動電腦或重新安裝 GFE。
+    </string>
+    <string name="title_decoding_error">視訊解碼器崩潰</string>
+    <string name="message_decoding_error">由於與該設備的視頻解碼器不相容，月光已崩潰。如果崩潰仍然存在，請嘗試調整串流媒體設定。</string>
+    <string name="title_decoding_reset">影片設定重置</string>
+    <string name="message_decoding_reset">您裝置的視訊解碼器在您選擇的串流媒體設定下繼續崩潰。您的串流媒體設定已重設為預設值。</string>
+    <string name="error_usb_prohibited">您的裝置管理員禁止 USB 存取。檢查您的 Knox 或 MDM 設定。</string>
+    <string name="unable_to_pin_shortcut">您目前的啟動器不允許建立固定快捷方式。</string>
+    <string name="video_decoder_init_failed">視訊解碼器初始化失敗。您的裝置可能不支援所選的解析度或幀速率。</string>
+    <string name="no_video_received_error">沒有收到主機的影片。</string>
+    <string name="no_frame_received_error">您的網路連線效能不佳。降低視訊比特率設定或嘗試更快的連線。</string>
+    <string name="early_termination_error">啟動流時您的主機出現問題。\n\n請確保您的主機上沒有開啟任何受 DRM 保護的內容。您也可以嘗試重新啟動主機。</string>
+    <string name="frame_conversion_error">主機報告了致命的視訊編碼錯誤。\n\n請嘗試停用 HDR 模式、變更串流解析度或變更主機的顯示解析度。</string>
+    <string name="check_ports_msg">檢查連接埠的防火牆和連接埠轉送規則：</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">建立連線</string>
+    <string name="conn_establishing_msg">開始連接</string>
+    <string name="conn_metered">警告：您的活動網路連線是按流量計費的！</string>
+    <string name="conn_client_latency">平均幀解碼延遲：</string>
+    <string name="conn_client_latency_hw">硬體解碼器延遲：</string>
+    <string name="conn_hardware_latency">平均硬體解碼延遲：</string>
+    <string name="conn_starting">開始</string>
+    <string name="conn_error_title">連線錯誤</string>
+    <string name="conn_error_msg">未能啟動</string>
+    <string name="conn_terminated_title">連線終止</string>
+    <string name="conn_terminated_msg">連線被終止。</string>
+    <string name="error_code_prefix">錯誤代碼：</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">PC主機IP位址</string>
+    <string name="searching_pc">正在本機網路上搜尋主機 PC…\n\n
+        確保 Sunshine 正在您的主機 PC 上運行，或在 GeForce Experience SHIELD 設定中啟用了 GameStream。</string>
+    <string name="yes">是的</string>
+    <string name="no">不</string>
+    <string name="lost_connection">與電腦失去連接</string>
+    <string name="title_details">細節</string>
+    <string name="help">幫助</string>
+    <string name="delete_pc_msg">您確定要刪除這台電腦嗎？</string>
+    <string name="slow_connection_msg">與 PC 連線速度慢\n降低位元率</string>
+    <string name="poor_connection_msg">與電腦連接不良</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">視訊串流：%1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">解碼器：%1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">來自網路的傳入幀速率：%1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">渲染幀速率：%1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">主機處理延遲最小值/最大值/平均值：%1$.1f/%2$.1f/%3$.1f 毫秒</string>
+    <string name="perf_overlay_netdrops">您的網路連線丟棄的幀數：%1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">平均網路延遲：%1$d 毫秒（差異：%2$d 毫秒）</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">平均解碼時間：%1$.2f 毫秒</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">正在連接電腦…</string>
+    <string name="applist_menu_resume">恢復會話</string>
+    <string name="applist_menu_quit">退出會話</string>
+    <string name="applist_menu_quit_and_start">退出當前遊戲並開始</string>
+    <string name="applist_menu_cancel">取消</string>
+    <string name="applist_menu_details">看詳情</string>
+    <string name="applist_menu_scut">建立快捷方式</string>
+    <string name="applist_menu_tv_channel">新增到頻道</string>
+    <string name="applist_menu_hide_app">隱藏應用程式</string>
+    <string name="applist_refresh_title">應用程式列表</string>
+    <string name="applist_refresh_msg">正在刷新應用程式…</string>
+    <string name="applist_refresh_error_title">錯誤</string>
+    <string name="applist_refresh_error_msg">取得應用程式清單失敗</string>
+    <string name="applist_quit_app">戒菸</string>
+    <string name="applist_quit_success">成功戒菸</string>
+    <string name="applist_quit_fail">退出失敗</string>
+    <string name="applist_quit_confirmation">您確定要退出正在運行的應用程式嗎？所有未儲存的資料都將遺失。</string>
+    <string name="applist_details_id">應用程式ID：</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">手動新增電腦</string>
+    <string name="msg_add_pc">正在連接電腦…</string>
+    <string name="addpc_fail">無法連接到指定的電腦。確保允許所需連接埠通過防火牆。</string>
+    <string name="addpc_success">新增計算機成功</string>
+    <string name="addpc_unknown_host">無法解析 PC 位址。確保您沒有輸入錯誤的地址。</string>
+    <string name="addpc_enter_ip">您必須輸入 IP 位址</string>
+    <string name="addpc_wrong_sitelocal">該地址看起來不對。您必須使用路由器的公用 IP 位址透過 Internet 進行串流傳輸。</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">基本設定</string>
+    <string name="title_resolution_list">視訊解析度</string>
+    <string name="summary_resolution_list">增加以提高影像清晰度。減少以在低端設備和較慢的網路上獲得更好的性能。</string>
+    <string name="title_native_res_dialog">本機分辨率警告</string>
+    <string name="text_native_res_dialog">串流媒體伺服器可能不支援本機解析度和/或 FPS。您可能需要手動為主機 PC 配置匹配的自定義顯示模式。\n\n如果您選擇在 NVIDIA 控制面板中創建自定義分辨率以匹配您的屏幕設置，請確保您已閱讀並理解 NVIDIA 的警告關於可能的顯示器損壞、電腦不穩定和其他潛在問題。\n\n我們對因在您的電腦上創建自訂解析度而導致的任何問題不承擔任何責任。\n\n您的顯示器可能不支援必要的顯示配置。如果是這樣，您可以嘗試設定虛擬顯示器。最後，如果您的裝置或主機不支援特定解析度或更新率的串流傳輸，那麼您就很不幸了。</string>
+    <string name="title_fps_list">視訊幀率</string>
+    <string name="summary_fps_list">增加以獲得更流暢的視訊串流。減少以在低端設備上獲得更好的性能。</string>
+    <string name="title_seekbar_bitrate">視訊比特率</string>
+    <string name="summary_seekbar_bitrate">增加以獲得更好的圖像品質。減少以提高較慢連線的效能。</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">將影片拉長至全螢幕</string>
+    <string name="title_stretch_video">伸展影片</string>
+    <string name="resolution_prefix_native">本國的</string>
+    <string name="resolution_prefix_native_fullscreen">原生全螢幕</string>
+    <string name="resolution_prefix_native_landscape">（景觀）</string>
+    <string name="resolution_prefix_native_portrait">（肖像）</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">本機 FPS 警告</string>
+
+    <string name="category_audio_settings">音訊設定</string>
+    <string name="title_audio_config_list">環繞音效配置</string>
+    <string name="summary_audio_config_list">為家庭劇院系統啟用 5.1 或 7.1 環繞聲</string>
+    <string name="title_checkbox_enable_audiofx">啟用系統均衡器支援</string>
+    <string name="summary_checkbox_enable_audiofx">允許音訊效果在串流時發揮作用，但可能會增加音訊延遲</string>
+
+    <string name="category_gamepad_settings">遊戲手把設定</string>
+    <string name="title_checkbox_multi_controller">自動檢測遊戲手把是否存在</string>
+    <string name="summary_checkbox_multi_controller">取消選取此選項會強制遊戲手把始終存在</string>
+    <string name="title_checkbox_vibrate_fallback">透過振動模擬隆隆聲支持</string>
+    <string name="summary_checkbox_vibrate_fallback">如果您的遊戲手把不支援，則振動您的裝置以模擬隆隆聲</string>
+    <string name="title_seekbar_vibrate_fallback_strength">調整模擬隆隆聲強度</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">增強或降低設備的振動強度</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">調整類比搖桿死區</string>
+    <string name="summary_seekbar_deadzone">注意：某些遊戲可以強制執行比 Starlight 配置使用的死區更大的死區。</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Xbox 360/One USB 遊戲手把驅動程式</string>
+    <string name="summary_checkbox_xb1_driver">為沒有本機 Xbox 控制器支援的裝置啟用內建 USB 驅動程式</string>
+    <string name="title_checkbox_usb_bind_all">覆蓋本機 Xbox 遊戲手把支援</string>
+    <string name="summary_checkbox_usb_bind_all">即使存在本機 Xbox 控制器支持，也對所有受支援的遊戲手柄使用 Starlight 的 USB 驅動程式</string>
+    <string name="title_checkbox_mouse_emulation">透過遊戲手把模擬滑鼠</string>
+    <string name="summary_checkbox_mouse_emulation">長按開始按鈕會將遊戲手把切換到滑鼠模式</string>
+    <string name="title_checkbox_flip_face_buttons">翻轉臉部按鈕</string>
+    <string name="summary_checkbox_flip_face_buttons">切換遊戲手把和螢幕控制的正面按鈕 A/B 和 X/Y</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">始終使用觸控板控制滑鼠</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">強制遊戲手把觸控板輸入來控制主機滑鼠，即使在使用觸控板模擬遊戲手把時也是如此。</string>
+    <string name="title_checkbox_gamepad_motion_sensors">允許使用遊戲手把運動感應器</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">使受支援的主機能夠在使用運動感測器模擬遊戲手把時請求運動感測器數據。如果遊戲中未使用運動感測器，停用可能會稍微減少電量和網路使用量。</string>
+    <string name="title_checkbox_gamepad_motion_fallback">模擬遊戲手把運動感應器支持</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">如果您連接的遊戲手把或 Android 版本不支援遊戲手把感應器，則使用裝置的內建動作感應器。\n注意：啟用此選項可能會導致您的遊戲手把在主機上顯示為 PlayStation 控制器。</string>
+
+    <string name="category_input_settings">輸入設定</string>
+    <string name="title_checkbox_touchscreen_trackpad">將觸控螢幕用作觸控板</string>
+    <string name="summary_checkbox_touchscreen_trackpad">如果啟用，觸控螢幕就像觸控板一樣。如果停用，觸控螢幕將直接控制滑鼠遊標。</string>
+    <string name="title_checkbox_absolute_mouse_mode">遠端桌面滑鼠模式</string>
+    <string name="summary_checkbox_absolute_mouse_mode">這可以使滑鼠加速在遠端桌面使用中表現得更自然，但它與許多遊戲不相容。</string>
+    <string name="title_checkbox_mouse_nav_buttons">啟用後退和前進滑鼠按鈕</string>
+    <string name="summary_checkbox_mouse_nav_buttons">啟用此選項可能會破壞某些有問題的裝置上的右鍵單擊</string>
+
+    <string name="category_on_screen_controls_settings">螢幕控制設定</string>
+    <string name="title_checkbox_show_onscreen_controls">顯示螢幕控制項</string>
+    <string name="summary_checkbox_show_onscreen_controls">在觸控螢幕上顯示虛擬控制器覆蓋層</string>
+    <string name="title_checkbox_vibrate_osc">啟用振動</string>
+    <string name="summary_checkbox_vibrate_osc">振動您的裝置以模擬螢幕控制的隆隆聲</string>
+    <string name="title_only_l3r3">只顯示L3和R3</string>
+    <string name="summary_only_l3r3">隱藏L3和R3之外的所有虛擬按鈕</string>
+    <string name="title_reset_osc">清除已儲存的螢幕控制項佈局</string>
+    <string name="summary_reset_osc">將所有螢幕控制項重設為其預設大小和位置</string>
+    <string name="dialog_title_reset_osc">重置佈局</string>
+    <string name="dialog_text_reset_osc">您確定要刪除已儲存的螢幕控制項佈局嗎？</string>
+    <string name="toast_reset_osc_success">螢幕控制重設為預設值</string>
+    <string name="title_osc_opacity">更改螢幕控制項的不透明度</string>
+    <string name="summary_osc_opacity">讓螢幕控制更加透明/不那麼透明</string>
+    <string name="dialog_title_osc_opacity">更改不透明度</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">使用者介面設定</string>
+    <string name="title_checkbox_enable_pip">啟用畫中畫觀察者模式</string>
+    <string name="summary_checkbox_enable_pip">允許在多任務處理時查看（但不受控制）流</string>
+    <string name="title_language_list">語言</string>
+    <string name="summary_language_list">月光使用的語言</string>
+    <string name="title_checkbox_small_icon_mode">使用小盒子藝術</string>
+    <string name="summary_checkbox_small_icon_mode">應用程式網格中較小的盒子藝術允許更多應用程式在螢幕上可見</string>
+
+    <string name="category_host_settings">主機設定</string>
+    <string name="title_checkbox_enable_sops">優化遊戲設定</string>
+    <string name="summary_checkbox_enable_sops">允許 GFE 修改遊戲設定以獲得最佳串流媒體</string>
+    <string name="title_checkbox_host_audio">在電腦上播放音訊</string>
+    <string name="summary_checkbox_host_audio">播放電腦和此設備中的音頻</string>
+
+    <string name="category_advanced_settings">進階設定</string>
+    <string name="title_unlock_fps">解鎖所有可能的幀速率</string>
+    <string name="summary_unlock_fps">以 90 或 120 FPS 進行串流傳輸可能會減少高階裝置上的延遲，但可能會導致不支援它的裝置上的延遲或不穩定</string>
+    <string name="title_checkbox_reduce_refresh_rate">允許降低刷新率</string>
+    <string name="summary_checkbox_reduce_refresh_rate">較低的顯示更新率可以節省電量，但會帶來一些額外的視訊延遲</string>
+    <string name="title_checkbox_disable_warnings">禁用警告訊息</string>
+    <string name="summary_checkbox_disable_warnings">串流傳輸時會停用螢幕上的連線警告訊息</string>
+    <string name="title_disable_frame_drop">永不掉幀</string>
+    <string name="summary_disable_frame_drop">可能會減少某些裝置上的微卡頓，但會增加延遲</string>
+    <string name="title_video_format">更改編解碼器設置</string>
+    <string name="summary_video_format">如果您的設備支持，較新的編解碼器可以降低視訊頻寬要求。如果主機軟體或 GPU 不支持，則編解碼器選擇可能會被忽略。</string>
+    <string name="title_enable_hdr">啟用 HDR（實驗性）</string>
+    <string name="summary_enable_hdr">當遊戲和 PC GPU 支援時串流 HDR。 HDR 需要支援 HEVC Main 10 編碼的 GPU。</string>
+    <string name="title_full_range">強制全範圍影片（依賴設備）</string>
+    <string name="summary_full_range">如果您的裝置無法正確顯示全範圍影片內容，這將導致明暗區域的細節遺失。</string>
+    <string name="title_enable_perf_overlay">串流時顯示效能統計數據</string>
+    <string name="summary_enable_perf_overlay">串流媒體時顯示即時串流效能資訊</string>
+    <string name="title_enable_post_stream_toast">串流後顯示延遲訊息</string>
+    <string name="summary_enable_post_stream_toast">串流結束後顯示延遲訊息訊息</string>
+
+    <string name="category_help">幫助</string>
+    <string name="title_setup_guide">設定指南</string>
+    <string name="summary_setup_guide">查看有關如何設定遊戲電腦進行串流的說明</string>
+    <string name="title_troubleshooting">故障排除指南</string>
+    <string name="summary_troubleshooting">查看診斷和修復常見串流媒體問題的提示</string>
+    <string name="title_privacy_policy">隱私權政策</string>
+    <string name="summary_privacy_policy">查看月光的隱私權政策</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">遊戲手把類型可能會因運動感光元件模擬而改變</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30幀/秒</string>
+    <string name="fps_60">60幀/秒</string>
+    <string name="fps_90">90幀/秒</string>
+    <string name="fps_120">120幀/秒</string>
+
+    <string name="audioconf_stereo">立體聲</string>
+    <string name="audioconf_51surround">5.1環繞聲</string>
+    <string name="audioconf_71surround">7.1 環繞聲</string>
+
+    <string name="videoformat_auto">自動（建議）</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">偏好 AV1（實驗性）</string>
+    <string name="videoformat_hevcalways">更喜歡 HEVC</string>
+    <string name="videoformat_h264always">更喜歡 H.264</string>
+
+    <string name="title_frame_pacing">視訊幀節奏</string>
+    <string name="summary_frame_pacing">指定如何平衡視訊延遲和流暢度</string>
+    <string name="pacing_latency">偏好最低延遲</string>
+    <string name="pacing_balanced">均衡</string>
+    <string name="pacing_balanced_alt">與 FPS 限制保持平衡</string>
+    <string name="pacing_smoothness">喜歡最流暢的影片（可能會顯著增加延遲）</string>
+    <string name="title_analog_scrolling">使用類比搖桿滾動</string>
+    <string name="summary_analog_scrolling">在滑鼠模擬模式下選擇要滾動的模擬搖桿</string>
+    <string name="analogscroll_none">無（兩根搖桿都會移動滑鼠）</string>
+    <string name="analogscroll_right">右模擬搖桿</string>
+    <string name="analogscroll_left">左模擬搖桿</string>
+    <string name="games">遊戲</string>
+    <string name="settings">設定</string>
+    <string name="exit">出口</string>
+    <string name="options">選項</string>
+    <string name="pending">待辦的</string>
+    <string name="data_collection">數據採集</string>
+    <string name="loading_for_first_time_use_please_wait">首次使用正在載入…請稍候…</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">您要退出還是暫停此應用程序，退出時所有未儲存的資料將遺失。</string>
+    <string name="confirm_quit">確認退出</string>
+    <string name="quit">辭職</string>
+    <string name="pause">暫停</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">您確定要清除緩存，這將關閉此視窗嗎？</string>
+    <string name="clear_cache">清除快取</string>
+    <string name="click_ok_to_launch_game">按一下「確定」啟動遊戲。</string>
+    <string name="active_internet_connection_required_for_game_details">遊戲詳情需要有效的網路連接，</string>
+    <string name="download">下載</string>
+    <string name="download_translations_model">下載翻譯模型</string>
+    <string name="download_locale_language_model_to_translate_game_data">下載區域設定語言模型翻譯遊戲數據</string>
+    <string name="downloading_ml_language_file_please_wait">請稍等..</string>
+    <string name="download_successful">下載成功</string>
+    <string name="download_error_please_try_again">下載錯誤：請重試</string>
+    <string name="model_deleted_successfully">模型刪除成功</string>
+    <string name="model_delete_failed_please_try_again">模型刪除失敗，請重試</string>
+    <string name="delete_language_model">刪除語言模型</string>
+    <string name="delete_downloaded_language_model">刪除下載的語言模型</string>
+    <string name="support">“支持 ”</string>
+    <string name="cache">快取%1$s</string>
+    <string name="hdr_off">“HDR 關閉”</string>
+    <string name="hdr_on">“HDR 開啟”</string>
+    <string name="cancel">取消</string>
+    <string name="display_does_not_support_hdr10">顯示器不支援 HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">解碼器不支援 HDR10 設定文件</string>
+    <string name="no_hevc_decoder_found">找不到 HEVC 解碼器</string>
+    <string name="no_av1_decoder_found">未找到 AV1 解碼器</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">此裝置或 ROM 不支援硬體加速 H.264 播放。</string>
+    <string name="server_version_malformed">伺服器版本格式錯誤</string>
+    <string name="device_not_paired_with_computer">設備未與電腦配對</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">您的 PC GPU 不支援串流 HDR。該流將為 SDR。</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">您的主機不支援 4K 以上解析度的串流。</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">您的串流媒體設備必須支援 HEVC 或 AV1 才能以 4K 以上的解析度進行串流媒體。</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">您必須更新 GeForce Experience 才能以 4K 串流傳輸。串流媒體將為 1080p。</string>
+    <string name="failed_to_resume_existing_session">無法恢復現有會話</string>
+    <string name="this_session_wasn_t_started_by_this_device">此會話不是由該裝置啟動的，</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">“因此無法恢復。結束原始串流媒體”</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">“設備或電腦本身，然後重試。（錯誤代碼：”</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">“該應用程式已最小化。請在 PC 上手動恢復它或”</string>
+    <string name="quit_the_session_and_start_streaming_again">退出會話並再次開始串流。</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">退出上一會話失敗！您必須手動退出</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">“所以無法退出。結束原始串流媒體播放”</string>
+    <string name="device_or_the_pc_itself_error_code">“設備或電腦本身。（錯誤代碼：”</string>
+    <string name="failed_to_launch_application">無法啟動應用程式</string>
+    <string name="please_wait_for_the_process_to_complete">請等待過程完成…</string>
+    <string name="enter_api_key_here">在此輸入 API 金鑰：</string>
+    <string name="favorites">收藏夾</string>
+    <string name="removed_from_favorites">“已從收藏夾和家庭頻道中刪除”</string>
+    <string name="added_to_favorites">“已添加到收藏夾和家庭頻道”</string>
+    <string name="clear_favorites">清除收藏夾</string>
+    <string name="clear_favs_msg">您確定要清除收藏夾嗎，這也會刪除應用程式「家庭頻道」嗎？</string>
+    <string name="app_list_updated">應用程式清單已更新</string>
+    <string name="update_the_database"><![CDATA[您確定要清除並更新資料庫，這將關閉此視窗嗎？]]></string>
+    <string name="update_database">更新資料庫</string>
+    <string name="database">資料庫</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">您確定要清除所有收藏嗎？</string>
+    <string name="resuming_session">恢復會話</string>
+    <string name="app_added_to_favorites">已加入至收藏夾</string>
+    <string name="app_removed_from_favorites">已從收藏夾中刪除</string>
+    <string name="anonymous_statistics">匿名統計</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">發送匿名統計資訊以提高應用程式效能。</string>
+    <string name="captions">YouTube影片字幕</string>
+    <string name="captions_text">啟用或停用 YouTube 影片字幕。</string>
+    <string name="privacy">隱私</string>
+    <string name="restart_application">重新啟動應用程式</string>
+    <string name="restart_now">這將重新啟動應用程式以應用變更。您想現在重新啟動嗎？</string>
+    <string name="database_updating">資料庫更新</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">影像增強：（x%1$.2f）著色器 SGSR1</string>
+    <string name="title_video_sr">影片超解析度</string>
+    <string name="summary_video_sr">利用硬體加速提升畫面清晰度</string>
+    <string name="aaudio">嘗試取得直接硬體存取權限以加快音訊回應速度。由於部分安卓電視或串流媒體設備的製造商限制，可能會出現延遲；如果音訊不穩定，請停用此選項。</string>
+    <string name="enable_aaudio">啟用音訊</string>
+    <string name="aaudio_title">AAudio 超低延遲（實驗性）</string>
+    <string name="aaudio_summary">AAudio 超低延遲（支援環繞音效）</string>
+    <string name="aaudio_summary29">啟用 AAudio 超低延遲</string>
+    <string name="game_media_library">遊戲媒體庫</string>
+
+    <string name="title_audio_output_mode">音訊輸出格式</string>
+    <string name="summary_audio_output_mode">PCM 相容於所有裝置。 AC-3 和 Dolby Digital Plus 會將編碼後的 5.1 聲道音訊傳送到 HDMI/eARC 接收器，如果傳輸失敗，則會回退到 PCM。</string>
+    <string name="audio_output_mode_pcm">PCM（預設）</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1（自動，實驗性）</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1（力，實驗）</string>
+    <string name="audio_output_mode_eac3_auto">杜比數位+ / E-AC-3 5.1（自動，實驗性）</string>
+    <string name="audio_output_mode_eac3_force">杜比數位+ / E-AC-3 5.1（強制，實驗性）</string>
+    <string name="encoded_audio_fallback_to_pcm">編碼音訊輸出不可用。將繼續使用PCM音訊。</string>
+    <string name="switch_to_encoded">已啟用編碼音訊輸出，正在切換到編碼音訊。</string>
+</resources>

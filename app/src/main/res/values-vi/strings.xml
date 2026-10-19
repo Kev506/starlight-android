@@ -1,0 +1,417 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Chơi</string>
+    <string name="details">Chi tiết</string>
+    <string name="running">Trò chơi đang chạy, nhấp vào chơi để có các tùy chọn.</string>
+    <string name="No_Details">Rất tiếc, không có thông tin chi tiết nào để hiển thị.
+
+Nếu bạn đã thêm trò chơi thủ công, vui lòng kiểm tra tiêu đề và cập nhật lại cơ sở dữ liệu.
+
+Nếu mục đã chọn là ứng dụng máy tính để bàn, sẽ không có thông tin chi tiết nào để hiển thị.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Trailer</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Sử dụng giao diện người dùng Leanback</string>
+    <string name="leanback_summary">Chọn để hiển thị các ứng dụng trong Leanback UI</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PC đã bị xóa</string>
+    <string name="scut_not_paired">PC chưa được ghép nối</string>
+    <string name="scut_pc_not_found">Không tìm thấy máy tính</string>
+    <string name="scut_invalid_uuid">PC được cung cấp không hợp lệ</string>
+    <string name="scut_invalid_app_id">Ứng dụng được cung cấp không hợp lệ</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Trợ giúp Người xem</string>
+    <string name="help_loading_msg">Đang tải trang trợ giúp…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">Trực tuyến</string>
+    <string name="pcview_menu_header_offline">Ngoại tuyến</string>
+    <string name="pcview_menu_header_unknown">Làm mới</string>
+    <string name="pcview_menu_app_list">Xem tất cả ứng dụng</string>
+    <string name="pcview_menu_pair_pc">Ghép nối với PC</string>
+    <string name="pcview_menu_unpair_pc">Hủy ghép nối</string>
+    <string name="pcview_menu_send_wol">Gửi yêu cầu Wake-On-LAN</string>
+    <string name="pcview_menu_delete_pc">Xóa PC</string>
+    <string name="pcview_menu_test_network">Kiểm tra kết nối mạng</string>
+    <string name="pcview_menu_details">Xem chi tiết</string>
+    <string name="pcview_menu_eol">NVIDIA GameStream kết thúc dịch vụ</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Kiểm tra kết nối mạng</string>
+    <string name="nettest_text_waiting">Starlight đang kiểm tra kết nối mạng của bạn để xác định xem có cổng bắt buộc nào bị chặn hay không.\n\nQuá trình này có thể mất vài giây…</string>
+    <string name="nettest_title_done">Kiểm tra mạng hoàn tất</string>
+    <string name="nettest_text_success">Mạng của bạn dường như không chặn Starlight. Nếu bạn vẫn gặp sự cố khi kết nối, hãy kiểm tra cài đặt tường lửa của PC.\n\nNếu bạn đang cố truyền phát qua Internet, hãy cài đặt Công cụ lưu trữ Internet Moonlight trên PC của bạn và chạy Trình kiểm tra phát trực tuyến Internet đi kèm để kiểm tra PC của bạn\ kết nối Internet của.</string>
+    <string name="nettest_text_inconclusive">Không thể thực hiện kiểm tra mạng vì không có máy chủ kiểm tra kết nối nào của Starlight có thể truy cập được. Hãy kiểm tra kết nối Internet của bạn hoặc thử lại sau.</string>
+    <string name="nettest_text_failure">Có vẻ như kết nối mạng hiện tại trên thiết bị của bạn đang chặn Starlight. Truyền trực tuyến qua Internet có thể không hoạt động khi kết nối với mạng này.\n\nCác cổng mạng sau đã bị chặn:\n</string>
+    <string name="nettest_text_blocked">Kết nối mạng hiện tại của thiết bị của bạn đang chặn Starlight. Truyền phát qua Internet có thể không hoạt động khi kết nối với mạng này.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Đang ghép nối…</string>
+    <string name="pair_pc_offline">Máy tính đang ngoại tuyến</string>
+    <string name="pair_pc_ingame">Máy tính hiện đang trong một trò chơi. Bạn phải đóng trò chơi trước khi ghép nối.</string>
+    <string name="pair_pairing_title">Ghép nối</string>
+    <string name="pair_pairing_msg">Vui lòng nhập mã PIN sau vào PC mục tiêu:</string>
+    <string name="pair_pairing_help">Nếu PC chủ của bạn đang chạy Sunshine, hãy điều hướng đến giao diện người dùng web Sunshine để nhập mã PIN.</string>
+    <string name="pair_incorrect_pin">Mã PIN không chính xác</string>
+    <string name="pair_fail">Ghép nối không thành công</string>
+    <string name="pair_already_in_progress">Đang ghép nối</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">Máy tính đang trực tuyến</string>
+    <string name="wol_no_mac">Không thể đánh thức PC vì không có địa chỉ MAC được lưu trữ</string>
+    <string name="wol_waking_pc">Máy tính đang thức giấc…</string>
+    <string name="wol_waking_msg">Có thể mất vài giây để PC của bạn thức dậy.
+Nếu không, hãy đảm bảo rằng nó được định cấu hình đúng cho Wake-On-LAN.
+    </string>
+    <string name="wol_fail">Không thể gửi gói Wake-On-LAN</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Đang hủy ghép nối…</string>
+    <string name="unpair_success">Đã hủy ghép nối thành công</string>
+    <string name="unpair_fail">Không thể hủy ghép nối</string>
+    <string name="unpair_error">Thiết bị chưa được ghép nối</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">Máy tính đang ngoại tuyến</string>
+    <string name="error_manager_not_running">Dịch vụ ComputerManager không chạy. Vui lòng đợi vài giây hoặc khởi động lại ứng dụng.</string>
+    <string name="error_unknown_host">Không thể giải quyết máy chủ</string>
+    <string name="error_404">GFE trả về lỗi HTTP 404. Đảm bảo PC của bạn đang chạy GPU được hỗ trợ.
+Sử dụng phần mềm máy tính từ xa cũng có thể gây ra lỗi này. Hãy thử khởi động lại máy hoặc cài đặt lại GFE.
+    </string>
+    <string name="title_decoding_error">Bộ giải mã video bị lỗi</string>
+    <string name="message_decoding_error">Starlight đã bị hỏng do không tương thích với bộ giải mã video của thiết bị này. Hãy thử điều chỉnh cài đặt phát trực tuyến nếu sự cố vẫn tiếp diễn.</string>
+    <string name="title_decoding_reset">Đặt lại cài đặt video</string>
+    <string name="message_decoding_reset">Bộ giải mã video trên thiết bị của bạn tiếp tục gặp sự cố ở cài đặt phát trực tuyến đã chọn của bạn. Cài đặt phát trực tuyến của bạn đã được đặt lại về mặc định.</string>
+    <string name="error_usb_prohibited">Quản trị viên thiết bị của bạn cấm truy cập USB. Kiểm tra cài đặt Knox hoặc MDM của bạn.</string>
+    <string name="unable_to_pin_shortcut">Trình khởi chạy hiện tại của bạn không cho phép tạo lối tắt được ghim.</string>
+    <string name="video_decoder_init_failed">Bộ giải mã video không khởi chạy được. Thiết bị của bạn có thể không hỗ trợ độ phân giải hoặc tốc độ khung hình đã chọn.</string>
+    <string name="no_video_received_error">Không nhận được video từ máy chủ.</string>
+    <string name="no_frame_received_error">Kết nối mạng của bạn hiện không hoạt động tốt. Giảm cài đặt tốc độ bit video của bạn hoặc thử kết nối nhanh hơn.</string>
+    <string name="early_termination_error">Đã xảy ra lỗi trên PC chủ của bạn khi bắt đầu phát trực tuyến.\n\nĐảm bảo rằng bạn không mở bất kỳ nội dung nào được bảo vệ DRM trên PC chủ của mình. Bạn cũng có thể thử khởi động lại PC chủ của mình.</string>
+    <string name="frame_conversion_error">PC chủ đã báo cáo lỗi mã hóa video nghiêm trọng.\n\nHãy thử tắt chế độ HDR, thay đổi độ phân giải phát trực tuyến hoặc thay đổi độ phân giải màn hình của PC chủ.</string>
+    <string name="check_ports_msg">Kiểm tra các quy tắc chuyển tiếp cổng và tường lửa của bạn để biết (các) cổng:</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Thiết lập kết nối</string>
+    <string name="conn_establishing_msg">Bắt đầu kết nối</string>
+    <string name="conn_metered">Cảnh báo: Kết nối mạng đang hoạt động của bạn đã được đo!</string>
+    <string name="conn_client_latency">Độ trễ giải mã khung hình trung bình:</string>
+    <string name="conn_client_latency_hw">độ trễ bộ giải mã phần cứng:</string>
+    <string name="conn_hardware_latency">Độ trễ giải mã phần cứng trung bình:</string>
+    <string name="conn_starting">Bắt đầu</string>
+    <string name="conn_error_title">Lỗi kết nối</string>
+    <string name="conn_error_msg">Không thể bắt đầu</string>
+    <string name="conn_terminated_title">Kết nối bị chấm dứt</string>
+    <string name="conn_terminated_msg">Kết nối đã bị chấm dứt.</string>
+    <string name="error_code_prefix">Mã lỗi:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">Địa chỉ IP của PC chủ</string>
+    <string name="searching_pc">Đang tìm kiếm PC chủ trên mạng cục bộ của bạn…\n\n
+        Đảm bảo Sunshine đang chạy trên PC chủ của bạn hoặc GameStream được bật trong cài đặt GeForce Experience SHIELD.</string>
+    <string name="yes">Đúng</string>
+    <string name="no">KHÔNG</string>
+    <string name="lost_connection">Mất kết nối với PC</string>
+    <string name="title_details">Chi tiết</string>
+    <string name="help">Giúp đỡ</string>
+    <string name="delete_pc_msg">Bạn có chắc chắn muốn xóa PC này không\?</string>
+    <string name="slow_connection_msg">Kết nối chậm với PC\nGiảm tốc độ bit của bạn</string>
+    <string name="poor_connection_msg">Kết nối với PC kém</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Luồng video: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Bộ giải mã: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Tốc độ khung hình đến từ mạng: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Tốc độ khung hình hiển thị: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Độ trễ xử lý máy chủ tối thiểu/tối đa/trung bình: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">Số khung hình bị rớt do kết nối mạng của bạn: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Độ trễ mạng trung bình: %1$d ms (phương sai: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Thời gian giải mã trung bình: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Đang kết nối với PC…</string>
+    <string name="applist_menu_resume">Tiếp tục phiên</string>
+    <string name="applist_menu_quit">Thoát khỏi phiên</string>
+    <string name="applist_menu_quit_and_start">Thoát khỏi trò chơi hiện tại và bắt đầu</string>
+    <string name="applist_menu_cancel">Hủy bỏ</string>
+    <string name="applist_menu_details">Xem chi tiết</string>
+    <string name="applist_menu_scut">Tạo lối tắt</string>
+    <string name="applist_menu_tv_channel">Thêm vào kênh</string>
+    <string name="applist_menu_hide_app">Ẩn ứng dụng</string>
+    <string name="applist_refresh_title">Danh sách ứng dụng</string>
+    <string name="applist_refresh_msg">Đang làm mới ứng dụng…</string>
+    <string name="applist_refresh_error_title">Lỗi</string>
+    <string name="applist_refresh_error_msg">Không lấy được danh sách ứng dụng</string>
+    <string name="applist_quit_app">Đang bỏ cuộc</string>
+    <string name="applist_quit_success">Thoát thành công</string>
+    <string name="applist_quit_fail">Không thể bỏ được</string>
+    <string name="applist_quit_confirmation">Bạn có chắc chắn muốn thoát khỏi ứng dụng đang chạy không\? Tất cả dữ liệu chưa được lưu sẽ bị mất.</string>
+    <string name="applist_details_id">ID ứng dụng:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">Thêm PC theo cách thủ công</string>
+    <string name="msg_add_pc">Đang kết nối với PC…</string>
+    <string name="addpc_fail">Không thể kết nối với máy tính được chỉ định. Đảm bảo các cổng cần thiết được cho phép thông qua tường lửa.</string>
+    <string name="addpc_success">Đã thêm máy tính thành công</string>
+    <string name="addpc_unknown_host">Không thể giải quyết địa chỉ PC. Hãy đảm bảo rằng bạn không mắc lỗi đánh máy trong địa chỉ.</string>
+    <string name="addpc_enter_ip">Bạn phải nhập địa chỉ IP</string>
+    <string name="addpc_wrong_sitelocal">Địa chỉ đó có vẻ không đúng. Bạn phải sử dụng địa chỉ IP công cộng của bộ định tuyến để truyền phát qua Internet.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Cài đặt cơ bản</string>
+    <string name="title_resolution_list">Độ phân giải video</string>
+    <string name="summary_resolution_list">Tăng để cải thiện độ rõ của hình ảnh. Giảm để có hiệu suất tốt hơn trên các thiết bị cấp thấp hơn và mạng chậm hơn.</string>
+    <string name="title_native_res_dialog">Cảnh báo độ phân giải gốc</string>
+    <string name="text_native_res_dialog">Độ phân giải gốc và/hoặc FPS có thể không được máy chủ phát trực tuyến hỗ trợ. Bạn có thể sẽ cần phải định cấu hình chế độ hiển thị tùy chỉnh phù hợp cho PC chủ theo cách thủ công.\n\nNếu bạn chọn tạo độ phân giải tùy chỉnh trong Bảng điều khiển NVIDIA để phù hợp với cài đặt màn hình của mình, hãy đảm bảo rằng bạn đã đọc và hiểu cảnh báo của NVIDIA liên quan đến hư hỏng màn hình có thể xảy ra, tính không ổn định của PC và các sự cố tiềm ẩn khác.\n\nChúng tôi không chịu trách nhiệm về bất kỳ sự cố nào phát sinh từ việc tạo độ phân giải tùy chỉnh trên PC của bạn.\n\nCó thể màn hình của bạn không hỗ trợ cấu hình hiển thị cần thiết. Nếu vậy, bạn có thể thử thiết lập một màn hình ảo. Cuối cùng, nếu thiết bị hoặc máy tính chủ của bạn không hỗ trợ phát trực tuyến ở độ phân giải hoặc tốc độ làm mới cụ thể thì rất tiếc là bạn đã không gặp may.</string>
+    <string name="title_fps_list">Tỉ lệ khung hình video</string>
+    <string name="summary_fps_list">Tăng để có luồng video mượt mà hơn. Giảm để có hiệu suất tốt hơn trên các thiết bị cấp thấp hơn.</string>
+    <string name="title_seekbar_bitrate">Tốc độ bit của video</string>
+    <string name="summary_seekbar_bitrate">Tăng để có chất lượng hình ảnh tốt hơn. Giảm để cải thiện hiệu suất trên các kết nối chậm hơn.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mb/giây</string>
+    <string name="title_checkbox_stretch_video">Kéo dài video ra toàn màn hình</string>
+    <string name="title_stretch_video">Video giãn cơ</string>
+    <string name="resolution_prefix_native">Tự nhiên</string>
+    <string name="resolution_prefix_native_fullscreen">Toàn màn hình gốc</string>
+    <string name="resolution_prefix_native_landscape">(Phong cảnh)</string>
+    <string name="resolution_prefix_native_portrait">(Chân dung)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Cảnh báo FPS gốc</string>
+
+    <string name="category_audio_settings">Cài đặt âm thanh</string>
+    <string name="title_audio_config_list">Cấu hình âm thanh vòm</string>
+    <string name="summary_audio_config_list">Bật âm thanh vòm 5.1 hoặc 7.1 cho hệ thống rạp hát tại nhà</string>
+    <string name="title_checkbox_enable_audiofx">Bật hỗ trợ bộ cân bằng hệ thống</string>
+    <string name="summary_checkbox_enable_audiofx">Cho phép các hiệu ứng âm thanh hoạt động trong khi phát trực tuyến nhưng có thể làm tăng độ trễ âm thanh</string>
+
+    <string name="category_gamepad_settings">Cài đặt tay cầm chơi game</string>
+    <string name="title_checkbox_multi_controller">Tự động phát hiện sự hiện diện của gamepad</string>
+    <string name="summary_checkbox_multi_controller">Việc bỏ chọn tùy chọn này buộc gamepad phải luôn hiện diện</string>
+    <string name="title_checkbox_vibrate_fallback">Mô phỏng hỗ trợ rumble với độ rung</string>
+    <string name="summary_checkbox_vibrate_fallback">Rung thiết bị của bạn để mô phỏng tiếng ầm ầm nếu gamepad của bạn không hỗ trợ nó</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Điều chỉnh cường độ ầm ầm mô phỏng</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Khuếch đại hoặc giảm cường độ rung trên thiết bị của bạn</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Điều chỉnh vùng chết của thanh analog</string>
+    <string name="summary_seekbar_deadzone">Lưu ý: Một số trò chơi có thể thực thi vùng chết lớn hơn những gì Starlight được định cấu hình để sử dụng.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Trình điều khiển gamepad Xbox 360/One USB</string>
+    <string name="summary_checkbox_xb1_driver">Kích hoạt trình điều khiển USB tích hợp cho các thiết bị không hỗ trợ bộ điều khiển Xbox gốc</string>
+    <string name="title_checkbox_usb_bind_all">Ghi đè hỗ trợ gamepad Xbox gốc</string>
+    <string name="summary_checkbox_usb_bind_all">Sử dụng trình điều khiển USB của Starlight cho tất cả các gamepad được hỗ trợ, ngay cả khi có hỗ trợ bộ điều khiển Xbox gốc</string>
+    <string name="title_checkbox_mouse_emulation">Giả lập chuột qua gamepad</string>
+    <string name="summary_checkbox_mouse_emulation">Nhấn và giữ nút Bắt đầu sẽ chuyển gamepad sang chế độ chuột</string>
+    <string name="title_checkbox_flip_face_buttons">Nút lật mặt</string>
+    <string name="summary_checkbox_flip_face_buttons">Chuyển đổi các nút mặt A/B và X/Y cho gamepad và điều khiển trên màn hình</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Luôn điều khiển chuột bằng bàn di chuột</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">Buộc đầu vào bàn di chuột của gamepad để điều khiển chuột chủ, ngay cả khi mô phỏng gamepad bằng bàn di chuột.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Cho phép sử dụng cảm biến chuyển động của gamepad</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Cho phép các máy chủ được hỗ trợ yêu cầu dữ liệu cảm biến chuyển động khi mô phỏng gamepad bằng cảm biến chuyển động. Việc tắt có thể làm giảm nhẹ mức sử dụng năng lượng và mạng nếu cảm biến chuyển động không được sử dụng trong trò chơi.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Giả lập hỗ trợ cảm biến chuyển động gamepad</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Sử dụng cảm biến chuyển động tích hợp trong thiết bị của bạn nếu cảm biến gamepad không được gamepad được kết nối hoặc phiên bản Android của bạn hỗ trợ.\nLưu ý: Việc bật tùy chọn này có thể khiến gamepad của bạn xuất hiện dưới dạng bộ điều khiển PlayStation trên máy chủ.</string>
+
+    <string name="category_input_settings">Nhập vào cài đặt</string>
+    <string name="title_checkbox_touchscreen_trackpad">Sử dụng màn hình cảm ứng làm trackpad</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Nếu được bật, màn hình cảm ứng sẽ hoạt động giống như một bàn di chuột. Nếu bị tắt, màn hình cảm ứng sẽ trực tiếp điều khiển con trỏ chuột.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Chế độ chuột máy tính để bàn từ xa</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Điều này có thể giúp tăng tốc chuột hoạt động tự nhiên hơn khi sử dụng máy tính để bàn từ xa, nhưng nó không tương thích với nhiều trò chơi.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Kích hoạt nút chuột quay lại và chuyển tiếp</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Bật tùy chọn này có thể làm hỏng việc nhấp chuột phải vào một số thiết bị có lỗi</string>
+
+    <string name="category_on_screen_controls_settings">Cài đặt điều khiển trên màn hình</string>
+    <string name="title_checkbox_show_onscreen_controls">Hiển thị điều khiển trên màn hình</string>
+    <string name="summary_checkbox_show_onscreen_controls">Hiển thị lớp phủ bộ điều khiển ảo trên màn hình cảm ứng</string>
+    <string name="title_checkbox_vibrate_osc">Bật rung</string>
+    <string name="summary_checkbox_vibrate_osc">Rung thiết bị của bạn để mô phỏng tiếng ầm ầm cho các điều khiển trên màn hình</string>
+    <string name="title_only_l3r3">Chỉ hiển thị L3 và R3</string>
+    <string name="summary_only_l3r3">Ẩn tất cả các nút ảo ngoại trừ L3 và R3</string>
+    <string name="title_reset_osc">Xóa bố cục điều khiển trên màn hình đã lưu</string>
+    <string name="summary_reset_osc">Đặt lại tất cả các điều khiển trên màn hình về kích thước và vị trí mặc định của chúng</string>
+    <string name="dialog_title_reset_osc">Đặt lại bố cục</string>
+    <string name="dialog_text_reset_osc">Bạn có chắc chắn muốn xóa bố cục điều khiển trên màn hình đã lưu của mình không\?</string>
+    <string name="toast_reset_osc_success">Điều khiển trên màn hình được đặt lại về mặc định</string>
+    <string name="title_osc_opacity">Thay đổi độ mờ của điều khiển trên màn hình</string>
+    <string name="summary_osc_opacity">Làm cho các điều khiển trên màn hình trở nên trong suốt hơn/ít hơn</string>
+    <string name="dialog_title_osc_opacity">Thay đổi độ mờ</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">Cài đặt giao diện người dùng</string>
+    <string name="title_checkbox_enable_pip">Bật chế độ quan sát Ảnh trong ảnh</string>
+    <string name="summary_checkbox_enable_pip">Cho phép xem luồng (nhưng không được kiểm soát) trong khi đa nhiệm</string>
+    <string name="title_language_list">Ngôn ngữ</string>
+    <string name="summary_language_list">Ngôn ngữ sử dụng cho Starlight</string>
+    <string name="title_checkbox_small_icon_mode">Sử dụng hộp nghệ thuật nhỏ</string>
+    <string name="summary_checkbox_small_icon_mode">Hình hộp nhỏ hơn trong lưới ứng dụng cho phép hiển thị nhiều ứng dụng hơn trên màn hình</string>
+
+    <string name="category_host_settings">Cài đặt máy chủ</string>
+    <string name="title_checkbox_enable_sops">Tối ưu hóa cài đặt trò chơi</string>
+    <string name="summary_checkbox_enable_sops">Cho phép GFE sửa đổi cài đặt trò chơi để phát trực tuyến tối ưu</string>
+    <string name="title_checkbox_host_audio">Phát âm thanh trên PC</string>
+    <string name="summary_checkbox_host_audio">Phát âm thanh từ máy tính và thiết bị này</string>
+
+    <string name="category_advanced_settings">Cài đặt nâng cao</string>
+    <string name="title_unlock_fps">Mở khóa tất cả tốc độ khung hình có thể</string>
+    <string name="summary_unlock_fps">Truyền phát ở tốc độ 90 hoặc 120 FPS có thể giảm độ trễ trên các thiết bị cao cấp nhưng có thể gây ra độ trễ hoặc mất ổn định trên các thiết bị không thể hỗ trợ</string>
+    <string name="title_checkbox_reduce_refresh_rate">Cho phép giảm tốc độ làm mới</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Tốc độ làm mới màn hình thấp hơn có thể tiết kiệm năng lượng nhưng phải trả giá bằng một số độ trễ video bổ sung</string>
+    <string name="title_checkbox_disable_warnings">Tắt thông báo cảnh báo</string>
+    <string name="summary_checkbox_disable_warnings">Tắt thông báo cảnh báo kết nối trên màn hình trong khi phát trực tuyến</string>
+    <string name="title_disable_frame_drop">Không bao giờ bỏ khung hình</string>
+    <string name="summary_disable_frame_drop">Có thể giảm tình trạng giật hình trên một số thiết bị nhưng có thể tăng độ trễ</string>
+    <string name="title_video_format">Thay đổi cài đặt codec</string>
+    <string name="summary_video_format">Các codec mới hơn có thể hạ thấp yêu cầu về băng thông video nếu thiết bị của bạn hỗ trợ chúng. Các lựa chọn Codec có thể bị bỏ qua nếu không được phần mềm máy chủ hoặc GPU hỗ trợ.</string>
+    <string name="title_enable_hdr">Bật HDR (Thử nghiệm)</string>
+    <string name="summary_enable_hdr">Truyền phát HDR khi trò chơi và GPU PC hỗ trợ nó. HDR yêu cầu GPU có hỗ trợ mã hóa HEVC Main 10.</string>
+    <string name="title_full_range">Buộc video toàn dải (Phụ thuộc vào thiết bị)</string>
+    <string name="summary_full_range">Điều này sẽ gây mất chi tiết ở các vùng sáng và tối nếu thiết bị của bạn không hiển thị đúng nội dung video đầy đủ.</string>
+    <string name="title_enable_perf_overlay">Hiển thị số liệu thống kê hiệu suất trong khi phát trực tuyến</string>
+    <string name="summary_enable_perf_overlay">Hiển thị thông tin hiệu suất phát trực tuyến theo thời gian thực trong khi phát trực tuyến</string>
+    <string name="title_enable_post_stream_toast">Hiển thị thông báo độ trễ sau khi phát trực tuyến</string>
+    <string name="summary_enable_post_stream_toast">Hiển thị thông báo thông tin về độ trễ sau khi luồng kết thúc</string>
+
+    <string name="category_help">Giúp đỡ</string>
+    <string name="title_setup_guide">Hướng dẫn thiết lập</string>
+    <string name="summary_setup_guide">Xem hướng dẫn về cách thiết lập PC chơi game để phát trực tuyến</string>
+    <string name="title_troubleshooting">Hướng dẫn khắc phục sự cố</string>
+    <string name="summary_troubleshooting">Xem các mẹo để chẩn đoán và khắc phục các sự cố phát trực tuyến phổ biến</string>
+    <string name="title_privacy_policy">Chính sách bảo mật</string>
+    <string name="summary_privacy_policy">Xem chính sách về quyền riêng tư của Starlight\</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">Loại gamepad có thể bị thay đổi do mô phỏng cảm biến chuyển động</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30 khung hình/giây</string>
+    <string name="fps_60">60 khung hình/giây</string>
+    <string name="fps_90">90 khung hình/giây</string>
+    <string name="fps_120">120 khung hình/giây</string>
+
+    <string name="audioconf_stereo">Âm thanh nổi</string>
+    <string name="audioconf_51surround">Âm thanh vòm 5.1</string>
+    <string name="audioconf_71surround">Âm thanh vòm 7.1</string>
+
+    <string name="videoformat_auto">Tự động (Được khuyến nghị)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">Ưu tiên AV1 (Thử nghiệm)</string>
+    <string name="videoformat_hevcalways">Ưu tiên HEVC</string>
+    <string name="videoformat_h264always">Thích H.264 hơn</string>
+
+    <string name="title_frame_pacing">Tốc độ khung hình video</string>
+    <string name="summary_frame_pacing">Chỉ định cách cân bằng độ trễ và độ mượt của video</string>
+    <string name="pacing_latency">Ưu tiên độ trễ thấp nhất</string>
+    <string name="pacing_balanced">Cân bằng</string>
+    <string name="pacing_balanced_alt">Cân bằng với giới hạn FPS</string>
+    <string name="pacing_smoothness">Thích video mượt mà nhất (có thể tăng độ trễ đáng kể)</string>
+    <string name="title_analog_scrolling">Sử dụng cần analog để cuộn</string>
+    <string name="summary_analog_scrolling">Chọn một cần analog để cuộn khi ở chế độ mô phỏng chuột</string>
+    <string name="analogscroll_none">Không (cả hai gậy đều di chuyển chuột)</string>
+    <string name="analogscroll_right">Cần analog bên phải</string>
+    <string name="analogscroll_left">Cần analog bên trái</string>
+    <string name="games">Trò chơi</string>
+    <string name="settings">Cài đặt</string>
+    <string name="exit">Lối ra</string>
+    <string name="options">Tùy chọn</string>
+    <string name="pending">Chưa giải quyết</string>
+    <string name="data_collection">Thu thập dữ liệu</string>
+    <string name="loading_for_first_time_use_please_wait">Đang tải cho lần sử dụng đầu tiên.... Vui lòng đợi...</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Bạn muốn thoát hay tạm dừng ứng dụng này, tất cả dữ liệu chưa được lưu sẽ bị mất khi thoát.</string>
+    <string name="confirm_quit">Xác nhận Thoát</string>
+    <string name="quit">Từ bỏ</string>
+    <string name="pause">Tạm ngừng</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Bạn có chắc chắn muốn xóa bộ nhớ đệm, thao tác này sẽ đóng cửa sổ này không\?</string>
+    <string name="clear_cache">Xóa bộ nhớ đệm</string>
+    <string name="click_ok_to_launch_game">nhấn OK để khởi chạy trò chơi.</string>
+    <string name="active_internet_connection_required_for_game_details">Cần có kết nối Internet hoạt động để biết chi tiết trò chơi,</string>
+    <string name="download">Tải xuống</string>
+    <string name="download_translations_model">Tải xuống mô hình bản dịch</string>
+    <string name="download_locale_language_model_to_translate_game_data">Tải xuống mô hình ngôn ngữ địa phương để dịch dữ liệu trò chơi</string>
+    <string name="downloading_ml_language_file_please_wait">Vui lòng chờ..</string>
+    <string name="download_successful">Tải xuống thành công</string>
+    <string name="download_error_please_try_again">Lỗi tải xuống: Vui lòng thử lại</string>
+    <string name="model_deleted_successfully">Đã xóa mô hình thành công</string>
+    <string name="model_delete_failed_please_try_again">Xóa mô hình không thành công, vui lòng thử lại</string>
+    <string name="delete_language_model">Xóa mô hình ngôn ngữ</string>
+    <string name="delete_downloaded_language_model">Xóa mô hình ngôn ngữ đã tải xuống</string>
+    <string name="support">\"Ủng hộ \"</string>
+    <string name="cache">Bộ nhớ đệm %1$s</string>
+    <string name="hdr_off">\"Tắt HDR\"</string>
+    <string name="hdr_on">\"Bật HDR\"</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="display_does_not_support_hdr10">Màn hình không hỗ trợ HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">Bộ giải mã không hỗ trợ cấu hình HDR10</string>
+    <string name="no_hevc_decoder_found">Không tìm thấy bộ giải mã HEVC</string>
+    <string name="no_av1_decoder_found">Không tìm thấy bộ giải mã AV1</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">Thiết bị hoặc ROM này không hỗ trợ phát lại H.264 được tăng tốc phần cứng.</string>
+    <string name="server_version_malformed">Phiên bản máy chủ không đúng định dạng</string>
+    <string name="device_not_paired_with_computer">Thiết bị chưa được ghép nối với máy tính</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">GPU PC của bạn không hỗ trợ phát trực tuyến HDR. Luồng sẽ là SDR.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">PC chủ của bạn không hỗ trợ phát trực tuyến ở độ phân giải trên 4K.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">Thiết bị phát trực tuyến của bạn phải hỗ trợ HEVC hoặc AV1 để phát trực tuyến ở độ phân giải trên 4K.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Bạn phải cập nhật GeForce Experience để phát trực tuyến ở 4K. Luồng sẽ là 1080p.</string>
+    <string name="failed_to_resume_existing_session">Không thể tiếp tục phiên hiện có</string>
+    <string name="this_session_wasn_t_started_by_this_device">Phiên này không được bắt đầu bởi thiết bị này,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" nên không thể tiếp tục lại. Kết thúc phát trực tiếp trên bản gốc \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"thiết bị hoặc chính PC và thử lại. (Mã lỗi: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"Ứng dụng đã được thu nhỏ. Tiếp tục lại trên PC theo cách thủ công hoặc \"</string>
+    <string name="quit_the_session_and_start_streaming_again">thoát khỏi phiên và bắt đầu truyền phát lại.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Không thoát được phiên trước! Bạn phải thoát nó bằng tay</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" nên không thể thoát được. Kết thúc phát trực tuyến trên bản gốc \"</string>
+    <string name="device_or_the_pc_itself_error_code">\"thiết bị hoặc chính PC. (Mã lỗi: \"</string>
+    <string name="failed_to_launch_application">Không khởi chạy được ứng dụng</string>
+    <string name="please_wait_for_the_process_to_complete">Vui lòng đợi quá trình hoàn tất…</string>
+    <string name="enter_api_key_here">Nhập khóa API tại đây:</string>
+    <string name="favorites">Yêu thích</string>
+    <string name="removed_from_favorites">\" Đã xóa khỏi mục yêu thích và Kênh chính\"</string>
+    <string name="added_to_favorites">\"Đã thêm vào mục yêu thích và Kênh Trang chủ\"</string>
+    <string name="clear_favorites">Xóa mục yêu thích</string>
+    <string name="clear_favs_msg">Bạn có chắc chắn muốn xóa các mục yêu thích, thao tác này cũng sẽ xóa Kênh Trang chủ của ứng dụng không\?</string>
+    <string name="app_list_updated">Đã cập nhật danh sách ứng dụng</string>
+    <string name="update_the_database"><![CDATA[Bạn có chắc chắn muốn xóa và cập nhật cơ sở dữ liệu, thao tác này sẽ đóng cửa sổ này không\?]]></string>
+    <string name="update_database">Cập nhật cơ sở dữ liệu</string>
+    <string name="database">Cơ sở dữ liệu</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Bạn có chắc chắn muốn xóa tất cả các mục yêu thích không?</string>
+    <string name="resuming_session">Đang tiếp tục phiên</string>
+    <string name="app_added_to_favorites">Đã thêm vào mục yêu thích</string>
+    <string name="app_removed_from_favorites">Đã xóa khỏi mục yêu thích</string>
+    <string name="anonymous_statistics">Thống kê ẩn danh</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Gửi số liệu thống kê ẩn danh để cải thiện hiệu suất ứng dụng.</string>
+    <string name="captions">Phụ đề video YouTube</string>
+    <string name="captions_text">Bật hoặc tắt phụ đề video trên YouTube.</string>
+    <string name="privacy">Sự riêng tư</string>
+    <string name="restart_application">Khởi động lại ứng dụng</string>
+    <string name="restart_now">Thao tác này sẽ khởi động lại ứng dụng để áp dụng các thay đổi. Bạn có muốn khởi động lại ngay bây giờ không\?</string>
+    <string name="database_updating">Cập nhật cơ sở dữ liệu</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Cải tiến video: (x%1$.2f) Shader SGSR1</string>
+    <string name="title_video_sr">Video siêu phân giải</string>
+    <string name="summary_video_sr">Tận dụng khả năng tăng tốc phần cứng để cải thiện độ rõ nét của hình ảnh</string>
+    <string name="aaudio">Chức năng này cố gắng đảm bảo quyền truy cập trực tiếp vào phần cứng để phản hồi âm thanh nhanh hơn. Do những hạn chế của nhà sản xuất trên một số thiết bị Android TV hoặc thiết bị phát trực tuyến, có thể xảy ra độ trễ; nếu âm thanh trở nên không ổn định, vui lòng tắt tùy chọn này.</string>
+    <string name="enable_aaudio">Bật AAudio</string>
+    <string name="aaudio_title">AAudio Độ trễ cực thấp (Thử nghiệm)</string>
+    <string name="aaudio_summary">AAudio Độ trễ cực thấp (với hỗ trợ âm thanh vòm)</string>
+    <string name="aaudio_summary29">Bật AAudio Độ trễ cực thấp</string>
+    <string name="game_media_library">Thư viện phương tiện trò chơi</string>
+
+    <string name="title_audio_output_mode">Định dạng đầu ra âm thanh</string>
+    <string name="summary_audio_output_mode">PCM tương thích với tất cả các thiết bị. AC-3 và Dolby Digital Plus gửi âm thanh 5.1 đã mã hóa đến bộ thu HDMI/eARC và sẽ chuyển sang PCM nếu đường truyền không thành công.</string>
+    <string name="audio_output_mode_pcm">PCM (mặc định)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (tự động, thử nghiệm)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (lực, thử nghiệm)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (tự động, thử nghiệm)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (cường độ cao, thử nghiệm)</string>
+    <string name="encoded_audio_fallback_to_pcm">Không thể phát âm thanh mã hóa. Tiếp tục với âm thanh PCM.</string>
+    <string name="switch_to_encoded">Chế độ âm thanh mã hóa khả dụng, hãy chuyển sang chế độ âm thanh mã hóa.</string>
+</resources>

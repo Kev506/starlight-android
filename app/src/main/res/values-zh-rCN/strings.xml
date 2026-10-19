@@ -1,0 +1,417 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">玩</string>
+    <string name="details">细节</string>
+    <string name="running">游戏运行，点击播放选项。</string>
+    <string name="No_Details">抱歉，没有详细信息可供显示。
+
+如果您是手动添加的游戏，请检查游戏标题并清除并更新数据库。
+
+如果所选项目是桌面应用程序，则不会显示任何详细信息。</string>
+    
+    
+    
+    
+    
+    <string name="trailers">预告片</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">使用 Leanback UI</string>
+    <string name="leanback_summary">选择在 Leanback UI 中显示应用程序</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">电脑已删除</string>
+    <string name="scut_not_paired">电脑未配对</string>
+    <string name="scut_pc_not_found">未找到电脑</string>
+    <string name="scut_invalid_uuid">所提供的 PC 无效</string>
+    <string name="scut_invalid_app_id">提供的应用程序无效</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">帮助查看器</string>
+    <string name="help_loading_msg">正在加载帮助页面…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">在线的</string>
+    <string name="pcview_menu_header_offline">离线</string>
+    <string name="pcview_menu_header_unknown">清爽</string>
+    <string name="pcview_menu_app_list">查看所有应用程序</string>
+    <string name="pcview_menu_pair_pc">与电脑配对</string>
+    <string name="pcview_menu_unpair_pc">取消配对</string>
+    <string name="pcview_menu_send_wol">发送 LAN 唤醒请求</string>
+    <string name="pcview_menu_delete_pc">删除电脑</string>
+    <string name="pcview_menu_test_network">测试网络连接</string>
+    <string name="pcview_menu_details">查看详情</string>
+    <string name="pcview_menu_eol">NVIDIA GameStream 服务终止</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">测试网络连接</string>
+    <string name="nettest_text_waiting">Starlight 正在测试您的网络连接以确定是否有任何所需的端口被阻止。\n\n这可能需要几秒钟…</string>
+    <string name="nettest_title_done">网络测试完成</string>
+    <string name="nettest_text_success">您的网络似乎没有阻止月光。如果连接仍然遇到问题，请检查 PC 的防火墙设置。\n\n如果您尝试通过 Internet 进行流式传输，请在 PC 上安装 Moonlight Internet Hosting Tool 并运行附带的 Internet Streaming Tester 以检查您的 PC\的互联网连接。</string>
+    <string name="nettest_text_inconclusive">由于无法访问 Starlight 的所有连接测试服务器，因此无法执行网络测试。检查您的互联网连接或稍后重试。</string>
+    <string name="nettest_text_failure">您设备当前的网络连接似乎阻止了 Starlight。连接到此网络时，可能无法通过 Internet 进行流式传输。\n\n以下网络端口被阻止:\n</string>
+    <string name="nettest_text_blocked">您设备当前的网络连接正在阻止 Starlight。连接到此网络时，可能无法通过 Internet 进行流式传输。</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">配对…</string>
+    <string name="pair_pc_offline">电脑离线</string>
+    <string name="pair_pc_ingame">电脑当前正在玩游戏。配对前您必须关闭游戏。</string>
+    <string name="pair_pairing_title">配对</string>
+    <string name="pair_pairing_msg">请在目标 PC 上输入以下 PIN：</string>
+    <string name="pair_pairing_help">如果您的主机 PC 正在运行 Sunshine，请导航至 Sunshine Web UI 以输入 PIN。</string>
+    <string name="pair_incorrect_pin">PIN 码不正确</string>
+    <string name="pair_fail">配对失败</string>
+    <string name="pair_already_in_progress">配对已在进行中</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">电脑已在线</string>
+    <string name="wol_no_mac">由于没有存储 MAC 地址，无法唤醒 PC</string>
+    <string name="wol_waking_pc">唤醒电脑…</string>
+    <string name="wol_waking_msg">您的电脑可能需要几秒钟的时间才能唤醒。
+如果没有，请确保已正确配置 LAN 唤醒。
+    </string>
+    <string name="wol_fail">发送 LAN 唤醒数据包失败</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">正在取消配对…</string>
+    <string name="unpair_success">取消配对成功</string>
+    <string name="unpair_fail">取消配对失败</string>
+    <string name="unpair_error">设备未配对</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">电脑离线</string>
+    <string name="error_manager_not_running">ComputerManager 服务未运行。请等待几秒钟或重新启动应用程序。</string>
+    <string name="error_unknown_host">无法解析主机</string>
+    <string name="error_404">GFE 返回 HTTP 404 错误。确保您的电脑正在运行受支持的 GPU。
+使用远程桌面软件也可能导致此错误。尝试重新启动计算机或重新安装 GFE。
+    </string>
+    <string name="title_decoding_error">视频解码器崩溃</string>
+    <string name="message_decoding_error">由于与该设备的视频解码器不兼容，月光已崩溃。如果崩溃仍然存在，请尝试调整流媒体设置。</string>
+    <string name="title_decoding_reset">视频设置重置</string>
+    <string name="message_decoding_reset">您设备的视频解码器在您选择的流媒体设置下继续崩溃。您的流媒体设置已重置为默认值。</string>
+    <string name="error_usb_prohibited">您的设备管理员禁止 USB 访问。检查您的 Knox 或 MDM 设置。</string>
+    <string name="unable_to_pin_shortcut">您当前的启动器不允许创建固定快捷方式。</string>
+    <string name="video_decoder_init_failed">视频解码器初始化失败。您的设备可能不支持所选的分辨率或帧速率。</string>
+    <string name="no_video_received_error">没有收到主机的视频。</string>
+    <string name="no_frame_received_error">您的网络连接性能不佳。降低视频比特率设置或尝试更快的连接。</string>
+    <string name="early_termination_error">启动流时您的主机出现问题。\n\n请确保您的主机上没有打开任何受 DRM 保护的内容。您还可以尝试重新启动主机。</string>
+    <string name="frame_conversion_error">主机报告了致命的视频编码错误。\n\n请尝试禁用 HDR 模式、更改流分辨率或更改主机的显示分辨率。</string>
+    <string name="check_ports_msg">检查端口的防火墙和端口转发规则：</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">建立连接</string>
+    <string name="conn_establishing_msg">开始连接</string>
+    <string name="conn_metered">警告：您的活动网络连接是按流量计费的！</string>
+    <string name="conn_client_latency">平均帧解码延迟：</string>
+    <string name="conn_client_latency_hw">硬件解码器延迟：</string>
+    <string name="conn_hardware_latency">平均硬件解码延迟：</string>
+    <string name="conn_starting">开始</string>
+    <string name="conn_error_title">连接错误</string>
+    <string name="conn_error_msg">未能启动</string>
+    <string name="conn_terminated_title">连接终止</string>
+    <string name="conn_terminated_msg">连接被终止。</string>
+    <string name="error_code_prefix">错误代码：</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">PC主机IP地址</string>
+    <string name="searching_pc">正在本地网络上搜索主机 PC…\n\n
+        确保 Sunshine 正在您的主机 PC 上运行，或者在 GeForce Experience SHIELD 设置中启用了 GameStream。</string>
+    <string name="yes">是的</string>
+    <string name="no">不</string>
+    <string name="lost_connection">与电脑失去连接</string>
+    <string name="title_details">细节</string>
+    <string name="help">帮助</string>
+    <string name="delete_pc_msg">您确定要删除这台电脑吗？</string>
+    <string name="slow_connection_msg">与 PC 连接速度慢\n降低比特率</string>
+    <string name="poor_connection_msg">与电脑连接不良</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">视频流：%1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">解码器：%1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">来自网络的传入帧速率：%1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">渲染帧速率：%1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">主机处理延迟最小值/最大值/平均值：%1$.1f/%2$.1f/%3$.1f 毫秒</string>
+    <string name="perf_overlay_netdrops">您的网络连接丢弃的帧数：%1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">平均网络延迟：%1$d 毫秒（差异：%2$d 毫秒）</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">平均解码时间：%1$.2f 毫秒</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">正在连接到电脑…</string>
+    <string name="applist_menu_resume">恢复会话</string>
+    <string name="applist_menu_quit">退出会话</string>
+    <string name="applist_menu_quit_and_start">退出当前游戏并开始</string>
+    <string name="applist_menu_cancel">取消</string>
+    <string name="applist_menu_details">查看详情</string>
+    <string name="applist_menu_scut">创建快捷方式</string>
+    <string name="applist_menu_tv_channel">添加到频道</string>
+    <string name="applist_menu_hide_app">隐藏应用程序</string>
+    <string name="applist_refresh_title">应用列表</string>
+    <string name="applist_refresh_msg">正在刷新应用程序…</string>
+    <string name="applist_refresh_error_title">错误</string>
+    <string name="applist_refresh_error_msg">获取应用列表失败</string>
+    <string name="applist_quit_app">戒烟</string>
+    <string name="applist_quit_success">成功戒烟</string>
+    <string name="applist_quit_fail">退出失败</string>
+    <string name="applist_quit_confirmation">您确定要退出正在运行的应用程序吗？所有未保存的数据都将丢失。</string>
+    <string name="applist_details_id">应用程序ID：</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">手动添加电脑</string>
+    <string name="msg_add_pc">正在连接到电脑…</string>
+    <string name="addpc_fail">无法连接到指定的计算机。确保允许所需端口通过防火墙。</string>
+    <string name="addpc_success">添加计算机成功</string>
+    <string name="addpc_unknown_host">无法解析 PC 地址。确保您没有输入错误的地址。</string>
+    <string name="addpc_enter_ip">您必须输入 IP 地址</string>
+    <string name="addpc_wrong_sitelocal">该地址看起来不对。您必须使用路由器的公共 IP 地址通过 Internet 进行流式传输。</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">基本设置</string>
+    <string name="title_resolution_list">视频分辨率</string>
+    <string name="summary_resolution_list">增加以提高图像清晰度。减少以在低端设备和较慢的网络上获得更好的性能。</string>
+    <string name="title_native_res_dialog">本机分辨率警告</string>
+    <string name="text_native_res_dialog">流媒体服务器可能不支持本机分辨率和/或 FPS。您可能需要手动为主机 PC 配置匹配的自定义显示模式。\n\n如果您选择在 NVIDIA 控制面板中创建自定义分辨率以匹配您的屏幕设置，请确保您已阅读并理解 NVIDIA 的警告有关可能的显示器损坏、电脑不稳定和其他潜在问题的信息。\n\n我们对因在您的电脑上创建自定义分辨率而导致的任何问题不承担任何责任。\n\n您的显示器可能不支持必要的显示配置。如果是这样，您可以尝试设置虚拟显示器。最后，如果您的设备或主机不支持特定分辨率或刷新率的流式传输，那么您就很不幸了。</string>
+    <string name="title_fps_list">视频帧率</string>
+    <string name="summary_fps_list">增加以获得更流畅的视频流。减少以在低端设备上获得更好的性能。</string>
+    <string name="title_seekbar_bitrate">视频比特率</string>
+    <string name="summary_seekbar_bitrate">增加以获得更好的图像质量。减少以提高较慢连接的性能。</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">将视频拉伸至全屏</string>
+    <string name="title_stretch_video">拉伸视频</string>
+    <string name="resolution_prefix_native">本国的</string>
+    <string name="resolution_prefix_native_fullscreen">原生全屏</string>
+    <string name="resolution_prefix_native_landscape">（景观）</string>
+    <string name="resolution_prefix_native_portrait">（肖像）</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">本机 FPS 警告</string>
+
+    <string name="category_audio_settings">音频设置</string>
+    <string name="title_audio_config_list">环绕声配置</string>
+    <string name="summary_audio_config_list">为家庭影院系统启用 5.1 或 7.1 环绕声</string>
+    <string name="title_checkbox_enable_audiofx">启用系统均衡器支持</string>
+    <string name="summary_checkbox_enable_audiofx">允许音频效果在流式传输时发挥作用，但可能会增加音频延迟</string>
+
+    <string name="category_gamepad_settings">游戏手柄设置</string>
+    <string name="title_checkbox_multi_controller">自动检测游戏手柄是否存在</string>
+    <string name="summary_checkbox_multi_controller">取消选中此选项会强制游戏手柄始终存在</string>
+    <string name="title_checkbox_vibrate_fallback">通过振动模拟隆隆声支持</string>
+    <string name="summary_checkbox_vibrate_fallback">如果您的游戏手柄不支持，则振动您的设备以模拟隆隆声</string>
+    <string name="title_seekbar_vibrate_fallback_strength">调整模拟隆隆声强度</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">增强或降低设备的振动强度</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">调整模拟摇杆死区</string>
+    <string name="summary_seekbar_deadzone">注意：某些游戏可以强制执行比 Starlight 配置使用的死区更大的死区。</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Xbox 360/One USB 游戏手柄驱动程序</string>
+    <string name="summary_checkbox_xb1_driver">为没有本机 Xbox 控制器支持的设备启用内置 USB 驱动程序</string>
+    <string name="title_checkbox_usb_bind_all">覆盖本机 Xbox 游戏手柄支持</string>
+    <string name="summary_checkbox_usb_bind_all">即使存在本机 Xbox 控制器支持，也对所有受支持的游戏手柄使用 Starlight 的 USB 驱动程序</string>
+    <string name="title_checkbox_mouse_emulation">通过游戏手柄模拟鼠标</string>
+    <string name="summary_checkbox_mouse_emulation">长按开始按钮会将游戏手柄切换到鼠标模式</string>
+    <string name="title_checkbox_flip_face_buttons">翻转面部按钮</string>
+    <string name="summary_checkbox_flip_face_buttons">切换游戏手柄和屏幕控件的正面按钮 A/B 和 X/Y</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">始终使用触摸板控制鼠标</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">强制游戏手柄触摸板输入来控制主机鼠标，即使在使用触摸板模拟游戏手柄时也是如此。</string>
+    <string name="title_checkbox_gamepad_motion_sensors">允许使用游戏手柄运动传感器</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">使支持的主机能够在使用运动传感器模拟游戏手柄时请求运动传感器数据。如果游戏中未使用运动传感器，禁用可能会稍微减少电量和网络使用量。</string>
+    <string name="title_checkbox_gamepad_motion_fallback">模拟游戏手柄运动传感器支持</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">如果您连接的游戏手柄或 Android 版本不支持游戏手柄传感器，则使用设备的内置运动传感器。\n注意：启用此选项可能会导致您的游戏手柄在主机上显示为 PlayStation 控制器。</string>
+
+    <string name="category_input_settings">输入设置</string>
+    <string name="title_checkbox_touchscreen_trackpad">将触摸屏用作触控板</string>
+    <string name="summary_checkbox_touchscreen_trackpad">如果启用，触摸屏就像触控板一样。如果禁用，触摸屏将直接控制鼠标光标。</string>
+    <string name="title_checkbox_absolute_mouse_mode">远程桌面鼠标模式</string>
+    <string name="summary_checkbox_absolute_mouse_mode">这可以使鼠标加速在远程桌面使用时表现得更自然，但与许多游戏不兼容。</string>
+    <string name="title_checkbox_mouse_nav_buttons">启用后退和前进鼠标按钮</string>
+    <string name="summary_checkbox_mouse_nav_buttons">启用此选项可能会破坏某些有问题的设备上的右键单击</string>
+
+    <string name="category_on_screen_controls_settings">屏幕控制设置</string>
+    <string name="title_checkbox_show_onscreen_controls">显示屏幕控件</string>
+    <string name="summary_checkbox_show_onscreen_controls">在触摸屏上显示虚拟控制器覆盖层</string>
+    <string name="title_checkbox_vibrate_osc">启用振动</string>
+    <string name="summary_checkbox_vibrate_osc">振动您的设备以模拟屏幕控件的隆隆声</string>
+    <string name="title_only_l3r3">只显示L3和R3</string>
+    <string name="summary_only_l3r3">隐藏除L3和R3之外的所有虚拟按钮</string>
+    <string name="title_reset_osc">清除保存的屏幕控件布局</string>
+    <string name="summary_reset_osc">将所有屏幕控件重置为其默认大小和位置</string>
+    <string name="dialog_title_reset_osc">重置布局</string>
+    <string name="dialog_text_reset_osc">您确定要删除已保存的屏幕控制布局吗？</string>
+    <string name="toast_reset_osc_success">屏幕控件重置为默认值</string>
+    <string name="title_osc_opacity">更改屏幕控件的不透明度</string>
+    <string name="summary_osc_opacity">使屏幕控件更加透明/不那么透明</string>
+    <string name="dialog_title_osc_opacity">更改不透明度</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">用户界面设置</string>
+    <string name="title_checkbox_enable_pip">启用画中画观察者模式</string>
+    <string name="summary_checkbox_enable_pip">允许在多任务处理时查看（但不受控制）流</string>
+    <string name="title_language_list">语言</string>
+    <string name="summary_language_list">月光使用的语言</string>
+    <string name="title_checkbox_small_icon_mode">使用小盒子艺术</string>
+    <string name="summary_checkbox_small_icon_mode">应用程序网格中较小的盒子艺术允许更多应用程序在屏幕上可见</string>
+
+    <string name="category_host_settings">主机设置</string>
+    <string name="title_checkbox_enable_sops">优化游戏设置</string>
+    <string name="summary_checkbox_enable_sops">允许 GFE 修改游戏设置以获得最佳流媒体</string>
+    <string name="title_checkbox_host_audio">在电脑上播放音频</string>
+    <string name="summary_checkbox_host_audio">播放计算机和此设备中的音频</string>
+
+    <string name="category_advanced_settings">高级设置</string>
+    <string name="title_unlock_fps">解锁所有可能的帧速率</string>
+    <string name="summary_unlock_fps">以 90 或 120 FPS 进行流式传输可能会减少高端设备上的延迟，但可能会导致不支持它的设备上的延迟或不稳定</string>
+    <string name="title_checkbox_reduce_refresh_rate">允许降低刷新率</string>
+    <string name="summary_checkbox_reduce_refresh_rate">较低的显示刷新率可以节省电量，但会带来一些额外的视频延迟</string>
+    <string name="title_checkbox_disable_warnings">禁用警告消息</string>
+    <string name="summary_checkbox_disable_warnings">流式传输时禁用屏幕上的连接警告消息</string>
+    <string name="title_disable_frame_drop">永不掉帧</string>
+    <string name="summary_disable_frame_drop">可能会减少某些设备上的微卡顿，但会增加延迟</string>
+    <string name="title_video_format">更改编解码器设置</string>
+    <string name="summary_video_format">如果您的设备支持，较新的编解码器可以降低视频带宽要求。如果主机软件或 GPU 不支持，则编解码器选择可能会被忽略。</string>
+    <string name="title_enable_hdr">启用 HDR（实验性）</string>
+    <string name="summary_enable_hdr">当游戏和 PC GPU 支持时流式传输 HDR。 HDR 需要支持 HEVC Main 10 编码的 GPU。</string>
+    <string name="title_full_range">强制全范围视频（依赖于设备）</string>
+    <string name="summary_full_range">如果您的设备无法正确显示全范围视频内容，这将导致明暗区域的细节丢失。</string>
+    <string name="title_enable_perf_overlay">流式传输时显示性能统计数据</string>
+    <string name="summary_enable_perf_overlay">流媒体时显示实时流性能信息</string>
+    <string name="title_enable_post_stream_toast">流式传输后显示延迟消息</string>
+    <string name="summary_enable_post_stream_toast">流结束后显示延迟信息消息</string>
+
+    <string name="category_help">帮助</string>
+    <string name="title_setup_guide">设置指南</string>
+    <string name="summary_setup_guide">查看有关如何设置游戏电脑进行流式传输的说明</string>
+    <string name="title_troubleshooting">故障排除指南</string>
+    <string name="summary_troubleshooting">查看诊断和修复常见流媒体问题的提示</string>
+    <string name="title_privacy_policy">隐私政策</string>
+    <string name="summary_privacy_policy">查看月光的隐私政策</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">游戏手柄类型可能会因运动传感器模拟而改变</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30帧/秒</string>
+    <string name="fps_60">60帧/秒</string>
+    <string name="fps_90">90帧/秒</string>
+    <string name="fps_120">120帧/秒</string>
+
+    <string name="audioconf_stereo">立体声</string>
+    <string name="audioconf_51surround">5.1环绕声</string>
+    <string name="audioconf_71surround">7.1 环绕声</string>
+
+    <string name="videoformat_auto">自动（推荐）</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">更喜欢 AV1（实验性）</string>
+    <string name="videoformat_hevcalways">更喜欢 HEVC</string>
+    <string name="videoformat_h264always">更喜欢 H.264</string>
+
+    <string name="title_frame_pacing">视频帧节奏</string>
+    <string name="summary_frame_pacing">指定如何平衡视频延迟和流畅度</string>
+    <string name="pacing_latency">偏好最低延迟</string>
+    <string name="pacing_balanced">均衡</string>
+    <string name="pacing_balanced_alt">与 FPS 限制保持平衡</string>
+    <string name="pacing_smoothness">喜欢最流畅的视频（可能会显着增加延迟）</string>
+    <string name="title_analog_scrolling">使用模拟摇杆滚动</string>
+    <string name="summary_analog_scrolling">在鼠标模拟模式下选择要滚动的模拟摇杆</string>
+    <string name="analogscroll_none">无（两根摇杆都移动鼠标）</string>
+    <string name="analogscroll_right">右模拟摇杆</string>
+    <string name="analogscroll_left">左模拟摇杆</string>
+    <string name="games">游戏</string>
+    <string name="settings">设置</string>
+    <string name="exit">出口</string>
+    <string name="options">选项</string>
+    <string name="pending">待办的</string>
+    <string name="data_collection">数据采集</string>
+    <string name="loading_for_first_time_use_please_wait">首次使用正在加载…请稍候…</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">您要退出还是暂停此应用程序，退出时所有未保存的数据将丢失。</string>
+    <string name="confirm_quit">确认退出</string>
+    <string name="quit">辞职</string>
+    <string name="pause">暂停</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">您确定要清除缓存，这将关闭此窗口吗？</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="click_ok_to_launch_game">单击“确定”启动游戏。</string>
+    <string name="active_internet_connection_required_for_game_details">游戏详情需要有效的互联网连接，</string>
+    <string name="download">下载</string>
+    <string name="download_translations_model">下载翻译模型</string>
+    <string name="download_locale_language_model_to_translate_game_data">下载区域设置语言模型来翻译游戏数据</string>
+    <string name="downloading_ml_language_file_please_wait">请稍等..</string>
+    <string name="download_successful">下载成功</string>
+    <string name="download_error_please_try_again">下载错误：请重试</string>
+    <string name="model_deleted_successfully">模型删除成功</string>
+    <string name="model_delete_failed_please_try_again">模型删除失败，请重试</string>
+    <string name="delete_language_model">删除语言模型</string>
+    <string name="delete_downloaded_language_model">删除下载的语言模型</string>
+    <string name="support">“支持 ”</string>
+    <string name="cache">缓存%1$s</string>
+    <string name="hdr_off">“HDR 关闭”</string>
+    <string name="hdr_on">“HDR 开启”</string>
+    <string name="cancel">取消</string>
+    <string name="display_does_not_support_hdr10">显示器不支持 HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">解码器不支持 HDR10 配置文件</string>
+    <string name="no_hevc_decoder_found">未找到 HEVC 解码器</string>
+    <string name="no_av1_decoder_found">未找到 AV1 解码器</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">此设备或 ROM 不支持硬件加速 H.264 播放。</string>
+    <string name="server_version_malformed">服务器版本格式错误</string>
+    <string name="device_not_paired_with_computer">设备未与计算机配对</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">您的 PC GPU 不支持流式 HDR。该流将为 SDR。</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">您的主机不支持 4K 以上分辨率的流式传输。</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">您的流媒体设备必须支持 HEVC 或 AV1 才能以 4K 以上的分辨率进行流媒体播放。</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">您必须更新 GeForce Experience 才能以 4K 流式传输。流媒体将为 1080p。</string>
+    <string name="failed_to_resume_existing_session">无法恢复现有会话</string>
+    <string name="this_session_wasn_t_started_by_this_device">此会话不是由该设备启动的，</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">“因此无法恢复。结束原始流媒体”</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">“设备或电脑本身，然后重试。（错误代码：”</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">“该应用程序已最小化。请在 PC 上手动恢复它或”</string>
+    <string name="quit_the_session_and_start_streaming_again">退出会话并再次开始流式传输。</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">无法退出上一个会话！您必须手动退出</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">“所以无法退出。结束原始流媒体播放”</string>
+    <string name="device_or_the_pc_itself_error_code">“设备或 PC 本身。（错误代码：”</string>
+    <string name="failed_to_launch_application">无法启动应用程序</string>
+    <string name="please_wait_for_the_process_to_complete">请等待该过程完成…</string>
+    <string name="enter_api_key_here">在此输入 API 密钥：</string>
+    <string name="favorites">收藏夹</string>
+    <string name="removed_from_favorites">“已从收藏夹和主频道中移除”</string>
+    <string name="added_to_favorites">“已添加到收藏夹和主页频道”</string>
+    <string name="clear_favorites">清除收藏夹</string>
+    <string name="clear_favs_msg">您确定要清除收藏夹吗？这也会删除应用程序“家庭频道”吗？</string>
+    <string name="app_list_updated">应用列表已更新</string>
+    <string name="update_the_database"><![CDATA[您确定要清除并更新数据库吗？这将关闭此窗口吗？]]></string>
+    <string name="update_database">更新数据库</string>
+    <string name="database">数据库</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">您确定要清除所有收藏夹吗？</string>
+    <string name="resuming_session">恢复会话</string>
+    <string name="app_added_to_favorites">已添加到收藏夹</string>
+    <string name="app_removed_from_favorites">已从收藏夹中移除</string>
+    <string name="anonymous_statistics">匿名统计</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">发送匿名统计信息以提高应用程序性能。</string>
+    <string name="captions">YouTube视频字幕</string>
+    <string name="captions_text">启用或禁用 YouTube 视频字幕。</string>
+    <string name="privacy">隐私</string>
+    <string name="restart_application">重新启动应用程序</string>
+    <string name="restart_now">这将重新启动应用程序以应用更改。您想现在重新启动吗？</string>
+    <string name="database_updating">数据库更新</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">视频增强：（x%1$.2f）Shader SGSR1</string>
+    <string name="title_video_sr">视频超分辨率</string>
+    <string name="summary_video_sr">利用硬件加速提升画面清晰度</string>
+    <string name="aaudio">尝试获取直接硬件访问权限以加快音频响应速度。由于部分安卓电视或流媒体设备的制造商限制，可能会出现延迟；如果音频不稳定，请禁用此选项。</string>
+    <string name="enable_aaudio">启用音频</string>
+    <string name="aaudio_title">AAudio 超低延迟（实验性）</string>
+    <string name="aaudio_summary">AAudio 超低延迟（支持环绕声）</string>
+    <string name="aaudio_summary29">启用 AAudio 超低延迟</string>
+    <string name="game_media_library">游戏媒体库</string>
+
+    <string name="title_audio_output_mode">音频输出格式</string>
+    <string name="summary_audio_output_mode">PCM 兼容所有设备。AC-3 和 Dolby Digital Plus 会将编码后的 5.1 声道音频发送到 HDMI/eARC 接收器，如果传输失败，则会回退到 PCM。</string>
+    <string name="audio_output_mode_pcm">PCM（默认）</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1（自动，实验性）</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1（力，实验）</string>
+    <string name="audio_output_mode_eac3_auto">杜比数字+ / E-AC-3 5.1（自动，实验性）</string>
+    <string name="audio_output_mode_eac3_force">杜比数字+ / E-AC-3 5.1（强制，实验性）</string>
+    <string name="encoded_audio_fallback_to_pcm">编码音频输出不可用。将继续使用PCM音频。</string>
+    <string name="switch_to_encoded">已启用编码音频输出，正在切换到编码音频。</string>
+</resources>

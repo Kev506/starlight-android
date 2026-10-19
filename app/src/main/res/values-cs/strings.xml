@@ -1,0 +1,415 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Hrát si</string>
+    <string name="details">Podrobnosti</string>
+    <string name="running">Hra běží, kliknutím na tlačítko Přehrát zobrazíte možnosti.</string>
+    <string name="No_Details">Omlouváme se, ale nezobrazují se žádné podrobnosti.
+Pokud jste hru přidali ručně, zkontrolujte prosím název a vymažte/aktualizujte databázi.
+Pokud je vybraná položka desktopová aplikace, nebudou k dispozici žádné podrobnosti.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Přívěsy</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Použijte uživatelské rozhraní Leanback</string>
+    <string name="leanback_summary">Vyberte pro zobrazení aplikací v uživatelském rozhraní Leanback</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PC smazáno</string>
+    <string name="scut_not_paired">PC není spárováno</string>
+    <string name="scut_pc_not_found">PC nenalezeno</string>
+    <string name="scut_invalid_uuid">Dodaný PC není platný</string>
+    <string name="scut_invalid_app_id">Poskytnutá aplikace není platná</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Help Viewer</string>
+    <string name="help_loading_msg">Načítání stránky nápovědy…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">Online</string>
+    <string name="pcview_menu_header_offline">Offline</string>
+    <string name="pcview_menu_header_unknown">Osvěžující</string>
+    <string name="pcview_menu_app_list">Zobrazit všechny aplikace</string>
+    <string name="pcview_menu_pair_pc">Spárujte s PC</string>
+    <string name="pcview_menu_unpair_pc">Zrušit spárování</string>
+    <string name="pcview_menu_send_wol">Odeslat požadavek Wake-On-LAN</string>
+    <string name="pcview_menu_delete_pc">Smazat PC</string>
+    <string name="pcview_menu_test_network">Otestujte připojení k síti</string>
+    <string name="pcview_menu_details">Zobrazit podrobnosti</string>
+    <string name="pcview_menu_eol">Konec služby NVIDIA GameStream</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Testování síťového připojení</string>
+    <string name="nettest_text_waiting">Starlight testuje vaše síťové připojení, aby zjistil, zda nejsou blokovány některé požadované porty.\n\nMůže to několik sekund trvat…</string>
+    <string name="nettest_title_done">Test sítě dokončen</string>
+    <string name="nettest_text_success">Zdá se, že vaše síť neblokuje Starlight. Pokud máte stále problémy s připojením, zkontrolujte nastavení firewallu vašeho PC.\n\nPokud se pokoušíte streamovat přes internet, nainstalujte si do počítače Moonlight Internet Hosting Tool a spusťte přiložený Internet Streaming Tester pro kontrolu vašeho PC\ připojení k internetu.</string>
+    <string name="nettest_text_inconclusive">Test sítě nemohl být proveden, protože nebyl dosažitelný žádný ze serverů pro testování připojení Starlight. Zkontrolujte připojení k internetu nebo to zkuste znovu později.</string>
+    <string name="nettest_text_failure">Zdá se, že aktuální síťové připojení vašeho zařízení blokuje Starlight. Streamování přes internet nemusí při připojení k této síti fungovat.\n\nByly zablokovány následující síťové porty:\n</string>
+    <string name="nettest_text_blocked">Aktuální síťové připojení vašeho zařízení blokuje Starlight. Streamování přes internet nemusí při připojení k této síti fungovat.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Párování…</string>
+    <string name="pair_pc_offline">Počítač je offline</string>
+    <string name="pair_pc_ingame">Počítač je momentálně ve hře. Před spárováním musíte hru zavřít.</string>
+    <string name="pair_pairing_title">Párování</string>
+    <string name="pair_pairing_msg">Zadejte prosím na cílovém počítači následující PIN:</string>
+    <string name="pair_pairing_help">Pokud váš hostitelský počítač používá Sunshine, přejděte do webového uživatelského rozhraní Sunshine a zadejte PIN.</string>
+    <string name="pair_incorrect_pin">Nesprávný PIN</string>
+    <string name="pair_fail">Párování se nezdařilo</string>
+    <string name="pair_already_in_progress">Párování již probíhá</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">Počítač je online</string>
+    <string name="wol_no_mac">Počítač nelze probudit, protože není uložena žádná MAC adresa</string>
+    <string name="wol_waking_pc">Probuzení PC…</string>
+    <string name="wol_waking_msg">Může trvat několik sekund, než se váš počítač probudí.
+Pokud ne, ujistěte se, že je správně nakonfigurován pro Wake-On-LAN.
+    </string>
+    <string name="wol_fail">Odeslání paketů Wake-On-LAN se nezdařilo</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Rušení párování…</string>
+    <string name="unpair_success">Spárování bylo úspěšně zrušeno</string>
+    <string name="unpair_fail">Párování se nezdařilo</string>
+    <string name="unpair_error">Zařízení nebylo spárováno</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">Počítač je offline</string>
+    <string name="error_manager_not_running">Služba ComputerManager není spuštěna. Počkejte několik sekund nebo restartujte aplikaci.</string>
+    <string name="error_unknown_host">Nepodařilo se vyřešit hostitele</string>
+    <string name="error_404">GFE vrátilo chybu HTTP 404. Ujistěte se, že váš počítač používá podporovaný GPU.
+Tuto chybu může způsobit také použití softwaru pro vzdálenou plochu. Zkuste restartovat počítač nebo přeinstalovat GFE.
+    </string>
+    <string name="title_decoding_error">Video dekodér havaroval</string>
+    <string name="message_decoding_error">Starlight se zhroutil kvůli nekompatibilitě s dekodérem videa tohoto zařízení. Pokud bude selhání pokračovat, zkuste upravit nastavení streamování.</string>
+    <string name="title_decoding_reset">Obnovení nastavení videa</string>
+    <string name="message_decoding_reset">Video dekodér vašeho zařízení nadále selhává při zvoleném nastavení streamování. Vaše nastavení streamování byla resetována na výchozí.</string>
+    <string name="error_usb_prohibited">Přístup k USB je zakázán správcem vašeho zařízení. Zkontrolujte nastavení Knox nebo MDM.</string>
+    <string name="unable_to_pin_shortcut">Váš aktuální spouštěč neumožňuje vytváření připnutých zástupců.</string>
+    <string name="video_decoder_init_failed">Video dekodér se nepodařilo inicializovat. Vaše zařízení nemusí podporovat zvolené rozlišení nebo snímkovou frekvenci.</string>
+    <string name="no_video_received_error">Od hostitele nebylo přijato žádné video.</string>
+    <string name="no_frame_received_error">Vaše síťové připojení nefunguje dobře. Snižte nastavení přenosové rychlosti videa nebo zkuste rychlejší připojení.</string>
+    <string name="early_termination_error">Při spouštění streamu se na vašem hostitelském počítači něco pokazilo.\n\nUjistěte se, že na hostitelském počítači nemáte otevřený žádný obsah chráněný DRM. Můžete také zkusit restartovat hostitelský počítač.</string>
+    <string name="frame_conversion_error">Hostitelský počítač ohlásil závažnou chybu kódování videa.\n\nZkuste vypnout režim HDR, změnit rozlišení streamování nebo změnit rozlišení zobrazení hostitelského počítače.</string>
+    <string name="check_ports_msg">Zkontrolujte bránu firewall a pravidla pro předávání portů pro porty:</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Navazování spojení</string>
+    <string name="conn_establishing_msg">Spouštění připojení</string>
+    <string name="conn_metered">Upozornění: Vaše aktivní síťové připojení je měřeno!</string>
+    <string name="conn_client_latency">Průměrná latence dekódování snímků:</string>
+    <string name="conn_client_latency_hw">Latence hardwarového dekodéru:</string>
+    <string name="conn_hardware_latency">Průměrná latence hardwarového dekódování:</string>
+    <string name="conn_starting">Začínající</string>
+    <string name="conn_error_title">Chyba připojení</string>
+    <string name="conn_error_msg">Spuštění se nezdařilo</string>
+    <string name="conn_terminated_title">Připojení ukončeno</string>
+    <string name="conn_terminated_msg">Spojení bylo ukončeno.</string>
+    <string name="error_code_prefix">Chybový kód:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">IP adresa hostitelského PC</string>
+    <string name="searching_pc">Vyhledávání hostitelských počítačů ve vaší místní síti…\n\n
+        Ujistěte se, že na vašem hostitelském počítači běží Sunshine nebo je povolen GameStream v nastavení GeForce Experience SHIELD.</string>
+    <string name="yes">Ano</string>
+    <string name="no">Ne</string>
+    <string name="lost_connection">Ztratilo se připojení k PC</string>
+    <string name="title_details">Podrobnosti</string>
+    <string name="help">Pomoc</string>
+    <string name="delete_pc_msg">Opravdu chcete tento počítač smazat\?</string>
+    <string name="slow_connection_msg">Pomalé připojení k PC\nSnižte přenosovou rychlost</string>
+    <string name="poor_connection_msg">Špatné připojení k PC</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Video stream: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Dekodér: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Příchozí snímková frekvence ze sítě: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Snímková frekvence vykreslování: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Latence zpracování hostitele min/max/průměr: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">Snímky vynechané vaším síťovým připojením: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Průměrná latence sítě: %1$d ms (rozdíl: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Průměrná doba dekódování: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Připojování k PC…</string>
+    <string name="applist_menu_resume">Obnovit relaci</string>
+    <string name="applist_menu_quit">Ukončit relaci</string>
+    <string name="applist_menu_quit_and_start">Ukončete aktuální hru a začněte</string>
+    <string name="applist_menu_cancel">zrušení</string>
+    <string name="applist_menu_details">Zobrazit podrobnosti</string>
+    <string name="applist_menu_scut">Vytvořit zástupce</string>
+    <string name="applist_menu_tv_channel">Přidat do kanálu</string>
+    <string name="applist_menu_hide_app">Skrýt aplikaci</string>
+    <string name="applist_refresh_title">Seznam aplikací</string>
+    <string name="applist_refresh_msg">Obnovování aplikací…</string>
+    <string name="applist_refresh_error_title">Chyba</string>
+    <string name="applist_refresh_error_msg">Nepodařilo se získat seznam aplikací</string>
+    <string name="applist_quit_app">Konec</string>
+    <string name="applist_quit_success">Úspěšně skončit</string>
+    <string name="applist_quit_fail">Nepodařilo se ukončit</string>
+    <string name="applist_quit_confirmation">Opravdu chcete běžící aplikaci ukončit\? Všechna neuložená data budou ztracena.</string>
+    <string name="applist_details_id">ID aplikace:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">Přidat PC ručně</string>
+    <string name="msg_add_pc">Připojování k PC…</string>
+    <string name="addpc_fail">Nelze se připojit k určenému počítači. Ujistěte se, že jsou požadované porty povoleny přes bránu firewall.</string>
+    <string name="addpc_success">Počítač byl úspěšně přidán</string>
+    <string name="addpc_unknown_host">Nelze vyřešit adresu PC. Ujistěte se, že jste v adrese neudělali překlep.</string>
+    <string name="addpc_enter_ip">Musíte zadat IP adresu</string>
+    <string name="addpc_wrong_sitelocal">Ta adresa nevypadá správně. Pro streamování přes internet musíte použít veřejnou IP adresu vašeho routeru.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Základní nastavení</string>
+    <string name="title_resolution_list">Rozlišení videa</string>
+    <string name="summary_resolution_list">Zvýšením zlepšíte jasnost obrazu. Snížením pro lepší výkon na zařízeních nižší třídy a pomalejších sítích.</string>
+    <string name="title_native_res_dialog">Upozornění na nativní rozlišení</string>
+    <string name="text_native_res_dialog">Streamovací server nemusí podporovat nativní rozlišení a/nebo FPS. Pravděpodobně budete muset ručně nakonfigurovat odpovídající vlastní režim zobrazení pro hostitelský počítač.\n\nPokud se rozhodnete vytvořit vlastní rozlišení v Ovládacím panelu NVIDIA, aby odpovídalo nastavení obrazovky, ujistěte se, že jste si přečetli a porozuměli varování NVIDIA ohledně možného poškození monitoru, nestability počítače a dalších potenciálních problémů.\n\nNeneseme odpovědnost za žádné problémy vyplývající z vytvoření vlastního rozlišení na vašem počítači.\n\nJe možné, že váš monitor nepodporuje potřebnou konfiguraci zobrazení. Pokud ano, můžete zkusit nastavit virtuální monitor. A konečně, pokud vaše zařízení nebo hostitelský počítač nepodporuje streamování v určitém rozlišení nebo obnovovací frekvenci, máte bohužel smůlu.</string>
+    <string name="title_fps_list">Snímková frekvence videa</string>
+    <string name="summary_fps_list">Zvyšte pro plynulejší video stream. Snížením dosáhnete lepšího výkonu na zařízeních nižší třídy.</string>
+    <string name="title_seekbar_bitrate">Datový tok videa</string>
+    <string name="summary_seekbar_bitrate">Zvýšit pro lepší kvalitu obrazu. Snížením zvýšíte výkon na pomalejších připojeních.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mb/s</string>
+    <string name="title_checkbox_stretch_video">Roztáhněte video na celou obrazovku</string>
+    <string name="title_stretch_video">Roztáhnout video</string>
+    <string name="resolution_prefix_native">Rodák</string>
+    <string name="resolution_prefix_native_fullscreen">Nativní režim celé obrazovky</string>
+    <string name="resolution_prefix_native_landscape">(Krajina)</string>
+    <string name="resolution_prefix_native_portrait">(Portrét)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Nativní varování FPS</string>
+
+    <string name="category_audio_settings">Nastavení zvuku</string>
+    <string name="title_audio_config_list">Konfigurace prostorového zvuku</string>
+    <string name="summary_audio_config_list">Povolte prostorový zvuk 5.1 nebo 7.1 pro systémy domácího kina</string>
+    <string name="title_checkbox_enable_audiofx">Povolit podporu systémového ekvalizéru</string>
+    <string name="summary_checkbox_enable_audiofx">Umožňuje fungování zvukových efektů při streamování, ale může zvýšit latenci zvuku</string>
+
+    <string name="category_gamepad_settings">Nastavení gamepadu</string>
+    <string name="title_checkbox_multi_controller">Automatická detekce přítomnosti gamepadu</string>
+    <string name="summary_checkbox_multi_controller">Zrušením zaškrtnutí této možnosti bude gamepad vždy přítomen</string>
+    <string name="title_checkbox_vibrate_fallback">Emulujte podporu dunění pomocí vibrací</string>
+    <string name="summary_checkbox_vibrate_fallback">Vibruje vaše zařízení, aby emulovalo rachot, pokud to váš gamepad nepodporuje</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Upravte intenzitu emulovaného dunění</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Zesilte nebo snižte intenzitu vibrací na vašem zařízení</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Upravte mrtvou zónu analogové páčky</string>
+    <string name="summary_seekbar_deadzone">Poznámka: Některé hry mohou vynutit větší mrtvou zónu, než pro kterou je Starlight nakonfigurován.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Ovladač gamepadu USB pro Xbox 360/One</string>
+    <string name="summary_checkbox_xb1_driver">Umožňuje vestavěný ovladač USB pro zařízení bez podpory nativního ovladače Xbox</string>
+    <string name="title_checkbox_usb_bind_all">Přepsat nativní podporu Xbox gamepadu</string>
+    <string name="summary_checkbox_usb_bind_all">Použijte ovladač Starlight USB pro všechny podporované gamepady, i když je k dispozici nativní podpora ovladače Xbox</string>
+    <string name="title_checkbox_mouse_emulation">Emulace myši přes gamepad</string>
+    <string name="summary_checkbox_mouse_emulation">Dlouhým stisknutím tlačítka Start přepnete gamepad do režimu myši</string>
+    <string name="title_checkbox_flip_face_buttons">Překlápěcí tlačítka</string>
+    <string name="summary_checkbox_flip_face_buttons">Přepíná obličejová tlačítka A/B a X/Y pro gamepady a ovládací prvky na obrazovce</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Vždy ovládejte myš pomocí touchpadu</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">Přinutí vstup touchpadu gamepadu k ovládání hostitelské myši, a to i při emulaci gamepadu s touchpadem.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Povolit použití snímačů pohybu gamepadu</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Umožňuje podporovaným hostitelům vyžadovat data snímače pohybu při emulaci gamepadu se snímači pohybu. Deaktivace může mírně snížit spotřebu energie a sítě, pokud se ve hře nepoužívají pohybové senzory.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Emulujte podporu snímače pohybu gamepadu</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Pokud připojený gamepad nebo vaše verze systému Android nepodporuje snímače gamepadu, použije vestavěné snímače pohybu vašeho zařízení.\nPoznámka: Povolení této možnosti může způsobit, že se váš gamepad na hostiteli zobrazí jako ovladač PlayStation.</string>
+
+    <string name="category_input_settings">Nastavení vstupu</string>
+    <string name="title_checkbox_touchscreen_trackpad">Použijte dotykovou obrazovku jako trackpad</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Pokud je povoleno, dotyková obrazovka funguje jako trackpad. Pokud je zakázáno, dotyková obrazovka přímo ovládá kurzor myši.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Režim myši vzdálené plochy</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Díky tomu se může akcelerace myši chovat přirozeněji při použití vzdálené plochy, ale není kompatibilní s mnoha hrami.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Povolit tlačítka myši zpět a vpřed</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Povolení této možnosti může přerušit kliknutí pravým tlačítkem na některých zařízeních s chybou</string>
+
+    <string name="category_on_screen_controls_settings">Nastavení ovládacích prvků na obrazovce</string>
+    <string name="title_checkbox_show_onscreen_controls">Zobrazit ovládací prvky na obrazovce</string>
+    <string name="summary_checkbox_show_onscreen_controls">Zobrazit překrytí virtuálního ovladače na dotykové obrazovce</string>
+    <string name="title_checkbox_vibrate_osc">Povolit vibrace</string>
+    <string name="summary_checkbox_vibrate_osc">Vibruje vaše zařízení, aby napodobilo dunění ovládacích prvků na obrazovce</string>
+    <string name="title_only_l3r3">Zobrazit pouze L3 a R3</string>
+    <string name="summary_only_l3r3">Skryjte všechna virtuální tlačítka kromě L3 a R3</string>
+    <string name="title_reset_osc">Vymazat uložené rozvržení ovládacích prvků na obrazovce</string>
+    <string name="summary_reset_osc">Obnoví výchozí velikost a polohu všech ovládacích prvků na obrazovce</string>
+    <string name="dialog_title_reset_osc">Obnovit rozložení</string>
+    <string name="dialog_text_reset_osc">Opravdu chcete smazat uložené rozvržení ovládacích prvků na obrazovce\?</string>
+    <string name="toast_reset_osc_success">Ovládací prvky na obrazovce se resetují na výchozí</string>
+    <string name="title_osc_opacity">Změňte průhlednost ovládacích prvků na obrazovce</string>
+    <string name="summary_osc_opacity">Udělejte ovládací prvky na obrazovce více/méně průhledné</string>
+    <string name="dialog_title_osc_opacity">Změňte neprůhlednost</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">Nastavení uživatelského rozhraní</string>
+    <string name="title_checkbox_enable_pip">Povolte režim pozorovatele obrazu v obraze</string>
+    <string name="summary_checkbox_enable_pip">Umožňuje sledovat (ale ne ovládat) stream při multitaskingu</string>
+    <string name="title_language_list">Jazyk</string>
+    <string name="summary_language_list">Jazyk používaný pro Starlight</string>
+    <string name="title_checkbox_small_icon_mode">Použijte malou krabici</string>
+    <string name="summary_checkbox_small_icon_mode">Menší rámeček v mřížce aplikací umožňuje zobrazení více aplikací na obrazovce</string>
+
+    <string name="category_host_settings">Nastavení hostitele</string>
+    <string name="title_checkbox_enable_sops">Optimalizujte nastavení hry</string>
+    <string name="summary_checkbox_enable_sops">Umožněte GFE upravit nastavení hry pro optimální streamování</string>
+    <string name="title_checkbox_host_audio">Přehrávejte zvuk na PC</string>
+    <string name="summary_checkbox_host_audio">Přehrávejte zvuk z počítače a tohoto zařízení</string>
+
+    <string name="category_advanced_settings">Pokročilé nastavení</string>
+    <string name="title_unlock_fps">Odemkněte všechny možné snímkové frekvence</string>
+    <string name="summary_unlock_fps">Streamování při 90 nebo 120 FPS může snížit latenci na špičkových zařízeních, ale může způsobit zpoždění nebo nestabilitu na zařízeních, která to nepodporují</string>
+    <string name="title_checkbox_reduce_refresh_rate">Povolit snížení obnovovací frekvence</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Nižší obnovovací frekvence displeje může ušetřit energii na úkor určité další latence videa</string>
+    <string name="title_checkbox_disable_warnings">Zakázat varovné zprávy</string>
+    <string name="summary_checkbox_disable_warnings">Během streamování deaktivujte varovné zprávy o připojení na obrazovce</string>
+    <string name="title_disable_frame_drop">Nikdy neupouštějte rámy</string>
+    <string name="summary_disable_frame_drop">Na některých zařízeních může snížit mikro-zasekávání, ale může zvýšit latenci</string>
+    <string name="title_video_format">Změňte nastavení kodeku</string>
+    <string name="summary_video_format">Novější kodeky mohou snížit požadavky na šířku pásma videa, pokud je vaše zařízení podporuje. Výběr kodeků může být ignorován, pokud není podporován hostitelským softwarem nebo GPU.</string>
+    <string name="title_enable_hdr">Povolit HDR (experimentální)</string>
+    <string name="summary_enable_hdr">Streamujte HDR, když to hra a GPU počítače podporují. HDR vyžaduje GPU s podporou kódování HEVC Main 10.</string>
+    <string name="title_full_range">Vynutit video v plném rozsahu (Závislé na zařízení)</string>
+    <string name="summary_full_range">To způsobí ztrátu detailů ve světlých a tmavých oblastech, pokud vaše zařízení správně nezobrazuje video obsah v plném rozsahu.</string>
+    <string name="title_enable_perf_overlay">Zobrazovat statistiky výkonu při streamování</string>
+    <string name="summary_enable_perf_overlay">Zobrazujte informace o výkonu streamu v reálném čase během streamování</string>
+    <string name="title_enable_post_stream_toast">Po streamování zobrazit zprávu o latenci</string>
+    <string name="summary_enable_post_stream_toast">Po skončení streamu zobrazit informační zprávu o latenci</string>
+
+    <string name="category_help">Pomoc</string>
+    <string name="title_setup_guide">Průvodce nastavením</string>
+    <string name="summary_setup_guide">Podívejte se na pokyny, jak nastavit herní počítač pro streamování</string>
+    <string name="title_troubleshooting">Průvodce řešením problémů</string>
+    <string name="summary_troubleshooting">Zobrazit tipy pro diagnostiku a řešení běžných problémů se streamováním</string>
+    <string name="title_privacy_policy">Zásady ochrany osobních údajů</string>
+    <string name="summary_privacy_policy">Zobrazit zásady ochrany osobních údajů společnosti Starlight</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">Typ gamepadu se může změnit kvůli emulaci pohybového senzoru</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30 FPS</string>
+    <string name="fps_60">60 FPS</string>
+    <string name="fps_90">90 FPS</string>
+    <string name="fps_120">120 FPS</string>
+
+    <string name="audioconf_stereo">Stereo</string>
+    <string name="audioconf_51surround">5.1 Prostorový zvuk</string>
+    <string name="audioconf_71surround">7.1 Prostorový zvuk</string>
+
+    <string name="videoformat_auto">Automaticky (doporučeno)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">Preferuji AV1 (experimentální)</string>
+    <string name="videoformat_hevcalways">Preferujte HEVC</string>
+    <string name="videoformat_h264always">Preferujte H.264</string>
+
+    <string name="title_frame_pacing">Rychlost snímků videa</string>
+    <string name="summary_frame_pacing">Určete, jak vyvážit latenci a plynulost videa</string>
+    <string name="pacing_latency">Preferujte nejnižší latenci</string>
+    <string name="pacing_balanced">Vyrovnaný</string>
+    <string name="pacing_balanced_alt">Vyváženo s limitem FPS</string>
+    <string name="pacing_smoothness">Preferovat nejplynulejší video (může výrazně zvýšit latenci)</string>
+    <string name="title_analog_scrolling">K rolování použijte analogovou páčku</string>
+    <string name="summary_analog_scrolling">Vyberte analogovou páčku, kterou chcete posouvat v režimu emulace myši</string>
+    <string name="analogscroll_none">Žádné (obě páčky pohybují myší)</string>
+    <string name="analogscroll_right">Pravá analogová páčka</string>
+    <string name="analogscroll_left">Levá analogová páčka</string>
+    <string name="games">Hry</string>
+    <string name="settings">Nastavení</string>
+    <string name="exit">Výstup</string>
+    <string name="options">Možnosti</string>
+    <string name="pending">čekající</string>
+    <string name="data_collection">Sběr dat</string>
+    <string name="loading_for_first_time_use_please_wait">Načítání pro první použití… Čekejte prosím…</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Chcete-li ukončit nebo pozastavit tuto aplikaci, všechna neuložená data budou při ukončení ztracena.</string>
+    <string name="confirm_quit">Potvrďte Konec</string>
+    <string name="quit">Přestat</string>
+    <string name="pause">Pauza</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Opravdu chcete vymazat mezipaměť, toto okno zavře\?</string>
+    <string name="clear_cache">Vyčistit mezipaměť</string>
+    <string name="click_ok_to_launch_game">kliknutím na OK spusťte hru.</string>
+    <string name="active_internet_connection_required_for_game_details">Pro podrobnosti o hře je vyžadováno aktivní připojení k internetu,</string>
+    <string name="download">Stažení</string>
+    <string name="download_translations_model">Stáhněte si model překladů</string>
+    <string name="download_locale_language_model_to_translate_game_data">Stáhněte si jazykový model národního prostředí pro překlad herních dat</string>
+    <string name="downloading_ml_language_file_please_wait">Prosím, čekejte..</string>
+    <string name="download_successful">Stahování proběhlo úspěšně</string>
+    <string name="download_error_please_try_again">Chyba stahování: Zkuste to znovu</string>
+    <string name="model_deleted_successfully">Model byl úspěšně smazán</string>
+    <string name="model_delete_failed_please_try_again">Smazání modelu se nezdařilo, zkuste to prosím znovu</string>
+    <string name="delete_language_model">Smazat jazykový model</string>
+    <string name="delete_downloaded_language_model">Smazat stažený jazykový model</string>
+    <string name="support">\"Podpěra, podpora \"</string>
+    <string name="cache">Mezipaměť %1$s</string>
+    <string name="hdr_off">\"HDR vypnuto\"</string>
+    <string name="hdr_on">\"HDR zapnuto\"</string>
+    <string name="cancel">zrušení</string>
+    <string name="display_does_not_support_hdr10">Displej nepodporuje HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">Dekodér nepodporuje profil HDR10</string>
+    <string name="no_hevc_decoder_found">Nebyl nalezen žádný dekodér HEVC</string>
+    <string name="no_av1_decoder_found">Nebyl nalezen žádný dekodér AV1</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">Toto zařízení nebo ROM nepodporuje hardwarově akcelerované přehrávání H.264.</string>
+    <string name="server_version_malformed">Verze serveru je chybná</string>
+    <string name="device_not_paired_with_computer">Zařízení není spárováno s počítačem</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">GPU vašeho počítače nepodporuje streamování HDR. Stream bude SDR.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">Váš hostitelský počítač nepodporuje streamování v rozlišení nad 4K.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">Vaše streamovací zařízení musí podporovat HEVC nebo AV1, abyste mohli streamovat v rozlišení nad 4K.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Chcete-li streamovat ve 4K, musíte aktualizovat GeForce Experience. Stream bude 1080p.</string>
+    <string name="failed_to_resume_existing_session">Obnovení stávající relace se nezdařilo</string>
+    <string name="this_session_wasn_t_started_by_this_device">Tato relace nebyla zahájena tímto zařízením,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" takže jej nelze obnovit. Ukončit streamování na originálu \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"zařízení nebo samotný počítač a zkuste to znovu. (Kód chyby: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"Aplikace je minimalizována. Obnovte ji v počítači ručně nebo \"</string>
+    <string name="quit_the_session_and_start_streaming_again">ukončete relaci a začněte znovu streamovat.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Předchozí relaci se nepodařilo ukončit! Musíte to ukončit ručně</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" takže to nelze ukončit. Ukončit streamování na originálu \"</string>
+    <string name="device_or_the_pc_itself_error_code">\"zařízení nebo samotný počítač. (Kód chyby: \"</string>
+    <string name="failed_to_launch_application">Aplikaci se nepodařilo spustit</string>
+    <string name="please_wait_for_the_process_to_complete">Počkejte prosím na dokončení procesu…</string>
+    <string name="enter_api_key_here">Zde zadejte klíč API:</string>
+    <string name="favorites">Oblíbené</string>
+    <string name="removed_from_favorites">\"Odstraněno z oblíbených a domovského kanálu\"</string>
+    <string name="added_to_favorites">\"Přidáno do oblíbených a domovského kanálu\"</string>
+    <string name="clear_favorites">Vymazat oblíbené</string>
+    <string name="clear_favs_msg">Jste si jisti, že chcete vymazat oblíbené položky, odstraní se tím také aplikace Home Channels\?</string>
+    <string name="app_list_updated">Seznam aplikací aktualizován</string>
+    <string name="update_the_database"><![CDATA[Opravdu chcete vymazat a aktualizovat databázi, čímž se toto okno zavře\?]]></string>
+    <string name="update_database">Aktualizovat databázi</string>
+    <string name="database">Databáze</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Opravdu chcete vymazat všechny oblíbené položky?</string>
+    <string name="resuming_session">Obnovení relace</string>
+    <string name="app_added_to_favorites">Přidáno k oblíbeným</string>
+    <string name="app_removed_from_favorites">Odebráno z oblíbených</string>
+    <string name="anonymous_statistics">Anonymní statistiky</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Odesílejte anonymní statistiky ke zlepšení výkonu aplikace.</string>
+    <string name="captions">Titulky k videím na YouTube</string>
+    <string name="captions_text">Povolit nebo zakázat titulky k videím na YouTube.</string>
+    <string name="privacy">Soukromí</string>
+    <string name="restart_application">Restartujte aplikaci</string>
+    <string name="restart_now">Tím se aplikace restartuje, aby se změny uplatnily. Chcete restartovat nyní\?</string>
+    <string name="database_updating">Aktualizace databáze</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Video vylepšení: (x%1$.2f) Shader SGSR1</string>
+    <string name="title_video_sr">Video Super Resolution</string>
+    <string name="summary_video_sr">Využití hardwarové akcelerace ke zlepšení ostrosti obrazu</string>
+    <string name="aaudio">Pokus o zajištění přímého přístupu k hardwaru pro rychlejší zvukovou odezvu. Vzhledem k omezením výrobce u některých televizorů Android TV nebo streamovacích zařízení může dojít k určité latenci. Pokud se zvuk stane nestabilním, tuto možnost prosím deaktivujte.</string>
+    <string name="enable_aaudio">Povolit AAudio</string>
+    <string name="aaudio_title">Ultra nízká latence AAudio (experimentální)</string>
+    <string name="aaudio_summary">Ultra nízká latence AAudio s (podporou prostorového zvuku)</string>
+    <string name="aaudio_summary29">Povolit ultra nízkou latenci AAudio</string>
+    <string name="game_media_library">Knihovna herních médií</string>
+
+    <string name="title_audio_output_mode">Formát zvukového výstupu</string>
+    <string name="summary_audio_output_mode">PCM je kompatibilní se všemi zařízeními. AC-3 a Dolby Digital Plus odesílají kódovaný 5.1 zvuk do HDMI/eARC receiveru a v případě selhání trasy se vrátí k PCM.</string>
+    <string name="audio_output_mode_pcm">PCM (výchozí)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (automatický, experimentální)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (sila, experimentální)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (automatický, experimentální)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (vynucený, experimentální)</string>
+    <string name="encoded_audio_fallback_to_pcm">Kódovaný zvukový výstup není k dispozici. Pokračování se zvukem PCM.</string>
+    <string name="switch_to_encoded">K dispozici je kódovaný zvukový výstup, přepínání na kódovaný zvuk.</string>
+</resources>

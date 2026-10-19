@@ -1,0 +1,416 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Bermain</string>
+    <string name="details">Detail</string>
+    <string name="running">Game sedang berjalan, klik mainkan untuk opsi.</string>
+    <string name="No_Details">Maaf, tidak ada detail yang dapat ditampilkan.
+
+Jika Anda menambahkan game secara manual, harap periksa judulnya dan perbarui basis data.
+Jika item yang dipilih adalah aplikasi desktop, tidak akan ada detail yang ditampilkan.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Trailer</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Gunakan UI Bersandar</string>
+    <string name="leanback_summary">Pilih untuk menampilkan aplikasi di Leanback UI</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PC dihapus</string>
+    <string name="scut_not_paired">PC tidak dipasangkan</string>
+    <string name="scut_pc_not_found">PC tidak ditemukan</string>
+    <string name="scut_invalid_uuid">PC yang disediakan tidak valid</string>
+    <string name="scut_invalid_app_id">Aplikasi yang Disediakan tidak valid</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Bantuan Pemirsa</string>
+    <string name="help_loading_msg">Memuat halaman bantuan…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">On line</string>
+    <string name="pcview_menu_header_offline">Luring</string>
+    <string name="pcview_menu_header_unknown">Menyegarkan</string>
+    <string name="pcview_menu_app_list">Lihat Semua Aplikasi</string>
+    <string name="pcview_menu_pair_pc">Pasangkan dengan PC</string>
+    <string name="pcview_menu_unpair_pc">Putuskan pasangan</string>
+    <string name="pcview_menu_send_wol">Kirim permintaan Wake-On-LAN</string>
+    <string name="pcview_menu_delete_pc">Hapus PC</string>
+    <string name="pcview_menu_test_network">Uji Koneksi Jaringan</string>
+    <string name="pcview_menu_details">Melihat rincian</string>
+    <string name="pcview_menu_eol">Akhir Layanan NVIDIA GameStream</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Menguji Koneksi Jaringan</string>
+    <string name="nettest_text_waiting">Starlight sedang menguji koneksi jaringan Anda untuk menentukan apakah ada port yang diperlukan yang diblokir.\n\nIni mungkin memerlukan waktu beberapa detik…</string>
+    <string name="nettest_title_done">Tes Jaringan Selesai</string>
+    <string name="nettest_text_success">Jaringan Anda tampaknya tidak memblokir Starlight. Jika Anda masih mengalami masalah koneksi, periksa setelan firewall PC Anda.\n\nJika Anda mencoba melakukan streaming melalui Internet, instal Alat Hosting Internet Moonlight di PC Anda dan jalankan Penguji Streaming Internet yang disertakan untuk memeriksa PC\ koneksi internet.</string>
+    <string name="nettest_text_inconclusive">Pengujian jaringan tidak dapat dilakukan karena tidak ada server pengujian koneksi Starlight yang dapat dijangkau. Periksa koneksi Internet Anda atau coba lagi nanti.</string>
+    <string name="nettest_text_failure">Koneksi jaringan perangkat Anda saat ini sepertinya memblokir Starlight. Streaming melalui Internet mungkin tidak berfungsi saat tersambung ke jaringan ini.\n\nPort jaringan berikut diblokir:\n</string>
+    <string name="nettest_text_blocked">Koneksi jaringan perangkat Anda saat ini memblokir Starlight. Streaming melalui Internet mungkin tidak berfungsi saat tersambung ke jaringan ini.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Memasangkan…</string>
+    <string name="pair_pc_offline">Komputer sedang offline</string>
+    <string name="pair_pc_ingame">Komputer sedang dalam permainan. Anda harus menutup permainan sebelum memasangkan.</string>
+    <string name="pair_pairing_title">berpasangan</string>
+    <string name="pair_pairing_msg">Silakan masukkan PIN berikut pada PC target:</string>
+    <string name="pair_pairing_help">Jika PC host Anda menjalankan Sunshine, navigasikan ke UI web Sunshine untuk memasukkan PIN.</string>
+    <string name="pair_incorrect_pin">PIN salah</string>
+    <string name="pair_fail">Penyandingan gagal</string>
+    <string name="pair_already_in_progress">Penyandingan sedang berlangsung</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">Komputer sedang online</string>
+    <string name="wol_no_mac">Tidak dapat membangunkan PC karena tidak ada alamat MAC yang tersimpan</string>
+    <string name="wol_waking_pc">Membangunkan PC…</string>
+    <string name="wol_waking_msg">Mungkin diperlukan waktu beberapa detik hingga PC Anda aktif.
+Jika tidak, pastikan dikonfigurasi dengan benar untuk Wake-On-LAN.
+    </string>
+    <string name="wol_fail">Gagal mengirim paket Wake-On-LAN</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Melepaskan pasangan…</string>
+    <string name="unpair_success">Berhasil melepas pasangan</string>
+    <string name="unpair_fail">Gagal melepaskan pasangan</string>
+    <string name="unpair_error">Perangkat tidak dipasangkan</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">Komputer sedang offline</string>
+    <string name="error_manager_not_running">Layanan ComputerManager tidak berjalan. Harap tunggu beberapa detik atau mulai ulang aplikasi.</string>
+    <string name="error_unknown_host">Gagal menyelesaikan masalah host</string>
+    <string name="error_404">GFE mengembalikan kesalahan HTTP 404. Pastikan PC Anda menjalankan GPU yang didukung.
+Menggunakan perangkat lunak desktop jarak jauh juga dapat menyebabkan kesalahan ini. Coba reboot mesin Anda atau instal ulang GFE.
+    </string>
+    <string name="title_decoding_error">Dekoder Video Rusak</string>
+    <string name="message_decoding_error">Starlight mogok karena ketidakcocokan dengan dekoder video perangkat ini. Coba sesuaikan pengaturan streaming jika error terus berlanjut.</string>
+    <string name="title_decoding_reset">Atur Ulang Pengaturan Video</string>
+    <string name="message_decoding_reset">Dekoder video perangkat Anda terus mogok pada setelan streaming yang Anda pilih. Pengaturan streaming Anda telah diatur ulang ke default.</string>
+    <string name="error_usb_prohibited">Akses USB dilarang oleh administrator perangkat Anda. Periksa pengaturan Knox atau MDM Anda.</string>
+    <string name="unable_to_pin_shortcut">Peluncur Anda saat ini tidak mengizinkan pembuatan pintasan yang disematkan.</string>
+    <string name="video_decoder_init_failed">Dekoder video gagal diinisialisasi. Perangkat Anda mungkin tidak mendukung resolusi atau kecepatan bingkai yang dipilih.</string>
+    <string name="no_video_received_error">Tidak ada video yang diterima dari pembawa acara.</string>
+    <string name="no_frame_received_error">Koneksi jaringan Anda tidak berfungsi dengan baik. Kurangi pengaturan bitrate video Anda atau coba koneksi yang lebih cepat.</string>
+    <string name="early_termination_error">Ada yang tidak beres pada PC host Anda saat memulai streaming.\n\nPastikan Anda tidak membuka konten apa pun yang dilindungi DRM di PC host Anda. Anda juga dapat mencoba me-restart PC host Anda.</string>
+    <string name="frame_conversion_error">PC host melaporkan kesalahan pengkodean video yang fatal.\n\nCoba nonaktifkan mode HDR, ubah resolusi streaming, atau ubah resolusi tampilan PC host Anda.</string>
+    <string name="check_ports_msg">Periksa firewall dan aturan penerusan port Anda untuk port:</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Membangun Koneksi</string>
+    <string name="conn_establishing_msg">Memulai koneksi</string>
+    <string name="conn_metered">Peringatan: Koneksi jaringan aktif Anda diukur!</string>
+    <string name="conn_client_latency">Latensi penguraian bingkai rata-rata:</string>
+    <string name="conn_client_latency_hw">latensi dekoder perangkat keras:</string>
+    <string name="conn_hardware_latency">Latensi decoding perangkat keras rata-rata:</string>
+    <string name="conn_starting">Mulai</string>
+    <string name="conn_error_title">Koneksi error</string>
+    <string name="conn_error_msg">Gagal untuk memulai</string>
+    <string name="conn_terminated_title">Koneksi terputus</string>
+    <string name="conn_terminated_msg">Koneksi dihentikan.</string>
+    <string name="error_code_prefix">Kode kesalahan:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">Alamat IP PC host</string>
+    <string name="searching_pc">Mencari PC host di jaringan lokal Anda…\n\n
+        Pastikan Sunshine berjalan di PC host Anda atau GameStream diaktifkan di pengaturan GeForce Experience SHIELD.</string>
+    <string name="yes">Ya</string>
+    <string name="no">TIDAK</string>
+    <string name="lost_connection">Kehilangan koneksi ke PC</string>
+    <string name="title_details">Detail</string>
+    <string name="help">Membantu</string>
+    <string name="delete_pc_msg">Apakah Anda yakin ingin menghapus PC ini\?</string>
+    <string name="slow_connection_msg">Koneksi lambat ke PC\nKurangi bitrate Anda</string>
+    <string name="poor_connection_msg">Koneksi buruk ke PC</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Aliran video: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Dekoder: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Kecepatan bingkai masuk dari jaringan: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Kecepatan bingkai rendering: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Latensi pemrosesan host min/maks/rata-rata: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">Bingkai dijatuhkan oleh koneksi jaringan Anda: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Latensi jaringan rata-rata: %1$d ms (varians: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Waktu decoding rata-rata: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Menghubungkan ke PC…</string>
+    <string name="applist_menu_resume">Lanjutkan Sesi</string>
+    <string name="applist_menu_quit">Keluar dari Sesi</string>
+    <string name="applist_menu_quit_and_start">Keluar dari Game Saat Ini dan Mulai</string>
+    <string name="applist_menu_cancel">Membatalkan</string>
+    <string name="applist_menu_details">Melihat rincian</string>
+    <string name="applist_menu_scut">Buat Pintasan</string>
+    <string name="applist_menu_tv_channel">Tambahkan ke Saluran</string>
+    <string name="applist_menu_hide_app">Sembunyikan Aplikasi</string>
+    <string name="applist_refresh_title">Daftar Aplikasi</string>
+    <string name="applist_refresh_msg">Menyegarkan aplikasi…</string>
+    <string name="applist_refresh_error_title">Kesalahan</string>
+    <string name="applist_refresh_error_msg">Gagal mendapatkan daftar aplikasi</string>
+    <string name="applist_quit_app">Berhenti</string>
+    <string name="applist_quit_success">Berhasil berhenti</string>
+    <string name="applist_quit_fail">Gagal berhenti</string>
+    <string name="applist_quit_confirmation">Apakah Anda yakin ingin keluar dari aplikasi yang sedang berjalan\? Semua data yang belum disimpan akan hilang.</string>
+    <string name="applist_details_id">ID Aplikasi:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">Tambahkan PC Secara Manual</string>
+    <string name="msg_add_pc">Menghubungkan ke PC…</string>
+    <string name="addpc_fail">Tidak dapat terhubung ke komputer yang ditentukan. Pastikan port yang diperlukan diizinkan melalui firewall.</string>
+    <string name="addpc_success">Berhasil menambahkan komputer</string>
+    <string name="addpc_unknown_host">Tidak dapat menyelesaikan alamat PC. Pastikan Anda tidak salah ketik alamatnya.</string>
+    <string name="addpc_enter_ip">Anda harus memasukkan alamat IP</string>
+    <string name="addpc_wrong_sitelocal">Alamat itu sepertinya tidak beres. Anda harus menggunakan alamat IP publik router Anda untuk streaming melalui Internet.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Pengaturan dasar</string>
+    <string name="title_resolution_list">Resolusi video</string>
+    <string name="summary_resolution_list">Tingkatkan untuk meningkatkan kejernihan gambar. Turunkan untuk kinerja yang lebih baik pada perangkat kelas bawah dan jaringan yang lebih lambat.</string>
+    <string name="title_native_res_dialog">Peringatan Resolusi Asli</string>
+    <string name="text_native_res_dialog">Resolusi asli dan/atau FPS mungkin tidak didukung oleh server streaming. Anda mungkin perlu mengonfigurasi mode tampilan khusus yang cocok untuk PC host secara manual.\n\nJika Anda memilih untuk membuat resolusi khusus di Panel Kontrol NVIDIA agar sesuai dengan pengaturan layar Anda, pastikan Anda telah membaca dan memahami peringatan NVIDIA mengenai kemungkinan kerusakan monitor, ketidakstabilan PC, dan potensi masalah lainnya.\n\nKami tidak bertanggung jawab atas masalah apa pun yang diakibatkan oleh pembuatan resolusi khusus pada PC Anda.\n\nMungkin monitor Anda tidak mendukung konfigurasi tampilan yang diperlukan. Jika demikian, Anda dapat mencoba menyiapkan monitor virtual. Terakhir, jika perangkat atau PC host Anda tidak mendukung streaming pada resolusi atau kecepatan refresh tertentu, sayangnya Anda kurang beruntung.</string>
+    <string name="title_fps_list">Kecepatan bingkai video</string>
+    <string name="summary_fps_list">Tingkatkan untuk streaming video yang lebih lancar. Turunkan untuk kinerja yang lebih baik pada perangkat kelas bawah.</string>
+    <string name="title_seekbar_bitrate">Kecepatan bit video</string>
+    <string name="summary_seekbar_bitrate">Tingkatkan untuk kualitas gambar yang lebih baik. Penurunan untuk meningkatkan kinerja pada koneksi yang lebih lambat.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">Regangkan video ke layar penuh</string>
+    <string name="title_stretch_video">Video peregangan</string>
+    <string name="resolution_prefix_native">Warga asli</string>
+    <string name="resolution_prefix_native_fullscreen">Layar Penuh Asli</string>
+    <string name="resolution_prefix_native_landscape">(Lanskap)</string>
+    <string name="resolution_prefix_native_portrait">(Potret)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Peringatan FPS Asli</string>
+
+    <string name="category_audio_settings">Pengaturan Audio</string>
+    <string name="title_audio_config_list">Konfigurasi suara sekeliling</string>
+    <string name="summary_audio_config_list">Aktifkan suara surround 5.1 atau 7.1 untuk sistem home theater</string>
+    <string name="title_checkbox_enable_audiofx">Aktifkan dukungan equalizer sistem</string>
+    <string name="summary_checkbox_enable_audiofx">Mengizinkan efek audio berfungsi saat streaming, namun dapat meningkatkan latensi audio</string>
+
+    <string name="category_gamepad_settings">Pengaturan Gamepad</string>
+    <string name="title_checkbox_multi_controller">Deteksi kehadiran gamepad otomatis</string>
+    <string name="summary_checkbox_multi_controller">Menghapus centang opsi ini akan memaksa gamepad untuk selalu ada</string>
+    <string name="title_checkbox_vibrate_fallback">Tiru dukungan gemuruh dengan getaran</string>
+    <string name="summary_checkbox_vibrate_fallback">Getarkan perangkat Anda untuk meniru gemuruh jika gamepad Anda tidak mendukungnya</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Sesuaikan intensitas gemuruh yang ditiru</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Perkuat atau kurangi intensitas getaran pada perangkat Anda</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Sesuaikan zona mati stik analog</string>
+    <string name="summary_seekbar_deadzone">Catatan: Beberapa game dapat menerapkan zona mati yang lebih besar daripada yang dikonfigurasi untuk digunakan oleh Starlight.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Driver gamepad USB Xbox 360/One</string>
+    <string name="summary_checkbox_xb1_driver">Mengaktifkan driver USB internal untuk perangkat tanpa dukungan pengontrol Xbox asli</string>
+    <string name="title_checkbox_usb_bind_all">Ganti dukungan gamepad Xbox asli</string>
+    <string name="summary_checkbox_usb_bind_all">Gunakan driver USB Starlight untuk semua gamepad yang didukung, meskipun ada dukungan pengontrol Xbox asli</string>
+    <string name="title_checkbox_mouse_emulation">Emulasi mouse melalui gamepad</string>
+    <string name="summary_checkbox_mouse_emulation">Menekan lama tombol Start akan mengalihkan gamepad ke mode mouse</string>
+    <string name="title_checkbox_flip_face_buttons">Balikkan tombol muka</string>
+    <string name="summary_checkbox_flip_face_buttons">Mengalihkan tombol muka A/B dan X/Y untuk gamepad dan kontrol di layar</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Selalu kendalikan mouse dengan touchpad</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">Memaksa input touchpad gamepad untuk mengontrol mouse host, bahkan saat meniru gamepad dengan touchpad.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Izinkan penggunaan sensor gerak gamepad</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Memungkinkan host yang didukung untuk meminta data sensor gerak saat meniru gamepad dengan sensor gerak. Menonaktifkan mungkin sedikit mengurangi penggunaan daya dan jaringan jika sensor gerak tidak digunakan dalam game.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Meniru dukungan sensor gerak gamepad</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Menggunakan sensor gerak bawaan perangkat jika sensor gamepad tidak didukung oleh gamepad yang terhubung atau versi Android Anda.\nCatatan: Mengaktifkan opsi ini dapat menyebabkan gamepad Anda muncul sebagai pengontrol PlayStation di host.</string>
+
+    <string name="category_input_settings">Pengaturan Masukan</string>
+    <string name="title_checkbox_touchscreen_trackpad">Gunakan layar sentuh sebagai trackpad</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Jika diaktifkan, layar sentuh berfungsi seperti trackpad. Jika dinonaktifkan, layar sentuh langsung mengontrol kursor mouse.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Mode mouse desktop jarak jauh</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Hal ini dapat membuat akselerasi mouse berperilaku lebih alami untuk penggunaan desktop jarak jauh, namun tidak kompatibel dengan banyak game.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Aktifkan tombol mundur dan maju mouse</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Mengaktifkan opsi ini dapat menyebabkan gangguan klik kanan pada beberapa perangkat yang bermasalah</string>
+
+    <string name="category_on_screen_controls_settings">Pengaturan Kontrol di Layar</string>
+    <string name="title_checkbox_show_onscreen_controls">Tampilkan kontrol di layar</string>
+    <string name="summary_checkbox_show_onscreen_controls">Tampilkan hamparan pengontrol virtual di layar sentuh</string>
+    <string name="title_checkbox_vibrate_osc">Aktifkan getaran</string>
+    <string name="summary_checkbox_vibrate_osc">Getarkan perangkat Anda untuk meniru gemuruh kontrol di layar</string>
+    <string name="title_only_l3r3">Hanya tampilkan L3 dan R3</string>
+    <string name="summary_only_l3r3">Sembunyikan semua tombol virtual kecuali L3 dan R3</string>
+    <string name="title_reset_osc">Hapus tata letak kontrol di layar yang disimpan</string>
+    <string name="summary_reset_osc">Menyetel ulang semua kontrol di layar ke ukuran dan posisi defaultnya</string>
+    <string name="dialog_title_reset_osc">Atur Ulang Tata Letak</string>
+    <string name="dialog_text_reset_osc">Apakah Anda yakin ingin menghapus tata letak kontrol di layar yang tersimpan\?</string>
+    <string name="toast_reset_osc_success">Kontrol di layar diatur ulang ke default</string>
+    <string name="title_osc_opacity">Ubah opacity kontrol di layar</string>
+    <string name="summary_osc_opacity">Jadikan kontrol di layar lebih/kurang transparan</string>
+    <string name="dialog_title_osc_opacity">Ubah opacity</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">Pengaturan UI</string>
+    <string name="title_checkbox_enable_pip">Aktifkan mode pengamat Gambar-dalam-Gambar</string>
+    <string name="summary_checkbox_enable_pip">Memungkinkan streaming untuk dilihat (tetapi tidak dikontrol) saat melakukan banyak tugas</string>
+    <string name="title_language_list">Bahasa</string>
+    <string name="summary_language_list">Bahasa yang digunakan untuk Starlight</string>
+    <string name="title_checkbox_small_icon_mode">Gunakan seni kotak kecil</string>
+    <string name="summary_checkbox_small_icon_mode">Seni kotak yang lebih kecil di kisi aplikasi memungkinkan lebih banyak aplikasi terlihat di layar</string>
+
+    <string name="category_host_settings">Pengaturan Tuan Rumah</string>
+    <string name="title_checkbox_enable_sops">Optimalkan pengaturan permainan</string>
+    <string name="summary_checkbox_enable_sops">Izinkan GFE mengubah pengaturan game untuk streaming yang optimal</string>
+    <string name="title_checkbox_host_audio">Memutar audio di PC</string>
+    <string name="summary_checkbox_host_audio">Memutar audio dari komputer dan perangkat ini</string>
+
+    <string name="category_advanced_settings">Pengaturan lanjutan</string>
+    <string name="title_unlock_fps">Buka kunci semua kemungkinan kecepatan bingkai</string>
+    <string name="summary_unlock_fps">Streaming pada 90 atau 120 FPS dapat mengurangi latensi pada perangkat kelas atas namun dapat menyebabkan kelambatan atau ketidakstabilan pada perangkat yang tidak mendukungnya</string>
+    <string name="title_checkbox_reduce_refresh_rate">Izinkan pengurangan kecepatan refresh</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Kecepatan refresh tampilan yang lebih rendah dapat menghemat daya dengan mengorbankan beberapa latensi video tambahan</string>
+    <string name="title_checkbox_disable_warnings">Nonaktifkan pesan peringatan</string>
+    <string name="summary_checkbox_disable_warnings">Nonaktifkan pesan peringatan koneksi di layar saat streaming</string>
+    <string name="title_disable_frame_drop">Jangan pernah menjatuhkan bingkai</string>
+    <string name="summary_disable_frame_drop">Dapat mengurangi kegagapan mikro pada beberapa perangkat, namun dapat meningkatkan latensi</string>
+    <string name="title_video_format">Ubah pengaturan codec</string>
+    <string name="summary_video_format">Codec yang lebih baru dapat menurunkan persyaratan bandwidth video jika perangkat Anda mendukungnya. Pilihan codec mungkin diabaikan jika tidak didukung oleh perangkat lunak host atau GPU.</string>
+    <string name="title_enable_hdr">Aktifkan HDR (Eksperimental)</string>
+    <string name="summary_enable_hdr">Streaming HDR saat game dan GPU PC mendukungnya. HDR memerlukan GPU dengan dukungan pengkodean HEVC Main 10.</string>
+    <string name="title_full_range">Paksa video jangkauan penuh (Bergantung pada perangkat)</string>
+    <string name="summary_full_range">Hal ini akan menyebabkan hilangnya detail di area terang dan gelap jika perangkat Anda tidak menampilkan konten video lengkap dengan benar.</string>
+    <string name="title_enable_perf_overlay">Tampilkan statistik kinerja saat streaming</string>
+    <string name="summary_enable_perf_overlay">Menampilkan informasi kinerja streaming waktu nyata saat streaming</string>
+    <string name="title_enable_post_stream_toast">Tampilkan pesan latensi setelah streaming</string>
+    <string name="summary_enable_post_stream_toast">Menampilkan pesan informasi latensi setelah streaming berakhir</string>
+
+    <string name="category_help">Membantu</string>
+    <string name="title_setup_guide">Panduan pengaturan</string>
+    <string name="summary_setup_guide">Lihat instruksi tentang cara mengatur PC game Anda untuk streaming</string>
+    <string name="title_troubleshooting">Panduan mengatasi masalah</string>
+    <string name="summary_troubleshooting">Lihat tips untuk mendiagnosis dan memperbaiki masalah streaming yang umum</string>
+    <string name="title_privacy_policy">Kebijakan pribadi</string>
+    <string name="summary_privacy_policy">Lihat kebijakan privasi Starlight</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">Jenis gamepad dapat diubah karena emulasi sensor gerak</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30FPS</string>
+    <string name="fps_60">60FPS</string>
+    <string name="fps_90">90FPS</string>
+    <string name="fps_120">120FPS</string>
+
+    <string name="audioconf_stereo">Stereo</string>
+    <string name="audioconf_51surround">5.1 Suara Sekitar</string>
+    <string name="audioconf_71surround">7.1 Suara Sekitar</string>
+
+    <string name="videoformat_auto">Otomatis (Disarankan)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">Lebih suka AV1 (Eksperimental)</string>
+    <string name="videoformat_hevcalways">Lebih suka HEVC</string>
+    <string name="videoformat_h264always">Lebih suka H.264</string>
+
+    <string name="title_frame_pacing">Kecepatan bingkai video</string>
+    <string name="summary_frame_pacing">Tentukan cara menyeimbangkan latensi dan kelancaran video</string>
+    <string name="pacing_latency">Lebih suka latensi terendah</string>
+    <string name="pacing_balanced">Seimbang</string>
+    <string name="pacing_balanced_alt">Seimbang dengan batas FPS</string>
+    <string name="pacing_smoothness">Lebih menyukai video yang paling halus (dapat meningkatkan latensi secara signifikan)</string>
+    <string name="title_analog_scrolling">Gunakan stik analog untuk menggulir</string>
+    <string name="summary_analog_scrolling">Pilih stik analog untuk digulir saat dalam mode emulasi mouse</string>
+    <string name="analogscroll_none">Tidak ada (kedua tongkat menggerakkan mouse)</string>
+    <string name="analogscroll_right">Tongkat analog kanan</string>
+    <string name="analogscroll_left">Stik analog kiri</string>
+    <string name="games">permainan</string>
+    <string name="settings">Pengaturan</string>
+    <string name="exit">KELUAR</string>
+    <string name="options">Pilihan</string>
+    <string name="pending">Tertunda</string>
+    <string name="data_collection">Pengumpulan data</string>
+    <string name="loading_for_first_time_use_please_wait">Memuat untuk penggunaan pertama kali.... Harap tunggu...</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Apakah Anda ingin keluar atau menjeda aplikasi ini, semua data yang belum disimpan akan hilang saat keluar.</string>
+    <string name="confirm_quit">Konfirmasi Keluar</string>
+    <string name="quit">Berhenti</string>
+    <string name="pause">Berhenti sebentar</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Apakah Anda yakin ingin menghapus cache, ini akan menutup jendela ini\?</string>
+    <string name="clear_cache">Hapus Tembolok</string>
+    <string name="click_ok_to_launch_game">klik OK untuk meluncurkan game.</string>
+    <string name="active_internet_connection_required_for_game_details">Koneksi Internet aktif diperlukan untuk detail permainan,</string>
+    <string name="download">Unduh</string>
+    <string name="download_translations_model">Unduh model terjemahan</string>
+    <string name="download_locale_language_model_to_translate_game_data">Unduh model bahasa lokal untuk menerjemahkan data game</string>
+    <string name="downloading_ml_language_file_please_wait">Harap tunggu..</string>
+    <string name="download_successful">Unduhan Berhasil</string>
+    <string name="download_error_please_try_again">Kesalahan pengunduhan: Silakan coba lagi</string>
+    <string name="model_deleted_successfully">Model berhasil dihapus</string>
+    <string name="model_delete_failed_please_try_again">Penghapusan model gagal, coba lagi</string>
+    <string name="delete_language_model">Hapus model bahasa</string>
+    <string name="delete_downloaded_language_model">Hapus model bahasa yang diunduh</string>
+    <string name="support">\"Mendukung \"</string>
+    <string name="cache">Tembolok %1$s</string>
+    <string name="hdr_off">\"HDR Mati\"</string>
+    <string name="hdr_on">\"HDR Aktif\"</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="display_does_not_support_hdr10">Tampilan tidak mendukung HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">Dekoder tidak mendukung profil HDR10</string>
+    <string name="no_hevc_decoder_found">Tidak ditemukan dekoder HEVC</string>
+    <string name="no_av1_decoder_found">Tidak ditemukan dekoder AV1</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">Perangkat atau ROM ini tidak mendukung pemutaran H.264 yang dipercepat perangkat keras.</string>
+    <string name="server_version_malformed">Versi server salah format</string>
+    <string name="device_not_paired_with_computer">Perangkat tidak dipasangkan dengan komputer</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">GPU PC Anda tidak mendukung streaming HDR. Alirannya adalah SDR.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">PC host Anda tidak mendukung streaming pada resolusi di atas 4K.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">Perangkat streaming Anda harus mendukung HEVC atau AV1 untuk melakukan streaming pada resolusi di atas 4K.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Anda harus memperbarui GeForce Experience untuk melakukan streaming dalam 4K. Streamingnya akan menjadi 1080p.</string>
+    <string name="failed_to_resume_existing_session">Gagal melanjutkan sesi yang ada</string>
+    <string name="this_session_wasn_t_started_by_this_device">Sesi ini tidak dimulai oleh perangkat ini,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" jadi tidak bisa dilanjutkan. Akhiri streaming di aslinya \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"perangkat atau PC itu sendiri dan coba lagi. (Kode kesalahan: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"Aplikasi diminimalkan. Lanjutkan di PC secara manual atau\"</string>
+    <string name="quit_the_session_and_start_streaming_again">keluar dari sesi dan mulai streaming lagi.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Gagal keluar dari sesi sebelumnya! Anda harus keluar secara manual</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" jadi tidak bisa dihentikan. Akhiri streaming pada yang asli \"</string>
+    <string name="device_or_the_pc_itself_error_code">\"perangkat atau PC itu sendiri. (Kode kesalahan: \"</string>
+    <string name="failed_to_launch_application">Gagal meluncurkan aplikasi</string>
+    <string name="please_wait_for_the_process_to_complete">Silahkan tunggu hingga prosesnya selesai…</string>
+    <string name="enter_api_key_here">Masukkan Kunci API di sini:</string>
+    <string name="favorites">Favorit</string>
+    <string name="removed_from_favorites">\"Dihapus dari favorit dan Saluran Beranda\"</string>
+    <string name="added_to_favorites">\" Ditambahkan ke Favorit dan Saluran Beranda\"</string>
+    <string name="clear_favorites">Hapus Favorit</string>
+    <string name="clear_favs_msg">Apakah Anda yakin ingin menghapus favorit, ini juga akan menghapus aplikasi Saluran Beranda\?</string>
+    <string name="app_list_updated">Daftar aplikasi diperbarui</string>
+    <string name="update_the_database"><![CDATA[Apakah Anda yakin ingin menghapus & memperbarui database, ini akan menutup jendela ini\?]]></string>
+    <string name="update_database">Perbarui Basis Data</string>
+    <string name="database">Basis data</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Apakah Anda yakin ingin menghapus semua favorit?</string>
+    <string name="resuming_session">Melanjutkan Sesi</string>
+    <string name="app_added_to_favorites">Ditambahkan ke favorit</string>
+    <string name="app_removed_from_favorites">Dihapus dari favorit</string>
+    <string name="anonymous_statistics">Statistik Anonim</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Kirim statistik anonim untuk meningkatkan kinerja aplikasi.</string>
+    <string name="captions">Teks Terjemahan Video YouTube</string>
+    <string name="captions_text">Aktifkan atau nonaktifkan teks terjemahan video YouTube.</string>
+    <string name="privacy">Pribadi</string>
+    <string name="restart_application">Mulai Ulang Aplikasi</string>
+    <string name="restart_now">Ini akan memulai ulang aplikasi untuk menerapkan perubahan. Apakah Anda ingin memulai ulang sekarang\?</string>
+    <string name="database_updating">Pembaruan Basis Data</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Peningkatan Video: (x%1$.2f) Shader SGSR1</string>
+    <string name="title_video_sr">Resolusi Super Video</string>
+    <string name="summary_video_sr">Manfaatkan akselerasi perangkat keras untuk meningkatkan kejernihan gambar</string>
+    <string name="aaudio">Upaya untuk mendapatkan akses perangkat keras langsung untuk respons audio yang lebih cepat. Karena pembatasan pabrikan pada beberapa Android TV atau perangkat streaming, mungkin terjadi sedikit latensi. Jika audio menjadi tidak stabil, harap nonaktifkan opsi ini.</string>
+    <string name="enable_aaudio">Aktifkan AAudio</string>
+    <string name="aaudio_title">AAudio Ultra Low Latency (Eksperimental)</string>
+    <string name="aaudio_summary">AAudio Ultra Low Latency dengan (Dukungan Suara Surround)</string>
+    <string name="aaudio_summary29">Aktifkan AAudio Ultra Low Latency</string>
+    <string name="game_media_library">Perpustakaan Media Game</string>
+
+    <string name="title_audio_output_mode">Format keluaran audio</string>
+    <string name="summary_audio_output_mode">PCM kompatibel dengan semua perangkat. AC-3 dan Dolby Digital Plus mengirimkan audio 5.1 yang telah dienkode ke penerima HDMI/eARC dan beralih ke PCM jika jalur tersebut gagal.</string>
+    <string name="audio_output_mode_pcm">PCM (default)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (otomatis, eksperimental)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (gaya, eksperimental)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (otomatis, eksperimental)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (force, experimental)</string>
+    <string name="encoded_audio_fallback_to_pcm">Output audio terenkode tidak tersedia. Melanjutkan dengan audio PCM.</string>
+    <string name="switch_to_encoded">Output audio terenkripsi tersedia, beralih ke audio terenkripsi.</string>
+</resources>

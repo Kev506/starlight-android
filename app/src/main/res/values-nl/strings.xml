@@ -1,0 +1,417 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+
+    <!--Game details-->
+    <string name="play">Toneelstuk</string>
+    <string name="details">Details</string>
+    <string name="running">Spel actief, klik op afspelen voor opties.</string>
+    <string name="No_Details">Sorry, er zijn geen details om weer te geven.
+
+Als u het spel handmatig hebt toegevoegd, controleer dan de titel en wis de databasegegevens.
+
+Als het geselecteerde item een desktopapplicatie is, worden er geen details weergegeven.</string>
+    
+    
+    
+    
+    
+    <string name="trailers">Trailers</string>
+
+    <!--Leanback UI-->
+    <string name="leanback">Gebruik de Leanback-gebruikersinterface</string>
+    <string name="leanback_summary">Selecteer om apps weer te geven in de Leanback-gebruikersinterface</string>
+    
+    
+    
+
+    <!-- Shortcut strings -->
+    <string name="scut_deleted_pc">PC verwijderd</string>
+    <string name="scut_not_paired">PC niet gekoppeld</string>
+    <string name="scut_pc_not_found">PC niet gevonden</string>
+    <string name="scut_invalid_uuid">Op voorwaarde dat de pc niet geldig is</string>
+    <string name="scut_invalid_app_id">De meegeleverde app is niet geldig</string>
+
+    <!-- Help strings -->
+    <string name="help_loading_title">Help-kijker</string>
+    <string name="help_loading_msg">Helppagina laden…</string>
+
+    <!-- PC view menu entries -->
+    <string name="pcview_menu_header_online">Online</string>
+    <string name="pcview_menu_header_offline">Offline</string>
+    <string name="pcview_menu_header_unknown">Verfrissend</string>
+    <string name="pcview_menu_app_list">Bekijk alle apps</string>
+    <string name="pcview_menu_pair_pc">Koppelen met pc</string>
+    <string name="pcview_menu_unpair_pc">Ontkoppelen</string>
+    <string name="pcview_menu_send_wol">Wake-On-LAN-verzoek verzenden</string>
+    <string name="pcview_menu_delete_pc">Pc verwijderen</string>
+    <string name="pcview_menu_test_network">Netwerkverbinding testen</string>
+    <string name="pcview_menu_details">Details bekijken</string>
+    <string name="pcview_menu_eol">Einde service NVIDIA GameStream</string>
+
+    <!-- Network test strings -->
+    <string name="nettest_title_waiting">Netwerkverbinding testen</string>
+    <string name="nettest_text_waiting">Starlight test uw netwerkverbinding om te bepalen of vereiste poorten zijn geblokkeerd.\n\nDit kan een paar seconden duren…</string>
+    <string name="nettest_title_done">Netwerktest voltooid</string>
+    <string name="nettest_text_success">Het lijkt erop dat uw netwerk Starlight niet blokkeert. Als u nog steeds problemen ondervindt bij het verbinden, controleer dan de firewallinstellingen van uw pc.\n\nAls u probeert te streamen via internet, installeer dan de Moonlight Internet Hosting Tool op uw pc en voer de meegeleverde Internet Streaming Tester uit om uw pc te controleren\ \'s internetverbinding.</string>
+    <string name="nettest_text_inconclusive">De netwerktest kon niet worden uitgevoerd omdat geen van de verbindingstestservers van Starlight bereikbaar was. Controleer uw internetverbinding of probeer het later opnieuw.</string>
+    <string name="nettest_text_failure">Het lijkt erop dat de huidige netwerkverbinding van uw apparaat Starlight blokkeert. Streamen via internet werkt mogelijk niet terwijl je verbonden bent met dit netwerk.\n\nDe volgende netwerkpoorten zijn geblokkeerd:\n</string>
+    <string name="nettest_text_blocked">De huidige netwerkverbinding van uw apparaat blokkeert Starlight. Streamen via internet werkt mogelijk niet als u verbonden bent met dit netwerk.</string>
+
+    <!-- Pair messages -->
+    <string name="pairing">Koppelen…</string>
+    <string name="pair_pc_offline">Computer is offline</string>
+    <string name="pair_pc_ingame">De computer is momenteel bezig met een spel. Je moet het spel afsluiten voordat je gaat koppelen.</string>
+    <string name="pair_pairing_title">Koppelen</string>
+    <string name="pair_pairing_msg">Voer de volgende pincode in op de doel-pc:</string>
+    <string name="pair_pairing_help">Als uw host-pc Sunshine gebruikt, navigeert u naar de Sunshine-webgebruikersinterface om de pincode in te voeren.</string>
+    <string name="pair_incorrect_pin">Onjuiste pincode</string>
+    <string name="pair_fail">Koppelen is mislukt</string>
+    <string name="pair_already_in_progress">Het koppelen is al bezig</string>
+
+    <!-- WOL messages -->
+    <string name="wol_pc_online">Computer staat online</string>
+    <string name="wol_no_mac">Kan de pc niet uit de slaapstand halen omdat er geen opgeslagen MAC-adres is</string>
+    <string name="wol_waking_pc">Pc wakker maken…</string>
+    <string name="wol_waking_msg">Het kan een paar seconden duren voordat uw pc wakker wordt.
+Als dit niet het geval is, controleer dan of het correct is geconfigureerd voor Wake-On-LAN.
+    </string>
+    <string name="wol_fail">Kan Wake-On-LAN-pakketten niet verzenden</string>
+
+    <!-- Unpair messages -->
+    <string name="unpairing">Ontkoppelen…</string>
+    <string name="unpair_success">Ontkoppeld</string>
+    <string name="unpair_fail">Kan niet ontkoppelen</string>
+    <string name="unpair_error">Apparaat is niet gekoppeld</string>
+
+    <!-- Errors -->
+    <string name="error_pc_offline">Computer is offline</string>
+    <string name="error_manager_not_running">De ComputerManager-service is niet actief. Wacht een paar seconden of start de app opnieuw.</string>
+    <string name="error_unknown_host">Kan host niet oplossen</string>
+    <string name="error_404">GFE heeft een HTTP 404-fout geretourneerd. Zorg ervoor dat uw pc een ondersteunde GPU gebruikt.
+Het gebruik van externe desktopsoftware kan deze fout ook veroorzaken. Probeer uw machine opnieuw op te starten of GFE opnieuw te installeren.
+    </string>
+    <string name="title_decoding_error">Videodecoder is gecrasht</string>
+    <string name="message_decoding_error">Starlight is gecrasht vanwege incompatibiliteit met de videodecoder van dit apparaat. Probeer de streaminginstellingen aan te passen als de crashes aanhouden.</string>
+    <string name="title_decoding_reset">Video-instellingen opnieuw instellen</string>
+    <string name="message_decoding_reset">De videodecoder van uw apparaat blijft crashen bij de door u geselecteerde streaminginstellingen. Je streaminginstellingen zijn teruggezet naar de standaardinstellingen.</string>
+    <string name="error_usb_prohibited">USB-toegang is verboden door uw apparaatbeheerder. Controleer uw Knox- of MDM-instellingen.</string>
+    <string name="unable_to_pin_shortcut">Met uw huidige opstartprogramma kunt u geen vastgezette snelkoppelingen maken.</string>
+    <string name="video_decoder_init_failed">Videodecoder kan niet worden geïnitialiseerd. Uw apparaat ondersteunt mogelijk de geselecteerde resolutie of framesnelheid niet.</string>
+    <string name="no_video_received_error">Geen video ontvangen van host.</string>
+    <string name="no_frame_received_error">Uw netwerkverbinding presteert niet goed. Verlaag uw videobitsnelheid of probeer een snellere verbinding.</string>
+    <string name="early_termination_error">Er is iets misgegaan op uw host-pc bij het starten van de stream.\n\nZorg ervoor dat er geen DRM-beveiligde inhoud geopend is op uw host-pc. U kunt ook proberen uw host-pc opnieuw op te starten.</string>
+    <string name="frame_conversion_error">De host-pc heeft een fatale videocoderingsfout gerapporteerd.\n\nProbeer de HDR-modus uit te schakelen, de streamingresolutie te wijzigen of de schermresolutie van je host-pc te wijzigen.</string>
+    <string name="check_ports_msg">Controleer uw firewall- en port forwarding-regels voor poort(en):</string>
+
+    <!-- Start application messages -->
+    <string name="conn_establishing_title">Verbinding tot stand brengen</string>
+    <string name="conn_establishing_msg">Verbinding starten</string>
+    <string name="conn_metered">Waarschuwing: uw actieve netwerkverbinding wordt gemeten!</string>
+    <string name="conn_client_latency">Gemiddelde framedecoderingslatentie:</string>
+    <string name="conn_client_latency_hw">latentie van hardwaredecoder:</string>
+    <string name="conn_hardware_latency">Gemiddelde latentie bij hardwaredecodering:</string>
+    <string name="conn_starting">Beginnend</string>
+    <string name="conn_error_title">Verbindingsfout</string>
+    <string name="conn_error_msg">Kan niet starten</string>
+    <string name="conn_terminated_title">Verbinding beëindigd</string>
+    <string name="conn_terminated_msg">De verbinding is verbroken.</string>
+    <string name="error_code_prefix">Foutcode:</string>
+
+    <!-- General strings -->
+    <string name="ip_hint">IP-adres van host-pc</string>
+    <string name="searching_pc">Zoeken naar host-pc\'s op uw lokale netwerk…\n\n
+        Zorg ervoor dat Sunshine op uw host-pc draait of dat GameStream is ingeschakeld in de GeForce Experience SHIELD-instellingen.</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
+    <string name="lost_connection">Verbinding met pc verbroken</string>
+    <string name="title_details">Details</string>
+    <string name="help">Hulp</string>
+    <string name="delete_pc_msg">Weet u zeker dat u deze pc wilt verwijderen\?</string>
+    <string name="slow_connection_msg">Trage verbinding met pc\nVerlaag uw bitsnelheid</string>
+    <string name="poor_connection_msg">Slechte verbinding met pc</string>
+    <string name="perf_overlay_streamdetails" tools:ignore="StringFormatCount">Videostream: %1$s %2$.2f FPS</string>
+    <string name="perf_overlay_decoder" tools:ignore="StringFormatCount">Decoder: %1$s</string>
+    <string name="perf_overlay_incomingfps" tools:ignore="StringFormatCount">Inkomende framesnelheid van netwerk: %1$.2f FPS</string>
+    <string name="perf_overlay_renderingfps" tools:ignore="StringFormatCount">Framesnelheid renderen: %1$.2f FPS</string>
+    <string name="perf_overlay_hostprocessinglatency">Latentie bij hostverwerking min./max./gemiddeld: %1$.1f/%2$.1f/%3$.1f ms</string>
+    <string name="perf_overlay_netdrops">Frames verwijderd door uw netwerkverbinding: %1$.2f%%</string>
+    <string name="perf_overlay_netlatency" tools:ignore="StringFormatCount">Gemiddelde netwerklatentie: %1$d ms (variantie: %2$d ms)</string>
+    <string name="perf_overlay_dectime" tools:ignore="StringFormatCount">Gemiddelde decoderingstijd: %1$.2f ms</string>
+
+    <!-- AppList activity -->
+    <string name="applist_connect_msg">Verbinding maken met pc…</string>
+    <string name="applist_menu_resume">Sessie hervatten</string>
+    <string name="applist_menu_quit">Sessie afsluiten</string>
+    <string name="applist_menu_quit_and_start">Sluit het huidige spel af en start</string>
+    <string name="applist_menu_cancel">Annuleren</string>
+    <string name="applist_menu_details">Details bekijken</string>
+    <string name="applist_menu_scut">Snelkoppeling maken</string>
+    <string name="applist_menu_tv_channel">Toevoegen aan kanaal</string>
+    <string name="applist_menu_hide_app">Verberg app</string>
+    <string name="applist_refresh_title">App-lijst</string>
+    <string name="applist_refresh_msg">Apps vernieuwen…</string>
+    <string name="applist_refresh_error_title">Fout</string>
+    <string name="applist_refresh_error_msg">Kan de app-lijst niet ophalen</string>
+    <string name="applist_quit_app">Stoppen</string>
+    <string name="applist_quit_success">Succesvol stoppen</string>
+    <string name="applist_quit_fail">Het is niet gelukt om te stoppen</string>
+    <string name="applist_quit_confirmation">Weet u zeker dat u de actieve app wilt afsluiten\? Alle niet-opgeslagen gegevens gaan verloren.</string>
+    <string name="applist_details_id">App-ID:</string>
+
+    <!-- Add computer manually activity -->
+    <string name="title_add_pc">PC handmatig toevoegen</string>
+    <string name="msg_add_pc">Verbinding maken met de pc…</string>
+    <string name="addpc_fail">Kan geen verbinding maken met de opgegeven computer. Zorg ervoor dat de vereiste poorten door de firewall worden toegelaten.</string>
+    <string name="addpc_success">Computer succesvol toegevoegd</string>
+    <string name="addpc_unknown_host">Kan het pc-adres niet achterhalen. Zorg ervoor dat u geen typefout heeft gemaakt in het adres.</string>
+    <string name="addpc_enter_ip">U moet een IP-adres invoeren</string>
+    <string name="addpc_wrong_sitelocal">Dat adres ziet er niet goed uit. Voor streaming via internet moet u het openbare IP-adres van uw router gebruiken.</string>
+
+    <!-- Preferences -->
+    <string name="category_basic_settings">Basis instellingen</string>
+    <string name="title_resolution_list">Video resolutie</string>
+    <string name="summary_resolution_list">Verhoog om de beeldhelderheid te verbeteren. Verlaag voor betere prestaties op lagere apparaten en langzamere netwerken.</string>
+    <string name="title_native_res_dialog">Waarschuwing voor native resolutie</string>
+    <string name="text_native_res_dialog">Eigen resolutie en/of FPS worden mogelijk niet ondersteund door de streamingserver. U zult waarschijnlijk handmatig een aangepaste weergavemodus voor de host-pc moeten configureren.\n\nAls u ervoor kiest om een aangepaste resolutie in het NVIDIA-configuratiescherm te maken die overeenkomt met uw scherminstellingen, zorg er dan voor dat u de waarschuwing van NVIDIA heeft gelezen en begrepen. met betrekking tot mogelijke monitorschade, pc-instabiliteit en andere potentiële problemen.\n\nWij zijn niet verantwoordelijk voor eventuele problemen die voortvloeien uit het maken van een aangepaste resolutie op uw pc.\n\nHet kan zijn dat uw monitor de noodzakelijke beeldschermconfiguratie niet ondersteunt. Als dat het geval is, kunt u proberen een virtuele monitor in te stellen. Als uw apparaat of host-pc ten slotte streaming met een specifieke resolutie of vernieuwingsfrequentie niet ondersteunt, heeft u helaas pech.</string>
+    <string name="title_fps_list">Video frame rate</string>
+    <string name="summary_fps_list">Verhoog voor een vloeiendere videostream. Verlaag voor betere prestaties op apparaten uit het lagere segment.</string>
+    <string name="title_seekbar_bitrate">Video-bitsnelheid</string>
+    <string name="summary_seekbar_bitrate">Verhogen voor een betere beeldkwaliteit. Verlaag om de prestaties op langzamere verbindingen te verbeteren.</string>
+    <string name="suffix_seekbar_bitrate_mbps">Mbps</string>
+    <string name="title_checkbox_stretch_video">Video uitrekken naar volledig scherm</string>
+    <string name="title_stretch_video">Rekvideo</string>
+    <string name="resolution_prefix_native">Oorspronkelijk</string>
+    <string name="resolution_prefix_native_fullscreen">Native volledig scherm</string>
+    <string name="resolution_prefix_native_landscape">(Landschap)</string>
+    <string name="resolution_prefix_native_portrait">(Portret)</string>
+    <string name="fps_suffix_fps">FPS</string>
+    <string name="title_native_fps_dialog">Native FPS-waarschuwing</string>
+
+    <string name="category_audio_settings">Geluidsinstellingen</string>
+    <string name="title_audio_config_list">Configuratie van surroundgeluid</string>
+    <string name="summary_audio_config_list">Schakel 5.1 of 7.1 surround sound in voor thuisbioscoopsystemen</string>
+    <string name="title_checkbox_enable_audiofx">Schakel ondersteuning voor systeemequalizer in</string>
+    <string name="summary_checkbox_enable_audiofx">Zorgt ervoor dat audio-effecten kunnen werken tijdens het streamen, maar kan de audiolatentie verhogen</string>
+
+    <string name="category_gamepad_settings">Gamepad-instellingen</string>
+    <string name="title_checkbox_multi_controller">Automatische aanwezigheidsdetectie van gamepads</string>
+    <string name="summary_checkbox_multi_controller">Als u deze optie uitschakelt, wordt een gamepad gedwongen altijd aanwezig te zijn</string>
+    <string name="title_checkbox_vibrate_fallback">Bootst gerommelondersteuning na met trillingen</string>
+    <string name="summary_checkbox_vibrate_fallback">Laat uw apparaat trillen om gerommel te emuleren als uw gamepad dit niet ondersteunt</string>
+    <string name="title_seekbar_vibrate_fallback_strength">Pas de geëmuleerde rumble-intensiteit aan</string>
+    <string name="summary_seekbar_vibrate_fallback_strength">Versterk of verlaag de trillingsintensiteit op uw apparaat</string>
+    <string name="suffix_seekbar_vibrate_fallback_strength">%</string>
+    <string name="title_seekbar_deadzone">Pas de dode zone van de analoge stick aan</string>
+    <string name="summary_seekbar_deadzone">Opmerking: sommige games kunnen een grotere dode zone afdwingen dan waarvoor Starlight is geconfigureerd.</string>
+    <string name="suffix_seekbar_deadzone">%</string>
+    <string name="title_checkbox_xb1_driver">Stuurprogramma voor Xbox 360/One USB-gamepad</string>
+    <string name="summary_checkbox_xb1_driver">Maakt een ingebouwd USB-stuurprogramma mogelijk voor apparaten zonder native Xbox-controllerondersteuning</string>
+    <string name="title_checkbox_usb_bind_all">Systeemeigen ondersteuning voor Xbox-gamepads negeren</string>
+    <string name="summary_checkbox_usb_bind_all">Gebruik het USB-stuurprogramma van Starlight voor alle ondersteunde gamepads, zelfs als native ondersteuning voor de Xbox-controller aanwezig is</string>
+    <string name="title_checkbox_mouse_emulation">Muisemulatie via gamepad</string>
+    <string name="summary_checkbox_mouse_emulation">Door lang op de Start-knop te drukken, wordt de gamepad in de muismodus gezet</string>
+    <string name="title_checkbox_flip_face_buttons">Knoppen omdraaien</string>
+    <string name="summary_checkbox_flip_face_buttons">Schakelt de gezichtsknoppen A/B en X/Y voor gamepads en de bedieningselementen op het scherm</string>
+    <string name="title_checkbox_gamepad_touchpad_as_mouse">Bedien de muis altijd met touchpad</string>
+    <string name="summary_checkbox_gamepad_touchpad_as_mouse">Forceert input van het gamepad-touchpad om de hostmuis te besturen, zelfs wanneer een gamepad met een touchpad wordt geëmuleerd.</string>
+    <string name="title_checkbox_gamepad_motion_sensors">Sta het gebruik van gamepad-bewegingssensoren toe</string>
+    <string name="summary_checkbox_gamepad_motion_sensors">Hiermee kunnen ondersteunde hosts bewegingssensorgegevens opvragen bij het emuleren van een gamepad met bewegingssensoren. Uitschakelen kan het stroom- en netwerkgebruik enigszins verminderen als er geen bewegingssensoren worden gebruikt in het spel.</string>
+    <string name="title_checkbox_gamepad_motion_fallback">Emuleer ondersteuning voor gamepad-bewegingssensoren</string>
+    <string name="summary_checkbox_gamepad_motion_fallback">Maakt gebruik van de ingebouwde bewegingssensoren van uw apparaat als gamepadsensoren niet worden ondersteund door uw aangesloten gamepad of uw Android-versie.\nOpmerking: als u deze optie inschakelt, kan uw gamepad op de host verschijnen als een PlayStation-controller.</string>
+
+    <string name="category_input_settings">Invoerinstellingen</string>
+    <string name="title_checkbox_touchscreen_trackpad">Gebruik het touchscreen als trackpad</string>
+    <string name="summary_checkbox_touchscreen_trackpad">Indien ingeschakeld, fungeert het touchscreen als een trackpad. Indien uitgeschakeld, bestuurt het touchscreen rechtstreeks de muiscursor.</string>
+    <string name="title_checkbox_absolute_mouse_mode">Muismodus op extern bureaublad</string>
+    <string name="summary_checkbox_absolute_mouse_mode">Hierdoor kan de muisversnelling zich natuurlijker gedragen bij gebruik op een extern bureaublad, maar dit is niet compatibel met veel games.</string>
+    <string name="title_checkbox_mouse_nav_buttons">Schakel de muisknoppen achteruit en vooruit in</string>
+    <string name="summary_checkbox_mouse_nav_buttons">Als u deze optie inschakelt, kan het klikken met de rechtermuisknop op sommige apparaten met fouten worden verbroken</string>
+
+    <string name="category_on_screen_controls_settings">Instellingen voor bedieningselementen op het scherm</string>
+    <string name="title_checkbox_show_onscreen_controls">Toon bedieningselementen op het scherm</string>
+    <string name="summary_checkbox_show_onscreen_controls">Toon virtuele controller-overlay op touchscreen</string>
+    <string name="title_checkbox_vibrate_osc">Trillingen inschakelen</string>
+    <string name="summary_checkbox_vibrate_osc">Laat uw apparaat trillen om gerommel voor de bedieningselementen op het scherm te emuleren</string>
+    <string name="title_only_l3r3">Toon alleen L3 en R3</string>
+    <string name="summary_only_l3r3">Verberg alle virtuele knoppen behalve L3 en R3</string>
+    <string name="title_reset_osc">Wis de opgeslagen lay-out van de bedieningselementen op het scherm</string>
+    <string name="summary_reset_osc">Zet alle bedieningselementen op het scherm terug naar hun standaardgrootte en -positie</string>
+    <string name="dialog_title_reset_osc">Indeling opnieuw instellen</string>
+    <string name="dialog_text_reset_osc">Weet u zeker dat u de opgeslagen lay-out van de bedieningselementen op het scherm wilt verwijderen\?</string>
+    <string name="toast_reset_osc_success">Bedieningselementen op het scherm worden teruggezet naar de standaardinstellingen</string>
+    <string name="title_osc_opacity">Wijzig de dekking van de bedieningselementen op het scherm</string>
+    <string name="summary_osc_opacity">Maak de bedieningselementen op het scherm meer/minder transparant</string>
+    <string name="dialog_title_osc_opacity">Wijzig de dekking</string>
+    <string name="suffix_osc_opacity">%</string>
+
+    <string name="category_ui_settings">UI-instellingen</string>
+    <string name="title_checkbox_enable_pip">Schakel de Picture-in-Picture-observatiemodus in</string>
+    <string name="summary_checkbox_enable_pip">Hiermee kan de stream worden bekeken (maar niet bestuurd) tijdens multitasking</string>
+    <string name="title_language_list">Taal</string>
+    <string name="summary_language_list">Taal om te gebruiken voor Starlight</string>
+    <string name="title_checkbox_small_icon_mode">Gebruik kleine box-art</string>
+    <string name="summary_checkbox_small_icon_mode">Dankzij kleinere box-art in het app-raster zijn meer apps zichtbaar op het scherm</string>
+
+    <string name="category_host_settings">Hostinstellingen</string>
+    <string name="title_checkbox_enable_sops">Optimaliseer spelinstellingen</string>
+    <string name="summary_checkbox_enable_sops">Sta GFE toe de game-instellingen aan te passen voor optimale streaming</string>
+    <string name="title_checkbox_host_audio">Speel audio af op pc</string>
+    <string name="summary_checkbox_host_audio">Speel audio af vanaf de computer en dit apparaat</string>
+
+    <string name="category_advanced_settings">Geavanceerde instellingen</string>
+    <string name="title_unlock_fps">Ontgrendel alle mogelijke framesnelheden</string>
+    <string name="summary_unlock_fps">Streamen met 90 of 120 FPS kan de latentie op geavanceerde apparaten verminderen, maar kan vertraging of instabiliteit veroorzaken op apparaten die dit niet ondersteunen</string>
+    <string name="title_checkbox_reduce_refresh_rate">Verlaging van de vernieuwingsfrequentie toestaan</string>
+    <string name="summary_checkbox_reduce_refresh_rate">Lagere vernieuwingsfrequenties van het scherm kunnen energie besparen, ten koste van wat extra videolatentie</string>
+    <string name="title_checkbox_disable_warnings">Schakel waarschuwingsberichten uit</string>
+    <string name="summary_checkbox_disable_warnings">Schakel verbindingswaarschuwingsberichten op het scherm uit tijdens het streamen</string>
+    <string name="title_disable_frame_drop">Laat nooit frames vallen</string>
+    <string name="summary_disable_frame_drop">Kan microstuttering op sommige apparaten verminderen, maar kan de latentie verhogen</string>
+    <string name="title_video_format">Wijzig de codec-instellingen</string>
+    <string name="summary_video_format">Nieuwere codecs kunnen de videobandbreedtevereisten verlagen als uw apparaat deze ondersteunt. Codecselecties kunnen worden genegeerd als ze niet worden ondersteund door de hostsoftware of GPU.</string>
+    <string name="title_enable_hdr">HDR inschakelen (experimenteel)</string>
+    <string name="summary_enable_hdr">Stream HDR wanneer de game en pc-GPU dit ondersteunen. HDR vereist een GPU met ondersteuning voor HEVC Main 10-codering.</string>
+    <string name="title_full_range">Forceer video met volledig bereik (Afhankelijk van het apparaat)</string>
+    <string name="summary_full_range">Dit leidt tot detailverlies in lichte en donkere gebieden als uw apparaat de video-inhoud niet goed weergeeft.</string>
+    <string name="title_enable_perf_overlay">Toon prestatiestatistieken tijdens het streamen</string>
+    <string name="summary_enable_perf_overlay">Geef realtime informatie over de streamprestaties weer tijdens het streamen</string>
+    <string name="title_enable_post_stream_toast">Latentiebericht weergeven na streaming</string>
+    <string name="summary_enable_post_stream_toast">Geef een latentie-informatiebericht weer nadat de stream is beëindigd</string>
+
+    <string name="category_help">Hulp</string>
+    <string name="title_setup_guide">Installatiehandleiding</string>
+    <string name="summary_setup_guide">Bekijk instructies voor het instellen van uw gaming-pc voor streaming</string>
+    <string name="title_troubleshooting">Gids voor probleemoplossing</string>
+    <string name="summary_troubleshooting">Bekijk tips voor het diagnosticeren en oplossen van veelvoorkomende streamingproblemen</string>
+    <string name="title_privacy_policy">Privacybeleid</string>
+    <string name="summary_privacy_policy">Bekijk het privacybeleid van Starlight</string>
+
+    <!-- Toasts -->
+    <string name="toast_controller_type_changed">Het type gamepad kan worden gewijzigd als gevolg van emulatie van bewegingssensoren</string>
+
+    <!-- Array strings -->
+    <string name="resolution_720p">720p</string>
+    <string name="resolution_1080p">1080p</string>
+    <string name="resolution_1440p">1440p</string>
+    <string name="resolution_4k">4K</string>
+
+    <string name="fps_30">30 FPS</string>
+    <string name="fps_60">60 FPS</string>
+    <string name="fps_90">90 FPS</string>
+    <string name="fps_120">120 FPS</string>
+
+    <string name="audioconf_stereo">Stereo</string>
+    <string name="audioconf_51surround">5.1 Surround-geluid</string>
+    <string name="audioconf_71surround">7.1 Surround-geluid</string>
+
+    <string name="videoformat_auto">Automatisch (aanbevolen)</string>
+    <string name="videoformat_av1always" tools:ignore="Typos">Geef de voorkeur aan AV1 (experimenteel)</string>
+    <string name="videoformat_hevcalways">Liever HEVC</string>
+    <string name="videoformat_h264always">Geef de voorkeur aan H.264</string>
+
+    <string name="title_frame_pacing">Videoframe-stimulatie</string>
+    <string name="summary_frame_pacing">Geef op hoe de videolatentie en vloeiendheid in evenwicht moeten worden gebracht</string>
+    <string name="pacing_latency">Geef de voorkeur aan de laagste latentie</string>
+    <string name="pacing_balanced">Evenwichtig</string>
+    <string name="pacing_balanced_alt">Gebalanceerd met FPS-limiet</string>
+    <string name="pacing_smoothness">Geef de voorkeur aan de meest vloeiende video (kan de latentie aanzienlijk verhogen)</string>
+    <string name="title_analog_scrolling">Gebruik een analoge stick om te scrollen</string>
+    <string name="summary_analog_scrolling">Selecteer een analoge stick om te scrollen in de muisemulatiemodus</string>
+    <string name="analogscroll_none">Geen (beide sticks bewegen de muis)</string>
+    <string name="analogscroll_right">Rechter analoge stick</string>
+    <string name="analogscroll_left">Linker analoge stick</string>
+    <string name="games">Spellen</string>
+    <string name="settings">Instellingen</string>
+    <string name="exit">Uitgang</string>
+    <string name="options">Opties</string>
+    <string name="pending">In behandeling</string>
+    <string name="data_collection">Gegevensverzameling</string>
+    <string name="loading_for_first_time_use_please_wait">Bezig met laden voor eerste gebruik.... Even geduld a.u.b....</string>
+    <string name="do_you_want_to_quit_or_pause_this_application">Wilt u deze toepassing afsluiten of pauzeren, bij het afsluiten gaan alle niet-opgeslagen gegevens verloren.</string>
+    <string name="confirm_quit">Bevestig Afsluiten</string>
+    <string name="quit">Ontslag nemen</string>
+    <string name="pause">Pauze</string>
+    <string name="are_you_sure_you_want_to_clear_the_cache_this_will_close_this_window">Weet u zeker dat u de cache wilt wissen. Hierdoor wordt dit venster gesloten\?</string>
+    <string name="clear_cache">Cache wissen</string>
+    <string name="click_ok_to_launch_game">klik op OK om het spel te starten.</string>
+    <string name="active_internet_connection_required_for_game_details">\"Actieve internetverbinding vereist voor gamedetails\",</string>
+    <string name="download">Downloaden</string>
+    <string name="download_translations_model">Vertaalmodel downloaden</string>
+    <string name="download_locale_language_model_to_translate_game_data">Download het lokale taalmodel om gamegegevens te vertalen</string>
+    <string name="downloading_ml_language_file_please_wait">Even geduld aub..</string>
+    <string name="download_successful">Downloaden is gelukt</string>
+    <string name="download_error_please_try_again">Downloadfout: Probeer het opnieuw</string>
+    <string name="model_deleted_successfully">Model succesvol verwijderd</string>
+    <string name="model_delete_failed_please_try_again">Het verwijderen van het model is mislukt. Probeer het opnieuw</string>
+    <string name="delete_language_model">Taalmodel verwijderen</string>
+    <string name="delete_downloaded_language_model">Verwijder het gedownloade taalmodel</string>
+    <string name="support">\"Steun \"</string>
+    <string name="cache">%1$s cachen</string>
+    <string name="hdr_off">\"HDR Uit\"</string>
+    <string name="hdr_on">\"HDR Aan\"</string>
+    <string name="cancel">Annuleren</string>
+    <string name="display_does_not_support_hdr10">Scherm ondersteunt geen HDR10</string>
+    <string name="decoder_does_not_support_hdr10_profile">Decoder ondersteunt geen HDR10-profiel</string>
+    <string name="no_hevc_decoder_found">Geen HEVC-decoder gevonden</string>
+    <string name="no_av1_decoder_found">Geen AV1-decoder gevonden</string>
+    <string name="this_device_or_rom_doesn_t_support_hardware_accelerated_h_264_playback">Dit apparaat of ROM ondersteunt geen hardwareversnelde H.264-weergave.</string>
+    <string name="server_version_malformed">Serverversie onjuist ingedeeld</string>
+    <string name="device_not_paired_with_computer">Apparaat niet gekoppeld aan computer</string>
+    <string name="your_pc_gpu_does_not_support_streaming_hdr_the_stream_will_be_sdr">Uw pc-GPU ondersteunt streaming HDR niet. De stream zal SDR zijn.</string>
+    <string name="your_host_pc_does_not_support_streaming_at_resolutions_above_4k">Uw host-pc ondersteunt geen streaming met resoluties boven 4K.</string>
+    <string name="your_streaming_device_must_support_hevc_or_av1_to_stream_at_resolutions_above_4k">Uw streamingapparaat moet HEVC of AV1 ondersteunen om te kunnen streamen met resoluties boven 4K.</string>
+    <string name="you_must_update_geforce_experience_to_stream_in_4k_the_stream_will_be_1080p">Je moet GeForce Experience updaten om in 4K te kunnen streamen. De stream zal 1080p zijn.</string>
+    <string name="failed_to_resume_existing_session">Kan de bestaande sessie niet hervatten</string>
+    <string name="this_session_wasn_t_started_by_this_device">Deze sessie is niet gestart door dit apparaat,</string>
+    <string name="so_it_cannot_be_resumed_end_streaming_on_the_original">\" dus het kan niet worden hervat. Beëindig het streamen op het origineel \"</string>
+    <string name="device_or_the_pc_itself_and_try_again_error_code">\"apparaat of de pc zelf en probeer het opnieuw. (Foutcode: \"</string>
+    <string name="the_application_is_minimized_resume_it_on_the_pc_manually_or">\"De applicatie is geminimaliseerd. Hervat deze handmatig op de pc of \"</string>
+    <string name="quit_the_session_and_start_streaming_again">beëindig de sessie en begin opnieuw met streamen.</string>
+    <string name="failed_to_quit_previous_session_you_must_quit_it_manually">Kan de vorige sessie niet afsluiten! U moet het handmatig afsluiten</string>
+    <string name="so_it_cannot_be_quit_end_streaming_on_the_original">\" dus het kan niet worden gestopt. Beëindig het streamen op het origineel \"</string>
+    <string name="device_or_the_pc_itself_error_code">\"apparaat of de pc zelf. (Foutcode: \"</string>
+    <string name="failed_to_launch_application">Kan de applicatie niet starten</string>
+    <string name="please_wait_for_the_process_to_complete">Wacht tot het proces is voltooid…</string>
+    <string name="enter_api_key_here">Voer hier de API-sleutel in:</string>
+    <string name="favorites">Favorieten</string>
+    <string name="removed_from_favorites">\"Verwijderd uit favorieten en thuiskanaal\"</string>
+    <string name="added_to_favorites">\"Toegevoegd aan favorieten en thuiskanaal\"</string>
+    <string name="clear_favorites">Wis favorieten</string>
+    <string name="clear_favs_msg">Weet je zeker dat je je favorieten wilt wissen; hiermee wordt ook de applicatie Home Channels verwijderd\?</string>
+    <string name="app_list_updated">App-lijst bijgewerkt</string>
+    <string name="update_the_database"><![CDATA[Weet u zeker dat u de database wilt wissen en bijwerken, waardoor dit venster wordt gesloten\?]]></string>
+    <string name="update_database">Database updaten</string>
+    <string name="database">Database</string>
+    <string name="are_you_sure_you_want_to_clear_all_favorites">Weet u zeker dat u alle favorieten wilt wissen?</string>
+    <string name="resuming_session">Sessie hervatten</string>
+    <string name="app_added_to_favorites">Toegevoegd aan favorieten</string>
+    <string name="app_removed_from_favorites">Verwijderd uit favorieten</string>
+    <string name="anonymous_statistics">Anonieme statistieken</string>
+    <string name="send_anonymous_statistics_to_improve_app_performance">Verzend anonieme statistieken om de app-prestaties te verbeteren.</string>
+    <string name="captions">YouTube-videoondertiteling</string>
+    <string name="captions_text">Schakel ondertiteling voor YouTube-video\'s in of uit.</string>
+    <string name="privacy">Privacy</string>
+    <string name="restart_application">Start de applicatie opnieuw</string>
+    <string name="restart_now">Hierdoor wordt de applicatie opnieuw opgestart om de wijzigingen toe te passen. Wil je nu opnieuw opstarten\?</string>
+    <string name="database_updating">Database-update</string>
+    <string name="perf_overlay_video_enhancement" tools:ignore="Typos">Videoverbetering: (x%1$.2f) Shader SGSR1</string>
+    <string name="title_video_sr">Video Superresolutie</string>
+    <string name="summary_video_sr">Maak gebruik van hardware-versnelling om de beeldhelderheid te verbeteren</string>
+    <string name="aaudio">Pogingen om directe hardwaretoegang te verkrijgen voor een snellere audiorespons. Vanwege beperkingen van de fabrikant op sommige Android-tv\'s of streamingapparaten kan er enige vertraging optreden. Als de audio instabiel wordt, schakel deze optie dan uit.</string>
+    <string name="enable_aaudio">Schakel AAudio in</string>
+    <string name="aaudio_title">AAudio Ultra Low Latency (Experimenteel)</string>
+    <string name="aaudio_summary">AAudio Ultra Low Latency met (ondersteuning voor surround sound)</string>
+    <string name="aaudio_summary29">Schakel AAudio Ultra Low Latency in.</string>
+    <string name="game_media_library">Spelmediabibliotheek</string>
+
+    <string name="title_audio_output_mode">Audio-uitvoerformaat</string>
+    <string name="summary_audio_output_mode">PCM is compatibel met alle apparaten. AC-3 en Dolby Digital Plus sturen gecodeerde 5.1-audio naar een HDMI/eARC-ontvanger en schakelen terug naar PCM als de verbinding mislukt.</string>
+    <string name="audio_output_mode_pcm">PCM (standaard)</string>
+    <string name="audio_output_mode_ac3_auto">AC-3 5.1 (automatisch, experimenteel)</string>
+    <string name="audio_output_mode_ac3_force">AC-3 5.1 (kracht, experimenteel)</string>
+    <string name="audio_output_mode_eac3_auto">Dolby Digital Plus / E-AC-3 5.1 (automatisch, experimenteel)</string>
+    <string name="audio_output_mode_eac3_force">Dolby Digital Plus / E-AC-3 5.1 (force, experimenteel)</string>
+    <string name="encoded_audio_fallback_to_pcm">Gecodeerde audio-uitvoer is niet beschikbaar. Er wordt verdergegaan met PCM-audio.</string>
+    <string name="switch_to_encoded">Gecodeerde audio-uitvoer is beschikbaar, overschakelen naar gecodeerde audio.</string>
+</resources>

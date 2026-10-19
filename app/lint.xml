@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InvalidPackage">
+        <ignore path="**/bcpkix-jdk15on-*.jar"/>
+    </issue>
+ <issue id="IconDensities" severity="ignore" />
+ <issue id="InsecureBaseConfiguration" severity="ignore" />
+ <issue id="CustomX509TrustManager" severity="ignore" />
+ <issue id="PrivateResource" severity="ignore" />
+ <issue id="IconMissingDensityFolder" severity="ignore" />
+ <issue id="IconXmlAndPng" severity="ignore" />
+ <issue id="ObsoleteSdkInt" severity="ignore" />
+ <issue id="IconDuplicatesConfig" severity="ignore" />
+ <issue id="IconDipSize" severity="ignore" />
+ <issue id="UnusedResources" severity="ignore" />
+ <issue id="GestureBackNavigation" severity="ignore" />
+ <issue id="MonochromeLauncherIcon" severity="ignore" />
+ <issue id="MissingTranslation" severity="ignore" />
+</lint>
