@@ -1,3 +1,4 @@
 UPDATES FROM STARLIGHT MAIN
 -Updated layouts for improved user exeperience
 -Migrated to AndroidX and refactored to Compose for TV
+-Added IGDB trailers, full details and artwork
