@@ -143,7 +143,7 @@ android {
              is to PLEASE change the applicationId before you publish.*/
 
             // TL;DR: Leave the following line alone!
-            //applicationIdSuffix = (".unofficial")
+            applicationIdSuffix = (".unofficial")
         }
         debug {
             applicationIdSuffix = (".debug")
