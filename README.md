@@ -29,6 +29,33 @@ The code for Starlight is available here, released under the GPLv3 license. We w
 ## 🔗 Downloads
 * COMING SOON
 
+## 🛠️ Contribution & Local Build Setup
+
+This project uses **Firebase** for backend services (such as Remote Config / Auth). For security and quota management, the official `google-services.json` file is omitted from this repository. 
+
+To build and run the app locally, you must provide your own Firebase configuration.
+
+### Prerequisites
+1. Create a free account on the [Firebase Console](https://google.com).
+2. Click **Add Project** and follow the steps to set up a new project.
+3. Add an **Android App** to your Firebase project. Ensure the **Package Name** exactly matches the one in our `app/build.gradle` file (`com.yourcompany.yourapp`).
+
+### Configuration Steps
+1. Download the `google-services.json` file provided at the end of the Firebase App setup wizard.
+2. Place the downloaded `google-services.json` file into the root of your app module directory:
+   ```text
+   YOUR_PROJECT_ROOT/app/google-services.json
+   ```
+3. This application rely on Remote Config, make sure to add corresponding parameter keys in your own Firebase Console matching the following.
+
+1. IGDB: = clientid
+2. IGDB: = clientsecret
+3. Your FTP SERVER: = server
+4. Your FTP Directory: = directory
+5. Your FTP Usename: = username
+6. Your FTP Password: = directory
+
+You can now move on to the next step and build and run the project.
 
 ## 🏗️ Building
 * Install [Android Studio](https://developer.android.com/studio/install) and the Android NDK, ensure the latest [NDK version](https://developer.android.com/ndk/downloads) is installed.
