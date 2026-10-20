@@ -43,9 +43,6 @@ build/
 **/jniLibs
 app/.externalNativeBuild/
 
-# Google/Firebase API's
-app/google-services.json
-
 # NDK stuff
 .cxx/
 

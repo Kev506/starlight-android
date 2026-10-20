@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "713840161099",
+    "project_id": "starlight-e6d24",
+    "storage_bucket": "starlight-e6d24.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713840161099:android:541fafa7b3d2ef859b38ce",
+        "android_client_info": {
+          "package_name": "com.starlight"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbL5SECx1C9VEw5sbghqpKnIA8aUTU6Ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713840161099:android:165c3cd146e2e8b79b38ce",
+        "android_client_info": {
+          "package_name": "com.starlight.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbL5SECx1C9VEw5sbghqpKnIA8aUTU6Ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713840161099:android:50f08256b93d2c259b38ce",
+        "android_client_info": {
+          "package_name": "com.starlight.unofficial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbL5SECx1C9VEw5sbghqpKnIA8aUTU6Ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
