@@ -31,7 +31,7 @@ The code for Starlight is available here, released under the GPLv3 license. We w
 
 ## 🛠️ Contribution & Local Build Setup
 
-This project uses **Firebase** for backend services (such as Remote Config / Auth). For security and quota management, the official `google-services.json` file is omitted from this repository. 
+This project uses **Firebase** for backend services (such as Remote Config). For security and quota management, the official `google-services.json` file is omitted from this repository. 
 
 To build and run the app locally, you must provide your own Firebase configuration.
 
@@ -48,12 +48,10 @@ To build and run the app locally, you must provide your own Firebase configurati
    ```
 3. This application relies on Remote Config, make sure to add corresponding parameter keys in your own Firebase Console matching the following.
 
-1. IGDB: = clientid
-2. IGDB: = clientsecret
-3. Your FTP SERVER: = server
-4. Your FTP Directory: = directory
-5. Your FTP Usename: = username
-6. Your FTP Password: = directory
+* Your FTP SERVER: = server
+* Your FTP Directory: = directory
+* Your FTP Usename: = username
+* Your FTP Password: = directory
 
 You can now move on to the next step and build and run the project.
 
@@ -61,6 +59,9 @@ You can now move on to the next step and build and run the project.
 * Install [Android Studio](https://developer.android.com/studio/install) and the Android NDK, ensure the latest [NDK version](https://developer.android.com/ndk/downloads) is installed.
 * Run ‘git submodule update --init --recursive’ from within starlight-android/
 * In starlight-android/, create a file called ‘local.properties’. Add an ‘ndk.dir=’ property to the local.properties file and set it equal to your NDK directory.
+* Also in the local.properties insert your IGDB Credentials, add the following:
+  * IGDB_CLIENT_ID="your_actual_client_id_here"
+  * IGDB_CLIENT_SECRET="your_actual_client_secret_here"
 * For testing locally on devices, create a keystore.properties file in the project root, once the app bundle is signed using [Sign your app](https://developer.android.com/studio/publish/app-signing), you then enter the details in the keystore file as follows:
     * storeFile = "location of your key jks file"
     * storePassword = "your password"
