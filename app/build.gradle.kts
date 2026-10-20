@@ -16,6 +16,7 @@ plugins {
     id("com.google.firebase.crashlytics")
     id("org.jetbrains.kotlin.plugin.compose")
     kotlin("plugin.serialization") version "2.3.20"
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 kotlin {
