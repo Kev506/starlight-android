@@ -40,10 +40,6 @@ The code for Starlight is available here, released under the GPLv3 license. We w
     * keyAlias = "your alias"
     * keyPassword = "your key password"
     * The build.gradle is already configured to retrieve the values
-* You will need to register the app using [Firebase](https://firebase.google.com/docs/android/setup), as the configuration file is not included.
-    * Once setup download the configuration file and place it in the projects app root
-    * Everything is already set to connect to the Firebase API so there is nothing more to do
-    * If you are unsure about using Firebase contact [Support](https://starlight-game-streaming.com/Contact)
 * Build the APK using Android Studio or gradle
 * As the app bundle is signed you can deploy and test on local devices.
 
