@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.google.gson.Gson
+import com.starlight.BuildConfig
 import com.starlight.R
 import com.starlight.games.GameDataBaseManager.Companion.GAME_VIDEOS_COLUMN_NAME
 import com.starlight.games.api.RetrofitClient
@@ -20,12 +21,9 @@ import com.starlight.ui.grids.assets.MemoryAssetLoader
 import com.starlight.ui.grids.assets.NetworkAssetLoader
 import com.starlight.utils.Constants.BASE_COVER_URL
 import com.starlight.utils.Constants.BASE_IMAGE_URL
-import com.starlight.utils.Constants.CLIENT_ID
-import com.starlight.utils.Constants.CLIENT_SECRET
 import com.starlight.utils.LimeLog.info
 import com.starlight.utils.LimeLog.warning
 import com.starlight.utils.Starlight.Companion.applicationScope
-import com.starlight.utils.Starlight.Companion.readSecureData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaType
@@ -51,13 +49,11 @@ class IgdbRepository(
     private var igdbConfig: IgdbConfig? = null
 
     init {
-        val clientIdConfig = readSecureData(CLIENT_ID, activity)
-        val clientSecretConfig = readSecureData(CLIENT_SECRET, activity)
+        val clientIdConfig = BuildConfig.IGDB_CLIENT_ID
+        val clientSecretConfig = BuildConfig.IGDB_CLIENT_SECRET
 
-        if (clientIdConfig != null && clientSecretConfig != null) {
-            igdbConfig = IgdbConfig(clientIdConfig, clientSecretConfig)
-            info("IGDB keys are present, get from encrypted data")
-        }
+        igdbConfig = IgdbConfig(clientIdConfig, clientSecretConfig)
+        info("IGDB keys are present")
 
         dbHandler = GameDataBaseManager.getInstance(activity.applicationContext)
 

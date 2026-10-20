@@ -11,8 +11,6 @@ import com.google.firebase.crashlytics.crashlytics
 import com.google.firebase.remoteconfig.remoteConfig
 import com.google.firebase.remoteconfig.remoteConfigSettings
 import com.starlight.preferences.PreferenceKeys.fromPreferences
-import com.starlight.utils.Constants.CLIENT_ID
-import com.starlight.utils.Constants.CLIENT_SECRET
 import com.starlight.utils.Constants.DIRECTORY_PREF
 import com.starlight.utils.Constants.HEADER_PREF
 import com.starlight.utils.Constants.PASSWORD_PREF
@@ -22,7 +20,6 @@ import com.starlight.utils.Starlight.Companion.aead
 import com.starlight.utils.Starlight.Companion.applicationScope
 import com.starlight.utils.Starlight.Companion.dataStore
 import com.starlight.utils.Starlight.Companion.instance
-import com.starlight.utils.Starlight.Companion.readSecureData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -118,11 +115,9 @@ object LimeLog {
         val username = readSecureData(USERNAME_PREF, context)
         val password = readSecureData(PASSWORD_PREF, context)
         val directory = readSecureData(DIRECTORY_PREF, context)
-        val clientId = readSecureData(CLIENT_ID, context)
-        val clientSecret = readSecureData(CLIENT_SECRET, context)
 
-        if (server != null && username != null && password != null && directory != null && clientId != null && clientSecret != null) {
-            ftpConfig = FtpConfig(server, username, password, directory, clientId, clientSecret)
+        if (server != null && username != null && password != null && directory != null) {
+            ftpConfig = FtpConfig(server, username, password, directory)
             info("Keys are present, get from encrypted data")
         } else {
             // Keys are not present or incomplete, fetch from Remote Config
@@ -133,9 +128,7 @@ object LimeLog {
                             remoteConfig.getString(SERVER_PREF),
                             remoteConfig.getString(USERNAME_PREF),
                             remoteConfig.getString(PASSWORD_PREF),
-                            remoteConfig.getString(DIRECTORY_PREF),
-                            remoteConfig.getString(CLIENT_ID),
-                            remoteConfig.getString(CLIENT_SECRET)
+                            remoteConfig.getString(DIRECTORY_PREF)
                         )
                         ftpConfig = config
                         info("Keys are not present, fetching from remote config")
@@ -406,9 +399,7 @@ object LimeLog {
         val server: String?,
         val username: String?,
         val password: String?,
-        val directory: String?,
-        val clientId: String?,
-        val clientSecret: String?
+        val directory: String?
     )
 
     // Extension function to convert FtpConfig to Map
@@ -417,9 +408,7 @@ object LimeLog {
             SERVER_PREF to server,
             USERNAME_PREF to username,
             PASSWORD_PREF to password,
-            DIRECTORY_PREF to directory,
-            CLIENT_ID to clientId,
-            CLIENT_SECRET to clientSecret
+            DIRECTORY_PREF to directory
         )
     }
 
@@ -440,6 +429,33 @@ object LimeLog {
             } catch (e: IOException) {
                 severe("Failed to write encrypted file for key '$key': ${e.message}")
             }
+        }
+    }
+
+    // Helper function for reading data securely using Tink
+    fun readSecureData(key: String, context: Context): String? {
+        if (aead == null) {
+            severe("AEAD not initialized. Cannot read secure data.")
+            return null
+        }
+        try {
+            val file = File(context.filesDir, key)
+            if (!file.exists()) {
+                return null
+            }
+
+            // Use the .use block to automatically close the FileInputStream
+            val encryptedValue = FileInputStream(file).use { it.readBytes() }
+            val decryptedValue = aead!!.decrypt(encryptedValue, null)
+
+            return String(decryptedValue, StandardCharsets.UTF_8)
+
+        } catch (e: GeneralSecurityException) {
+            severe("Failed to decrypt data for key '$key': ${e.message}")
+            return null
+        } catch (e: IOException) {
+            severe("Failed to read encrypted file for key '$key': ${e.message}")
+            return null
         }
     }
 }

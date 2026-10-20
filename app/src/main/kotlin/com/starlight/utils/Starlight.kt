@@ -26,10 +26,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
-import java.io.File
-import java.io.FileInputStream
 import java.io.IOException
-import java.nio.charset.StandardCharsets
 import java.security.GeneralSecurityException
 
 
@@ -147,33 +144,6 @@ class Starlight : Application() {
                 s
             } else {
                 first.uppercaseChar().toString() + s.substring(1)
-            }
-        }
-
-        // Helper function for reading data securely using Tink
-        fun readSecureData(key: String, context: Context): String? {
-            if (aead == null) {
-                severe("AEAD not initialized. Cannot read secure data.")
-                return null
-            }
-            try {
-                val file = File(context.filesDir, key)
-                if (!file.exists()) {
-                    return null
-                }
-
-                // Use the .use block to automatically close the FileInputStream
-                val encryptedValue = FileInputStream(file).use { it.readBytes() }
-                val decryptedValue = aead!!.decrypt(encryptedValue, null)
-
-                return String(decryptedValue, StandardCharsets.UTF_8)
-
-            } catch (e: GeneralSecurityException) {
-                severe("Failed to decrypt data for key '$key': ${e.message}")
-                return null
-            } catch (e: IOException) {
-                severe("Failed to read encrypted file for key '$key': ${e.message}")
-                return null
             }
         }
     }
