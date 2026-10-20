@@ -46,7 +46,7 @@ To build and run the app locally, you must provide your own Firebase configurati
    ```text
    YOUR_PROJECT_ROOT/app/google-services.json
    ```
-3. This application rely on Remote Config, make sure to add corresponding parameter keys in your own Firebase Console matching the following.
+3. This application relies on Remote Config, make sure to add corresponding parameter keys in your own Firebase Console matching the following.
 
 1. IGDB: = clientid
 2. IGDB: = clientsecret
