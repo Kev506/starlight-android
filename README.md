@@ -31,7 +31,7 @@ The code for Starlight is available here, released under the GPLv3 license. We w
 
 ## 🛠️ Contribution & Local Build Setup
 
-This project uses **Firebase** for backend services (such as Remote Config). For security and quota management, the official `google-services.json` file is omitted from this repository. 
+This project uses **Firebase** for backend services (such as Analytics). For security and quota management, the official `google-services.json` file is omitted from this repository. 
 
 To build and run the app locally, you must provide your own Firebase configuration.
 
