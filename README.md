@@ -46,13 +46,6 @@ To build and run the app locally, you must provide your own Firebase configurati
    ```text
    YOUR_PROJECT_ROOT/app/google-services.json
    ```
-3. This application relies on Remote Config, make sure to add corresponding parameter keys in your own Firebase Console matching the following.
-
-* Your FTP SERVER: = server
-* Your FTP Directory: = directory
-* Your FTP Usename: = username
-* Your FTP Password: = directory
-
 You can now move on to the next step and build and run the project.
 
 ## 🏗️ Building
