@@ -44,6 +44,8 @@ LOCAL_SRC_FILES := moonlight-common-c/src/AudioStream.c \
                    callbacks.c \
                    aaudio_renderer.c \
                    minisdl.c \
+                   xxtea.h \
+                   facade.cpp \
 
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/moonlight-common-c/enet/include \

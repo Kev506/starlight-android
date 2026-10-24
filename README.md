@@ -31,7 +31,7 @@ The code for Starlight is available here, released under the GPLv3 license. We w
 
 ## 🛠️ Contribution & Local Build Setup
 
-This project uses **Firebase** for backend services (such as Analytics). For security and quota management, the official `google-services.json` file is omitted from this repository. 
+This project uses **Firebase** for backend services (such as Crashlytics). For security and quota management, the official `google-services.json` file is omitted from this repository. 
 
 To build and run the app locally, you must provide your own Firebase configuration.
 
@@ -55,6 +55,7 @@ You can now move on to the next step and build and run the project.
 * Also in the local.properties insert your IGDB Credentials, add the following:
   * IGDB_CLIENT_ID="your_actual_client_id_here"
   * IGDB_CLIENT_SECRET="your_actual_client_secret_here"
+  * **Important follow the setup instructions. [Encrption Setup](https://github.com/Kev506/starlight-android/blob/main/.github/docs/ENCRYPTION-SETUP.md)
 * For testing locally on devices, create a keystore.properties file in the project root, once the app bundle is signed using [Sign your app](https://developer.android.com/studio/publish/app-signing), you then enter the details in the keystore file as follows:
     * storeFile = "location of your key jks file"
     * storePassword = "your password"
@@ -63,6 +64,7 @@ You can now move on to the next step and build and run the project.
     * The build.gradle is already configured to retrieve the values
 * Build the APK using Android Studio or gradle
 * As the app bundle is signed you can deploy and test on local devices.
+* **Note when debugging, you will notice noticeable lag on the UI, this is an expected framework behavior when debugging Compose**
 
 ## 📦 Project Architecture
 

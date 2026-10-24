@@ -77,19 +77,8 @@ object Constants {
     const val THREE_FINGER_TAP_THRESHOLD = 300
     const val SAMSUNG_DEX_MOUSE_SOURCE = 12290
 
-    const val SERVER_PREF = "server"
-    const val USERNAME_PREF = "username"
-    const val PASSWORD_PREF = "password"
-    const val DIRECTORY_PREF = "directory"
-    const val CLIENT_ID = "clientid"
-    const val CLIENT_SECRET = "clientsecret"
-    const val DEFAULT_SERVER_PREF = ""
-    const val DEFAULT_USERNAME_PREF = ""
-    const val DEFAULT_PASSWORD_PREF = ""
-    const val DEFAULT_DIRECTORY_PREF = ""
     const val HEADER_PREF = "headerWritten"
     const val DEFAULT_HEADER_PREF = false
-
     const val ACCESS_TOKEN_KEY = "access_token"
     const val EXPIRATION_TIME_KEY = "expiration_timestamp"
     const val GLES_PREF_STRING = "system_gles_version"

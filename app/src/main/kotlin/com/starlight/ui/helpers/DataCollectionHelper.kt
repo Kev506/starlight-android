@@ -159,7 +159,7 @@ class DataCollectionHelper(var viewModel: MainViewModel, var uiContext: Componen
                     }
 
                     appList.forEach { app ->
-                        game.syncGameInfo(app)
+                        game.fetchAndConnectIgdb(app)
                         delay(2000.milliseconds)
                     }
                     LimeLog.info("Loaded applist into database")

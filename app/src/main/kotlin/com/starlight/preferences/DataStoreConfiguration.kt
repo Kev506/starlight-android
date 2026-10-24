@@ -40,7 +40,6 @@ import com.starlight.utils.Constants.DEFAULT_CAPTIONS
 import com.starlight.utils.Constants.DEFAULT_CAPTIONS_STRING
 import com.starlight.utils.Constants.DEFAULT_DATABASE_ENABLED
 import com.starlight.utils.Constants.DEFAULT_DEADZONE
-import com.starlight.utils.Constants.DEFAULT_DIRECTORY_PREF
 import com.starlight.utils.Constants.DEFAULT_DISABLE_TOASTS
 import com.starlight.utils.Constants.DEFAULT_ENABLE_AUDIO_FX
 import com.starlight.utils.Constants.DEFAULT_ENABLE_HDR
@@ -64,22 +63,18 @@ import com.starlight.utils.Constants.DEFAULT_MOUSE_EMULATION
 import com.starlight.utils.Constants.DEFAULT_MOUSE_NAV_BUTTONS
 import com.starlight.utils.Constants.DEFAULT_MULTI_CONTROLLER
 import com.starlight.utils.Constants.DEFAULT_OPACITY
-import com.starlight.utils.Constants.DEFAULT_PASSWORD_PREF
 import com.starlight.utils.Constants.DEFAULT_REDUCE_REFRESH_RATE
 import com.starlight.utils.Constants.DEFAULT_RENDERER_PREF
 import com.starlight.utils.Constants.DEFAULT_RESOLUTION
-import com.starlight.utils.Constants.DEFAULT_SERVER_PREF
 import com.starlight.utils.Constants.DEFAULT_STRETCH
 import com.starlight.utils.Constants.DEFAULT_TOUCHSCREEN_TRACKPAD
 import com.starlight.utils.Constants.DEFAULT_UNLOCK_FPS
 import com.starlight.utils.Constants.DEFAULT_USB_DRIVER
-import com.starlight.utils.Constants.DEFAULT_USERNAME_PREF
 import com.starlight.utils.Constants.DEFAULT_VIBRATE_FALLBACK
 import com.starlight.utils.Constants.DEFAULT_VIBRATE_FALLBACK_STRENGTH
 import com.starlight.utils.Constants.DEFAULT_VIBRATE_OSC
 import com.starlight.utils.Constants.DEFAULT_VIDEO_FORMAT
 import com.starlight.utils.Constants.DEFAULT_VIDEO_SR
-import com.starlight.utils.Constants.DIRECTORY_PREF
 import com.starlight.utils.Constants.DISABLE_TOASTS_PREF_STRING
 import com.starlight.utils.Constants.ENABLE_AUDIO_FX_PREF_STRING
 import com.starlight.utils.Constants.ENABLE_HDR_PREF_STRING
@@ -118,13 +113,11 @@ import com.starlight.utils.Constants.ONLY_L3_R3_PREF_STRING
 import com.starlight.utils.Constants.ONSCREEN_CONTROLLER_DEFAULT
 import com.starlight.utils.Constants.ONSCREEN_CONTROLLER_PREF_STRING
 import com.starlight.utils.Constants.OSC_OPACITY_PREF_STRING
-import com.starlight.utils.Constants.PASSWORD_PREF
 import com.starlight.utils.Constants.PREF_KEY_CRASH_COUNT
 import com.starlight.utils.Constants.PREF_KEY_LAST_NOTIFIED_CRASH_COUNT
 import com.starlight.utils.Constants.REDUCE_REFRESH_RATE_PREF_STRING
 import com.starlight.utils.Constants.RENDERER_PREF
 import com.starlight.utils.Constants.RESOLUTION_PREF_STRING
-import com.starlight.utils.Constants.SERVER_PREF
 import com.starlight.utils.Constants.SMALL_ICONS_DEFAULT
 import com.starlight.utils.Constants.SMALL_ICONS_PREF_STRING
 import com.starlight.utils.Constants.SQUARISH_SCREEN_ASPECT_RATIO_THRESHOLD
@@ -137,7 +130,6 @@ import com.starlight.utils.Constants.SUN_FAVORITES_PREF
 import com.starlight.utils.Constants.TOUCHSCREEN_TRACKPAD_PREF_STRING
 import com.starlight.utils.Constants.UNLOCK_FPS_STRING
 import com.starlight.utils.Constants.USB_DRIVER_PREF_SRING
-import com.starlight.utils.Constants.USERNAME_PREF
 import com.starlight.utils.Constants.VIBRATE_FALLBACK_PREF_STRING
 import com.starlight.utils.Constants.VIBRATE_FALLBACK_STRENGTH_PREF_STRING
 import com.starlight.utils.Constants.VIBRATE_OSC_PREF_STRING
@@ -214,10 +206,6 @@ data class DataStoreConfiguration(
     val favorites: String = FAVORITES_DEFAULT_PREF,
     val renderer: String = DEFAULT_RENDERER_PREF,
     val fingerprint: String = DEFAULT_FINGERPRINT_PREF,
-    val server: String = DEFAULT_SERVER_PREF,
-    val username: String = DEFAULT_USERNAME_PREF,
-    val password: String = DEFAULT_PASSWORD_PREF,
-    val directory: String = DEFAULT_DIRECTORY_PREF,
     val header: Boolean = DEFAULT_HEADER_PREF,
     val vibrateFallbackToDeviceStrength: Int = DEFAULT_VIBRATE_FALLBACK_STRENGTH,
     val touchscreenTrackpad: Boolean = DEFAULT_TOUCHSCREEN_TRACKPAD,
@@ -359,10 +347,6 @@ object PreferenceKeys {
             favorites = this[stringPreferencesKey(FAVORITES_PREF)] ?: FAVORITES_DEFAULT_PREF,
             renderer = this[stringPreferencesKey(RENDERER_PREF)] ?: DEFAULT_RENDERER_PREF,
             fingerprint = this[stringPreferencesKey(FINGERPRINT_PREF)] ?: DEFAULT_FINGERPRINT_PREF,
-            server = this[stringPreferencesKey(SERVER_PREF)] ?: DEFAULT_SERVER_PREF,
-            username = this[stringPreferencesKey(USERNAME_PREF)] ?: DEFAULT_USERNAME_PREF,
-            password = this[stringPreferencesKey(PASSWORD_PREF)] ?: DEFAULT_PASSWORD_PREF,
-            directory = this[stringPreferencesKey(DIRECTORY_PREF)] ?: DEFAULT_DIRECTORY_PREF,
             header = this[booleanPreferencesKey(HEADER_PREF)] ?: DEFAULT_HEADER_PREF,
             selectedPosition = this[intPreferencesKey(KEY_SELECTED_POSITION)] ?: 0,
             videoPosition = this[intPreferencesKey(VIDEO_SELECTED_POSITION)] ?: 0,

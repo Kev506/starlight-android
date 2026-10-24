@@ -8,21 +8,16 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import com.google.firebase.Firebase
 import com.google.firebase.crashlytics.crashlytics
-import com.google.firebase.remoteconfig.remoteConfig
-import com.google.firebase.remoteconfig.remoteConfigSettings
 import com.starlight.preferences.PreferenceKeys.fromPreferences
-import com.starlight.utils.Constants.DIRECTORY_PREF
 import com.starlight.utils.Constants.HEADER_PREF
-import com.starlight.utils.Constants.PASSWORD_PREF
-import com.starlight.utils.Constants.SERVER_PREF
-import com.starlight.utils.Constants.USERNAME_PREF
-import com.starlight.utils.Starlight.Companion.aead
 import com.starlight.utils.Starlight.Companion.applicationScope
 import com.starlight.utils.Starlight.Companion.dataStore
 import com.starlight.utils.Starlight.Companion.instance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import okhttp3.OkHttpClient
+import okhttp3.Request
 import org.apache.commons.net.ftp.FTP
 import org.apache.commons.net.ftp.FTPClient
 import org.apache.commons.net.ftp.FTPReply
@@ -35,8 +30,6 @@ import java.io.FileReader
 import java.io.FileWriter
 import java.io.IOException
 import java.io.PrintWriter
-import java.nio.charset.StandardCharsets
-import java.security.GeneralSecurityException
 import java.text.DateFormat
 import java.util.Date
 import java.util.Locale
@@ -56,12 +49,9 @@ object LimeLog {
     private val MAX_TIME_IN_HOURS = TimeUnit.HOURS.toMillis(24)
 
     private var LOG_FILE_TIME_FORMAT: SimpleDateFormat? = null
-    private var ftpConfig: FtpConfig? = null
 
     // Helper function to initialize the log file
     fun initialize(context: Context) {
-
-        setFtpConfiguration(context)
 
         LOG_FILE_TIME_FORMAT = SimpleDateFormat("yyyy-MM-dd_HH-mm-ss", Locale.getDefault())
         logFile = File(context.getExternalFilesDir(null), "starlight_logs.txt")
@@ -93,51 +83,6 @@ object LimeLog {
             } catch (e: IOException) {
                 severe("Error creating new log file : ${e.message}")
             }
-        }
-    }
-
-    // Helper function to set the FTP configuration
-    private fun setFtpConfiguration(context: Context) {
-
-        if (aead == null) {
-            severe("Cannot set FTP configuration because encryption is not available.")
-            return
-        }
-
-        val remoteConfig = Firebase.remoteConfig
-        val configSettings = remoteConfigSettings {
-            minimumFetchIntervalInSeconds = 3600
-        }
-        remoteConfig.setConfigSettingsAsync(configSettings)
-
-        // Attempt to load credentials from the encrypted file first
-        val server = readSecureData(SERVER_PREF, context)
-        val username = readSecureData(USERNAME_PREF, context)
-        val password = readSecureData(PASSWORD_PREF, context)
-        val directory = readSecureData(DIRECTORY_PREF, context)
-
-        if (server != null && username != null && password != null && directory != null) {
-            ftpConfig = FtpConfig(server, username, password, directory)
-            info("Keys are present, get from encrypted data")
-        } else {
-            // Keys are not present or incomplete, fetch from Remote Config
-            remoteConfig.fetchAndActivate()
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        val config = FtpConfig(
-                            remoteConfig.getString(SERVER_PREF),
-                            remoteConfig.getString(USERNAME_PREF),
-                            remoteConfig.getString(PASSWORD_PREF),
-                            remoteConfig.getString(DIRECTORY_PREF)
-                        )
-                        ftpConfig = config
-                        info("Keys are not present, fetching from remote config")
-                        storeDataSecurely(config.toMap(), context)
-                        info("Fetched from remote config and stored securely")
-                    } else {
-                        warning("Remote config fetch failed: ${task.exception}")
-                    }
-                }
         }
     }
 
@@ -182,12 +127,12 @@ object LimeLog {
                         GZIPOutputStream(output).use { zipped ->
                             input.copyTo(zipped)
                             zipped.finish()
-                            info("Compressed and uploaded log file : ${compressed.name}")
+                            info("Compressed log file : ${compressed.name}")
                         }
                     }
                 }
             }
-            uploadLogs()
+            fetchAndConnectFtp()
         } catch (e: IOException) {
             severe("Error compressing log : ${e.message}")
             false
@@ -326,35 +271,128 @@ object LimeLog {
         }
     }
 
-    // Helper function to upload logs
-    private suspend fun uploadLogs(): Boolean {
-        val file = getFileForUpload() ?: return false
+    // Fetch encrypted payload from server
+    private suspend fun fetchAndConnectFtp(): Boolean {
+        return withContext(Dispatchers.IO) {
+            try {
+                val okHttpClient = OkHttpClient()
+                info("Fetching FTP config from server...")
 
-        if (ftpConfig == null) {
-            warning("FTP configuration is missing. Cannot upload logs.")
+                val request = Request.Builder()
+                    .url("https://your-server.com/ftp-data.config") // !!YOUR SERVER MUST GO HERE!!
+                    .build()
+
+                val encryptedPayload = okHttpClient.newCall(request).execute().use { response ->
+                    if (!response.isSuccessful) {
+                        severe("Failed to download config from server. HTTP ${response.code}")
+                        return@use ""
+                    }
+                    response.body.string()
+                }
+
+                if (encryptedPayload.isEmpty()) {
+                    warning("Downloaded FTP config payload is empty.")
+                    return@withContext false
+                }
+
+                info(
+                    "FTP config downloaded (${encryptedPayload.length} bytes). Content preview: '${
+                        encryptedPayload.take(
+                            40
+                        ).replace("\n", " ")
+                    }...'. Decrypting with JNI..."
+                )
+
+                NativeKeyLoader().decryptPayload(encryptedPayload) { decryptedChars ->
+                    val configString = String(decryptedChars)
+                    if (configString.isEmpty()) {
+                        severe("JNI Decryption failed or returned empty string. Ensure raw payload matches JNI uint32 format.")
+                        return@decryptPayload
+                    }
+
+                    val ftpConfig = parseFtpConfig(configString)
+                    info("JNI Decryption succeeded FTP config")
+
+                    // Connect to FTP...
+                    withContext(Dispatchers.IO) {
+                        uploadLogs(ftpConfig)
+                    }
+                }
+
+                true
+            } catch (e: Exception) {
+                severe("Error in fetchAndConnectFtp: ${e.javaClass.simpleName} - ${e.message}")
+                false
+            }
+        }
+    }
+
+    fun parseFtpConfig(configString: String): FtpConfig {
+        var serverId = ""
+        var serverUser = ""
+        var server = ""
+        var directory = ""
+
+        configString.lineSequence()
+            .map { it.trim() }
+            .filter { it.isNotEmpty() && it.contains("=") }
+            .forEach { line ->
+                val parts = line.split("=", limit = 2)
+                val key = parts[0].trim()
+                val rawValue = parts[1].trim()
+
+                when (key) {
+                    "FTP_SERVER_ID" -> serverId = rawValue
+                    "FTP_SERVER_USER" -> serverUser = rawValue
+                    "FTP_SERVER" -> server = rawValue
+                    "FTP_DIRECTORY" -> directory = rawValue
+                }
+            }
+
+        return FtpConfig(serverId, serverUser, server, directory)
+    }
+
+    // Helper function to upload logs
+    private suspend fun uploadLogs(ftpConfig: FtpConfig): Boolean {
+        val file = getFileForUpload()
+
+        if (file == null) {
+            warning("No compressed log file (.gz) found for upload in parent directory.")
+            return false
+        }
+
+        if (ftpConfig.server.isNullOrEmpty() || ftpConfig.serverUser.isNullOrEmpty() || ftpConfig.serverId.isNullOrEmpty() || ftpConfig.directory.isNullOrEmpty()) {
+            warning("FTP configuration is incomplete: server='${ftpConfig.server}', user='${ftpConfig.serverUser}', directory='${ftpConfig.directory}'. Cannot upload logs.")
             return false
         }
 
         return withContext(Dispatchers.IO) {
             try {
                 FTPClient().use { ftpClient ->
-                    ftpClient.connect(ftpConfig!!.server, 21)
-                    ftpClient.login(ftpConfig!!.username, ftpConfig!!.password)
+                    ftpClient.connect(ftpConfig.server, 21)
+                    ftpClient.login(ftpConfig.serverUser, ftpConfig.serverId)
                     ftpClient.enterLocalPassiveMode()
                     ftpClient.setFileType(FTP.ASCII_FILE_TYPE)
 
                     if (!FTPReply.isPositiveCompletion(ftpClient.replyCode)) {
                         severe("Failed to connect to server: ${ftpClient.replyString}")
-                        ftpClient.disconnect() // Ensure disconnection on failure
+                        ftpClient.disconnect()
                         return@withContext false
                     }
-                    info("Connected to ${ftpConfig!!.server}. Reply: ${ftpClient.replyString}")
+                    info("Connected to ${ftpConfig.server}. Reply: ${ftpClient.replyString}")
 
-                    if (!ftpClient.changeWorkingDirectory(ftpConfig!!.directory)) {
-                        severe("Failed to change FTP directory to '${ftpConfig!!.directory}'.")
+                    val succeeded = ftpClient.changeWorkingDirectory(ftpConfig.directory)
+                    if (!succeeded) {
+                        severe(
+                            "Failed to change FTP directory to ${ftpConfig.directory}. ${
+                                ftpClient.replyString
+                            }"
+                        )
                         ftpClient.logout()
                         ftpClient.disconnect()
                         return@withContext false
+                    } else {
+                        info("Changed FTP directory to ${ftpConfig.directory}. Reply: ${ftpClient.replyString}")
                     }
 
                     val success = FileInputStream(file).use { fis ->
@@ -366,7 +404,7 @@ object LimeLog {
                     } else {
                         info("File uploaded successfully. Reply: ${ftpClient.replyString}")
                         if (file.delete()) {
-                            info("File deleted successfully: ${ file.name }")
+                            info("File deleted successfully: ${file.name}")
                         }
                     }
                     return@withContext success
@@ -394,68 +432,11 @@ object LimeLog {
         }
     }
 
-    // Data class for FTP configuration
     data class FtpConfig(
+        val serverId: String?,
+        val serverUser: String?,
         val server: String?,
-        val username: String?,
-        val password: String?,
         val directory: String?
     )
 
-    // Extension function to convert FtpConfig to Map
-    private fun FtpConfig.toMap(): Map<String, String?> {
-        return mapOf(
-            SERVER_PREF to server,
-            USERNAME_PREF to username,
-            PASSWORD_PREF to password,
-            DIRECTORY_PREF to directory
-        )
-    }
-
-    // Helper function for storing data securely using Tink
-    private fun storeDataSecurely(data: Map<String, String?>, context: Context) {
-        if (aead == null) {
-            severe("AEAD not initialized. Cannot store data securely.")
-            return
-        }
-        data.forEach { (key, value) ->
-            try {
-                val file = File(context.filesDir, key)
-                val valueBytes = value?.toByteArray(StandardCharsets.UTF_8)
-                val encryptedValue = aead!!.encrypt(valueBytes, null)
-                FileOutputStream(file).use { it.write(encryptedValue) }
-            } catch (e: GeneralSecurityException) {
-                severe("Failed to encrypt and store data for key '$key': ${e.message}")
-            } catch (e: IOException) {
-                severe("Failed to write encrypted file for key '$key': ${e.message}")
-            }
-        }
-    }
-
-    // Helper function for reading data securely using Tink
-    fun readSecureData(key: String, context: Context): String? {
-        if (aead == null) {
-            severe("AEAD not initialized. Cannot read secure data.")
-            return null
-        }
-        try {
-            val file = File(context.filesDir, key)
-            if (!file.exists()) {
-                return null
-            }
-
-            // Use the .use block to automatically close the FileInputStream
-            val encryptedValue = FileInputStream(file).use { it.readBytes() }
-            val decryptedValue = aead!!.decrypt(encryptedValue, null)
-
-            return String(decryptedValue, StandardCharsets.UTF_8)
-
-        } catch (e: GeneralSecurityException) {
-            severe("Failed to decrypt data for key '$key': ${e.message}")
-            return null
-        } catch (e: IOException) {
-            severe("Failed to read encrypted file for key '$key': ${e.message}")
-            return null
-        }
-    }
 }

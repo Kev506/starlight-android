@@ -333,7 +333,7 @@ class AppViewHelper(
                         )
                         applicationScope.launch {
                             appList.forEach { app ->
-                                gameRepo.syncGameInfo(app)
+                                gameRepo.fetchAndConnectIgdb(app)
                                 delay(1000.milliseconds)
                             }
                         }

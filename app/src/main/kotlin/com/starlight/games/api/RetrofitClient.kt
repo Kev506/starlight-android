@@ -1,5 +1,6 @@
 package com.starlight.games.api
 
+import com.starlight.BuildConfig
 import com.starlight.utils.Constants.IGDB_API_BASEURL
 import com.starlight.utils.Constants.TWITCH_AUTH_BASEURL
 import kotlinx.serialization.json.Json
@@ -9,6 +10,14 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
 
+/**
+ * Created by Kevin Andrews on 15/06/2026.
+ */
+
+
+/**
+ * WARNING!! DO NOT MODIFY THIS FILE!!
+ */
 object RetrofitClient {
 
     private val json = Json {
@@ -18,9 +27,16 @@ object RetrofitClient {
 
     private val okHttpClient: OkHttpClient by lazy {
         OkHttpClient.Builder()
-            .addInterceptor(HttpLoggingInterceptor().apply {
-                level = HttpLoggingInterceptor.Level.BODY
-            })
+            .apply {
+                if (BuildConfig.DEBUG) {
+                    val loggingInterceptor = HttpLoggingInterceptor().apply {
+                        level = HttpLoggingInterceptor.Level.BASIC
+                        redactHeader("Client-ID")
+                        redactHeader("Authorization")
+                    }
+                    addInterceptor(loggingInterceptor)
+                }
+            }
             .build()
     }
 

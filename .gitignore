@@ -51,6 +51,3 @@ app/google-services.json
 
 # Since Kotlin 2.0.0, folder named ".kotlin" is created at compile time
 .kotlin/
-
-# Core module published to Maven
-core/

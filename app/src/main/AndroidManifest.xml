@@ -69,8 +69,6 @@
         android:theme="@style/AppTheme"
         tools:targetApi="TIRAMISU">
 
-        <profileable android:shell="true"/>
-
         <!-- Content Provider -->
         <provider
             android:name=".ui.content.PosterContentProvider"

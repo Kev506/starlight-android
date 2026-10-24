@@ -5,10 +5,10 @@ To protect server credentials and infrastructure, this project utilizes a secure
 Production keys are never stored in the repository. As a contributor, you must host your own configuration payloads on your server and configure your local app to read them.
 
 ### 🛠️ Step 1: Generate Your Encrypted Payloads
-Before uploading configurations to your server, you need to use the `NativeKeyLoader` to encrypt your raw credentials locally.
+Before uploading configurations to your server, you need to use `NativeKeyLoader` to encrypt your raw credentials locally.
 
-1. In Android Studio, open **`RetrofitClient.kt`** or create a temporary Kotlin Scratch file (`File` > `New` > `Scratch File`).
-2. Temporarily inject your raw credentials into a debug block or local unit test using the following structure:
+1. In Android Studio, open any file or create a temporary Kotlin Scratch file (`File` > `New` > `Scratch File`).
+2. Temporarily inject your raw credentials using the following structure:
 
 ```kotlin
 // 1. Define your FTP Credentials
@@ -20,8 +20,8 @@ val rawFtpConfig = """
 """.trimIndent()
 
 // Encrypt for FTP
-val encryptedFtp = NativeKeyLoader().encryptFtpPayload(rawFtpConfig)
-android.util.Log.d("DEVELOPER_SETUP", "Encrypted FTP Payload:\n\$encryptedFtp")
+val encryptedFtp = NativeKeyLoader().encryptPayload(rawFtpConfig)
+android.util.Log.d("DEVELOPER_SETUP", "Encrypted FTP Payload:\n$encryptedFtp")
 
 // 2. Define your IGDB Credentials
 val rawIgdbConfig = """
@@ -30,34 +30,31 @@ val rawIgdbConfig = """
 """.trimIndent()
 
 // Encrypt for IGDB
-val encryptedIgdb = NativeKeyLoader().encryptIgdbPayload(rawIgdbConfig)
-android.util.Log.d("DEVELOPER_SETUP", "Encrypted IGDB Payload:\n\$encryptedIgdb")
+val encryptedIgdb = NativeKeyLoader().encryptPayload(rawIgdbConfig)
+android.util.Log.d("DEVELOPER_SETUP", "Encrypted IGDB Payload:\n$encryptedIgdb")
 ```
 
 3. Run the application in **Debug mode**.
-4. Open the **Logcat** tab in Android Studio, filter for `DEVELOPER_SETUP`, and copy the resulting jumbled, encrypted strings.
-5. ⚠️ **CRITICAL:** Revert any changes you made to the codebase. Ensure your raw credentials are completely wiped from your local files before proceeding.
+4. Open the **Logcat** tab in Android Studio, filter for `DEVELOPER_SETUP`, and copy the resulting space-separated integer payload strings.
+5. ⚠️ **CRITICAL:** Revert any temporary changes you made to the codebase. Ensure your raw credentials are completely wiped from your local files before proceeding.
 
 ---
 
 ### 🌐 Step 2: Deploy to Your Remote Server
-Your official app instance expects to find these exact encrypted strings hosted securely on your personal server endpoints.
+Your local app instance expects to find these exact encrypted strings hosted securely on your server endpoints.
 
-1. Create two separate text/config files on your server (or your preferred endpoint API structures).
-2. Paste the **encrypted payload string** exactly as it appeared in Logcat into those files.
-3. Ensure your server serves these raw text files over a secure connection (`https://`).
+1. Create two separate text files on your web server (e.g. `ftp-data.config` and `igdb-data.config`).
+2. Paste the **encrypted payload string** (the space-separated numbers) exactly as it appeared in Logcat into those files.
+3. Ensure your server serves these raw text files over HTTPS (`https://`).
 
 ---
 
 ### ⚙️ Step 3: Point the App to Your Server
-Finally, you must tell your local build where to fetch these encrypted files.
+Finally, update the server endpoints in your local project so the app fetches payloads from your custom server:
 
-1. Open your local `local.properties` file (which is ignored by Git).
-2. Add your custom server endpoints:
-   ```properties
-   DEVELOPER_FTP_URL="https://yourserver.com"
-   DEVELOPER_IGDB_URL="https://yourserver.com"
-   ```
-3. Sync Gradle. The project's build config will feed these URLs into your local `RetrofitClient` instance. When the app runs, it will hit your server, pull down the encrypted blobs, and your local JNI layer will seamlessly pass back the decrypted configurations in memory.
+1. Update the configuration download URLs in `LimeLog.kt line 282` (for FTP logs) and `IgdbRepository.kt line 480` (for IGDB).
+2. When the app runs, it will hit your server, pull down the encrypted blobs, and JNI will decrypt them seamlessly in memory.
 
-⚠️ **Security Reminder:** Never commit your server URLs or raw payload strings to GitHub. If you accidentally modify `RetrofitClient.kt` with hardcoded credentials, the automated CI/CD pipeline will reject your Pull Request.
+⚠️ **Security Reminder:** Never commit your raw server credentials or encrypted payload strings to GitHub.
+
+

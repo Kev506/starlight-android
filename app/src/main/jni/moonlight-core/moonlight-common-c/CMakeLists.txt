@@ -1,5 +1,5 @@
 
-cmake_minimum_required(VERSION 3.1...4.0)
+cmake_minimum_required(VERSION 4.1.2)
 project(moonlight-common-c LANGUAGES C)
 
 string(TOUPPER "x${CMAKE_BUILD_TYPE}" BUILD_TYPE)
@@ -117,3 +117,9 @@ target_include_directories(moonlight-common-c SYSTEM PRIVATE
 )
 
 target_compile_definitions(moonlight-common-c PRIVATE HAS_SOCKLEN_T)
+
+if(CMAKE_BUILD_TYPE STREQUAL "Release")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -fvisibility-inlines-hidden")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fdata-sections -ffunction-sections")
+  set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--gc-sections -Wl,--strip-all")
+endif()

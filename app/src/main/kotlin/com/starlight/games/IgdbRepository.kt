@@ -4,10 +4,8 @@ import android.content.ContentValues
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.google.gson.Gson
-import com.starlight.BuildConfig
 import com.starlight.R
 import com.starlight.games.GameDataBaseManager.Companion.GAME_VIDEOS_COLUMN_NAME
 import com.starlight.games.api.RetrofitClient
@@ -22,11 +20,16 @@ import com.starlight.ui.grids.assets.NetworkAssetLoader
 import com.starlight.utils.Constants.BASE_COVER_URL
 import com.starlight.utils.Constants.BASE_IMAGE_URL
 import com.starlight.utils.LimeLog.info
+import com.starlight.utils.LimeLog.severe
 import com.starlight.utils.LimeLog.warning
+import com.starlight.utils.NativeKeyLoader
 import com.starlight.utils.Starlight.Companion.applicationScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.OkHttpClient
+import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.ByteArrayOutputStream
 import java.time.Instant
@@ -46,15 +49,8 @@ class IgdbRepository(
 ) {
 
     private var loader: CachedAppAssetLoader? = null
-    private var igdbConfig: IgdbConfig? = null
 
     init {
-        val clientIdConfig = BuildConfig.IGDB_CLIENT_ID
-        val clientSecretConfig = BuildConfig.IGDB_CLIENT_SECRET
-
-        igdbConfig = IgdbConfig(clientIdConfig, clientSecretConfig)
-        info("IGDB keys are present")
-
         dbHandler = GameDataBaseManager.getInstance(activity.applicationContext)
 
         if (loader != null) {
@@ -74,34 +70,24 @@ class IgdbRepository(
     }
 
     // Check for valid token or renew
-    fun syncGameInfo(app: NvApp) {
-        val config = igdbConfig ?: run {
-            Toast.makeText(activity, "IGDB configuration is missing. Cannot continue.", Toast.LENGTH_LONG).show()
-            return
-        }
-
-        val clientId = config.clientId
-        val clientSecret = config.clientSecret
-
-        if (clientId.isNullOrEmpty() || clientSecret.isNullOrEmpty()) {
-            saveDefaultGameInfo(app)
-            return
-        }
-
+    fun syncGameInfo(app: NvApp, igdbConfig: IgdbConfig) {
         applicationScope.launch(Dispatchers.Main) {
             val tokenManager = TwitchTokenManager(activity.applicationContext)
             var validToken = tokenManager.getValidToken()
 
             if (validToken == null) {
-                val newTokenObj = TwitchAuthRepository.fetchNewToken(clientId, clientSecret)
-                if (newTokenObj != null) {
-                    tokenManager.saveToken(newTokenObj.accessToken, newTokenObj.expiresIn)
-                    validToken = newTokenObj.accessToken
+
+                if (!igdbConfig.clientId.isNullOrEmpty() && !igdbConfig.clientSecret.isNullOrEmpty()) {
+                    val newTokenObj = TwitchAuthRepository.fetchNewToken(igdbConfig.clientId, igdbConfig.clientSecret)
+                    if (newTokenObj != null) {
+                        tokenManager.saveToken(newTokenObj.accessToken, newTokenObj.expiresIn)
+                        validToken = newTokenObj.accessToken
+                    }
                 }
             }
 
-            if (validToken != null) {
-                fetchGameFromIgdb(app, clientId, validToken)
+            if (validToken != null && !igdbConfig.clientId.isNullOrEmpty()) {
+                fetchGameFromIgdb(app, igdbConfig.clientId, validToken)
             } else {
                 saveDefaultGameInfo(app)
             }
@@ -483,14 +469,90 @@ class IgdbRepository(
         return sb.toString()
     }
 
-    companion object {
-        var dbHandler: GameDataBaseManager? = null
-        const val TAG = "Games"
+    // Fetch encrypted payload from server
+    suspend fun fetchAndConnectIgdb(app: NvApp): Boolean {
+        return withContext(Dispatchers.IO) {
+            try {
+                val okHttpClient = OkHttpClient()
+                info("Fetching IGDB config from server...")
+
+                val request = Request.Builder()
+                    .url("https://your-server.com/igdb-data.config") // !!YOUR SERVER MUST GO HERE!!
+                    .build()
+
+                val encryptedPayload = okHttpClient.newCall(request).execute().use { response ->
+                    if (!response.isSuccessful) {
+                        severe("Failed to download config from server. HTTP ${response.code}")
+                        return@use ""
+                    }
+                    response.body.string()
+                }
+
+                if (encryptedPayload.isEmpty()) {
+                    warning("Downloaded IGDB config payload is empty.")
+                    return@withContext false
+                }
+
+                info(
+                    "IGDB config downloaded (${encryptedPayload.length} bytes). Content preview: '${
+                        encryptedPayload.take(
+                            40
+                        ).replace("\n", " ")
+                    }...'. Decrypting with JNI..."
+                )
+
+                NativeKeyLoader().decryptPayload(encryptedPayload) { decryptedChars ->
+                    val configString = String(decryptedChars)
+                    if (configString.isEmpty()) {
+                        severe("JNI Decryption failed or returned empty string. Ensure raw payload matches JNI uint32 format.")
+                        return@decryptPayload
+                    }
+
+                    val igdbConfig = parseIgdbConfig(configString)
+                    info("JNI Decryption succeeded IGDB config")
+
+                    // Connect to IGDB...
+                    withContext(Dispatchers.IO) {
+                        syncGameInfo(app, igdbConfig)
+                    }
+                }
+
+                true
+            } catch (e: Exception) {
+                severe("Error in fetchAndConnectIgdb: ${e.javaClass.simpleName} - ${e.message}")
+                false
+            }
+        }
     }
 
-    // Data class for FTP configuration
+    fun parseIgdbConfig(configString: String): IgdbConfig {
+        var clientId = ""
+        var clientSecret = ""
+
+        configString.lineSequence()
+            .map { it.trim() }
+            .filter { it.isNotEmpty() && it.contains("=") }
+            .forEach { line ->
+                val parts = line.split("=", limit = 2)
+                val key = parts[0].trim()
+                val rawValue = parts[1].trim()
+
+                when (key) {
+                    "IGDB_CLIENT_ID" -> clientId = rawValue
+                    "IGDB_CLIENT_SECRET" -> clientSecret = rawValue
+                }
+            }
+
+        return IgdbConfig(clientId, clientSecret)
+    }
+
     data class IgdbConfig(
         val clientId: String?,
         val clientSecret: String?
     )
+
+    companion object {
+        var dbHandler: GameDataBaseManager? = null
+        const val TAG = "Games"
+    }
 }

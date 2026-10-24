@@ -8,7 +8,6 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
-import com.google.crypto.tink.Aead
 import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.crashlytics.crashlytics
@@ -19,15 +18,12 @@ import com.starlight.utils.Constants.GLES_PREF_STRING
 import com.starlight.utils.Constants.RENDERER_PREF
 import com.starlight.utils.Constants.STARLIGHT_PREF_NAME
 import com.starlight.utils.LimeLog.info
-import com.starlight.utils.LimeLog.severe
 import com.starlight.utils.LimeLog.warning
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
-import java.io.IOException
-import java.security.GeneralSecurityException
 
 
 class Starlight : Application() {
@@ -46,15 +42,6 @@ class Starlight : Application() {
 
     override fun onCreate() {
         super.onCreate()
-
-        // Initialize Tink AEAD
-        try {
-            aead = TinkAead(this).get()
-        } catch (e: GeneralSecurityException) {
-            severe("Failed to initialize Tink AEAD: ${e.message}")
-        } catch (e: IOException) {
-            severe("Failed to initialize Tink AEAD: ${e.message}")
-        }
 
         instance = this
 
@@ -107,8 +94,6 @@ class Starlight : Application() {
     }
 
     companion object {
-
-        var aead: Aead? = null
 
         lateinit var instance: Starlight
             private set
