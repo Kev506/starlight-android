@@ -62,7 +62,7 @@ You can now move on to the next step and build and run the project.
     * **Important follow the setup instructions. [Encryption Setup](https://github.com/Kev506/starlight-android/blob/main/.github/docs/ENCRYPTION-SETUP.md)**
 * Build the APK using Android Studio or gradle
 * As the app bundle is signed you can deploy and test on local devices.
-* **Note when debugging, you will notice a noticeable lag on the UI, this is an expected framework behavior when debugging Compose**
+* **Note when debugging, there will be a noticeable lag on the UI, this is an expected framework behaviour when debugging Compose**
 
 ## 📦 Project Architecture
 
