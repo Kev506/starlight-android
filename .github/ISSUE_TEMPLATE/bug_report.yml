@@ -102,9 +102,9 @@ body:
   - type: input
     id: server-geforce
     attributes:
-      label: Server PC GeForce Experience version
-      description: What is the GeForce Experience version?
-      placeholder: i.e. 3.16.0.140
+      label: Server streaming software and version
+      description: Which streaming server and version are you using (Sunshine or GeForce Experience)?
+      placeholder: Software name and version
     validations:
       required: true
   - type: input
