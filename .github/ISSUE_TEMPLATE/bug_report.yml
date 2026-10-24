@@ -41,7 +41,7 @@ body:
       label: Changed settings
       description: If the settings have been adjusted, which settings have been changed?
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: settings-default
     attributes:
