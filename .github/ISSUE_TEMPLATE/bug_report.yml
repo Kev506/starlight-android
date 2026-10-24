@@ -110,9 +110,9 @@ body:
   - type: input
     id: server-driver
     attributes:
-      label: Server PC Nvidia GPU driver version
-      description: What is the Nvidia GPU driver version?
-      placeholder: i.e. 417.35
+      label: Server PC GPU and driver version
+      description: What GPU model and driver version does the server PC use?
+      placeholder: GPU vendor, model, and driver version
     validations:
       required: true
   - type: input
