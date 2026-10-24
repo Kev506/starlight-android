@@ -1,0 +1,145 @@
+name: Bug report
+description: Follow the troubleshooting guide before reporting a bug
+title: "[Issue]: "
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug form!
+        
+        **READ ME FIRST!**
+        If you're here because something basic isn't working, it's probably something specific to your setup, so make sure you've gone through the Troubleshooting Guide first: https://tiki.starlight-stream.com/tiki-index.php?page=Troubleshooting
+        
+  - type: textarea
+    id: describe-bug
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Any special steps that are required for the bug to appear.
+    validations:
+      required: true
+  - type: dropdown
+    id: settings-adjusted
+    attributes:
+      label: Starlight adjusted settings
+      description: Have any settings been adjusted from defaults?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    id: settings-adjusted-settings
+    attributes:
+      label: Changed settings
+      description: If the settings have been adjusted, which settings have been changed?
+    validations:
+      required: false
+  - type: dropdown
+    id: settings-default
+    attributes:
+      label: Starlight default settings
+      description: Does the problem still occur after reverting settings back to default?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: dropdown
+    id: gamepad-connected
+    attributes:
+      label: Gamepad-related connection issue
+      description: Do you have any gamepads connected to your host PC directly?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: dropdown
+    id: gamepad-test
+    attributes:
+      label: Gamepad-related streaming issue
+      description: |
+        Does the problem still remain if you stream the desktop and use https://html5gamepad.com to test your gamepad? 
+        Instructions for streaming the desktop can be found here: https://tiki.starlight-stream.com/tiki-index.php?page=Setup%20Guide#Using_Starlight_to_Stream_your_Desktop
+      options:
+        - "Yes"
+        - "No"
+        - "Not applicable / unable to test"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      description: What is the Android version?
+      placeholder: i.e. Android 10
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device model
+      description: What is the device model?
+      placeholder: i.e. Google TV Streamer
+    validations:
+      required: true
+  - type: input
+    id: server-os
+    attributes:
+      label: Server PC OS version
+      description: What is the PC OS version?
+      placeholder: i.e. Windows 11
+    validations:
+      required: true
+  - type: input
+    id: server-geforce
+    attributes:
+      label: Server streaming software and version
+      description: Which streaming server and version are you using (Sunshine or GeForce Experience)?
+      placeholder: Software name and version
+    validations:
+      required: true
+  - type: input
+    id: server-driver
+    attributes:
+      label: Server PC GPU and driver version
+      description: What GPU model and driver version does the server PC use?
+      placeholder: GPU vendor, model, and driver version
+    validations:
+      required: true
+  - type: input
+    id: server-antivirus
+    attributes:
+      label: Server PC antivirus and firewall software
+      description: Which antivirus and firewall software are installed on the Server PC?
+      placeholder: i.e. Windows Defender and Windows Firewall
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem. If the issue is related to video glitching or poor quality, please include screenshots.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: |
+        Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: Shell
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
