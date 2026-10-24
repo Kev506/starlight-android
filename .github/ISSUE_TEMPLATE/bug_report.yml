@@ -38,7 +38,7 @@ body:
   - type: textarea
     id: settings-adjusted-settings
     attributes:
-      label: Starlight adjusted settings
+      label: Changed settings
       description: If the settings have been adjusted, which settings have been changed?
     validations:
       required: true
