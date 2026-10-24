@@ -9,7 +9,7 @@ body:
         Thank you for taking the time to fill out this bug form!
         
         **READ ME FIRST!**
-        If you're here because something basic isn't working, it's probably something specific to your setup, so make sure you've gone through the Troubleshooting Guide first: https://tiki.starlight-stream.com/tiki-index.php?page=Troubleshooting
+        If you're here because something basic isn't working, i.e. gamepad, video or audio, it's possibly something specific to your setup, so make sure you've gone through the Troubleshooting Guide first: https://tiki.starlight-stream.com/tiki-index.php?page=Troubleshooting
         
   - type: textarea
     id: describe-bug
