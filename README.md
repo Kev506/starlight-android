@@ -36,7 +36,7 @@ This project uses **Firebase** for backend services (such as Crashlytics). For s
 To build and run the app locally, you must provide your own Firebase configuration.
 
 ### Prerequisites
-1. Create a free account on the [Firebase Console](https://google.com).
+1. Create a free account on the [Firebase Console](https://console.firebase.google.com/).
 2. Click **Add Project** and follow the steps to set up a new project.
 3. Add an **Android App** to your Firebase project. Ensure the **Package Name** exactly matches the one in our `app/build.gradle` file (`com.yourcompany.yourapp`).
 
@@ -62,7 +62,7 @@ You can now move on to the next step and build and run the project.
     * **Important follow the setup instructions. [Encryption Setup](https://github.com/Kev506/starlight-android/blob/main/.github/docs/ENCRYPTION-SETUP.md)**
 * Build the APK using Android Studio or gradle
 * As the app bundle is signed you can deploy and test on local devices.
-* **Note when debugging, you will notice a noticeable lag on the UI, this is an expected framework behavior when debugging Compose**
+* **Note when debugging, there will be a noticeable lag on the UI, this is an expected framework behaviour when debugging Compose**
 
 ## 📦 Project Architecture
 
