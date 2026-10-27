@@ -77,7 +77,7 @@ android {
 
         versionName = ("14.1.0")
         versionCode = 67
-        applicationId = ("com.starlight")
+        applicationId = ("com.github.kev506.starlight")
 
         externalNativeBuild {
             ndkBuild {
