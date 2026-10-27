@@ -164,7 +164,7 @@ fun AppDrawer(
                         .padding(12.dp)
                         .focusProperties {
                             onExit = { mainContentRequester.requestFocus() }
-                            canFocus = !isBackInProgress
+                            canFocus = !isBackInProgress || isMainView || isSideMenuOpen
                         }
                         .background(Color.Transparent)
                         .selectableGroup()

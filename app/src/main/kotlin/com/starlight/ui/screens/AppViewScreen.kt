@@ -155,7 +155,14 @@ fun AppViewContent(
     uuid: String
 ) {
 
-    val focusRequesters = remember(data.size) { Array(data.size) { FocusRequester() } }
+    val focusRequestersList = remember { mutableListOf<FocusRequester>() }
+    val focusRequesters = remember(data.size) {
+        while (focusRequestersList.size < data.size) {
+            focusRequestersList.add(FocusRequester())
+        }
+        focusRequestersList.toTypedArray()
+    }
+
     val isSideMenuOpen by viewModel.isSideMenuOpen.observeAsState(false)
     val composeView = LocalView.current
     val context = LocalContext.current
@@ -205,10 +212,19 @@ fun AppViewContent(
                     yield()
                 }
 
-                focusRequesters.getOrNull(target)?.requestFocus()
-
-                delay(50.milliseconds)
                 isGridReady = true
+                yield()
+
+                var attempts = 0
+                while (attempts < 5) {
+                    try {
+                        focusRequesters.getOrNull(target)?.requestFocus()
+                        break
+                    } catch (_: Exception) {
+                        delay(50.milliseconds)
+                        attempts++
+                    }
+                }
 
                 if (reloaded) viewModel.setReloaded(false)
             }
