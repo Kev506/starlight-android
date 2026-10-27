@@ -27,7 +27,7 @@ The code for Starlight is available here, released under the GPLv3 license. We w
 
 
 ## 🔗 Downloads
-* COMING SOON
+* [Official APK](https://github.com/Kev506/starlight-android/releases/tag/v14.1.0)
 
 ## 🛠️ Contribution & Local Build Setup
 
