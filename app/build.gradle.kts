@@ -75,8 +75,8 @@ android {
         minSdk = 29
         targetSdk = 37
 
-        versionName = ("14.1.2")
-        versionCode = 68
+        versionName = ("14.1.5")
+        versionCode = 69
         applicationId = ("com.github.kev506.starlight")
 
         externalNativeBuild {
