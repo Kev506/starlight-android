@@ -24,6 +24,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
@@ -51,7 +52,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import androidx.lifecycle.lifecycleScope
 import androidx.tv.material3.Button
 import androidx.tv.material3.ButtonDefaults
 import androidx.tv.material3.Surface
@@ -132,7 +132,7 @@ fun AddComputerScreenContent(
     val dialogText = viewModel.dialogMessage.observeAsState("")
     val openAlertDialog = viewModel.openAlertDialog.observeAsState(false)
     val showLoader = viewModel.showLoaderState.observeAsState(false)
-    val lifecycleOwner = LocalLifecycleOwner.current
+    val coroutineScope = rememberCoroutineScope()
 
     LaunchedEffect(showLoader.value) {
         if (showLoader.value) {
@@ -239,7 +239,7 @@ fun AddComputerScreenContent(
                     ),
                     keyboardActions = KeyboardActions(
                         onDone = {
-                            lifecycleOwner.lifecycleScope.launch {
+                           coroutineScope.launch {
                                 composeData.handleDoneEvent(
                                     text.value
                                 )
@@ -252,7 +252,7 @@ fun AddComputerScreenContent(
                         .background(Color.Transparent)
                         .onKeyEvent { event ->
                             if (event.key == Key.Enter && event.type == KeyEventType.KeyDown) {
-                                lifecycleOwner.lifecycleScope.launch {
+                               coroutineScope.launch {
                                     composeData.handleDoneEvent(
                                         text.value
                                     )
@@ -269,7 +269,7 @@ fun AddComputerScreenContent(
                 Spacer(modifier = Modifier.width(12.dp))
                 Button(
                     onClick = {
-                        lifecycleOwner.lifecycleScope.launch {
+                       coroutineScope.launch {
                             composeData.handleDoneEvent(
                                 text.value
                             )

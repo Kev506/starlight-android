@@ -31,6 +31,7 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -59,7 +60,6 @@ import androidx.constraintlayout.compose.Dimension
 import androidx.core.net.toUri
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.tv.material3.Button
 import androidx.tv.material3.ButtonDefaults
@@ -200,6 +200,7 @@ fun GameDetailsContent(
     val playButtonRequester = remember { FocusRequester() }
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
+    val coroutineScope = rememberCoroutineScope()
 
     val detailsLoader =
         remember { DetailsLoaderHelper(computer!!, viewModel.uniqueIdString!!, context) }
@@ -238,7 +239,6 @@ fun GameDetailsContent(
             val (yearIcon, igdbImg, gridDetails) = createRefs()
 
             val activity = LocalActivity.current as? ComponentActivity
-            val lifecycleOwner = LocalLifecycleOwner.current
             var focusState by remember { mutableStateOf(false) }
             val scrollState = rememberScrollState()
             val scrollAmount = 50f // Adjust scroll speed
@@ -574,7 +574,7 @@ fun GameDetailsContent(
                         .onFocusChanged {
                             focusState = it.isFocused
                             if (!focusState) {
-                                lifecycleOwner.lifecycleScope.launch { scrollState.scrollTo(0) }
+                               coroutineScope.launch { scrollState.scrollTo(0) }
                             }
                         }
                         .focusable()

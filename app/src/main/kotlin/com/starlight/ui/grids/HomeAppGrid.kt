@@ -57,7 +57,6 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.tv.material3.Border
 import androidx.tv.material3.Card
@@ -239,7 +238,7 @@ fun HomeAppGridContent(
         }
 
         LifecycleResumeEffect(key1 = lifecycleOwner) {
-            lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+           coroutineScope.launch(Dispatchers.IO) {
                 UiHelper.reportDecoderCrash(activity, viewModel)
             }
 
@@ -370,7 +369,7 @@ fun HomeAppGridContent(
                                     homeScreenHelper.stopComputerUpdates()
                                     composeView.showContextMenu()
 
-                                    lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                                   coroutineScope.launch(Dispatchers.IO) {
                                         context.dataStore.edit { preferences ->
                                             preferences[intPreferencesKey(KEY_SELECTED_POSITION)] =
                                                 index
@@ -389,7 +388,7 @@ fun HomeAppGridContent(
                                             uuid = uuid
                                         )
                                     }
-                                    lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                                   coroutineScope.launch(Dispatchers.IO) {
                                         context.dataStore.edit { preferences ->
                                             preferences[intPreferencesKey(KEY_SELECTED_POSITION)] =
                                                 index
@@ -483,7 +482,7 @@ fun HomeAppGridContent(
                         if (isQuitting) {
                             viewModel.setIsQuitting(false)
                             viewModel.setDialogValue(false)
-                            lifecycleOwner.lifecycleScope.launch {
+                           coroutineScope.launch {
                                 selectedApp!!.app?.let {
                                     computer?.let { gameComputer ->
                                         managerBinder?.let { binder ->
@@ -503,7 +502,7 @@ fun HomeAppGridContent(
                             viewModel.setStartWithQuit(false)
                             viewModel.setDialogValue(false)
                             ServerHelper.isAppRunning = isAppRunning
-                            lifecycleOwner.lifecycleScope.launch {
+                           coroutineScope.launch {
                                 selectedApp!!.app?.let {
                                     computer?.let { gameComputer ->
                                         managerBinder?.let { binder ->
@@ -526,7 +525,7 @@ fun HomeAppGridContent(
                             )
                         } else if (isCrash) {
                             viewModel.setIsCrash(false)
-                            lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                           coroutineScope.launch(Dispatchers.IO) {
                                 context.dataStore.edit { preferences ->
                                     preferences[intPreferencesKey(PREF_KEY_LAST_NOTIFIED_CRASH_COUNT)] =
                                         crashCount

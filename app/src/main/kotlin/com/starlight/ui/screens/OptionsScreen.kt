@@ -54,7 +54,6 @@ import androidx.compose.ui.unit.sp
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import androidx.lifecycle.lifecycleScope
 import androidx.tv.material3.Border
 import androidx.tv.material3.Card
 import androidx.tv.material3.CardDefaults
@@ -82,6 +81,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlin.system.exitProcess
 import kotlin.time.Duration.Companion.milliseconds
 
 
@@ -235,7 +235,7 @@ fun OptionsScreenContent(
                                         }
 
                                         R.drawable.ic_baseline_hdr_off_24 -> {
-                                            lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                                            coroutineScope.launch(Dispatchers.IO) {
                                                 context.dataStore.edit { preferences ->
                                                     preferences[booleanPreferencesKey(
                                                         ENABLE_HDR_PREF_STRING
@@ -255,7 +255,7 @@ fun OptionsScreenContent(
                                         }
 
                                         R.drawable.ic_baseline_hdr_on_24 -> {
-                                            lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                                            coroutineScope.launch(Dispatchers.IO) {
                                                 context.dataStore.edit { preferences ->
                                                     preferences[booleanPreferencesKey(
                                                         ENABLE_HDR_PREF_STRING
@@ -388,14 +388,14 @@ fun OptionsScreenContent(
                         },
                         onConfirmation = {
                             if (isCacheSelected.value) {
-                                lifecycleOwner.lifecycleScope.launch {
+                                coroutineScope.launch {
                                     CacheHelper.clearAppCache(context)
                                     restartApplication(context)
                                 }
                                 isCacheSelected.value = false
                                 viewModel.setDialogValue(false)
                             } else if (isDatabaseSelected.value) {
-                                lifecycleOwner.lifecycleScope.launch {
+                                coroutineScope.launch {
                                     val dbManager =
                                         GameDataBaseManager.getInstance(context)
                                     dbManager?.deleteGameData(
@@ -403,14 +403,14 @@ fun OptionsScreenContent(
                                         dbManager.writableDatabase
                                     )
 
-                                    lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                                    coroutineScope.launch(Dispatchers.IO) {
                                         context.dataStore.edit { preferences ->
                                             preferences[booleanPreferencesKey(DATABASE_PREF)] =
                                                 false
                                         }
                                     }
 
-                                    lifecycleOwner.lifecycleScope.launch {
+                                    coroutineScope.launch {
                                         viewModel.isDatabaseCleared = true
                                         val intent =
                                             Intent(activity, MainView::class.java).apply {
@@ -461,10 +461,10 @@ fun OptionsScreenContent(
 private fun restartApplication(context: Context) {
     val packageManager = context.packageManager
     val intent = packageManager.getLaunchIntentForPackage(context.packageName)
-    intent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
-    context.startActivity(intent)
-    if (context is ComponentActivity) {
-        context.finishAffinity()
+    if (intent != null) {
+        val restartIntent = Intent.makeRestartActivityTask(intent.component)
+        context.startActivity(restartIntent)
+        exitProcess(0)
     }
 }
 

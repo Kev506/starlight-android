@@ -54,7 +54,6 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import androidx.lifecycle.lifecycleScope
 import androidx.tv.material3.Border
 import androidx.tv.material3.Card
 import androidx.tv.material3.CardDefaults
@@ -219,7 +218,7 @@ fun ComputerScreenContent(
     LifecycleResumeEffect(key1 = lifecycleOwner) {
         val openScreen = savedStateHandle?.get<Boolean>("open_screen") ?: false
 
-        lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+       coroutineScope.launch(Dispatchers.IO) {
             UiHelper.reportDecoderCrash(activity, viewModel)
         }
 
@@ -320,7 +319,7 @@ fun ComputerScreenContent(
 
                                         else -> {
                                             // Open app list for paired machine
-                                            lifecycleOwner.lifecycleScope.launch {
+                                           coroutineScope.launch {
                                                 computer?.doAppList(
                                                     item.details!!,
                                                     newlyPaired = false,
@@ -438,7 +437,7 @@ fun ComputerScreenContent(
             AlertDialog(
                 onDismissRequest = {
                     if (isHelp) {
-                        lifecycleOwner.lifecycleScope.launch {
+                       coroutineScope.launch {
                             viewModel.url = TROUBLESHOOTING_URL
                             viewModel.getNavController()
                                 ?.navigate(Screens.HelpScreen.route)
@@ -461,7 +460,7 @@ fun ComputerScreenContent(
                 },
                 onConfirmation = {
                     if (isDelete) {
-                        lifecycleOwner.lifecycleScope.launch {
+                       coroutineScope.launch {
                             selectedPc?.let { computer?.removeComputer(it) }
                         }
                         viewModel.setDialogValue(false)
@@ -471,7 +470,7 @@ fun ComputerScreenContent(
                         viewModel.setDialogValue(false)
                     } else if (isCrash) {
                         viewModel.setIsCrash(false)
-                        lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                       coroutineScope.launch(Dispatchers.IO) {
                             context.dataStore.edit { preferences ->
                                 preferences[intPreferencesKey(PREF_KEY_LAST_NOTIFIED_CRASH_COUNT)] = crashCount
                             }
@@ -523,7 +522,7 @@ fun ComputerScreenContent(
             LaunchedEffect(Unit) {
                 showLoader = true
 
-                lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+               coroutineScope.launch(Dispatchers.IO) {
                     val ret = StarBridge.testClientConnectivity(
                         CONNECTION_TEST_SERVER,
                         443,

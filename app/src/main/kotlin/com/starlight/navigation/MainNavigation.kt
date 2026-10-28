@@ -20,13 +20,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
-import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -66,7 +65,7 @@ fun MainNavigation(
     val refreshId by viewModel.refreshId.observeAsState(0)
     val navController = rememberNavController()
     viewModel.setNavController(navController)
-    val lifecycleOwner = LocalLifecycleOwner.current
+    val coroutineScope = rememberCoroutineScope()
     val context = LocalContext.current
 
     val tvBringIntoViewSpec = remember {
@@ -285,7 +284,7 @@ fun MainNavigation(
             config?.let { currentConfig ->
                 if (currentConfig.favSelectedPosition != 0) {
                     LaunchedEffect(Unit) {
-                        lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                       coroutineScope.launch(Dispatchers.IO) {
                             activity.dataStore.edit { preferences ->
                                 preferences[intPreferencesKey(KEY_FAV_SELECTED_POSITION)] = 0
                             }
@@ -294,7 +293,7 @@ fun MainNavigation(
                 }
                 if (currentConfig.selectedPosition != 0) {
                     LaunchedEffect(Unit) {
-                        lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                       coroutineScope.launch(Dispatchers.IO) {
                             activity.dataStore.edit { preferences ->
                                 preferences[intPreferencesKey(KEY_SELECTED_POSITION)] = 0
                             }
@@ -305,7 +304,7 @@ fun MainNavigation(
                 if (!isLeanbackEnabled) {
                     if (currentConfig.appViewSelectedPosition != 0) {
                         LaunchedEffect(Unit) {
-                            lifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                           coroutineScope.launch(Dispatchers.IO) {
                                 activity.dataStore.edit { preferences ->
                                     preferences[intPreferencesKey(APP_VIEW_KEY_SELECTED_POSITION)] =
                                         0
