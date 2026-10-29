@@ -47,7 +47,6 @@ class Starlight : Application() {
 
         applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
-
         val config = fromPreferences(this@Starlight)
 
         val isStatsEnabled = config.statsEnabled

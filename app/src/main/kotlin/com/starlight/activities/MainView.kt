@@ -2,7 +2,6 @@
 
 package com.starlight.activities
 
-import android.annotation.SuppressLint
 import android.app.ActivityManager
 import android.content.Context
 import android.content.Intent
@@ -46,7 +45,6 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.NavHostController
 import androidx.tv.material3.Surface
 import androidx.tv.material3.SurfaceDefaults
 import coil3.compose.AsyncImage
@@ -1291,11 +1289,6 @@ class MainView : ComponentActivity(), OptionsHelper.OptionsCallback,
 
             else -> super.onContextItemSelected(item)
         }
-    }
-
-    @SuppressLint("RestrictedApi")
-    fun getBackStackCount(navController: NavHostController): Int {
-        return navController.currentBackStack.value.size
     }
 
     // Helper function to check if the database exists

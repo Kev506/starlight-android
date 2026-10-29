@@ -1,7 +1,6 @@
 package com.starlight.ui.helpers
 
 import android.annotation.SuppressLint
-import android.content.ContentResolver
 import android.content.ContentUris
 import android.content.Context
 import android.content.Intent
@@ -201,24 +200,6 @@ class TvChannelHelper(private val activity: ComponentActivity) {
         } catch (e: IllegalArgumentException) {
             e.printStackTrace()
             return
-        }
-    }
-
-    // Helper function to clear channels
-    @SuppressLint("RestrictedApi")
-    fun clearChannels(resolver: ContentResolver) {
-        resolver.query(
-            TvContractCompat.Channels.CONTENT_URI,
-            null,
-            null,
-            null,
-            null
-        )?.use { cursor ->
-            if (cursor.count > 0) {
-                val deletedCount =
-                    resolver.delete(TvContractCompat.Channels.CONTENT_URI, null, null)
-                LimeLog.info("ChannelCleanup: Deleted $deletedCount channels.")
-            }
         }
     }
 
