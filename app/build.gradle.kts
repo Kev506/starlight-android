@@ -75,8 +75,8 @@ android {
         minSdk = 29
         targetSdk = 37
 
-        versionName = ("14.2.0")
-        versionCode = 70
+        versionName = ("14.2.1")
+        versionCode = 71
         applicationId = ("com.github.kev506.starlight")
 
         externalNativeBuild {
@@ -84,6 +84,13 @@ android {
                 abiFilters("armeabi-v7a", "arm64-v8a")
                 arguments("APP_LDFLAGS+=-Wl,-z,max-page-size=16384")
             }
+        }
+    }
+
+    packaging {
+        jniLibs  {
+            excludes += "/lib/x86_64/*.so"
+            excludes += "/lib/x86/*.so"
         }
     }
 
