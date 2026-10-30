@@ -2550,13 +2550,13 @@ fun SettingsScreen(viewModel: MainViewModel) {
                                 },
                                 onConfirmation = {
                                     if (isStats.value) {
-                                       coroutineScope.launch(Dispatchers.IO) {
+                                        coroutineScope.launch {
+                                            val newStatsState = !currentConfig.statsEnabled
                                             context.dataStore.edit { preferences ->
-                                                preferences[booleanPreferencesKey(STATS_PREF_STRING)] =
-                                                    !currentConfig.statsEnabled
+                                                preferences[booleanPreferencesKey(STATS_PREF_STRING)] = newStatsState
                                             }
+                                            restartApplication(context)
                                         }
-                                        restartApplication(context)
                                         openAlertDialog.value = false
                                         isStats.value = false
                                     } else if (!isFpsSupported.value) {

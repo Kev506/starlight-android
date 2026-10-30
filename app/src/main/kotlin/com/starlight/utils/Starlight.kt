@@ -4,6 +4,9 @@ import android.app.ActivityManager
 import android.app.Application
 import android.content.Context
 import android.os.Build
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
@@ -12,17 +15,21 @@ import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.crashlytics.crashlytics
 import com.starlight.BuildConfig
-import com.starlight.preferences.PreferenceKeys.fromPreferences
+import com.starlight.utils.Constants.DEFAULT_RENDERER_PREF
 import com.starlight.utils.Constants.FINGERPRINT_PREF
 import com.starlight.utils.Constants.GLES_PREF_STRING
 import com.starlight.utils.Constants.RENDERER_PREF
 import com.starlight.utils.Constants.STARLIGHT_PREF_NAME
+import com.starlight.utils.Constants.STATS_ENABLED
+import com.starlight.utils.Constants.STATS_PREF_STRING
 import com.starlight.utils.LimeLog.info
 import com.starlight.utils.LimeLog.warning
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
 
@@ -47,49 +54,62 @@ class Starlight : Application() {
 
         applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
-        val config = fromPreferences(this@Starlight)
-
-        val isStatsEnabled = config.statsEnabled
-        val isGlRenderer = config.renderer
-
         LimeLog.initialize(this@Starlight)
 
-        if (isStatsEnabled) {
-            initializeFirebase()
-        } else {
-            deactivateFirebase()
+        applicationScope.launch {
+            dataStore.data
+                .map { prefs -> prefs[booleanPreferencesKey(STATS_PREF_STRING)] ?: STATS_ENABLED }
+                .collect { isStatsEnabled ->
+                    if (isStatsEnabled) {
+                        initializeFirebase()
+                    } else {
+                        deactivateFirebase()
+                    }
+                }
         }
 
-        if (isGlRenderer.isEmpty()) {
+        applicationScope.launch {
+            if (isGlRendererMissing(dataStore)) {
+                val gpuInfo = fetchDeviceGpuInfo()
 
-            val gpuInfo = fetchDeviceGpuInfo()
+                val activityManager =
+                    getSystemService(ACTIVITY_SERVICE) as ActivityManager
 
-            val activityManager =
-                getSystemService(ACTIVITY_SERVICE) as ActivityManager
+                val configurationInfo = activityManager.deviceConfigurationInfo
+                val glesVersion = configurationInfo.reqGlEsVersion
 
-            val configurationInfo = activityManager.deviceConfigurationInfo
-            val glesVersion = configurationInfo.reqGlEsVersion
-
-            applicationScope.launch{
                 dataStore.edit { preferences ->
                     preferences[stringPreferencesKey(RENDERER_PREF)] = gpuInfo.renderer
                     preferences[stringPreferencesKey(FINGERPRINT_PREF)] = Build.FINGERPRINT
                     preferences[intPreferencesKey(GLES_PREF_STRING)] = glesVersion
                 }
-            }
 
-            info("GPU_INFO: Renderer: ${gpuInfo.renderer}")
+                info("GPU_INFO: Renderer: ${gpuInfo.renderer}")
+            }
         }
+    }
+
+    private suspend fun isGlRendererMissing(dataStore: DataStore<Preferences>): Boolean {
+        return dataStore.data
+            .map { preferences ->
+                preferences[stringPreferencesKey(RENDERER_PREF)] ?: DEFAULT_RENDERER_PREF
+            }
+            .first()
+            .isEmpty()
     }
 
     private fun initializeFirebase() {
         Firebase.crashlytics.isCrashlyticsCollectionEnabled = true
         FirebaseAnalytics.getInstance(this).setAnalyticsCollectionEnabled(true)
+
+        info("Firebase initialized")
     }
 
     private fun deactivateFirebase() {
         Firebase.crashlytics.isCrashlyticsCollectionEnabled = false
         FirebaseAnalytics.getInstance(this).setAnalyticsCollectionEnabled(false)
+
+        info("Firebase deactivated")
     }
 
     companion object {
